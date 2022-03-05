@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TaoFormLaySurveyKhachHang</title>
+    <style>
+        table{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Market Research Survey</h1>
+    <p>Please take a few moments to complete this satisfaction survey.</p>
+    <hr>
+    <form>
+    <label><b> What is your age range ?</b> </label><br>
+            <select style="width:400px" name="age">
+                <option> 18 - 24 </option>
+                <option> 25 - 34 </option>
+                <option> 35 - 50 </option>
+                <option> 50+ </option>
+            </select><br><br>
+    <label><b> What is your yearly income range?</b> </label><br>
+    <select style="width:400px" name="monney">
+        <option> $0 - $25000 </option>
+        <option> $25001 - $50000 </option>
+        <option> $50000 - $100000 </option>
+        <option> $100000 </option>
+    </select><br/><br>
+    <label><b> Gender identity</b></label><br>
+    <label><input name="gender" type="radio" /> Male</label> <br/>
+    <label><input name="gender" type="radio" /> Female</label> <br/>
+    <label><input name="gender" type="radio" /> Nonbinary</label> <br/>
+    <label><input name="gender" type="radio" /> Other</label> <br/> <input type="text"><br><br>
+    <label><b> Which of the following products have your purchased in the last 2 months. Please check all that apply.</b></label><br>
+    <label><input name="product" type="checkbox"/> Product 1</label> <br/>
+    <label><input name="product" type="checkbox"/> Product 2</label> <br/>
+    <label><input name="product" type="checkbox"/> Product 3</label> <br/><br>
+    <label><b> How often would you use our new product?</b></label><br>
+    <label><input name="day" type="radio" value="Daily"> Daily</label><br>
+    <label><input name="day" type="radio" value="Weekly"> Weekly</label><br>
+    <label><input name="day" type="radio" value="Monthly"> Monthly</label><br><br>
+    <label><b> What would you pay for the new product?</b></label>
+    <table>
+        <tr> <td>$</td><td> <input type="text" style="width: 60px"></td> <td>.</td> <td> <input type="text" style="width:15px"></td><br></tr>
+        <tr><td> </td><td> Dollars</td><td> </td><td>Cents </td></tr>
+    </table><br>
+    <label><b> What features would you like to see in the new product.</b></label><br>
+        <input type="text" style="height: 120px;width:380px"><br><br>
+        <label> Please rate your level of agreement with the following statements </label><br>
+        <table border="1px" style="border-collapse: collapse;" cellpadding="px">
+            <tr>
+                <th> </th> <th>Strongly Disagree</th><th>Disgree</th><th> Agree </th><th> Strongly Agree</th>
+            </tr>
+            <tr>
+                <th rowspan="2"> Our products are price fairly.</th> <td> <input type="radio" name="fairly"></td>
+                <td> <input  type="radio" name="fairly"></td> <td> <input type="radio" name="fairly"></td>
+                <td> <input  type="radio" name="fairly">
+            </tr>
+            <tr>
+                 <td>1</td> <td>2</td> <td>3</td> <td>4</td>
+            </tr>
+            <tr>
+                <th rowspan="2"> Our products are high quality.</th> <td> <input type="radio" name="fairly"></td>
+                <td> <input type="radio" name="fairly"></td> <td> <input type="radio" name="fairly"></td><td> <input type="radio" name="fairly"></td>
+            </tr>
+            <tr>
+                <td>1</td> <td>2</td> <td>3</td> <td>4</td>
+            </tr>
+            <tr> <th rowspan="2"> You would recommend our product to a friend or coworked. </th> <td> <input type="radio" name="fairly"></td>
+                <td> <input type="radio" name="fairly"></td> <td> <input type="radio" name="fairly"></td> <td> <input type="radio" name="fairly"></td>
+            </tr>
+            <tr>
+                <td>1</td> <td>2</td> <td>3</td> <td>4</td>
+            </tr>
+
+        </table><br>
+        <input type="submit" value="Submit" style="width: 90px">
+
+
+    </form>
+</body>
+</html>
