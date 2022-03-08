@@ -11,33 +11,40 @@
             <th> Amount of:</th> <th>From currency: </th> <th> To Currency: </th>
         </tr>
         <tr>
-            <td ><input id="monney" type="text" > </td> <td><select name="country" id="country" >
+            <td ><input id="money" type="text" > </td> <td><select name="country" id="country" >
             <option value="VN">VietNam</option>
             <option value="USD">USD</option>
-            <option value="YEN">Nhat</option>
         </select></td>
             <td><select name="country2" id="country2" >
                 <option value="VN">VietNam</option>
                 <option value="USD">USD</option>
-                <option value="YEN">Nhat</option>
             </select>
             </td>
-            <td> <input type="submit" value="Convert to" onclick="hello()"></td>
+            <td> <input type="button" value="Convert to" onclick="hello()"></td>
         </tr>
     </table>
 
 <script>
 
     function hello() {
-        let sotien = document.getElementById("monney").value;
-        document.getElementById("country").value=sotien;
-        let t;
-        document.getElementById('country2').value=t;
-        t=23000*sotien;
-        document.write('Ket qua la: ' +t)
+        let tien = document.getElementById("money").value;
+        let  num1 = document.getElementById("country").value;
+        let  num2 = document.getElementById("country2").value;
+        if( num1== 'VN' && num2 =='USD') {
+            let result = tien * 23000;
+            document.write('so tien la: ' + result);
+        } else if(num1 =='VN'&& num2 =='VN'){
+            let result = tien
+            document.write('so tien là:'+ result);
+        }
+        else if(num1 =='USD'&& num2 =='VN'){
+            let result = tien/23000;
+            document.write('so tien là:'+ result);
+        }else{
+            let result = tien
+            document.write('so tien là:'+ result);
+        }
     }
-
 </script>
-
 </body>
 </html>

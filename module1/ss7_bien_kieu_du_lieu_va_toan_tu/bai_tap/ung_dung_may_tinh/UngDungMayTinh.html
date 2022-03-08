@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td colspan="2"><input type="text" id="window1"></td><td colspan="2"><input type="text" id="window2"> </td>
+    </tr>
+    <tr>
+        <td><button id="cong" onclick="cong()">Cộng </button></td>
+        <td><button id="tru" onclick="tru()">Trừ</button></td>
+        <td><button id="nhan" onclick="nhan()">Nhân </button></td>
+        <td><button id="chia" onclick="chia()">Chia </button></td>
+    </tr>
+</table>
+<script>
+    function cong(){
+        let num1= document.getElementById("window1").value
+        let num2= document.getElementById("window2").value
+        let result= parseInt(num1)+parseInt(num2)
+            document.write("kết quả là: " + result);
+        }
+    function tru(){
+        let num1= document.getElementById("window1").value
+        let num2= document.getElementById("window2").value
+        let result= num1-num2;
+        document.write("kết quả là: " + result);
+    }
+    function nhan(){
+        let num1= document.getElementById("window1").value
+        let num2= document.getElementById("window2").value
+        let result= num1*num2;
+        document.write("kết quả là: " + result);
+    }
+    function chia(){
+        let num1= document.getElementById("window1").value
+        let num2= document.getElementById("window2").value
+        let result= num1/num2;
+        document.write("kết quả là: " + result);
+    }
+
+
+
+</script>
+
+</body>
+</html>
