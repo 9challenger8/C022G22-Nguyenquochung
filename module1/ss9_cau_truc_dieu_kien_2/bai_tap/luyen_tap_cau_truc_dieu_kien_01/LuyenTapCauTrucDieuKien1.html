@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 1 đến Bài -->
+
+<!--<script>-->
+<!--    let a=Number(prompt('nhập số a: '));-->
+<!--    let b=Number(prompt('nhập số b : '));-->
+<!--    if(a%b==0){-->
+<!--        alert("có chia hết")-->
+<!--    }-->
+<!--    else{-->
+<!--        alert("không chia hết")-->
+<!--    }-->
+<!--</script>-->
+
+
+<!--<script>-->
+<!--    let sotuoi=Number(prompt('Nhập số tuổi: '));-->
+<!--    if ( sotuoi >= 15 ){-->
+<!--        alert("đủ tuổi học lớp 10");-->
+<!--    }else{-->
+<!--        alert('không đủ tuổi học lớp 10');-->
+<!--    }-->
+<!--</script>-->
+
+
+<!--<script> -->
+<!--    let a=Number(prompt('nhập số '));-->
+<!--    let b=Number(prompt('nhập số '));-->
+<!--    let c=Number(prompt('nhập số '));-->
+<!--    if(a>=b && a>=c){-->
+<!--        alert(a + ' là số lớn nhất')-->
+<!--    }else if(a<b || a<c){-->
+<!--        if(b>c){-->
+<!--            alert(b+' là số lớn nhất')-->
+<!--        }-->
+<!--        else{-->
+<!--            alert(c+' là số lớn nhất')-->
+<!--        }-->
+<!--    }-->
+
+<!--<script>-->
+<!--        let a=parseInt(prompt('nhập số: '))-->
+<!--        if(a>0){-->
+<!--            alert('Lớn hớn 0')-->
+<!--        }-->
+<!--        else{-->
+<!--            alert('Nhỏ hơn 0')-->
+<!--        }-->
+<!--</script>-->
+<!--<script>-->
+<!--    let a=Number(prompt('nhập điểm '))-->
+<!--    let b=Number(prompt('nhập điểm '))-->
+<!--    let TB=(a+b)/2-->
+<!--    if(TB>=5){-->
+<!--        alert('đạt')-->
+<!--    }else{-->
+<!--        alert('chưa đạt')-->
+<!--    }-->
+<!--</script>-->
+
+<!--<script>-->
+<!--    let a=Number(prompt('Nhập doanh số bán hàng: '))-->
+
+<!--    if(a>=50000)-->
+<!--    {-->
+
+<!--        alert('hưởng hoa hồng 10%');-->
+<!--        let result = a*0.1;-->
+<!--        alert('số hoa hồng nhận được: '+ result)-->
+<!--    }-->
+<!--    else-->
+<!--    {-->
+<!--        alert('hưởng hoa hồng 5%')-->
+<!--        let result=a*0.05 ;-->
+<!--        alert('số hoa hồng nhận được: '+ result)-->
+<!--    }-->
+<!--</script>-->
+
+<script>
+    let sophut= Number(prompt('nhập sô phút gọi: '))
+    const phicodinh=25000;
+    if(sophut>200){
+        let phi= (sophut-200)*200 + 150*400 + 50*600;
+        let tong=phi+phicodinh
+        alert('Số tiền phải nộp là: '+ tong )
+    } else if(sophut>50){
+        let phi=(sophut-50)*400+50*600;
+        let tong=phi+phicodinh
+        alert('Số tiền phải nộp là:'+tong)
+    }else{
+        let phi=sophut*600;
+        let tong=phi+phicodinh
+        alert('Số tiền phải nộp là:'+tong)
+    }
+</script>
+
+</body>
+</html>
