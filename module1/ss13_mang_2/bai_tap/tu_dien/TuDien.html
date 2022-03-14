@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>TỪ ĐIỂN ANH VIỆT</h1>
+<input type="text" id="window">
+<label><button type="button" onclick="timkiem()"> Tìm kiếm   </button>  </label>
+
+<script>
+
+let engLish=["years","name","tree","milk","hotel"]
+let vietNamese=["năm","tên","cây","sữa",'khách sạn']
+ function timkiem(){
+    let nhap = document.getElementById("window").value;
+     let poSiTion =engLish.indexOf(nhap);
+     if(poSiTion !== -1 ){
+         alert("Nghĩa của từ là: " + vietNamese[poSiTion])
+     }else{
+         alert("Không tìm thấy")
+     }
+ }
+</script>
+</body>
+</html>

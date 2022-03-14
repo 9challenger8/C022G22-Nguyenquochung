@@ -76,7 +76,7 @@
 <!--    let f2=1-->
 <!--    let f3 ;-->
 <!--    let tTong=f1+f2 ;-->
-<!--    let i;-->20
+<!--    let i;-->
 <!--    for( i=2;i<;i++){-->
 <!--            f3 = f1+f2;-->
 <!--            tTong+=f3;-->
@@ -87,35 +87,36 @@
 <!--</script>-->
 
 
-<!--<script>-->
-<!--    let count=0;-->
-<!--    let tTong=0;-->
-<!--    let f1;-->
-<!--        for (let i=0;i<15000;i++){-->
-<!--            if(i%7===0){-->
-<!--               f1=i;-->
-<!--               count++;-->
-<!--               document.write(" "+f1+" ")-->
-<!--                tTong+=f1;-->
-<!--            }-->
-<!--            if(count===30){-->
-<!--                break;-->
-<!--            }-->
-<!--        }-->
-<!--    document.write("tổng là: "+ tTong)-->
-<!--</script>-->
+<script>
+    let count=0;
+    let tTong=0;
+    let f1;
+    let i=0;
+        while (count<=29){
+            if(i%7===0){
+               f1=i;
+               count++;
+               document.write(" "+f1+" ")
+                tTong+=f1;
+            }
+            i++
+        }
+    document.write("tổng là: "+ tTong)
+</script>
+
+
 
 <!--<script>-->
 <!--    let a=null;-->
 <!--    for(let i=1;i<=100;i++){-->
-<!--        if(i%3===0){-->
-<!--            document.write("  Fizz  ")-->
+<!--        if(i%3===0&&i%5===0){-->
+<!--            document.write("  FizzBuzz  ")-->
 <!--        }-->
 <!--        else if(i%5===0){-->
 <!--            document.write("  Buzz  ")-->
 <!--        }-->
-<!--        else if(i%3===0&&i%5===0){-->
-<!--            document.write(" FizzBuzz ")-->
+<!--        else if(i%3===0){-->
+<!--            document.write(" Fizz ")-->
 <!--        }else{-->
 <!--            document.write(" "+i+" ")-->
 <!--        }-->
