@@ -83,15 +83,50 @@
 
 <!--Bài 6-->
 <!--<script>-->
-<!--    let array1=[5,6,4,3,2,33,45,6,56,78]-->
+<!--let arr = [1,2,3,4,5,6,7,8,9,10];-->
+<!--let V =parseInt(prompt("Nhập số nguyên V"));-->
+<!--let flag = false;-->
+<!--for( let i = 0;i < arr.length;i++){-->
+<!--if(V === arr[i]) {-->
+<!--flag = true;-->
+<!--break;-->
+<!--}-->
 
-
-
-
-
-
-
+<!--}-->
+<!--if (flag === true){-->
+<!--alert("V is in the array");-->
+<!--}else {-->
+<!--alert("V is not in the array")-->
+<!--}-->
 <!--</script>-->
+
+
+
+<!--Bài 7:-->
+
+<input type="text" id="so" placeholder="Nhập số"/>
+<input type="button" onclick="kiemSo()" value="tìm"/>
+<script>
+    let arr = [1,2,3,4,5,6,7,8,9,10]
+    let flag = true
+    function kiemSo() {
+        let so = parseInt(document.getElementById("so").value);
+        let index = arr.indexOf(so);
+        for ( let i=0; i < arr.length; i++){
+            if (index !==-1){
+                flag=false;
+            }
+        }
+        if(flag===false){
+            arr.splice(index,1);
+            arr.push(0);
+        }
+        console.log(arr);
+    }
+</script>
+
+
+
 
 
 
