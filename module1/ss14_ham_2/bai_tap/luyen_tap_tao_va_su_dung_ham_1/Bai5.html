@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="nhap" placeholder=" nhập từ cần tìm">
+<button onclick="check()" > Tìm</button>
+<script>
+    let array1=["Polaris"," Aldebaran"," Deneb"," Vega", "Altair"," Dubhe","Regulus"]
+    let array2=["Ursa Minor","Tarurus"," Cygnus"," Lyra"," Aquila"," Ursa Major","Leo"]
+    function check(){
+        let nhap=document.getElementById("nhap").value
+        let poSiTion=array1.indexOf(nhap)
+            if(poSiTion !== -1){
+                alert("tu can tim: "+ array2[poSiTion])
+            }else{
+                alert("Khong tim thay")
+    }
+    }
+</script>
+
+</body>
+</html>
