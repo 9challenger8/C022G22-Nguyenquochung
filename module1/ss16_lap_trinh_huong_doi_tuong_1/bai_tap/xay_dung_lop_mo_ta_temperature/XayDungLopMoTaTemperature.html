@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class  Temperature{
+        constructor(C){
+            this.doC=C
+    }
+        getDoF(){
+            return this.doC*9/5+32
+        }
+        getDoK(){
+            return this.doC+273
+        }
+    }
+        let nhietDo= new Temperature(25);
+        let f = nhietDo.getDoF()
+        let k = nhietDo.getDoK()
+        console.log("độ F là: "+f+ " độ k là: "+ k)
+
+</script>
+
+</body>
+</html>
