@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Apple{
+        constructor() {
+            this.weight=10;
+        }
+        decrease(){
+            if(this.weight>0){
+                this.weight--;
+            }
+        }
+        isEmpty(){
+            if(this.weight>0){
+                return false;
+            }else {
+                return true;
+            }
+        }
+        getWeight(){
+            return this.weight;
+        }
+
+    }
+
+    class Human{
+        constructor() {
+            this.name;
+            this.gender;
+            this.weight;
+        }
+        isMale(){
+            return this.gender;
+    }
+        setGender(gender){
+            this.gender=gender;
+            if(gender){
+                document.write("toi la nam <br>")
+            }else{
+                    document.write("toi la nu <br>")
+            }
+    }
+
+        checkApple(apple){
+            if(apple.getWeight()>0){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        eatApple(apple){
+            apple.decrease()
+            this.weight=this.getWeight()+1;
+        }
+        say(message){
+            document.write(message)
+            document.write('<br>')
+        }
+        getName(){
+            return this.name
+        }
+        setName(name){
+            this.name=name;
+        }
+        getWeight(){
+            return this.weight;
+        }
+        setWeight(weight){
+            this.weight=weight;
+        }
+    }
+    let Adam = new Human();
+    let Eva  = new Human();
+    Adam.setName("Adam")
+    Adam.setGender(true)
+    Adam.setWeight(70)
+    Adam.say("toi ten la: "+Adam.getName()+"<br> toi nang:  "+Adam.getWeight())
+
+    Eva.setName("Eva")
+    Eva.setGender(false)
+    Eva.setWeight(58)
+    Eva.say("toi ten la: "+Eva.getName()+"<br> toi nang:  "+Eva.getWeight())
+
+    let demonTao = new Apple()
+    Eva.say("Den h an tao ")
+
+    while(demonTao.getWeight()>0){
+        Adam.eatApple(demonTao);
+        Adam.getWeight();
+        document.write("can nang Adam: "+Adam.getWeight()+"<br>")
+        demonTao.decrease()
+        if(demonTao.getWeight()>0){
+            Eva.eatApple(demonTao);
+            Eva.getWeight();
+            document.write("can nang Eva: "+Eva.getWeight()+"<br>")
+            demonTao.decrease()
+        }
+        document.write("tao con khong ? "+Adam.checkApple(demonTao)+"<br>");
+        if(demonTao.isEmpty()){
+            Eva.say("tao da het")
+            Eva.say("End Game.")
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
