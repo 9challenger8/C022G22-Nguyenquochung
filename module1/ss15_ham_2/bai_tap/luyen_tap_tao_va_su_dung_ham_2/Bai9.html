@@ -6,26 +6,28 @@
 </head>
 <body>
 <script>
-    class Battery() {
-            constructor(){
 
-        }
-        this.setEnergy = function (energy) {
-            this.energy = energy;
-        };
+        arr=[prompt()];
+        console.log(arr)
 
-        this.getEnergy = function () {
-            return this.energy;
-        };
-
-        this.decreaseEnergy = function () {
-            if (this.energy > 0) {
-                this.energy--;
+        function checkArr(k) {
+            let arr1=arr.toString()
+            console.log(arr1)
+            count=0;
+            let flag=true;
+            for(let i=0;i<arr1.length;i++){
+                if(arr1[i]===k){
+                    count++;
+                    flag=true;
+                }
             }
-        }
-    };
-
-
+            if(flag===true){
+                console.log(count)
+            }else{
+                return -1
+            }
+    }
+    checkArr(prompt("nhap : "));
 
 
 
