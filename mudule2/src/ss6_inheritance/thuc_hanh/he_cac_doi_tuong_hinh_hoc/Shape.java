@@ -1,6 +1,9 @@
 package ss6_inheritance.thuc_hanh.he_cac_doi_tuong_hinh_hoc;
 
-public class Shape {
+import ss7_interface_va_abstract_class.bai_tap.trien_khai_interface_colorable_cho_cac_lop_hinh_hoc.Colorable;
+import ss7_interface_va_abstract_class.bai_tap.trien_khai_interface_resizeable_cho_cac_lop_hinh_hoc.Resizeable;
+
+public class Shape implements Resizeable, Colorable {
     private String color = "green";
     private boolean filled = true;
 
@@ -34,5 +37,15 @@ public class Shape {
                 + getColor()
                 + " and "
                 + (isFilled() ? "filled" : "not filled");
+    }
+
+    @Override
+    public void resize(double percent) {
+
+    }
+
+    @Override
+    public void howToColor() {
+        
     }
 }

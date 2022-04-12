@@ -1,6 +1,9 @@
 package ss6_inheritance.thuc_hanh.he_cac_doi_tuong_hinh_hoc;
 
-public class Square extends Rectangle{
+import ss7_interface_va_abstract_class.bai_tap.trien_khai_interface_resizeable_cho_cac_lop_hinh_hoc.Resizeable;
+
+public class Square extends Rectangle implements Resizeable {
+
     public Square() {
     }
 
@@ -10,6 +13,11 @@ public class Square extends Rectangle{
 
     public Square(double side, String color, boolean filled) {
         super(side, side, color, filled);
+    }
+
+    @Override
+    public double getWidth() {
+        return super.getWidth();
     }
 
     public double getSide() {
@@ -32,11 +40,19 @@ public class Square extends Rectangle{
     }
 
     @Override
+    public void resize(double percent) {
+
+    }
+
+    @Override
     public String toString() {
         return "A Square with side="
                 + getSide()
                 + ", which is a subclass of "
                 + super.toString();
+
     }
+
+
 }
 

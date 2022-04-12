@@ -1,6 +1,7 @@
 package ss6_inheritance.thuc_hanh.he_cac_doi_tuong_hinh_hoc;
 
-public class Rectangle extends Shape {
+
+public class Rectangle extends Shape  {
     private double width = 1.0;
     private double length = 1.0;
 
@@ -51,5 +52,10 @@ public class Rectangle extends Shape {
                 + ", which is a subclass of "
                 + super.toString();
     }
-
+    @Override
+    public void resize(double percent){
+        width*=percent;
+        length*=percent;
+        System.out.println(getArea());
+    }
 }
