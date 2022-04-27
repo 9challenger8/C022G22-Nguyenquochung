@@ -3,8 +3,7 @@ package case_study.controllers;
 import java.util.Scanner;
 
 public class FuramaController {
-    private static Scanner scanner = new Scanner(System.in);
-
+    private static final Scanner scanner = new Scanner(System.in);
 
     public void displayMainMenu() {
         while (true) {
@@ -15,27 +14,12 @@ public class FuramaController {
                     "4.\tBooking Management\n" +
                     "5.\tPromotion Management\n" +
                     "6.\tExit\n ");
-            System.out.println("Hãy chọn chức năng: ");
+            System.out.print("Hãy chọn chức năng: ");
             int choice = Integer.parseInt(scanner.nextLine());
             switch (choice) {
                 case 1:
-                    System.out.println("1\tDisplay list employees\n" +
-                            "2\tAdd new employee\n" +
-                            "3\tEdit employee\n" +
-                            "4\tReturn main menu\n");
-                    System.out.println("Hãy chọn chức năng: ");
-                    int choice1 = Integer.parseInt(scanner.nextLine());
-                    switch (choice1) {
-                        case 1:
-                            break;
-                        case 2:
-                            break;
-                        case 3:
-                            break;
-                        case 4:
-                            break;
-                    }
-                    break;
+                    employeeManagement();
+                break;
                 case 2:
                     System.out.println("1.\tDisplay list customers\n" +
                             "2.\tAdd new customer\n" +
@@ -51,7 +35,7 @@ public class FuramaController {
                         case 3:
                             break;
                         case 4:
-                            break;
+                            return;
                     }
                     break;
                 case 3:
@@ -69,7 +53,7 @@ public class FuramaController {
                         case 3:
                             break;
                         case 4:
-                            break;
+                            return;
                     }
                     break;
                 case 4:
@@ -93,7 +77,7 @@ public class FuramaController {
                         case 5:
                             break;
                         case 6:
-                            break;
+                            return;
                     }
                     break;
                 case 5:
@@ -107,7 +91,7 @@ public class FuramaController {
                         case 2:
                             break;
                         case 3:
-                            break;
+                            return;
                     }
                     break;
                 case 6:
@@ -117,5 +101,28 @@ public class FuramaController {
                     break;
             }
         }
+    }
+
+    private void employeeManagement() {
+            System.out.println("1\tDisplay list employees\n" +
+                    "2\tAdd new employee\n" +
+                    "3\tEdit employee\n" +
+                    "4\tReturn main menu\n");
+            System.out.println("Hãy chọn chức năng: ");
+            int choice1 = Integer.parseInt(scanner.nextLine());
+            switch (choice1) {
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+                default:
+                    System.out.printf("Hãy chọn lại: ");
+                    choice1 = Integer.parseInt(scanner.nextLine());
+                    break;
+            }
     }
 }
