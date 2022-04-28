@@ -1,6 +1,8 @@
 package case_study.services;
 
+import java.text.ParseException;
+
 public interface IServices {
      void displayList();
-     void addNew();
+     void addNew() throws ParseException;
 }

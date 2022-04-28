@@ -1,5 +1,7 @@
 package case_study.services;
 
+import java.text.ParseException;
+
 public interface IEmployeeServices extends IServices {
     @Override
     default void displayList() {
@@ -7,7 +9,7 @@ public interface IEmployeeServices extends IServices {
     }
 
     @Override
-    default void addNew() {
+    default void addNew() throws ParseException {
 
     }
     void edit();

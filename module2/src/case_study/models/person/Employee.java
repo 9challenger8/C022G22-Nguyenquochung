@@ -2,6 +2,8 @@ package case_study.models.person;
 
 import case_study.models.person.Person;
 
+import java.util.Date;
+
 public class Employee extends Person {
     private String level;
     private String position;
@@ -11,6 +13,13 @@ public class Employee extends Person {
     }
 
     public Employee(String level, String position, Integer salary) {
+        this.level = level;
+        this.position = position;
+        this.salary = salary;
+    }
+
+    public Employee(Integer iD, String name, Date birthday, String gender, String numberCMND, String numberPhone, String email, String level, String position, Integer salary) {
+        super(iD, name, birthday, gender, numberCMND, numberPhone, email);
         this.level = level;
         this.position = position;
         this.salary = salary;
