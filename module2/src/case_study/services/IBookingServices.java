@@ -7,9 +7,9 @@ public interface IBookingServices extends IServices{
     }
 
     @Override
-    default void addNew() {
+    void addNew();
 
-    }
+
     void createdNewContract();
     void displayListContract();
     void editContract();

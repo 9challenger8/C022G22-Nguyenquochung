@@ -2,6 +2,7 @@ package case_study.models.person;
 
 import case_study.models.person.Person;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Employee extends Person {
@@ -18,7 +19,7 @@ public class Employee extends Person {
         this.salary = salary;
     }
 
-    public Employee(Integer iD, String name, Date birthday, String gender, String numberCMND, String numberPhone, String email, String level, String position, Integer salary) {
+    public Employee(Integer iD, String name, LocalDate birthday, String gender, String numberCMND, String numberPhone, String email, String level, String position, Integer salary) {
         super(iD, name, birthday, gender, numberCMND, numberPhone, email);
         this.level = level;
         this.position = position;
@@ -49,10 +50,9 @@ public class Employee extends Person {
         this.salary = salary;
     }
 
-    @Override
     public String toString() {
-        return "Employee{" +
-                "level='" + level + '\'' +
+        return "Employee{" + super.toString()+
+                ", level='" + level + '\'' +
                 ", position='" + position + '\'' +
                 ", salary=" + salary +
                 '}';

@@ -1,14 +1,9 @@
 package case_study.services;
 
-public interface IFacilityServices extends IServices {
-    @Override
-    default void displayList() {
-
-    }
-
-    @Override
-    default void addNew() {
-
-    }
+public interface IFacilityServices {
+    void displayList();
+    void addNewHouse();
+    void addNewRoom();
+    void addNewVilla();
     void displayListMaintenance();
 }

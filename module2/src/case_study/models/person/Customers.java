@@ -1,6 +1,6 @@
 package case_study.models.person;
 
-import case_study.models.person.Person;
+import java.time.LocalDate;
 
 public class Customers extends Person {
     private String guestType;
@@ -10,6 +10,12 @@ public class Customers extends Person {
     }
 
     public Customers(String guestType, String address) {
+        this.guestType = guestType;
+        this.address = address;
+    }
+
+    public Customers(Integer iD, String name, LocalDate birthday, String gender, String numberCMND, String numberPhone, String email, String guestType, String address) {
+        super(iD, name, birthday, gender, numberCMND, numberPhone, email);
         this.guestType = guestType;
         this.address = address;
     }
@@ -32,8 +38,8 @@ public class Customers extends Person {
 
     @Override
     public String toString() {
-        return "Customers{" +
-                "guestType='" + guestType + '\'' +
+        return "Customers{" + super.toString() +
+                ",guestType='" + guestType + '\'' +
                 ", address='" + address + '\'' +
                 '}';
     }

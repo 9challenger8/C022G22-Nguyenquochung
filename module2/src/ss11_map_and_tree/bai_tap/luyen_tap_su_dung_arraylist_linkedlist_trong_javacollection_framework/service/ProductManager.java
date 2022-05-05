@@ -49,8 +49,8 @@ public class ProductManager implements ProductService {
     }
 
     private Boolean checkExists(int idDelete) {
-        for (int i = 0; i < list.size(); i++) {
-            if (idDelete == list.get(i).getID()) {
+        for (Product product : list) {
+            if (idDelete == product.getID()) {
                 return true;
             }
         }
@@ -83,14 +83,14 @@ public class ProductManager implements ProductService {
     public void editProduct() {
         System.out.println(" Nhập ID cần sửa:");
         int iDCheck = Integer.parseInt(scanner.nextLine());
-        for (int i = 0; i < list.size(); i++) {
-            if (iDCheck == list.get(i).getID()) {
+        for (Product product : list) {
+            if (iDCheck == product.getID()) {
                 System.out.print("Nhập lại id sản phẩm: ");
-                list.get(i).setID(Integer.parseInt(scanner.nextLine()));
+                product.setID(Integer.parseInt(scanner.nextLine()));
                 System.out.print("Nhập lại tên sản phẩm: ");
-                list.get(i).setName(scanner.nextLine());
+                product.setName(scanner.nextLine());
                 System.out.print("Nhập lại giá sản phẩm: ");
-                list.get(i).setPrice(Integer.parseInt(scanner.nextLine()));
+                product.setPrice(Integer.parseInt(scanner.nextLine()));
             } else {
                 System.out.println(" ID bạn nhập hiện không có.");
             }

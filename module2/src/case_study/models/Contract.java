@@ -1,5 +1,7 @@
 package case_study.models;
 
+import case_study.services.impl.EmployeeManagement;
+
 public class Contract {
     private int numbersContract;
     private Integer iDBooking;
