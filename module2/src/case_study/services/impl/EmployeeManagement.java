@@ -1,10 +1,8 @@
 package case_study.services.impl;
 
-import case_study.common.AgeException;
-import case_study.common.Regex;
+import case_study.common.ReadAndWriteFile;
 import case_study.models.person.Employee;
 import case_study.services.IEmployeeServices;
-import sun.util.resources.LocaleData;
 
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
@@ -12,31 +10,36 @@ import java.util.*;
 
 public class EmployeeManagement implements IEmployeeServices {
     static final Scanner scanner = new Scanner(System.in);
-    static final List<Employee> listEmployee = new ArrayList<>();
+    static List<Employee> listEmployee = new ArrayList<>();
 
     public static SimpleDateFormat df = new SimpleDateFormat("dd-MM-yyyy");
 
     static {
         listEmployee.add(new Employee(1, "Dung", LocalDate.parse("2021-01-01"), "male", "2416849494", "0944569998", "ui@gmail.com", "trung cap", "giam doc", 5000));
-        listEmployee.add(new Employee(2, "Jon", LocalDate.parse("2021-01-01"), "female", "2416278494", "0944537998", "i@gmail.com", "dai hoc", "giam sat", 3000));
+        listEmployee.add(new Employee(2, "Jon", LocalDate.parse("2021-01-01"),
+                "female", "2416278494", "0944537998",
+                "i@gmail.com", "dai hoc", "giam sat", 3000));
+        ReadAndWriteFile.writeEmployee(listEmployee);
+
     }
 
     @Override
     public void displayList() {
-        for (Employee employee : listEmployee) {
+        List<Employee> employeeList = ReadAndWriteFile.readEmployee();
+        for (Employee employee : employeeList) {
             System.out.println(employee.toString());
         }
     }
 
     @Override
     public void addNew() {
+        listEmployee = ReadAndWriteFile.readEmployee();
         System.out.print("Nhập id nhân viên: ");
         int iD = Integer.parseInt(scanner.nextLine());
         System.out.print("Nhập tên nhân viên: ");
         String name = scanner.nextLine();
         System.out.print("Nhập ngày sinh của nhân viên theo định dang yyyy-MM-dd: ");
         LocalDate date = LocalDate.parse(scanner.nextLine());
-        LocalDate date2  = Regex.ageException(date);
         System.out.print("Nhập giới tính của nhân viên: ");
         String gender = scanner.nextLine();
         System.out.print("Nhập CMND của nhân viên: ");
@@ -51,12 +54,14 @@ public class EmployeeManagement implements IEmployeeServices {
         String position = scanner.nextLine();
         System.out.println("Nhập lương của nhân viên: ");
         int salary = Integer.parseInt(scanner.nextLine());
-        Employee employee = new Employee(iD, name, date2, gender, numberCMND, numberPhone, email, level, position, salary);
+        Employee employee = new Employee(iD, name, date, gender, numberCMND, numberPhone, email, level, position, salary);
         listEmployee.add(employee);
+        ReadAndWriteFile.writeEmployee(listEmployee);
     }
 
     @Override
     public void edit() {
+        listEmployee = ReadAndWriteFile.readEmployee();
         System.out.print("Nhập id nhân viên cần sửa:");
         int iDEdit = Integer.parseInt(scanner.nextLine());
         boolean iDExist = false;

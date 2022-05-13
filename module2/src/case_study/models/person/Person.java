@@ -87,6 +87,10 @@ public abstract class Person {
         this.email = email;
     }
 
+    public String getInFor() {
+        return this.iD + ", " + this.name + ", " + this.birthday  + ", " + this.gender + ", " + this.numberCMND + ", " + this.numberPhone + ", " + this.email;
+    }
+
     @Override
     public String toString() {
         return "Person{" +

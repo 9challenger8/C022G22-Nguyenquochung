@@ -50,6 +50,11 @@ public class Employee extends Person {
         this.salary = salary;
     }
 
+    @Override
+    public String getInFor() {
+        return super.getInFor() + "," + this.level + "," + this.position + "," + this.salary;
+    }
+
     public String toString() {
         return "Employee{" + super.toString()+
                 ", level='" + level + '\'' +

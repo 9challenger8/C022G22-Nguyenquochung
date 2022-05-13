@@ -1,6 +1,6 @@
 package case_study.controllers;
 
-import case_study.models.facility.Facility;
+import case_study.common.CheckException;
 import case_study.services.impl.CustomerManagement;
 import case_study.services.impl.EmployeeManagement;
 import case_study.services.impl.FacilityManagement;
@@ -9,9 +9,9 @@ import java.util.Scanner;
 
 public class FuramaController {
     private static final Scanner scanner = new Scanner(System.in);
-    EmployeeManagement employeeManagement= new EmployeeManagement();
-    CustomerManagement customerManagement=new CustomerManagement();
-    FacilityManagement facilityManagement=new FacilityManagement();
+    EmployeeManagement employeeManagement = new EmployeeManagement();
+    CustomerManagement customerManagement = new CustomerManagement();
+    FacilityManagement facilityManagement = new FacilityManagement();
 
 
     public void displayMainMenu() {
@@ -24,11 +24,11 @@ public class FuramaController {
                     "5.\tPromotion Management\n" +
                     "6.\tExit\n ");
             System.out.print("Hãy chọn chức năng: ");
-            int choice = Integer.parseInt(scanner.nextLine());
+            int choice = CheckException.checkInteger();
             switch (choice) {
                 case 1:
                     employeeManagement();
-                break;
+                    break;
                 case 2:
                     customerManagement();
                     break;
@@ -43,7 +43,7 @@ public class FuramaController {
                             "5.\tEdit contracts\n" +
                             "6.\tReturn main menu\n");
                     System.out.println("Hãy chọn chức năng: ");
-                    int choice4 = Integer.parseInt(scanner.nextLine());
+                    int choice4 = CheckException.checkInteger();
                     switch (choice4) {
                         case 1:
                             break;
@@ -63,7 +63,7 @@ public class FuramaController {
                     System.out.println("1.\tDisplay list customers use service\n" +
                             "2.\tDisplay list customers get voucher\n" +
                             "3.\tReturn main menu\n");
-                    int choice5 = Integer.parseInt(scanner.nextLine());
+                    int choice5 = CheckException.checkInteger();
                     switch (choice5) {
                         case 1:
                             break;
@@ -88,7 +88,7 @@ public class FuramaController {
                 "3\tDisplay list facility maintenance\n" +
                 "4\tReturn main menu\n");
         System.out.println("Hãy chọn chức năng: ");
-        int choice3 = Integer.parseInt(scanner.nextLine());
+        int choice3 = CheckException.checkInteger();
         switch (choice3) {
             case 1:
                 facilityManagement.displayList();
@@ -108,8 +108,8 @@ public class FuramaController {
                 "2.\tAdd New House\n" +
                 "3.\tAdd New Room\n" +
                 "4.\tBack to menu\n");
-        int choice32= Integer.parseInt(scanner.nextLine());
-        switch (choice32){
+        int choice32 = CheckException.checkInteger();
+        switch (choice32) {
             case 1:
                 facilityManagement.addNewVilla();
                 break;
@@ -129,7 +129,7 @@ public class FuramaController {
                 "3.\tEdit customer\n" +
                 "4.\tReturn main menu\n");
         System.out.println("Hãy chọn chức năng: ");
-        int choice2 = Integer.parseInt(scanner.nextLine());
+        int choice2 = CheckException.checkInteger();
         switch (choice2) {
             case 1:
                 customerManagement.displayList();
@@ -145,28 +145,28 @@ public class FuramaController {
     }
 
     private void employeeManagement() {
-            System.out.println("1\tDisplay list employees\n" +
-                    "2\tAdd new employee\n" +
-                    "3\tEdit employee\n" +
-                    "4\tReturn main menu\n");
-            System.out.println("Hãy chọn chức năng: ");
-            int choice1 = Integer.parseInt(scanner.nextLine());
-            switch (choice1) {
-                case 1:
-                    employeeManagement.displayList();
-                    break;
-                case 2:
-                    employeeManagement.addNew();
-                    break;
-                case 3:
-                    employeeManagement.edit();
-                    break;
-                case 4:
-                    break;
-                default:
-                    System.out.print("Hãy chọn lại: ");
-                    choice1 = Integer.parseInt(scanner.nextLine());
-                    break;
-            }
+        System.out.println("1\tDisplay list employees\n" +
+                "2\tAdd new employee\n" +
+                "3\tEdit employee\n" +
+                "4\tReturn main menu\n");
+        System.out.println("Hãy chọn chức năng: ");
+        int choice1 = CheckException.checkInteger();
+        switch (choice1) {
+            case 1:
+                employeeManagement.displayList();
+                break;
+            case 2:
+                employeeManagement.addNew();
+                break;
+            case 3:
+                employeeManagement.edit();
+                break;
+            case 4:
+                break;
+            default:
+                System.out.print("Hãy chọn lại: ");
+                choice1 = CheckException.checkInteger();
+                break;
+        }
     }
 }

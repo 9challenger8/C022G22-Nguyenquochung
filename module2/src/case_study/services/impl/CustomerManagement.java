@@ -1,5 +1,7 @@
 package case_study.services.impl;
 
+import case_study.common.CheckException;
+import case_study.common.ReadAndWriteFile;
 import case_study.models.person.Customers;
 import case_study.services.ICustomerServices;
 
@@ -15,10 +17,12 @@ public class CustomerManagement implements ICustomerServices {
     static {
         listCustomer.add(new Customers(1, "Hong Thuy", LocalDate.parse("1998-07-06"), "female", "2944783337", "095578327", "thuy@gmail.com", "Member", "89/Ho Tung Mau"));
         listCustomer.add(new Customers(2, "Eva", LocalDate.parse("1969-07-06"), "female", "29234383337", "095590827", "eva@gmail.com", "Diamond", "69/Nguyen Huu Tho"));
+        ReadAndWriteFile.writeCustomer(listCustomer);
     }
 
     @Override
     public void displayList() {
+        listCustomer = ReadAndWriteFile.readCustomer();
         for (Customers customer : listCustomer) {
             System.out.println(customer.toString());
         }
@@ -26,12 +30,13 @@ public class CustomerManagement implements ICustomerServices {
 
     @Override
     public void addNew() {
+        listCustomer = ReadAndWriteFile.readCustomer();
         System.out.print("Nhập id khách hàng: ");
-        int iD = Integer.parseInt(scanner.nextLine());
+        int iD = CheckException.checkInteger();
         System.out.print("Nhập tên khách hàng: ");
         String name = scanner.nextLine();
         System.out.print("Nhập ngày sinh của khách hàng theo định dang yyyy-MM-dd: ");
-        LocalDate date = LocalDate.parse(scanner.nextLine());
+        LocalDate date = CheckException.checkAge();
         System.out.print("Nhập giới tính của khách hàng: ");
         String gender = scanner.nextLine();
         System.out.print("Nhập CMND của khách hàng: ");
@@ -45,10 +50,12 @@ public class CustomerManagement implements ICustomerServices {
         System.out.print("Nhập địa chỉ của khách hàng: ");
         String address = scanner.nextLine();
         listCustomer.add(new Customers(iD, name, date, gender, numberCMND, numberPhone, email, guestType, address));
+        ReadAndWriteFile.writeCustomer(listCustomer);
     }
 
     @Override
     public void edit() {
+        listCustomer = ReadAndWriteFile.readCustomer();
         System.out.print("Nhập id khách hàng cần sửa: ");
         int iDEdit = Integer.parseInt(scanner.nextLine());
         boolean iDExist = false;
@@ -82,6 +89,5 @@ public class CustomerManagement implements ICustomerServices {
             System.out.print("Nhập lại địa chỉ của khách hàng: ");
             temp.setAddress(scanner.nextLine());
         }
-        displayList();
     }
 }

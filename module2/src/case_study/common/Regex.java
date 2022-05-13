@@ -1,6 +1,4 @@
 package case_study.common;
-import java.time.LocalDate;
-import java.time.Period;
 import java.util.Scanner;
 
 public class Regex {
@@ -37,7 +35,7 @@ public class Regex {
     }
 
     public static String inputUsableArea() {
-        System.out.println("Nhập diện tích sử dụng: ");
+        System.out.print("Nhập diện tích sử dụng: ");
         return Regex.regex(scanner.nextLine(), AREA_REGEX, "ERROR: Bạn đã nhập sai định dạng.");
     }
 
@@ -85,22 +83,4 @@ public class Regex {
         System.out.print("Nhập dịch vụ miễn phí (viết hoa chữ cái đầu): ");
         return Regex.regex(scanner.nextLine(), NAME_REGEX, "ERROR: Bạn đã nhập sai định dạng.");
     }
-
-    public static LocalDate ageException(LocalDate date){
-        boolean check=true;
-        LocalDate currentTime = LocalDate.now();
-        Period p = Period.between(date, currentTime);
-        while (check) {
-            try {
-                if (p.getYears() < 18 || p.getYears() > 100) {
-                    throw new AgeException("Nhap ngu");
-                }
-            }catch (Exception e){
-                System.out.println(e.getMessage());
-                scanner.nextLine();
-            }
-        }
-        return date;
-    }
-
 }

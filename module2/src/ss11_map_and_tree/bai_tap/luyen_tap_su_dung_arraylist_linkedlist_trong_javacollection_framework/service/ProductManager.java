@@ -72,8 +72,8 @@ public class ProductManager implements ProductService {
     }
 
     private Boolean checkName(String name){
-        for (int i = 0; i < list.size(); i++) {
-            if(list.get(i).getName().contains(name)){
+        for (Product product : list) {
+            if (product.getName().contains(name)) {
                 return true;
             }
         }

@@ -37,6 +37,11 @@ public class Customers extends Person {
     }
 
     @Override
+    public String getInFor() {
+        return super.getInFor() +", "+this.guestType+", "+this.address;
+    }
+
+    @Override
     public String toString() {
         return "Customers{" + super.toString() +
                 ",guestType='" + guestType + '\'' +
