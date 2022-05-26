@@ -160,7 +160,7 @@
     background-color: red;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1000px) {
     .col-xs-12{
         width: 100%;
     }
