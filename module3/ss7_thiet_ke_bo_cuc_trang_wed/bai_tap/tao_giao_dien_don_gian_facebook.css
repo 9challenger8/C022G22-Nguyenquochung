@@ -1,5 +1,193 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+}
 
-.img-fb{
-    height: 100px;
-    width: 100px   ;
+.header{
+    position: relative;
+    height: 56px;
+    width: 100%;
+    background-color: #343232;
+    z-index: 1;
+}
+.top-nav{
+    height: 56px;
+    width: 100%;
+    background-color: #343232;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.img-logo{
+    height: 39.78px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+.fa-solid{
+    color: black;
+    background-color: white;
+    margin-left: 5px;
+}
+.search{
+    margin-left: 10px;
+    width: 212px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: white;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.input{
+    margin-left: 5px;
+    border: white;
+    cursor: pointer;
+    height: 100%;
+}
+.header_mid{
+
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.header-icon{
+    width: 116.6px;
+    height: 56px;
+    color: white;
+    text-decoration: none;
+}
+.header-mid-icon{
+    height: 56px;
+}
+
+.header-icon:hover{
+    background-color: #CDCDCD;
+}
+
+.header-right-icon{
+    border-radius: 50%;
+    color: white;
+    height: 40px;
+    width: 40px;
+    padding: 7px;
+}
+
+.body{
+    display: flex;
+    position: relative;
+}
+.body-left{
+    position: relative;
+    width: 280px;
+    background-color: #777777;
+    height: 2200px;
+}
+.body-right{
+    position: relative;
+    width: 280px;
+    background-color: #777777;
+    height: 2200px;
+}
+.right-nav{
+    position: fixed;
+    z-index: 3;
+}
+.left-nav{
+    position: fixed;
+}
+
+.body-mid{
+    width: 62.8%;
+    height: 2200px;
+    background-color: black;
+
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.line{
+    width: 220px;
+}
+.ab{
+    display: flex;
+    justify-content: center;
+}
+.img{
+    width: 500px;
+    height: 700px;
+
+}
+.advertise{
+    color: white;
+    text-align: center;
+}
+
+
+
+.col-1 {
+    width: 8.33%
+}
+
+.col-2 {
+    width: 16.66%;
+
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.3%
+}
+
+.col-5 {
+    width: 41.66%
+}
+
+.col-6 {
+    width: 50%
+}
+
+.col-7 {
+    width: 58.33%
+}
+
+.col-8 {
+    width: 66.66%;
+
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
 }
