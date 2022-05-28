@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.header{
+    width: 100%;
+    height: 56px;
+    display: inline-block;
+    background-color: wheat;
+}
+.logo1{
+    display: flex;
+    height: 56px;
+    font-size: 50px;
+    width: 250px;
+    border-radius: 10px;
+}
+.logo{
+    background-color: red;
+}
+.content{
+    display: flex;
+}
+.content-left{
+    width: 35%;
+    height: 1000px;
+}
+.content-right{
+    margin-left: 20px;
+    width: 65%;
+    height: 1000px;
+
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    font-size: 25px;
+    align-items: center;
+
+
+}
+.menu{
+    font-size: 25px;
+    border-right: 2px solid black  ;
+    padding-right: 10px;
+    padding-left: 10px;
+    height: 30px;
+}
+.menu:hover{
+    background-color: red;
+}
+.menu1{
+    padding-left: 10px;
+}
+.menu1:hover {
+    background-color: red;
+}
