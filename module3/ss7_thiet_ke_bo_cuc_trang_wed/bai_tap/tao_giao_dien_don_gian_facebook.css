@@ -3,6 +3,7 @@
 }
 body{
     margin: 0px;
+    width: 100%;
 }
 
 .header{
@@ -138,6 +139,68 @@ body{
     color: white;
     text-align: center;
 }
+
+@media screen and (max-width: 700px)  {
+    .col-12{
+        width: 100%;
+
+    }
+    .hide{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

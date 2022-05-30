@@ -10,18 +10,12 @@
   <head>
     <title>$Title$</title>
   </head>
+  <body>
+  <h2> Product Discount Calculator </h2>
   <form method="post" action="/calculator">
-    <div class="product-discount">
-      <label>Product Description: </label><br/>
-      <textarea name="productDescription" ></textarea>
-      <br>
-      <label>List Price: </label><br/>
-      <input type="text" name="listPrice"/>
-      <br>
-      <label>Discount Percent: </label><br/>
-      <input type="text" name="discountPercent" />
-      <br>
-      <input type="submit" name="Calculate Discount" value="calculate">
-    </div>
+    <label>Product Description: </label>
+    <input type="text" placeholder="Nhập tên sản phẩm...">
+
   </form>
+  </body>
 </html>

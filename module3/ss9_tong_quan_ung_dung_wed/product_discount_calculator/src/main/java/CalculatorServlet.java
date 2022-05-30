@@ -4,7 +4,7 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "CalculatorServlet", value = "/calculator")
+@WebServlet(name = "CalculatorServlet", urlPatterns = "/calculator")
 public class CalculatorServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
