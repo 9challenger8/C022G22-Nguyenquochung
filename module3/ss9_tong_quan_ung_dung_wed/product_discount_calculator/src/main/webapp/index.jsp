@@ -13,13 +13,13 @@
   <form method="post" action="/calculator">
     <div class="product-discount">
       <label>Product Description: </label><br/>
-      <textarea name="productDescription" placeholder="Enter your Product Description: "></textarea>
+      <textarea name="productDescription" ></textarea>
       <br>
       <label>List Price: </label><br/>
-      <input type="text" name="listPrice" placeholder="Enter your List Price: "/>
+      <input type="text" name="listPrice"/>
       <br>
       <label>Discount Percent: </label><br/>
-      <input type="text" name="discountPercent" placeholder="Enter your Discount Percent: "/>
+      <input type="text" name="discountPercent" />
       <br>
       <input type="submit" name="Calculate Discount" value="calculate">
     </div>
