@@ -47,7 +47,7 @@
             </tr>
             <tr>
                 <td></td>
-                <td><input type="submit" value="Update customer"></td>
+                <td><input type="submit" value="Update product"></td>
             </tr>
         </table>
     </fieldset>
