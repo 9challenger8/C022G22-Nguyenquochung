@@ -44,4 +44,9 @@ public class ProductRepository implements IProductRepository {
     public void remove(int iD) {
         products.remove(iD);
     }
+
+    @Override
+    public Product findByID(int iD) {
+        return products.get(iD);
+    }
 }

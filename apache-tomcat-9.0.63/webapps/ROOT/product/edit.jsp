@@ -1,30 +1,25 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: ASUS-PRO
   Date: 31/05/2022
-  Time: 2:24 CH
+  Time: 10:17 CH
   To change this template use File | Settings | File Templates.
 --%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Create new customer</title>
-    <style>
-        .message{
-            color:green;
-        }
-    </style>
+    <title>Edit product</title>
 </head>
 <body>
-<h1>Create new customer</h1>
+<h1>Edit product</h1>
 <p>
     <c:if test='${requestScope["message"] != null}'>
         <span class="message">${requestScope["message"]}</span>
     </c:if>
 </p>
 <p>
-    <a href="/products">Back to customer list</a>
+    <a href="/products">Back to product list</a>
 </p>
 <form method="post">
     <fieldset>
@@ -52,7 +47,7 @@
             </tr>
             <tr>
                 <td></td>
-                <td><input type="submit" value="Create product"></td>
+                <td><input type="submit" value="Update customer"></td>
             </tr>
         </table>
     </fieldset>
