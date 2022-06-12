@@ -72,10 +72,7 @@
                         <a class="nav-link" href="#">Contract</a>
                     </li>
                 </ul>
-                <form method="post" action="/customers?action=search" class="d-flex" role="search">
-                    <input name="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+
             </div>
 
         </div>
@@ -91,9 +88,22 @@
 
 
     <div class="content-right">
+        <div style="display: flex;justify-content: space-between;align-items: center">
+            <a href="/customers"><h2 style="margin-left: 15px;color: blue">List customer:</h2></a>
+                <form style="display: flex;justify-content: center;align-items: center" method="post" action="/customers?action=search" class="d-flex" role="search">
+                    <select style="margin-right: 50px" name="customerTypeId" class="form-select" aria-label="Default select example">
+                        <option value="">Show All</option>
+                        <c:forEach var="temp" items="${listCustomerType}">
+                            <option value="${temp.id}">${temp.nameCustomerType}</option>
+                        </c:forEach>
+                    </select>
+                    <input value="${search}"  name="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button style="margin-right: 20px" class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+        </div>
 
         <table class="table table-striped table-bordered" id="tableCustomer" style="width: 100%">
-            <caption style="caption-side: top"><h1>LIST CUSTOMER:</h1></caption>
+
             <thead>
             <tr>
                 <th>ID</th>
@@ -115,18 +125,25 @@
                     <td><c:out value="${temp.getId()}"/></td>
                     <td><c:out value="${temp.getName()}"/></td>
                     <td><c:out value="${temp.getBirthday()}"/></td>
-                    <td><c:out value="${temp.getGender()}"/></td>
+                    <td>
+                        <c:choose>
+                            <c:when test="${temp.gender==1}">Male</c:when>
+                            <c:when test="${temp.gender==0}">Female</c:when>
+                        </c:choose>
+                    </td>
                     <td><c:out value="${temp.getIdCard()}"/></td>
                     <td><c:out value="${temp.getNumberPhone()}"/></td>
                     <td><c:out value="${temp.getEmail()}"/></td>
                     <td><c:out value="${temp.getAddress()}"/></td>
-                    <td><c:out value="${temp.getTypeId().nameCustomerType}"/></td>
-<%--                    <:c:forEach var="temp" items="${listCustomerType}" >--%>
-<%--                        <td><c:out value="${temp.nameCustomerType}"/></td>--%>
-<%--                    </:c:forEach>--%>
-
-
-
+                    <td>
+                        <c:choose>
+                            <c:when test="${temp.typeId==1}">Diamond</c:when>
+                            <c:when test="${temp.typeId==2}">Platinum</c:when>
+                            <c:when test="${temp.typeId==3}">Gold</c:when>
+                            <c:when test="${temp.typeId==4}">Silver</c:when>
+                            <c:when test="${temp.typeId==5}">Member</c:when>
+                        </c:choose>
+                    </td>
                     <td><a href="/customers?action=edit&id=${temp.getId()}">Edit</a></td>
 
                     <td><a style="cursor: pointer;color: #005cbf"  data-bs-toggle="modal"  data-bs-target="#staticBackdropDelete${temp.id}">Delete</a></td>
@@ -169,7 +186,6 @@
 <div class="footer">
 
 </div>
-
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>

@@ -10,6 +10,6 @@ public interface ICustomerRepository {
      List<Customer> selectAllCustomers();
      boolean deleteUser(int id) throws SQLException;
      boolean updateUser(Customer customer) throws SQLException;
-     List<Customer> searchByName(String name) throws SQLException;
+     List<Customer> searchByName(String name,String idCustomerType) throws SQLException;
      Customer selectUserById(int id) throws SQLException;
 }

@@ -107,12 +107,13 @@ public class CustomerRepositoryImpl implements ICustomerRepository {
     }
 
     @Override
-    public List<Customer> searchByName(String name) throws SQLException {
+    public List<Customer> searchByName(String name,String idCustomerType) throws SQLException {
         List<Customer> listCustomer=new ArrayList<>();
         try(Connection connection=baseRepository.getConnectionJavaToDB()){
-            PreparedStatement preparedStatement=connection.prepareStatement(" select * from khach_hang where ho_ten like ?;" );
+            PreparedStatement preparedStatement=connection.prepareStatement(" select * from khach_hang where ho_ten like ? and ma_loai_khach like ? ;" );
 
             preparedStatement.setString(1, '%'+ name + '%');
+            preparedStatement.setString(2, '%'+ idCustomerType+ '%');
             ResultSet rs= preparedStatement.executeQuery();
             while (rs.next()){
                 Integer id = rs.getInt(1);

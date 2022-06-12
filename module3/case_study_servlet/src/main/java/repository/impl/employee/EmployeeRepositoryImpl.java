@@ -34,7 +34,7 @@ public class EmployeeRepositoryImpl implements IEmployeeRepository {
                 Integer position=rs.getInt(9);
                 Integer educationDegree=rs.getInt(10);
                 Integer division=rs.getInt(11);
-                Employee employee =new Employee(id,name,birthday,idCard,salary,numberPhone,email,address,educationDegree,position,division);
+                Employee employee =new Employee(id,name,birthday,idCard,salary,numberPhone,email,address,position,educationDegree,division);
                 listEmployee.add(employee);
             }
 
@@ -62,7 +62,6 @@ public class EmployeeRepositoryImpl implements IEmployeeRepository {
         try(Connection connection = baseRepository.getConnectionJavaToDB()){
             PreparedStatement preparedStatement= connection.prepareStatement("update nhan_vien set ho_ten= ?,ngay_sinh= ?,so_cmnd= ?,luong=? ,so_dien_thoai=?,email= ?,dia_chi= ?," +
                     " ma_vi_tri=?,ma_trinh_do=?,ma_bo_phan=? where ma_nhan_vien=? ;");
-            System.out.println(employee.getId());
             preparedStatement.setString(1, employee.getName());
             preparedStatement.setString(2, employee.getBirthday());
             preparedStatement.setString(3, employee.getIdCard());
@@ -70,6 +69,11 @@ public class EmployeeRepositoryImpl implements IEmployeeRepository {
             preparedStatement.setString(5, employee.getNumberPhone());
             preparedStatement.setString(6, employee.getEmail());
             preparedStatement.setString(7, employee.getAddress());
+
+            System.out.println(employee.getPosition());
+            System.out.println(employee.getEducationDegree());
+            System.out.println(employee.getDivision());
+
             preparedStatement.setInt(8, employee.getPosition());
             preparedStatement.setInt(9, employee.getEducationDegree());
             preparedStatement.setInt(10, employee.getDivision());
@@ -140,6 +144,9 @@ public class EmployeeRepositoryImpl implements IEmployeeRepository {
             preparedStatement.setString(5, employee.getNumberPhone());
             preparedStatement.setString(6, employee.getEmail());
             preparedStatement.setString(7, employee.getAddress());
+            System.out.println(employee.getPosition());
+            System.out.println(employee.getEducationDegree());
+            System.out.println(employee.getDivision());
             preparedStatement.setInt(8, employee.getPosition());
             preparedStatement.setInt(9, employee.getEducationDegree());
             preparedStatement.setInt(10, employee.getDivision());

@@ -67,10 +67,7 @@
                         <a class="nav-link" href="#">Contract</a>
                     </li>
                 </ul>
-                <form method="post" action="/employees?action=search" class="d-flex" role="search">
-                    <input name="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+
             </div>
 
         </div>
@@ -86,10 +83,18 @@
 
 
     <div class="content-right">
+        <div style="display: flex;justify-content: space-between;align-items: center">
+            <a href="/employees"><h2 style="margin-left: 15px;color: blue">List employee:</h2></a>
+            <form method="post" action="/employees?action=search" class="d-flex" role="search">
+                <input name="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button style="margin-right: 20px" class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
 
         <table class="table table-striped table-bordered" id="tableCustomer" style="width: 100%">
-            <caption style="caption-side: top"><h1>LIST EMPLOYEE:</h1></caption>
+
             <thead>
+
             <tr>
                 <th>ID</th>
                 <th>Name</th>
@@ -117,9 +122,32 @@
                     <td><c:out value="${temp.getNumberPhone()}"/></td>
                     <td><c:out value="${temp.getEmail()}"/></td>
                     <td><c:out value="${temp.getAddress()}"/></td>
-                    <td><c:out value="${temp.educationDegree}"/></td>
-                    <td><c:out value="${temp.position}"/></td>
-                    <td><c:out value="${temp.division}"/></td>
+                    <td>
+                        <c:choose>
+                            <c:when test="${temp.position==1}">Lễ Tân</c:when>
+                            <c:when test="${temp.position==2}">Phục vụ</c:when>
+                            <c:when test="${temp.position==3}">Chuyên viên</c:when>
+                            <c:when test="${temp.position==4}">Giám sát</c:when>
+                            <c:when test="${temp.position==5}">Quản lý</c:when>
+                            <c:when test="${temp.position==6}">Giám đốc</c:when>
+                        </c:choose>
+                    </td>
+                    <td>
+                        <c:choose>
+                            <c:when test="${temp.educationDegree==1}">Trung cấp</c:when>
+                            <c:when test="${temp.educationDegree==2}">Cao Đẳng</c:when>
+                            <c:when test="${temp.educationDegree==3}">Đại Học</c:when>
+                            <c:when test="${temp.educationDegree==4}">Sau Đại Học</c:when>
+                        </c:choose>
+                    </td>
+                    <td>
+                        <c:choose>
+                            <c:when test="${temp.division==1}">Sale-Marketing</c:when>
+                            <c:when test="${temp.division==2}">Hành chính</c:when>
+                            <c:when test="${temp.division==3}">Phục vụ</c:when>
+                            <c:when test="${temp.division==4}">Quản lý</c:when>
+                        </c:choose>
+                    </td>
 
                     <td><a href="/employees?action=edit&id=${temp.getId()}">Edit</a></td>
 
@@ -142,8 +170,8 @@
                                 </div>
                                 <div class="modal-body">
                                     <div class="alert alert-warning">
-                                        Do you want delete Employee?  Name:  <strong>${temp.name}</strong>
-                                        and Id: <strong>${temp.id}</strong>
+                                        Do you want delete Employee?  Name: <strong>${temp.name}</strong>
+                                         and Id: <strong>${temp.id}</strong>
                                     </div>
                                     <a href="/employees?action=delete&id=${temp.id}" class="btn btn-success">Submit</a>
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close

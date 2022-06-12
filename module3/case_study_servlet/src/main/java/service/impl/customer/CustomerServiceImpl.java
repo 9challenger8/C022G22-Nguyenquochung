@@ -12,6 +12,7 @@ public class CustomerServiceImpl implements ICustomerService {
     private ICustomerRepository iCustomerRepository=new CustomerRepositoryImpl();
     @Override
     public void insertCustomer(Customer customer) {
+
         iCustomerRepository.insertCustomer(customer);
     }
 
@@ -36,8 +37,8 @@ public class CustomerServiceImpl implements ICustomerService {
     }
 
     @Override
-    public List<Customer> searchByName(String name) throws SQLException {
-        return iCustomerRepository.searchByName(name);
+    public List<Customer> searchByName(String name, String idCustomerType) throws SQLException {
+        return iCustomerRepository.searchByName(name,idCustomerType);
     }
 
     @Override

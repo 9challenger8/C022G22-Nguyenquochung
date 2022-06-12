@@ -1,4 +1,6 @@
 package case_study.common;
+
+
 import java.util.Scanner;
 
 public class Regex {

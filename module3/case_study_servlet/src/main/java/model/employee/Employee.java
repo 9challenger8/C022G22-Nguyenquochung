@@ -9,12 +9,12 @@ public class Employee {
     private String numberPhone;
     private String email;
     private String address;
-    private Integer educationDegree;
     private Integer position;
+    private Integer educationDegree;
     private Integer division;
 
-    public Employee(String name, String birthday, String idCard, String salary, String numberPhone, String email,
-                    String address, Integer educationDegree, Integer position, Integer division) {
+    public Employee(String name, String birthday, String idCard, String salary, String numberPhone,
+                    String email, String address, Integer position, Integer educationDegree, Integer division) {
         this.name = name;
         this.birthday = birthday;
         this.idCard = idCard;
@@ -22,13 +22,13 @@ public class Employee {
         this.numberPhone = numberPhone;
         this.email = email;
         this.address = address;
-        this.educationDegree = educationDegree;
         this.position = position;
+        this.educationDegree = educationDegree;
         this.division = division;
     }
 
-    public Employee(Integer id, String name, String birthday, String idCard, String salary, String numberPhone,
-                    String email, String address, Integer educationDegree, Integer position, Integer division) {
+    public Employee(Integer id, String name, String birthday, String idCard,
+                    String salary, String numberPhone, String email, String address, Integer position, Integer educationDegree, Integer division) {
         this.id = id;
         this.name = name;
         this.birthday = birthday;
@@ -37,8 +37,8 @@ public class Employee {
         this.numberPhone = numberPhone;
         this.email = email;
         this.address = address;
-        this.educationDegree = educationDegree;
         this.position = position;
+        this.educationDegree = educationDegree;
         this.division = division;
     }
 
