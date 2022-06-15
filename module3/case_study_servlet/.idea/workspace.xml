@@ -5,64 +5,183 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5cbe41f9-49b9-4302-81ac-3e7e3ee0a0d1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../module2/src/case_study/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module2/src/case_study/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module2/src/case_study/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module2/src/case_study/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module2/src/case_study/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module2/src/case_study/case_study.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/common/Validate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/form.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/controller/CustomerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/controller/CustomerServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/controller/EmployeeServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/controller/EmployeeServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/model/employee/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/model/employee/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/repository/icustomer/ICustomerRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/repository/icustomer/ICustomerRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/repository/impl/customer/CustomerRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/repository/impl/customer/CustomerRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/repository/impl/employee/EmployeeRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/repository/impl/employee/EmployeeRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/service/icustomer/ICustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/service/icustomer/ICustomerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/service/impl/customer/CustomerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/service/impl/customer/CustomerServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/customer/create_customer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/customer/create_customer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/customer/edit_customer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/customer/edit_customer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/customer/list_customer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/customer/list_customer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/employee/create_employee.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/employee/create_employee.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/employee/edit_employee.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/employee/edit_employee.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/employee/list_employee.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/employee/list_employee.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module2/src/case_study/common/CheckException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/case_study/common/CheckException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module2/src/case_study/common/Regex.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/case_study/common/Regex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/controller/MatBangServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/model/LoaiMatBang.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/model/MatBang.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/model/TrangThai.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/repository/BaseRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/repository/ILoaiMatBangRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/repository/IMatBangRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/repository/ITrangThaiRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/repository/LoaiMatBangRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/repository/MatBangRepositoryImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/repository/TrangThaiRepositoryImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/service/ILoaiMatBangService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/service/IMatBangService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/service/ITrangThaiService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/service/LoaiMatBangServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/service/MatBangServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/service/TrangThaiServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_mysql/exam_module3.mwb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/.gradle/7.1/dependencies-accessors/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/.gradle/7.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/.gradle/7.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/build/classes/java/main/common/Validate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/build/libs/exam_module3-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/java/common/Validate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/java/config/CharsetFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/java/controller/MatBangServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/java/model/LoaiMatBang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/java/model/MatBang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/java/model/TrangThai.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/java/repository/BaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/java/repository/ILoaiMatBangRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/java/repository/IMatBangRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/java/repository/ITrangThaiRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/java/repository/LoaiMatBangRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/java/repository/MatBangRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/java/repository/TrangThaiRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/java/service/ILoaiMatBangService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/java/service/IMatBangService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/java/service/ITrangThaiService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/java/service/LoaiMatBangServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/java/service/MatBangServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/java/service/TrangThaiServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/bootstrap413/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/bootstrap413/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/bootstrap413/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/bootstrap413/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/bootstrap413/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/bootstrap413/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/bootstrap413/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/bootstrap413/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/bootstrap413/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/bootstrap413/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/bootstrap413/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/bootstrap413/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/bootstrap413/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/bootstrap413/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/bootstrap413/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/bootstrap413/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/bootstrap413/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/bootstrap413/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/bootstrap413/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/bootstrap413/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/datatables/css/dataTables.bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/datatables/css/dataTables.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/datatables/css/dataTables.bootstrap4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/datatables/css/dataTables.bootstrap4.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/datatables/css/dataTables.foundation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/datatables/css/dataTables.foundation.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/datatables/css/dataTables.jqueryui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/datatables/css/dataTables.jqueryui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/datatables/css/dataTables.semanticui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/datatables/css/dataTables.semanticui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/datatables/css/jquery.dataTables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/datatables/css/jquery.dataTables.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/datatables/images/sort_asc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/datatables/images/sort_asc_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/datatables/images/sort_both.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/datatables/images/sort_desc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/datatables/images/sort_desc_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/datatables/js/dataTables.bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/datatables/js/dataTables.bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/datatables/js/dataTables.bootstrap4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/datatables/js/dataTables.bootstrap4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/datatables/js/dataTables.foundation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/datatables/js/dataTables.foundation.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/datatables/js/dataTables.jqueryui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/datatables/js/dataTables.jqueryui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/datatables/js/dataTables.semanticui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/datatables/js/dataTables.semanticui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/datatables/js/jquery.dataTables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/datatables/js/jquery.dataTables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/form.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/jquery/jquery-3.5.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam_module3/src/main/webapp/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/ss1_tong_quan_springmvc/tao_thu_project/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/ss1_tong_quan_springmvc/tao_thu_project/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/ss1_tong_quan_springmvc/tao_thu_project/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/common/Validate.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/common/Validate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/controller/CustomerServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/controller/EmployeeServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/model/customer/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/model/customer/CustomerType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/model/employee/Division.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/model/employee/EducationDegree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/model/employee/Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/model/employee/Position.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/repository/icustomer/ICustomerRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/repository/icustomer/ICustomerTypeRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/repository/iemployee/IDivisionRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/repository/iemployee/IEducationDegreeRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/repository/iemployee/IEmployeeRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/repository/iemployee/IPositionRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/repository/impl/BaseRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/repository/impl/customer/CustomerRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/repository/impl/customer/CustomerTypeRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/repository/impl/employee/DivisionRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/repository/impl/employee/EducationDegreeRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/repository/impl/employee/EmployeeRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/repository/impl/employee/PositionRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/service/icustomer/ICustomerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/service/icustomer/ICustomerTypeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/service/iemployee/IDivisionService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/service/iemployee/IEducationDegreeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/service/iemployee/IEmployeeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/service/iemployee/IPositionService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/service/impl/customer/CustomerServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/service/impl/customer/CustomerTypeServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/service/impl/employee/DivisionServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/service/impl/employee/EducationDegreeServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/service/impl/employee/EmployeeServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/service/impl/employee/PositionServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/customer/create_customer.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/customer/edit_customer.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/customer/list_customer.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/employee/create_employee.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/employee/edit_employee.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/employee/list_employee.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../apache-tomcat-9.0.63/webapps/ROOT/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/CustomerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/CustomerServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/EmployeeServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/EmployeeServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/employee/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/model/employee/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/repository/icustomer/ICustomerRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/repository/icustomer/ICustomerRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/repository/impl/customer/CustomerRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/repository/impl/customer/CustomerRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/repository/impl/employee/EmployeeRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/repository/impl/employee/EmployeeRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/service/icustomer/ICustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/service/icustomer/ICustomerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/service/impl/customer/CustomerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/service/impl/customer/CustomerServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/common/Validate.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/common/Validate.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/case_study_servlet-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/case_study_servlet-1.0-SNAPSHOT.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/Validate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/Validate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/CustomerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/CustomerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/EmployeeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/EmployeeServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/employee/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/employee/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/icustomer/ICustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/icustomer/ICustomerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/impl/customer/CustomerRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/impl/customer/CustomerRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/impl/employee/EmployeeRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/impl/employee/EmployeeRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/icustomer/ICustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/icustomer/ICustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/impl/customer/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/impl/customer/CustomerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/customer/create_customer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/customer/create_customer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/customer/edit_customer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/customer/edit_customer.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/customer/list_customer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/customer/list_customer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/employee/create_employee.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/employee/create_employee.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/employee/edit_employee.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/employee/edit_employee.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/employee/list_employee.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/employee/list_employee.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc_crud/thuc_hanh/user_manager/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_jdbc_crud/thuc_hanh/user_manager/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc_crud/thuc_hanh/user_manager/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_jdbc_crud/thuc_hanh/user_manager/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss12_jdbc_crud/thuc_hanh/user_manager/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_jdbc_crud/thuc_hanh/user_manager/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,8 +240,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last.edited.regexp" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last.edited.regexp" value="SV12-1234" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../exam_module3" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RunManager">
@@ -317,6 +436,12 @@
       <workItem from="1654842521775" duration="10835000" />
       <workItem from="1654860548996" duration="136000" />
       <workItem from="1654937331253" duration="4039000" />
+      <workItem from="1655048195189" duration="7749000" />
+      <workItem from="1655083463495" duration="370000" />
+      <workItem from="1655086393944" duration="7341000" />
+      <workItem from="1655104097302" duration="614000" />
+      <workItem from="1655170255009" duration="664000" />
+      <workItem from="1655258182812" duration="143000" />
     </task>
     <servers />
   </component>

@@ -95,9 +95,7 @@ public class CustomerServlet extends HttpServlet {
 
         try {
             request.getRequestDispatcher("/customer/create_customer.jsp").forward(request,response);
-        } catch (ServletException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
+        } catch (ServletException | IOException e) {
             e.printStackTrace();
         }
     }
