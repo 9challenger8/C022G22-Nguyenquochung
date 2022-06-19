@@ -19,7 +19,6 @@ public class CalculatorController {
         return "index";
     }
 
-
     @GetMapping("/calculator")
     public String Addition(@RequestParam int num1, @RequestParam int num2, Model model){
         int sum = this.iCalculatorService.sum(num1,num2);
@@ -32,22 +31,5 @@ public class CalculatorController {
         model.addAttribute("sub",sub);
         return "index";
     }
-    @GetMapping("sub")
-    public String Subtraction(@RequestParam int num1, @RequestParam int num2, Model model){
-        int sub = this.iCalculatorService.sub(num1,num2);
-        model.addAttribute("sub",sub);
-        return "index";
-    }
-    @GetMapping("mul")
-    public String Multiplication(@RequestParam int num1, @RequestParam int num2, Model model){
-        int mul =this.iCalculatorService.mul(num1,num2);
-        model.addAttribute("mul",mul);
-        return "index";
-    }
-    @GetMapping("div")
-    public String Division(@RequestParam int num1, @RequestParam int num2, Model model){
-        double div1 =this.iCalculatorService.div(num1,num2);
-        model.addAttribute("div1",div1);
-        return "index";
-    }
+  
 }
