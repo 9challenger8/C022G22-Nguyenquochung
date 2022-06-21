@@ -5,93 +5,75 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7268f466-466b-4e2f-8aa3-c6b4b1994eef" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/com/controller/ProductController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/com/model/Product.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/com/service/IProductService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/com/service/impl/ProductService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.1/dependencies-accessors/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.1/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/tmp/war/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/IProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/.gradle/7.1/dependencies-accessors/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/.gradle/7.1/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/.gradle/7.1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/build/tmp/war/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/src/main/java/com/controller/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/src/main/java/com/model/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/src/main/java/com/service/ICustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/src/main/java/com/service/impl/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/src/main/webapp/WEB-INF/views/delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/src/main/webapp/WEB-INF/views/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/src/main/webapp/WEB-INF/views/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/src/main/webapp/WEB-INF/views/view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/com/controller/SongController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/com/repository/ISongRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/com/repository/impl/BaseRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/com/repository/impl/SongRepositoryImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/com/service/ISongService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/com/service/impl/SongServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/views/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/views/delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/views/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/views/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/views/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/.gradle/7.1/dependencies-accessors/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/.gradle/7.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/.gradle/7.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/.idea/modules/nghe_nhac_don_gian.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/build/classes/java/main/com/controller/SongController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/build/classes/java/main/com/model/Song.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/build/classes/java/main/com/repository/ISongRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/build/classes/java/main/com/repository/impl/BaseRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/build/classes/java/main/com/repository/impl/SongRepositoryImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/build/classes/java/main/com/service/ISongService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/build/classes/java/main/com/service/impl/SongServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/build/libs/nghe_nhac_don_gian-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/build/resources/main/hibernate.conf.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/src/main/java/com/controller/SongController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/src/main/java/com/model/Song.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/src/main/java/com/repository/ISongRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/src/main/java/com/repository/impl/BaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/src/main/java/com/repository/impl/SongRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/src/main/java/com/service/ISongService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/src/main/java/com/service/impl/SongServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/src/main/resources/hibernate.conf.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/src/main/webapp/WEB-INF/views/delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/src/main/webapp/WEB-INF/views/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/src/main/webapp/WEB-INF/views/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/src/main/webapp/WEB-INF/views/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/nghe_nhac_don_gian/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/com/controller/ProductController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/com/controller/SongUploadController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/com/model/Song.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/com/model/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/com/model/Song.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/com/model/Song.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/com/service/IProductService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/com/service/impl/ProductService.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/classes/config/CharsetFilter.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/lib/attoparser-2.0.5.RELEASE.jar" beforeDir="false" />
@@ -99,6 +81,7 @@
       <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/lib/commons-io-2.2.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/lib/groovy-3.0.8.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/lib/groovy-extensions-1.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/lib/javassist-3.20.0-GA.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/lib/ognl-3.1.26.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/lib/spring-aop-5.3.20.jar" beforeDir="false" />
@@ -118,6 +101,17 @@
       <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.63/webapps/ROOT/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.63/webapps/ROOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../apache-tomcat-9.0.63/webapps/ROOT/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ss1_tong_quan_springmvc/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1_tong_quan_springmvc/thuc_hanh/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/controller/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/thymeleaf_quan_ly_du_lieu_san_pham-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/thymeleaf_quan_ly_du_lieu_san_pham-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +174,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/thuc_hanh/quan_ly_danh_sach_khach_hang/customer-management" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -290,7 +284,9 @@
       <workItem from="1655711950958" duration="53000" />
       <workItem from="1655712017264" duration="3356000" />
       <workItem from="1655715504730" duration="20000" />
-      <workItem from="1655715643484" duration="4155000" />
+      <workItem from="1655715643484" duration="4852000" />
+      <workItem from="1655793497229" duration="5110000" />
+      <workItem from="1655821113713" duration="3340000" />
     </task>
     <servers />
   </component>

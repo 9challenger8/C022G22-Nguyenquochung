@@ -72,8 +72,8 @@ public class ProductController {
 
     @PostMapping("/search")
     public String search(@RequestParam String name, Model model){
-        iProductService.findByName(name);
-
+        List<Product> listProduct= iProductService.findByName(name);
+          model.addAttribute("products",listProduct);
         return "redirect:/product";
     }
 }
