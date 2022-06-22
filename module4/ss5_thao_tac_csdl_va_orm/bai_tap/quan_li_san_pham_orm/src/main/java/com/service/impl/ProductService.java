@@ -58,7 +58,6 @@ public class ProductService implements IProductService {
         finally {
             session.close();
         }
-
     }
 
     @Override
