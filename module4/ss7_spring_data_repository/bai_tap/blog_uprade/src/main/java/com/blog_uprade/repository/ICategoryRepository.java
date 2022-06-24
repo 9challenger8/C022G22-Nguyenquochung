@@ -19,4 +19,7 @@ public interface ICategoryRepository extends JpaRepository<Category,Integer> {
     @Transactional
     @Query(value = "delete from blog where id=:id",nativeQuery = true)
     void remove(@Param("id") int id);
+
+    @Query(value = "select * from category where id= :id",nativeQuery = true)
+    Category findById(@Param("id") int id);
 }

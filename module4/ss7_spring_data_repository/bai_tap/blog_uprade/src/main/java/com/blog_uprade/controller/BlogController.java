@@ -2,6 +2,7 @@ package com.blog_uprade.controller;
 
 
 import com.blog_uprade.model.Blog;
+import com.blog_uprade.model.Category;
 import com.blog_uprade.service.IBLogService;
 import com.blog_uprade.service.ICategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -68,6 +69,17 @@ public class BlogController {
         iBLogService.save( blog);
         return "redirect:/blog";
     }
+    @GetMapping("/category/{id}/edit")
+    public String editCategory(@PathVariable int id, Model model){
+        model.addAttribute("category", iCategoryService.findById(id));
+        return "edit_category";
+    }
+
+    @PostMapping("/category/edit")
+    public String editCategory(@ModelAttribute Category category){
+        iCategoryService.save(category);
+        return "redirect:/blog/category";
+    }
 
     @GetMapping("/{id}/delete")
     public String deleteSong(@PathVariable int id, Model model){
@@ -80,5 +92,10 @@ public class BlogController {
         redirect.addFlashAttribute("success", "Removed product successfully!");
         iBLogService.remove(blog.getId());
         return "redirect:/blog";
+    }
+    @GetMapping("/{id}/view")
+    public String viewBLog(@PathVariable int id, Model model) {
+        model.addAttribute("blog", iBLogService.findById(id));
+        return "/view_blog";
     }
 }

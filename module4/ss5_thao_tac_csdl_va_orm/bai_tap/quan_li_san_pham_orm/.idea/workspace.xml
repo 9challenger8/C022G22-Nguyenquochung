@@ -5,14 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83541335-30f5-4f68-8bc7-c84990b83747" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog/src/main/java/com/blog/controller/BlogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog/src/main/java/com/blog/model/Blog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog/src/main/java/com/blog/repository/IBlogRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog/src/main/java/com/blog/service/IBLogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog/src/main/java/com/blog/service/impl/BlogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss7_spring_data_repository/bai_tap/blog_uprade/src/main/resources/templates/view_blog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ss1_tong_quan_springmvc/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1_tong_quan_springmvc/thuc_hanh/customer-management" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../thuc_hanh/quan_ly_danh_sach_khach_hang/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/quan_ly_danh_sach_khach_hang/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss7_spring_data_repository/bai_tap/blog_uprade/src/main/java/com/blog_uprade/controller/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss7_spring_data_repository/bai_tap/blog_uprade/src/main/java/com/blog_uprade/controller/BlogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss7_spring_data_repository/bai_tap/blog_uprade/src/main/java/com/blog_uprade/repository/ICategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss7_spring_data_repository/bai_tap/blog_uprade/src/main/java/com/blog_uprade/repository/ICategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss7_spring_data_repository/bai_tap/blog_uprade/src/main/java/com/blog_uprade/service/ICategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss7_spring_data_repository/bai_tap/blog_uprade/src/main/java/com/blog_uprade/service/ICategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss7_spring_data_repository/bai_tap/blog_uprade/src/main/java/com/blog_uprade/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss7_spring_data_repository/bai_tap/blog_uprade/src/main/java/com/blog_uprade/service/impl/CategoryServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +78,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../ss6_jpa/bai_tap/blog" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -190,6 +190,7 @@
       <workItem from="1655827637078" duration="1536000" />
       <workItem from="1655861770770" duration="4998000" />
       <workItem from="1655911884226" duration="836000" />
+      <workItem from="1656039266144" duration="698000" />
     </task>
     <servers />
   </component>

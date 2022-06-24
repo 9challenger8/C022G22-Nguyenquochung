@@ -14,4 +14,6 @@ public interface ICategoryService {
 
     void save(Category category);
 
+    Category findById(@Param("id") int id);
+
 }

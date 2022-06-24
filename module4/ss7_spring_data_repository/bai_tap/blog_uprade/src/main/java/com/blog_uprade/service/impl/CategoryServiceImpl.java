@@ -29,4 +29,9 @@ public class CategoryServiceImpl implements ICategoryService {
     public void save(Category category) {
         iCategoryRepository.save(category);
     }
+
+    @Override
+    public Category findById(int id) {
+        return iCategoryRepository.findById(id);
+    }
 }
