@@ -22,7 +22,14 @@
         </div>
         <div>
             <label>Date Create</label>
-            <input type="email" th:field="*{dateCreate}"/>
+            <input type="date" th:field="*{dateCreate}"/>
+        </div>
+        <div>
+            <label>Category</label>
+            <select th:field="*{category}" >
+               <option th:each="temp:${listCategory}"
+               th:value="${temp.getId()}" th:text="${temp.getName()}"></option>
+            </select>
         </div>
         <input type="submit" value="Save"/>
     </form>

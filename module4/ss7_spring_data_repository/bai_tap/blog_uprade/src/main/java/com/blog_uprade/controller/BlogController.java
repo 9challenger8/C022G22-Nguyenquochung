@@ -28,17 +28,26 @@ public class BlogController {
     public String showList(Model model,
                            @PageableDefault(value = 2) Pageable pageable,
                            @RequestParam Optional<String> keyword ){
-        String keywordVal=keyword.orElse("");
+        String keywordVal = keyword.orElse("");
         model.addAttribute("keywordVal",keywordVal);
-        model.addAttribute("blogs", iBLogService.findAllByName(keywordVal,pageable));
-        model.addAttribute("blogs",iBLogService.findAll(pageable));
-        return "list";
+        model.addAttribute("blogs", iBLogService.findAllByName("%"+keywordVal+"%" ,pageable));
+        model.addAttribute("listCategory",iCategoryService.findAll());
+//        model.addAttribute("blogs",iBLogService.findAll(pageable));
+
+        return "list_blog";
+    }
+
+    @GetMapping("/category")
+    public String showList(Model model){
+        model.addAttribute("category",iCategoryService.findAll());
+        return "list_category";
     }
 
     @GetMapping("/create")
     public String createBlog(Model model){
         model.addAttribute("blog", new Blog());
-        return "create";
+        model.addAttribute("listCategory",iCategoryService.findAll());
+        return "create_blog";
     }
 
     @PostMapping("/create")
@@ -51,7 +60,7 @@ public class BlogController {
     @GetMapping("/{id}/edit")
     public String editSong(@PathVariable int id, Model model){
         model.addAttribute("blog", iBLogService.findById(id));
-        return "edit";
+        return "edit_blog";
     }
 
     @PostMapping("/edit")
@@ -63,7 +72,7 @@ public class BlogController {
     @GetMapping("/{id}/delete")
     public String deleteSong(@PathVariable int id, Model model){
         model.addAttribute("blog", iBLogService.findById(id));
-        return "delete";
+        return "delete_blog";
     }
 
     @PostMapping("/delete")

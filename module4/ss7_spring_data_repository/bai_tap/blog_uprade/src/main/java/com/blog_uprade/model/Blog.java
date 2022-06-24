@@ -22,11 +22,14 @@ public class Blog {
     public Blog() {
     }
 
-    public Blog(Integer id, String name, String detail, String dateCreate) {
+
+
+    public Blog(Integer id, String name, String detail, String dateCreate, Category category) {
         this.id = id;
         this.name = name;
         this.detail = detail;
         this.dateCreate = dateCreate;
+        this.category = category;
     }
 
     public Integer getId() {
@@ -59,5 +62,13 @@ public class Blog {
 
     public void setDateCreate(String dateCreate) {
         this.dateCreate = dateCreate;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
     }
 }
