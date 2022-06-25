@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout :: head">
+</head>
+<body>
+<h3>User</h3>
+<p>
+    <a th:href="@{/create}">
+        Add new user
+    </a>
+</p>
+
+
+<div class="notify" style="color: #4CAF50;font-size: x-large">
+    <div style="color: #4CAF50;font-size: x-large"  th:if="${success}">
+        <span th:text="${success}"></span>
+    </div>
+</div>
+<form action="/user" method="get">
+    <div style="display: flex;width: 500px">
+        <input type="text" name="keyword"/>
+        <input style="width: 100px" type="submit" value="Search" />
+    </div>
+</form>
+
+<table id = "products">
+    <thead>
+    <tr>
+        <th>First Name</th>
+        <th>Last name</th>
+        <th>Phone Number</th>
+        <th>Age</th>
+        <th>Email</th>
+        <th>Edit</th>
+        <th>Delete</th>
+        <th>View</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="row,rowStat : ${users}">
+        <td th:text="${row.getFirstName()}"></td>
+        <td th:text="${row.getLastName()}"></td>
+        <td th:text="${row.getPhoneNumber()}"></td>
+        <td th:text="${row.getAge()}"></td>
+        <td th:text="${row.getEmail()}"></td>
+        <td><a th:href="@{/user/{id}/edit(id=${row.getId()})}">edit</a></td>
+        <td><a th:href="@{/user/{id}/delete(id=${row.getId()})}">delete</a></td>
+        <td><a th:href="@{/user/{id}/view(id=${row.getId()})}">view</a></td>
+    </tr>
+    </tbody>
+</table>
+
+
+<footer th:replace="/layout :: footer"></footer>
+</body>
+</html>
