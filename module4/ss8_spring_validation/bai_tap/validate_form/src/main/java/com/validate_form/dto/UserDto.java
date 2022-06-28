@@ -16,7 +16,7 @@ public class UserDto {
     @Size(min=5,max=45,message = "Length is from 5 to 45")
     private String lastName;
 
-    @Min(18)
+    @Min(value = 18,message = "Không được dưới 18 tuổi")
     private Integer age;
 
     @Pattern(regexp = "[0-9]{10}", message = "Include ten number.")

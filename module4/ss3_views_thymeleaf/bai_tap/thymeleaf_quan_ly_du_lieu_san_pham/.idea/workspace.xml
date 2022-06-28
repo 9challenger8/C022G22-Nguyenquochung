@@ -5,69 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7268f466-466b-4e2f-8aa3-c6b4b1994eef" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/demo/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/demo/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/demo/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/demo/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/demo/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/demo/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/demo/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/demo/src/main/java/com/demo/DemoApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/demo/src/main/java/com/demo/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/demo/src/main/java/com/demo/dto/ProductDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/demo/src/main/java/com/demo/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/demo/src/main/java/com/demo/repository/IProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/demo/src/main/java/com/demo/service/IProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/demo/src/main/java/com/demo/service/impl/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/demo/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/demo/src/main/resources/templates/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/demo/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/demo/src/main/resources/templates/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/demo/src/test/java/com/demo/DemoApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_form/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_form/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_form/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_form/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_form/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_form/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_form/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_form/src/main/java/com/validate_form/ValidateFormApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_form/src/main/java/com/validate_form/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_form/src/main/java/com/validate_form/dto/UserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_form/src/main/java/com/validate_form/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_form/src/main/java/com/validate_form/repository/IUserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_form/src/main/java/com/validate_form/service/IUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_form/src/main/java/com/validate_form/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_form/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_form/src/main/resources/templates/create_user.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_form/src/main/resources/templates/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_form/src/main/resources/templates/list_user.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_form/src/test/java/com/validate_form/ValidateFormApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_song/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_song/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_song/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_song/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_song/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_song/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_song/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_song/src/main/java/com/validate_song/ValidateSongApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_song/src/main/java/com/validate_song/controller/SongController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_song/src/main/java/com/validate_song/dto/SongDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_song/src/main/java/com/validate_song/model/Song.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_song/src/main/java/com/validate_song/repository/ISongRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_song/src/main/java/com/validate_song/service/ISongService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_song/src/main/java/com/validate_song/service/impl/SongServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_song/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_song/src/main/resources/templates/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_song/src/main/resources/templates/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_song/src/main/resources/templates/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_song/src/main/resources/templates/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_song/src/test/java/com/validate_song/ValidateSongApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ss1_tong_quan_springmvc/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1_tong_quan_springmvc/thuc_hanh/customer-management" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/quan_li_san_pham_orm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/bai_tap/quan_li_san_pham_orm/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/thuc_hanh/quan_ly_danh_sach_khach_hang/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/thuc_hanh/quan_ly_danh_sach_khach_hang/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss7_spring_data_repository/bai_tap/blog_uprade/src/main/java/com/blog_uprade/controller/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss7_spring_data_repository/bai_tap/blog_uprade/src/main/java/com/blog_uprade/controller/BlogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_form/src/main/java/com/validate_form/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_form/src/main/java/com/validate_form/dto/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_song/src/main/java/com/validate_song/controller/SongController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_song/src/main/java/com/validate_song/controller/SongController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_song/src/main/java/com/validate_song/dto/SongDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_song/src/main/java/com/validate_song/dto/SongDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_song/src/main/java/com/validate_song/repository/ISongRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_song/src/main/java/com/validate_song/repository/ISongRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_song/src/main/java/com/validate_song/service/ISongService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_song/src/main/java/com/validate_song/service/ISongService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_song/src/main/java/com/validate_song/service/impl/SongServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_song/src/main/java/com/validate_song/service/impl/SongServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_song/src/main/resources/templates/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_song/src/main/resources/templates/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_song/src/main/resources/templates/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss8_spring_validation/bai_tap/validate_song/src/main/resources/templates/list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +82,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../ss5_thao_tac_csdl_va_orm/thuc_hanh/quan_ly_danh_sach_khach_hang/customer-management" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -245,6 +197,7 @@
       <workItem from="1655821113713" duration="3340000" />
       <workItem from="1655827556996" duration="521000" />
       <workItem from="1656188795957" duration="920000" />
+      <workItem from="1656315475912" duration="388000" />
     </task>
     <servers />
   </component>

@@ -74,6 +74,6 @@ public class ProductController {
     public String search(@RequestParam String name, Model model){
         List<Product> listProduct= iProductService.findByName(name);
           model.addAttribute("products",listProduct);
-        return "redirect:/product";
+        return "index";
     }
 }

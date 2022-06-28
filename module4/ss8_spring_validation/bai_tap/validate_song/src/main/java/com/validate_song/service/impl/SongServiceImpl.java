@@ -5,6 +5,8 @@ import com.validate_song.model.Song;
 import com.validate_song.repository.ISongRepository;
 import com.validate_song.service.ISongService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -28,5 +30,15 @@ public class SongServiceImpl implements ISongService {
     @Override
     public void save(Song song) {
         iSongRepository.save(song);
+    }
+
+    @Override
+    public List<Song> sortByName() {
+        return iSongRepository.sortByName();
+    }
+
+    @Override
+    public Page<Song> findAllSong(Pageable pageable) {
+        return iSongRepository.findAllSong(pageable);
     }
 }

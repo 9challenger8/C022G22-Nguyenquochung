@@ -11,6 +11,7 @@
 <div id="form">
     <form action="#" th:action="@{/song/edit}" th:object="${song}"
           method="POST" >
+
         <input type="hidden" th:field="*{id}"/>
 
         <div>

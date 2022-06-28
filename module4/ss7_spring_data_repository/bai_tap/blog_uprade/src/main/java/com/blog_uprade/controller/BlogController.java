@@ -33,7 +33,6 @@ public class BlogController {
         model.addAttribute("keywordVal",keywordVal);
         model.addAttribute("blogs", iBLogService.findAllByName("%"+keywordVal+"%" ,pageable));
         model.addAttribute("listCategory",iCategoryService.findAll());
-//        model.addAttribute("blogs",iBLogService.findAll(pageable));
 
         return "list_blog";
     }

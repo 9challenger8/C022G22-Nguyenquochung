@@ -1,6 +1,5 @@
 package com.validate_song.dto;
-
-import javax.persistence.Column;
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
@@ -9,19 +8,19 @@ public class SongDto {
 
     private Integer id;
 
-    @NotEmpty
+    @NotBlank( message = "Khong để trống bạn ơi")
     @Size(max=800,message = "Length is max 800")
-    @Pattern(regexp = "^[a-zA-Z0-9]*$",message = "khong chua ki tu dac biet")
+    @Pattern(regexp = "^[a-zA-Z0-9 ]*$",message = "khong chua ki tu dac biet")
     private String name;
 
     @NotEmpty
     @Size(max=300,message = "Length is max 300")
-    @Pattern(regexp = "^[a-zA-Z0-9]*$",message = "khong chua ki tu dac biet")
+    @Pattern(regexp = "^[a-zA-Z0-9 ]*$",message = "khong chua ki tu dac biet")
     private String artist;
 
     @NotEmpty
     @Size(max=1000,message = "Length is max 1000")
-    @Pattern(regexp = "^[a-zA-Z0-9\\,]*$",message = "khong chua ki tu dac biet tru dau phay")
+    @Pattern(regexp = "^[a-zA-Z0-9\\, ]*$",message = "khong chua ki tu dac biet tru dau phay")
     private String typeMusic;
 
 
