@@ -13,8 +13,10 @@ public class BookDetail {
 
     @Column(name = "id_book")
     private Integer idBook;
-    private String name;
+
     private String author;
+
+    private String content;
 
     @OneToMany(mappedBy = "bookDetail")
     private List<Book> listBook;
@@ -22,12 +24,11 @@ public class BookDetail {
     public BookDetail() {
     }
 
-    public BookDetail(Integer idBookDetail, Integer idBook, String name, String author, List<Book> listBook) {
+    public BookDetail(Integer idBookDetail, Integer idBook, String author, String content) {
         this.idBookDetail = idBookDetail;
         this.idBook = idBook;
-        this.name = name;
         this.author = author;
-        this.listBook = listBook;
+        this.content = content;
     }
 
     public Integer getIdBookDetail() {
@@ -46,20 +47,20 @@ public class BookDetail {
         this.idBook = idBook;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getAuthor() {
         return author;
     }
 
     public void setAuthor(String author) {
         this.author = author;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
     }
 
     public List<Book> getListBook() {
