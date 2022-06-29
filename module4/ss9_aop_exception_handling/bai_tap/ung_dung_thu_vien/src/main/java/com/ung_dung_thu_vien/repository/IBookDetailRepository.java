@@ -1,4 +1,16 @@
 package com.ung_dung_thu_vien.repository;
 
-public interface IBookDetailRepository {
+import com.ung_dung_thu_vien.model.BookDetail;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
+
+import java.util.List;
+
+public interface IBookDetailRepository extends JpaRepository<BookDetail,Integer> {
+    @Query(value = "select * from book_detail",nativeQuery = true)
+    List<BookDetail> findAll();
+
+    @Query(value = "select * from book_detail where id = :id",nativeQuery = true)
+    BookDetail findById(@Param("id") int id);
 }

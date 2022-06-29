@@ -11,6 +11,10 @@ public class Book {
     private Integer id;
     private Integer amount;
 
+    @ManyToOne
+    @JoinColumn(name = "id_book")
+    private BookDetail bookDetail;
+
     public Book() {
     }
 
