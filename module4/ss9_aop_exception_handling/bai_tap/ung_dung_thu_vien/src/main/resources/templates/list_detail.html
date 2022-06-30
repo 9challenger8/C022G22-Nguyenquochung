@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout :: head">
+</head>
+<body>
+<h3>Book Detail</h3>
+<p>
+    <a th:href="@{/blog/create}">
+        Add new blog
+    </a>
+</p>
+<p>
+    <a th:href="@{/blog/category}">
+        List Book Detail
+    </a>
+</p>
+
+<div class="notify" style="color: #4CAF50;font-size: x-large">
+    <div style="color: #4CAF50;font-size: x-large"  th:if="${success}">
+        <span th:text="${success}"></span>
+    </div>
+</div>
+<form action="/blog" method="get">
+    <div style="display: flex;width: 500px">
+        <input type="text" name="keyword"/>
+        <input style="width: 100px" type="submit" value="Search" />
+    </div>
+</form>
+
+<table id = "products">
+    <thead>
+    <tr>
+        <th>ID Borrow</th>
+        <th>Name</th>
+        <th>Author</th>
+        <th>Year Release</th>
+        <th>Status</th>
+        <th>Edit</th>
+        <th>Delete</th>
+        <th>View</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="row,rowStat : ${bookDetails}">
+        <td th:text="${row.getIdBorrow()}"></td>
+        <td th:text="${row.book.getName()}"></td>
+        <td th:text="${row.getYear()}"></td>
+        <td th:text="${row.getStatus()}"></td>
+<!--        <td><a th:href="@{/blog/{id}/edit(id=${row.getId()})}">edit</a></td>-->
+<!--        <td><a th:href="@{/blog/{id}/delete(id=${row.getId()})}">delete</a></td>-->
+<!--        <td><a th:href="@{/blog/{id}/view(id=${row.getId()})}">view</a></td>-->
+    </tr>
+    </tbody>
+</table>
+
+<!--<div>-->
+<!--    <a th:if ="${blogs.hasPrevious()}"-->
+<!--       th:href="@{/blog(page=${blogs.number - 1},keyword=${keywordVal})}">-->
+<!--        Previous-->
+<!--    </a>-->
+<!--    <span th:text="${blogs.number +1}"></span>-->
+<!--    /-->
+<!--    <span th:text="${blogs.totalPages }"></span>-->
+<!--    <a th:if ="${blogs.hasNext()}"-->
+<!--       th:href="@{/blog(page=${blogs.number + 1},keyword=${keywordVal})}">-->
+<!--        Next-->
+<!--    </a>-->
+<!--</div>-->
+<footer th:replace="/layout :: footer"></footer>
+</body>
+</html>

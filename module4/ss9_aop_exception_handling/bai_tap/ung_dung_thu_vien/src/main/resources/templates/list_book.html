@@ -29,9 +29,9 @@
 
         <div class="card" style="width: 25%;">
             <img height="650px" th:src="${book.getImage()}" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title" th:text="${book.getName()}"></h5>
-                <p class="card-title" th:text="${book.getAmount()}"></p>
+            <div class="card-body" >
+                <h4 style="text-align: center" class="card-title" th:text="${book.getName()}"></h4>
+                <p class="card-title" th:text=" 'Số lượng: ' + ${book.getAmount()}"></p>
             </div>
             <div class="card-body">
 <!--                <a class="btn btn-primary" th:href="@{/add/__${product.id}__(action='list')}" role="button">Add To Cart</a>-->

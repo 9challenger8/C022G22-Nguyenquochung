@@ -2,6 +2,7 @@ package com.ung_dung_thu_vien.model;
 
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "book")
@@ -9,22 +10,23 @@ public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String name;
     private Integer amount;
     private String image;
+    private String name;
 
-    @ManyToOne
-    @JoinColumn(name = "id_book")
-    private BookDetail bookDetail;
+    @OneToMany(mappedBy = "book")
+    private List<BookDetail> listBookDetail;
+
+
+
+    public Book() {
+    }
 
     public Book(Integer id, String name, Integer amount, String image) {
         this.id = id;
         this.name = name;
         this.amount = amount;
         this.image = image;
-    }
-
-    public Book() {
     }
 
     public Integer getId() {
@@ -59,11 +61,11 @@ public class Book {
         this.image = image;
     }
 
-    public BookDetail getBookDetail() {
-        return bookDetail;
+    public List<BookDetail> getListBookDetail() {
+        return listBookDetail;
     }
 
-    public void setBookDetail(BookDetail bookDetail) {
-        this.bookDetail = bookDetail;
+    public void setListBookDetail(List<BookDetail> listBookDetail) {
+        this.listBookDetail = listBookDetail;
     }
 }

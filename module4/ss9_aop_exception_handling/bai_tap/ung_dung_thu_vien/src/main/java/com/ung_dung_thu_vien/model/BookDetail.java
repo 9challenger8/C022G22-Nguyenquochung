@@ -1,7 +1,6 @@
 package com.ung_dung_thu_vien.model;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Entity
 @Table(name = "book_detail")
@@ -9,42 +8,45 @@ public class BookDetail {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer idBookDetail;
 
-    @Column(name = "id_book")
-    private Integer idBook;
-
+    @Column(name = "id_borrow")
+    private Integer idBorrow;
     private String author;
+    private String year;
 
-    private String content;
+    @Column(columnDefinition = "integer default 0")
+    private Integer status;
 
-    @OneToMany(mappedBy = "bookDetail")
-    private List<Book> listBook;
+    @ManyToOne
+    @JoinColumn(name = "id_book",referencedColumnName ="id" )
+    private Book book;
+
 
     public BookDetail() {
     }
 
-    public BookDetail(Integer idBookDetail, Integer idBook, String author, String content) {
-        this.idBookDetail = idBookDetail;
-        this.idBook = idBook;
+    public BookDetail(Integer idBorrow, String author, String year, Integer status, Book book) {
+        this.idBorrow = idBorrow;
         this.author = author;
-        this.content = content;
+        this.year = year;
+        this.status = status;
+        this.book = book;
     }
 
-    public Integer getIdBookDetail() {
-        return idBookDetail;
+    public Integer getStatus() {
+        return status;
     }
 
-    public void setIdBookDetail(Integer idBookDetail) {
-        this.idBookDetail = idBookDetail;
+    public void setStatus(Integer status) {
+        this.status = status;
     }
 
-    public Integer getIdBook() {
-        return idBook;
+    public Integer getIdBorrow() {
+        return idBorrow;
     }
 
-    public void setIdBook(Integer idBook) {
-        this.idBook = idBook;
+    public void setIdBorrow(Integer idBorrow) {
+        this.idBorrow = idBorrow;
     }
 
     public String getAuthor() {
@@ -55,19 +57,19 @@ public class BookDetail {
         this.author = author;
     }
 
-    public String getContent() {
-        return content;
+    public String getYear() {
+        return year;
     }
 
-    public void setContent(String content) {
-        this.content = content;
+    public void setYear(String year) {
+        this.year = year;
     }
 
-    public List<Book> getListBook() {
-        return listBook;
+    public Book getBook() {
+        return book;
     }
 
-    public void setListBook(List<Book> listBook) {
-        this.listBook = listBook;
+    public void setBook(Book book) {
+        this.book = book;
     }
 }
