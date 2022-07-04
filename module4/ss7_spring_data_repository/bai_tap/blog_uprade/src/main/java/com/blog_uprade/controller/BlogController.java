@@ -26,7 +26,7 @@ public class BlogController {
 
 
     @GetMapping("")
-    public String showList(Model model,
+    public String showListBlog(Model model,
                            @PageableDefault(value = 2) Pageable pageable,
                            @RequestParam Optional<String> keyword ){
         String keywordVal = keyword.orElse("");
@@ -38,7 +38,7 @@ public class BlogController {
     }
 
     @GetMapping("/category")
-    public String showList(Model model){
+    public String showListCategory(Model model){
         model.addAttribute("category",iCategoryService.findAll());
         return "list_category";
     }
