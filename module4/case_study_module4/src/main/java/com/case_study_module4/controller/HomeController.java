@@ -7,14 +7,19 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class HomeController {
 
-    @GetMapping("/display")
+    @GetMapping("")
     public String display(){
         return "home";
     }
 
-    @GetMapping("list")
+    @GetMapping("/list")
     public String list(){
-        return "list";
+        return "/service/list";
+    }
+
+    @GetMapping("/edit")
+    public String edit(){
+        return "/service/edit";
     }
 
 

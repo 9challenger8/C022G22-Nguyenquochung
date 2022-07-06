@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+    <link rel="stylesheet" th:href="@{/home.css}" type="text/css">
+
+</head>
+<body>
+
+<nav class="flex-nav" >
+    <div class="container">
+        <div class="grid">
+            <div class="column-xs-9 column-md-8" style="width: auto">
+                <p id="logo">FURAMA<span id="highlight">.</span></p>
+            </div>
+            <div class="column-xs-3 column-md-4" style="width: border-box" >
+                <a href="#" class="toggle-nav">Menu <i class="ion-navicon-round"></i></a>
+                <ul  style="color: white">
+                    <li><a href="#">Customer</a></li>
+                    <li><a href="#">Employee</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Contract</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main class="intro-section">
+    <div class="container">
+        <div class="grid">
+            <div class="column-xs-12">
+                <ul class="slider">
+                    <li class="slider-item active">
+                        <div class="grid vertical">
+                            <div class="column-xs-12 column-md-2 hide-mobile">
+                                <div class="intro">
+                                    <a href="#">
+                                        <h1 class="title"><span class="underline">Furama Đà Nẵng</span></h1>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="column-xs-12 column-md-10">
+                                <div class="image-holder">
+                                    <img src="https://scr.vn/wp-content/uploads/2020/07/N%E1%BB%81n-bi%E1%BB%83n-c%E1%BA%A3-m%C3%AAnh-m%C3%B4ng.jpg">
+                                </div>
+                                <div class="grid">
+                                    <div class="column-xs-12 column-md-9">
+                                        <div class="intro show-mobile">
+                                            <a href="#">
+                                                <h1 class="title"><span class="underline">Furama Đà Nẵng </span></h1>
+                                            </a>
+                                        </div>
+                                        <p class="description">KHU NGHỈ DƯỠNG ĐẲNG CẤP THẾ GIỚI, FURAMA ĐÀ NẴNG, NỔI TIẾNG LÀ KHU NGHỈ DƯỠNG ẨM THỰC TẠI VIỆT NAM.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="slider-item">
+                        <div class="grid vertical">
+                            <div class="column-xs-12 column-md-2 hide-mobile">
+                                <div class="intro">
+                                    <a href="#">
+                                        <h1 class="title"><span class="underline">Ẩm Thực</span></h1>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="column-xs-12 column-md-10">
+                                <div class="image-holder">
+                                    <img src="https://furamavietnam.com/wp-content/uploads/2018/07/CULIRARY.jpg">
+                                </div>
+                                <div class="grid">
+                                    <div class="column-xs-12 column-md-9">
+                                        <div class="intro show-mobile">
+                                            <a href="#">
+                                                <h1 class="title"><span class="underline">Explore Kyoto</span></h1>
+                                            </a>
+                                        </div>
+                                        <p class="description">Trải nghiệm ẩm thực tại Khu nghỉ có sự pha trộn độc đáo các món ăn truyền thống Việt Nam
+                                            với nhiều những hương vị ẩm thực châu Á, Ý và châu Âu.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="slider-item">
+                        <div class="grid vertical">
+                            <div class="column-xs-12 column-md-2 hide-mobile">
+                                <div class="intro">
+                                    <a href="#">
+                                        <h1 class="title"><span class="underline">Spa & Fitness</span></h1>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="column-xs-12 column-md-10">
+                                <div class="image-holder">
+                                    <img src="https://furamavietnam.com/wp-content/uploads/2018/08/spa-s-04.jpg">
+                                </div>
+                                <div class="grid">
+                                    <div class="column-xs-12 column-md-9">
+                                        <div class="intro show-mobile">
+                                            <a href="#">
+                                                <h1 class="title"><span class="underline">Explore Osaka</span></h1>
+                                            </a>
+                                        </div>
+                                        <p class="description">Nuông chiều bản thân và thư giãn với các liệu pháp mát xa chân, điều trị cơ thể, chăm sóc da mặt và nhiều dịch vụ
+                                            làm đẹp khác ngay trong kỳ nghỉ bao gồm cả xông hơi khô và xông ướt sẵn có tại đây. Tại sao không?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="slider-item">
+                        <div class="grid vertical">
+                            <div class="column-xs-12 column-md-2 hide-mobile">
+                                <div class="intro">
+                                    <a href="#">
+                                        <h1 class="title"><span class="underline">Dịch vụ </span></h1>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="column-xs-12 column-md-10">
+                                <div class="image-holder">
+                                    <img src="https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/723969/723969/FV_Balcony_Two_Bedroom_Villa.jpg?auto=format,compress&fit=crop&crop=entropy&w=1920&q=75">
+                                </div>
+                                <div class="grid">
+                                    <div class="column-xs-12 column-md-9">
+                                        <div class="intro show-mobile">
+                                            <a href="#">
+                                                <h1 class="title"><span class="underline">Dịch vụ </span></h1>
+                                            </a>
+                                        </div>
+                                        <p class="description">Có nhiều những gói nghỉ dưỡng phù hợp cho cả những kỳ nghỉ ngắn hay dài ngày.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="grid">
+                    <div class="column-xs-12">
+                        <div class="controls">
+                            <button class="previous">
+                                <span class="visually-hidden">Previous</span>
+                                <span class="icon arrow-left" aria-hidden="true"></span>
+                            </button>
+                            <button class="next">
+                                <span class="visually-hidden">Next</span>
+                                <span class="icon arrow-right" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="/home.js"></script>
+
+<footer th:replace="/layout ::end"></footer>
+</body>
+</html>
