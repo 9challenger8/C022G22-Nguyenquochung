@@ -2,23 +2,39 @@ package ss3_mang_va_phuong_thuc.bai_tap;
 
 public class GopHaiMang {
     public static void main(String[] args) {
-        int[] arr1 = {4,5,6,4,3,2};
-        int[] arr2 = {5,7,6};
-        int[] arr3 = new int[arr1.length + arr2.length];
-        int j = 0;
-        for (int i = 0; i < arr3.length; i++) {
-            if (i < arr1.length) {
-                arr3[i] = arr1[i];
-            } else {
-                if (j<arr2.length) {
-                    arr3[i] = arr2[j];
-                    j++;
-                }
+        int [] prices={3,2,10,1,4,5};
+        int asset=10;
+
+        int tien =solution(prices,asset);
+
+        System.out.println(" so tien:"+tien);
+
+    }
+
+    public static int solution(int[] prices, int asset) {
+        int maxMoney;
+        int min=prices[0];
+        int max=prices[0];
+        int dayMax=0;
+        int dayMin=0;
+        for(int i=0;i<prices.length;i++){
+            if(max<prices[i]){
+                max=prices[i];
+                dayMax=i;
             }
         }
-        System.out.print("Hien thi mang: ");
-        for (int a : arr3) {
-            System.out.print(a+ "\t");
+        for(int i=0;i<prices.length;i++){
+            if(min>prices[i]){
+                min=prices[i];
+                dayMin=i;
+            }
         }
+        int monney = asset - min + max;
+        if(dayMax>dayMin){
+            maxMoney=Math.max(monney, asset);
+        }else {
+            maxMoney=asset;
+        }
+        return maxMoney ;
     }
 }

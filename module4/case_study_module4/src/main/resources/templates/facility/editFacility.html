@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <link rel="stylesheet" th:href="@{/bootstrap-5.1.3-dist/bootstrap.min.css}" type="text/css">
+    <link rel="stylesheet" th:href="@{/form.css}">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+    <!-- Template Main CSS Files -->
+    <link href="assets/css/variables.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body>
+<header th:replace="/layout :: nav"></header>
+
+
+<main id="main">
+    <div class="container">
+        <section id="hero-slider" class="hero-slider">
+            <div class="container" data-aos="fade-in">
+                <div class="row">
+                    <div class="col-12">
+                        <form>
+                            <fieldset>
+                                <legend>Edit Service:</legend>
+                                <input name="name" type="text" class="feedback-input" placeholder="Name" />
+                                <input name="area" type="text" class="feedback-input" placeholder="Area" />
+                                <input name="cost" type="text" class="feedback-input" placeholder="Cost" />
+                                <input name="numberPeople" type="text" class="feedback-input" placeholder="Number of people" />
+
+                                <select name="rentType">
+                                    <option value="" disabled="1" selected="1">Please choose a rental type.</option>
+                                    <option value="1">Year</option>
+                                    <option value="2">Month</option>
+                                    <option value="3">Day</option>
+                                    <option value="4">Hour</option>
+                                </select>
+
+                                <select id="facilityType"  name="facilityType" onchange="display()">
+                                    <option value="" disabled="1" selected="1">Please choose a facility type.</option>
+                                    <option value="1">Villa</option>
+                                    <option value="2">House</option>
+                                    <option value="3">Room</option>
+                                </select>
+
+                                <input id="standardRoom" name="standardRoom" type="text" class="feedback-input" placeholder="Standard Room" style="display: none" />
+                                <input id="otherConvenience" name="otherConvenience" type="text" class="feedback-input"
+                                       placeholder="Description other convenience" style="display: none" />
+                                <input id="poolArea" name="poolArea" type="text" class="feedback-input" placeholder="Pool area" style="display: none" />
+                                <input id="numberFloor" name="numberFloor" type="text" class="feedback-input" placeholder="Number of floor" style="display: none" />
+                                <textarea id="facilityFree" name="facilityFree" class="feedback-input" placeholder="Facility free" style="display: none"></textarea>
+                                <input type="submit" value="SUBMIT"/>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+
+<footer th:replace="/layout :: end"></footer>
+
+<script src="/bootstrap-5.1.3-dist/bootstrap.bundle.min.js"></script>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+
+<script>
+    function display() {
+
+        let temp = $('#facilityType').val();
+
+        switch (temp) {
+            case '1':
+                $("#standardRoom").show(200)
+                $("#otherConvenience").show(200)
+                $("#poolArea").show(200)
+                $("#numberFloor").show(200)
+                $("#facilityFree").hide(200)
+                break;
+            case '2':
+                $("#standardRoom").show(200)
+                $("#otherConvenience").show(200)
+                $("#poolArea").hide(200)
+                $("#numberFloor").show(200)
+                $("#facilityFree").hide(200)
+                break;
+            case '3':
+                $("#standardRoom").hide(200)
+                $("#otherConvenience").hide(200)
+                $("#poolArea").hide(200)
+                $("#numberFloor").hide(200)
+                $("#facilityFree").show(200)
+                break;
+        }
+    }
+</script>
+</body>
+</html>
