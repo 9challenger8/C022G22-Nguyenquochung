@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+
+   <div th:replace="~{layout :: linkCss}"></div>
+
+
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/form.css}">
+</head>
+
+<body>
+<header th:replace="~{/layout :: begin}"></header>
+
+<main id="main">
+    <div  class="container-fluid">
+        <section id="hero-slider" class="hero-slider">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>List Contract:</h1>
+                        <p>
+                            <a class="addNew" th:href="@{/contract/create}">
+                                Add new contract
+                            </a>
+                        </p>
+                        <div class="notify" style="color: #4CAF50;font-size: x-large">
+                            <div style="color: #4CAF50;font-size: x-large"  th:if="${success}">
+                                <span th:text="${success}"></span>
+                            </div>
+                        </div>
+
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th scope="col">Contract Id</th>
+                                <th scope="col">Room Id</th>
+                                <th scope="col">Name Rent</th>
+                                <th scope="col">Start Date</th>
+                                <th scope="col">Time Rent</th>
+                                <th scope="col">Total Money</th>
+                                <th scope="col" colspan="2">Option</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr th:each="row,rowStat : ${contracts}">
+                                <th scope="row" th:text="${row.id}"></th>
+                                <td scope="col" th:text="${row.room.id}"></td>
+                                <td scope="col" th:text="${row.nameRent}"></td>
+                                <td scope="col" th:text="${row.startDate}"></td>
+                                <td scope="col" th:text="${row.timeRent}"></td>
+                                <td scope="col" th:text="${row.room.cost*row.timeRent}"></td>
+                                <td>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" th:data-bs-target="'#exampleModal'+ ${row.id}">
+                                        Delete
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" th:id="'exampleModal'+ ${row.id}" tabindex="-1" th:aria-labelledby="'exampleModalLabel'+ ${row.id}" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+<!--                                                    <h5 class="modal-title" th:id="'exampleModalLabel'+ ${row.id}">Delete</h5>-->
+<!--                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+                                                    Delete
+                                                </div>
+                                                <div class="modal-body">
+                                                    Are you want to delete ?<br>
+                                                    ID Contract: <span th:text="${row.id}"></span> <br>
+                                                    Room ID : <span th:text=" ${row.room.id} "></span>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                   <a th:href="@{/contract/delete/{id}(id=${row.id})}" ><button type="button" class="btn btn-primary" >Delete</button></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer th:replace="~{/layout ::end}"></footer>
+
+<div th:replace="~{layout :: linkScript}"></div>
+</body>
+</html>
+
+

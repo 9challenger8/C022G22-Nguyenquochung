@@ -1,7 +1,6 @@
 package com.blog_uprade.repository;
 
 import com.blog_uprade.model.Blog;
-import com.blog_uprade.model.Blog;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

@@ -10,13 +10,14 @@ import org.springframework.data.repository.query.Param;
 import java.util.List;
 
 public interface IBLogService  {
+
     List<Blog> findAll();
 
 
-    Blog findById(@Param("id") int id);
+    Blog findById(int id);
 
 
-    void remove(@Param("id") int id);
+    void remove(int id);
 
     void save(Blog blog);
 

@@ -27,13 +27,12 @@ public class BlogController {
 
     @GetMapping("")
     public String showListBlog(Model model,
-                           @PageableDefault(value = 2) Pageable pageable,
+                           @PageableDefault(value = 6) Pageable pageable,
                            @RequestParam Optional<String> keyword ){
         String keywordVal = keyword.orElse("");
         model.addAttribute("keywordVal",keywordVal);
         model.addAttribute("blogs", iBLogService.findAllByName("%"+keywordVal+"%" ,pageable));
         model.addAttribute("listCategory",iCategoryService.findAll());
-
         return "list_blog";
     }
 
@@ -68,6 +67,7 @@ public class BlogController {
         iBLogService.save( blog);
         return "redirect:/blog";
     }
+
     @GetMapping("/category/{id}/edit")
     public String editCategory(@PathVariable int id, Model model){
         model.addAttribute("category", iCategoryService.findById(id));

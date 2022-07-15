@@ -3,27 +3,9 @@
 <head>
     <meta charset="UTF-8">
 
-    <link rel="stylesheet" th:href="@{/bootstrap-5.1.3-dist/bootstrap.min.css}" type="text/css">
-    <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-     Google Fonts
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
-     Vendor CSS Files
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-
-    <!-- Template Main CSS Files -->
-    <link href="assets/css/variables.css" rel="stylesheet">
-    <link href="assets/css/main.css" rel="stylesheet">
-
+    <div th:replace="~{layout :: linkCss}"></div>
+    <link rel="stylesheet" th:href="@{/form.css}">
 
     <title>Title</title>
 </head>
@@ -34,10 +16,20 @@
 <main id="main">
     <div class="container-fluid">
         <section id="hero-slider" class="hero-slider">
-            <div class="container"  >
+            <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <h1>List Facility:</h1>
+                        <p>
+                            <a class="addNew" th:href="@{/facility/create}">
+                                Add new Facility
+                            </a>
+                        </p>
+                        <div class="notify" style="color: #4CAF50;font-size: x-large">
+                            <div style="color: #4CAF50;font-size: x-large" th:if="${success}">
+                                <span th:text="${success}"></span>
+                            </div>
+                        </div>
                         <table class="table">
                             <thead>
                             <tr>
@@ -51,39 +43,39 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
+                            <tr th:each="row,rowStat:${facilities}">
+                                <th scope="row" th:text="${row.id}"></th>
+                                <td th:text="${row.name}">Mark</td>
+                                <td th:text="${row.area}">Otto</td>
+                                <td th:text="${row.numberOfPeople}">@mdo</td>
+                                <td th:text="${row.rentType.name}">@mdo</td>
+                                <td th:text="${row.facilityType.name}">@mdo</td>
                                 <td>
                                     <!-- Button trigger modal -->
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" th:data-bs-target="'#facilityModal'+ ${row.id}">
                                         Delete
                                     </button>
 
                                     <!-- Modal -->
-                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal fade" th:id="'facilityModal'+ ${row.id}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                    <h5 class="modal-title" id="exampleModalLabel">Delete</h5>
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    ...
+                                                    Are you sure delete Name: <span th:text=" ${row.name}"></span> with ID: <span th:text=" ${row.id} "></span>?
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                    <a th:href="@{/facility/delete/{id}(id=${row.id})}" ><button type="button" class="btn btn-primary" >Delete</button></a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </td>
-                                <td>Edit</td>
+                                <td><a th:href="@{/facility/{id}/edit(id=${row.id})}">Edit</a></td>
                             </tr>
                             </tbody>
                         </table>
@@ -93,25 +85,23 @@
         </section><!-- End Hero Slider Section -->
     </div>
 </main>
+<div>
+    <a th:if ="${facilities.hasPrevious()}"
+       th:href="@{/facility/list(page=${facilities.number - 1},keyword=${keywordVal})}">
+        Previous
+    </a>
+    <span th:text="${facilities.number +1}"></span>
+    /
+    <span th:text="${facilities.totalPages }"></span>
+    <a th:if ="${facilities.hasNext()}"
+       th:href="@{/facility/list(page=${facilities.number + 1},keyword=${keywordVal})}">
+        Next
+    </a>
+</div>
 
 
-<footer th:replace="/layout ::end"></footer>
+<footer th:replace="~{/layout ::end}"></footer>
 
-
-
-
-
-<!-- Vendor JS Files -->
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/aos/aos.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
-
-<!-- Template Main JS File -->
-<script src="assets/js/main.js"></script>
-
-<script src="/bootstrap-5.1.3-dist/bootstrap.bundle.min.js"></script>
-
+<div th:replace="~{layout :: linkScript}"></div>
 </body>
 </html>

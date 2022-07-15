@@ -16,7 +16,7 @@ public class HomeController {
     @GetMapping("/list")
     public String list(){
 
-        return "employee/listEmployee";
+        return "customer/listCustomer";
     }
 
     @GetMapping("/contract")

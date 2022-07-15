@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+    <div th:replace="~{layout :: linkCss}"></div>
+
+    <link rel="stylesheet" th:href="@{/form.css}">
+</head>
+
+
+
+<body>
+
+<header th:replace="/layout :: begin"></header>
+
+
+<main id="main">
+    <div class="container">
+        <section id="hero-slider" class="hero-slider">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+
+                        <form action="/contract/create"  method="POST" th:object="${contract}" >
+                            <fieldset>
+                                <legend>Add Contract:</legend>
+                                <input type="text" th:field="*{id}" class="feedback-input" placeholder="Contract Id" />
+
+
+                                <select th:field="*{room.id}"  >
+                                    <option value=""  selected="selected" >Please choose room.</option>
+                                    <option th:each="temp:${rooms}" th:value="${temp.id}"
+                                            th:text="${temp.id}" >
+                                </select>
+
+                                <input th:field="*{nameRent}"   type="text" class="feedback-input" placeholder="Name Rent" />
+                                <input th:field="*{idCard}"   type="text" class="feedback-input" placeholder="Id Card" />
+
+
+                                <label for="startDate" >Start Date:</label><br>
+                                <input id="startDate" type="date" class="feedback-input" th:field="*{startDate}" />
+
+                                <select th:field="*{timeRent}" >
+                                    <option selected  value=""  >Please choose time rent.</option>
+                                    <option value="3 Month">3 Month</option>
+                                    <option value="6 Month">6 Month</option>
+                                    <option value="12 Month">12 Month</option>
+                                </select>
+                                <input type="submit" value="SUBMIT"/>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+
+
+
+<footer th:replace="/layout ::end"></footer>
+
+<script src="/jquery-3.6.0.min.js"></script>
+
+<div th:replace="~{layout :: linkScript}"></div>
+
+</body>
+</html>

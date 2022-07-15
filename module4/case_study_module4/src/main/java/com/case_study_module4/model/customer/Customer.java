@@ -1,6 +1,10 @@
 package com.case_study_module4.model.customer;
 
+import com.case_study_module4.model.contract.Contract;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "customer")
@@ -13,7 +17,7 @@ public class Customer {
     @Column(name = "date_of_birth")
     private String dateOfBirth;
 
-    private Integer gender;
+    private String gender;
 
     @Column(name = "id_card")
     private String idCard;
@@ -27,10 +31,16 @@ public class Customer {
     private String address;
 
     @ManyToOne
-    @JoinColumn(name = "customer_type_id",referencedColumnName = "id")
+    @JoinColumn(name = "customer_type_id")
     private CustomerType customerType;
 
-    public Customer(Integer id, String name, String dateOfBirth, Integer gender, String idCard, String phoneNumber, String email, String address, CustomerType customerType) {
+    @OneToMany(mappedBy = "customer")
+    @JsonBackReference
+    private List<Contract> contractList;
+
+
+    public Customer(Integer id, String name, String dateOfBirth, String gender, String idCard, String phoneNumber,
+                    String email, String address, CustomerType customerType, List<Contract> contractList) {
         this.id = id;
         this.name = name;
         this.dateOfBirth = dateOfBirth;
@@ -40,9 +50,18 @@ public class Customer {
         this.email = email;
         this.address = address;
         this.customerType = customerType;
+        this.contractList = contractList;
     }
 
     public Customer() {
+    }
+
+    public List<Contract> getContractList() {
+        return contractList;
+    }
+
+    public void setContractList(List<Contract> contractList) {
+        this.contractList = contractList;
     }
 
     public Integer getId() {
@@ -69,11 +88,11 @@ public class Customer {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public Integer getGender() {
+    public String getGender() {
         return gender;
     }
 
-    public void setGender(Integer gender) {
+    public void setGender(String gender) {
         this.gender = gender;
     }
 
