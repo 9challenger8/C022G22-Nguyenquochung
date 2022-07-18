@@ -131,11 +131,11 @@ section {
   height: 70px;
 }
 .header .logo img {
-  max-height: 40px;
+  max-height: 45px;
   margin-right: 6px;
 }
 .header .logo h1 {
-  font-size: 40px;
+  font-size: 45px;
   font-weight: 700;
   color: var(--color-white);
   font-family: var(--font-primary);
@@ -216,7 +216,7 @@ section {
     justify-content: space-between;
     padding: 10px 0 10px 30px;
     font-family: var(--font-default);
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
     color: rgba(var(--color-default-rgb), 1);
     white-space: nowrap;
