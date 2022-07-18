@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4494bfc9-81ff-4a89-8e09-81433b71e705" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/bai_tap/fibonacci/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/bai_tap/fibonacci/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/bai_tap/fibonacci/.idea/fibonacci.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/bai_tap/fibonacci/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/bai_tap/fibonacci/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/bai_tap/fibonacci/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/bai_tap/fibonacci/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/bai_tap/fibonacci/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/bai_tap/fibonacci/src/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/bai_tap/fibonacci/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/bai_tap/fibonacci/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/dieu_kien_va_vong_lap/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/dieu_kien_va_vong_lap/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/dieu_kien_va_vong_lap/.idea/dieu_kien_va_vong_lap.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/dieu_kien_va_vong_lap/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/dieu_kien_va_vong_lap/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/dieu_kien_va_vong_lap/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/dieu_kien_va_vong_lap/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/dieu_kien_va_vong_lap/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/dieu_kien_va_vong_lap/src/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/dieu_kien_va_vong_lap/src/isPrime.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/dieu_kien_va_vong_lap/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/khai_bao_va_su_dung_bien/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/khai_bao_va_su_dung_bien/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/khai_bao_va_su_dung_bien/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/khai_bao_va_su_dung_bien/src/demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/khai_bao_va_su_dung_bien/src/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/khai_bao_va_su_dung_bien/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/kiem_tra_so_nguyen_to/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/kiem_tra_so_nguyen_to/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/kiem_tra_so_nguyen_to/.idea/kiem_tra_so_nguyen_to.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/kiem_tra_so_nguyen_to/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/kiem_tra_so_nguyen_to/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/kiem_tra_so_nguyen_to/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/kiem_tra_so_nguyen_to/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/kiem_tra_so_nguyen_to/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/kiem_tra_so_nguyen_to/src/checkIsPrime.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/kiem_tra_so_nguyen_to/src/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/kiem_tra_so_nguyen_to/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/promise/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/promise/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/promise/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/promise/.idea/promise.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/promise/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/promise/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/promise/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/promise/src/display.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/promise/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/promise/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/xay_dung_cac_doi_tuong_hinh_hoc/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/xay_dung_cac_doi_tuong_hinh_hoc/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/xay_dung_cac_doi_tuong_hinh_hoc/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/xay_dung_cac_doi_tuong_hinh_hoc/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/xay_dung_cac_doi_tuong_hinh_hoc/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/xay_dung_cac_doi_tuong_hinh_hoc/.idea/xay_dung_cac_doi_tuong_hinh_hoc.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/xay_dung_cac_doi_tuong_hinh_hoc/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/xay_dung_cac_doi_tuong_hinh_hoc/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/xay_dung_cac_doi_tuong_hinh_hoc/src/IArea.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/xay_dung_cac_doi_tuong_hinh_hoc/src/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/xay_dung_cac_doi_tuong_hinh_hoc/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/xay_dung_cac_doi_tuong_hinh_hoc/src/rectangle.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/xay_dung_cac_doi_tuong_hinh_hoc/src/shape.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/xay_dung_cac_doi_tuong_hinh_hoc/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/ss1_tong_quan_springmvc/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss1_tong_quan_springmvc/thuc_hanh/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/ss5_thao_tac_csdl_va_orm/thuc_hanh/quan_ly_danh_sach_khach_hang/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss5_thao_tac_csdl_va_orm/thuc_hanh/quan_ly_danh_sach_khach_hang/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/ss9_aop_exception_handling/thuc_hanh/aspect_log_quan_ly_khach_hang/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss9_aop_exception_handling/thuc_hanh/aspect_log_quan_ly_khach_hang/customer-management" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/ss2_type_script/bai_tap/fibonacci" />
+  </component>
+  <component name="ProjectId" id="2BxizyiI7lh1xVQza6rrqdlJF05" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="D:\C022G22-NguyenQuocHung\module5\node_modules\prettier" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="ts.external.directory.path" value="D:\C022G22-NguyenQuocHung\module5\ss2_type_script\thuc_hanh\dieu_kien_va_vong_lap\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\C022G22-NguyenQuocHung\module5\casestudy_module5\templates" />
+      <recent name="D:\C022G22-NguyenQuocHung\module5\casestudy_module5\static" />
+      <recent name="D:\C022G22-NguyenQuocHung\module5\casestudy_module5" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\C022G22-NguyenQuocHung\module5\ss2_type_script\thuc_hanh" />
+      <recent name="D:\C022G22-NguyenQuocHung\module5\casestudy_module5\templates\facility" />
+      <recent name="D:\C022G22-NguyenQuocHung\module5\casestudy_module5\templates" />
+      <recent name="D:\C022G22-NguyenQuocHung\module5\casestudy_module5\static" />
+      <recent name="D:\C022G22-NguyenQuocHung\module5\casestudy_module5" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4494bfc9-81ff-4a89-8e09-81433b71e705" name="Default Changelist" comment="" />
+      <created>1657854402309</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1657854402309</updated>
+      <workItem from="1657854403420" duration="14649000" />
+      <workItem from="1657877419068" duration="3121000" />
+      <workItem from="1658041520985" duration="10920000" />
+      <workItem from="1658114475893" duration="1127000" />
+      <workItem from="1658115613065" duration="494000" />
+      <workItem from="1658127828437" duration="45000" />
+      <workItem from="1658128001764" duration="432000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="687" y="199" key="FileChooserDialogImpl" timestamp="1658116108641">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="687" y="199" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1658116108641" />
+    <state x="461" y="155" key="SettingsEditor" timestamp="1657879320975">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="155" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1657879320975" />
+  </component>
+</project>
