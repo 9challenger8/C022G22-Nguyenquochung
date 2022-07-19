@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
 
@@ -59,11 +59,11 @@
         </nav><!-- .navbar -->
 
         <div class="position-relative">
-            <a href="#" class="mx-2"><span style="color: white" class="bi-facebook"></span></a>
-            <a href="#" class="mx-2"><span style="color: white" class="bi-twitter"></span></a>
-            <a href="#" class="mx-2"><span style="color: white" class="bi-instagram"></span></a>
+            <a href="#" class="mx-2"><span style="color: white;font-size: 20px" class="bi-facebook"></span></a>
+            <a href="#" class="mx-2"><span style="color: white;font-size: 20px" class="bi-twitter"></span></a>
+            <a href="#" class="mx-2"><span style="color: white;font-size: 20px" class="bi-instagram"></span></a>
 
-            <a href="#" class="mx-2 js-search-open"><span style="color: white" class="bi-search"></span></a>
+            <a href="#" class="mx-2 js-search-open"><span style="color: white;font-size: 20px" class="bi-search"></span></a>
             <i class="bi bi-list mobile-nav-toggle"></i>
 
             <!-- ======= Search Form ======= -->
@@ -107,11 +107,13 @@
                                 <input  name="idCard" type="text" class="feedback-input" placeholder="Id card" />
 
                                 <input name="phoneNumber" type="text" class="feedback-input" placeholder="Phone number" />
+
                                 <input  name="email" type="text" class="feedback-input" placeholder="Email" />
 
                                 <select name="customerType" >
                                     <option value=""  selected="selected" >Please choose customer type.</option>
                                 </select>
+
                                 <textarea  name="address" class="feedback-input" placeholder="Address" ></textarea>
                                 <input type="submit" value="SUBMIT"/>
                             </fieldset>

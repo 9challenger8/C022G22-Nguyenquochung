@@ -20,72 +20,66 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4494bfc9-81ff-4a89-8e09-81433b71e705" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/bai_tap/fibonacci/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/bai_tap/fibonacci/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/bai_tap/fibonacci/.idea/fibonacci.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/bai_tap/fibonacci/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/bai_tap/fibonacci/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/bai_tap/fibonacci/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/bai_tap/fibonacci/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/bai_tap/fibonacci/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/bai_tap/fibonacci/src/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/bai_tap/fibonacci/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/bai_tap/fibonacci/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/dieu_kien_va_vong_lap/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/dieu_kien_va_vong_lap/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/dieu_kien_va_vong_lap/.idea/dieu_kien_va_vong_lap.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/dieu_kien_va_vong_lap/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/dieu_kien_va_vong_lap/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/dieu_kien_va_vong_lap/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/dieu_kien_va_vong_lap/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/dieu_kien_va_vong_lap/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/dieu_kien_va_vong_lap/src/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/dieu_kien_va_vong_lap/src/isPrime.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/dieu_kien_va_vong_lap/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/khai_bao_va_su_dung_bien/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/khai_bao_va_su_dung_bien/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/khai_bao_va_su_dung_bien/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/khai_bao_va_su_dung_bien/src/demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/khai_bao_va_su_dung_bien/src/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/khai_bao_va_su_dung_bien/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/kiem_tra_so_nguyen_to/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/kiem_tra_so_nguyen_to/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/kiem_tra_so_nguyen_to/.idea/kiem_tra_so_nguyen_to.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/kiem_tra_so_nguyen_to/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/kiem_tra_so_nguyen_to/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/kiem_tra_so_nguyen_to/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/kiem_tra_so_nguyen_to/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/kiem_tra_so_nguyen_to/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/kiem_tra_so_nguyen_to/src/checkIsPrime.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/kiem_tra_so_nguyen_to/src/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/kiem_tra_so_nguyen_to/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/promise/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/promise/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/promise/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/promise/.idea/promise.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/promise/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/promise/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/promise/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/promise/src/display.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/promise/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/promise/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/xay_dung_cac_doi_tuong_hinh_hoc/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/xay_dung_cac_doi_tuong_hinh_hoc/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/xay_dung_cac_doi_tuong_hinh_hoc/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/xay_dung_cac_doi_tuong_hinh_hoc/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/xay_dung_cac_doi_tuong_hinh_hoc/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/xay_dung_cac_doi_tuong_hinh_hoc/.idea/xay_dung_cac_doi_tuong_hinh_hoc.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/xay_dung_cac_doi_tuong_hinh_hoc/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/xay_dung_cac_doi_tuong_hinh_hoc/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/xay_dung_cac_doi_tuong_hinh_hoc/src/IArea.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/xay_dung_cac_doi_tuong_hinh_hoc/src/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/xay_dung_cac_doi_tuong_hinh_hoc/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/xay_dung_cac_doi_tuong_hinh_hoc/src/rectangle.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/xay_dung_cac_doi_tuong_hinh_hoc/src/shape.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss2_type_script/thuc_hanh/xay_dung_cac_doi_tuong_hinh_hoc/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/module5.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/bai_tap/bai-tap/src/app/calculator/calculator.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/bai_tap/bai-tap/src/app/calculator/calculator.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/bai_tap/bai-tap/src/app/calculator/calculator.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/bai_tap/bai-tap/src/app/calculator/calculator.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/thuc_hanh/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/thuc_hanh/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/thuc_hanh/.idea/thuc_hanh.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/thuc_hanh/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/thuc_hanh/angular-change-font-size/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/thuc_hanh/angular-change-font-size/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/thuc_hanh/angular-change-font-size/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/thuc_hanh/angular-change-font-size/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/thuc_hanh/angular-change-font-size/browserslist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/thuc_hanh/angular-change-font-size/e2e/protractor.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/thuc_hanh/angular-change-font-size/e2e/src/app.e2e-spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/thuc_hanh/angular-change-font-size/e2e/src/app.po.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/thuc_hanh/angular-change-font-size/e2e/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/thuc_hanh/angular-change-font-size/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/thuc_hanh/angular-change-font-size/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/thuc_hanh/angular-change-font-size/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/thuc_hanh/angular-change-font-size/src/app/app-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/thuc_hanh/angular-change-font-size/src/app/app.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/thuc_hanh/angular-change-font-size/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/thuc_hanh/angular-change-font-size/src/app/app.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/thuc_hanh/angular-change-font-size/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/thuc_hanh/angular-change-font-size/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/thuc_hanh/angular-change-font-size/src/app/font-size-editor/font-size-editor.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/thuc_hanh/angular-change-font-size/src/app/font-size-editor/font-size-editor.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/thuc_hanh/angular-change-font-size/src/app/font-size-editor/font-size-editor.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/thuc_hanh/angular-change-font-size/src/app/font-size-editor/font-size-editor.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/thuc_hanh/angular-change-font-size/src/app/pet/pet.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/thuc_hanh/angular-change-font-size/src/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/thuc_hanh/angular-change-font-size/src/environments/environment.prod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/thuc_hanh/angular-change-font-size/src/environments/environment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/thuc_hanh/angular-change-font-size/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/thuc_hanh/angular-change-font-size/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/thuc_hanh/angular-change-font-size/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/thuc_hanh/angular-change-font-size/src/polyfills.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/thuc_hanh/angular-change-font-size/src/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/thuc_hanh/angular-change-font-size/src/test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/thuc_hanh/angular-change-font-size/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/thuc_hanh/angular-change-font-size/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/thuc_hanh/angular-change-font-size/tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss3_angular_overview/thuc_hanh/angular-change-font-size/tslint.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module4/ss1_tong_quan_springmvc/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss1_tong_quan_springmvc/thuc_hanh/customer-management" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module4/ss5_thao_tac_csdl_va_orm/thuc_hanh/quan_ly_danh_sach_khach_hang/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss5_thao_tac_csdl_va_orm/thuc_hanh/quan_ly_danh_sach_khach_hang/customer-management" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module4/ss9_aop_exception_handling/thuc_hanh/aspect_log_quan_ly_khach_hang/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss9_aop_exception_handling/thuc_hanh/aspect_log_quan_ly_khach_hang/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy_module5/templates/customer/addCustomer.html" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy_module5/templates/customer/addCustomer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy_module5/templates/customer/editCustomer.html" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy_module5/templates/customer/editCustomer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy_module5/templates/customer/listCustomer.html" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy_module5/templates/customer/listCustomer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy_module5/templates/facility/addFacility.html" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy_module5/templates/facility/addFacility.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy_module5/templates/facility/editFacility.html" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy_module5/templates/facility/editFacility.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy_module5/templates/facility/listFacility.html" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy_module5/templates/facility/listFacility.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy_module5/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy_module5/templates/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy_module5/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy_module5/templates/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +94,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/ss2_type_script/bai_tap/fibonacci" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="2BxizyiI7lh1xVQza6rrqdlJF05" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -112,6 +106,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -154,6 +149,8 @@
       <workItem from="1658115613065" duration="494000" />
       <workItem from="1658127828437" duration="45000" />
       <workItem from="1658128001764" duration="432000" />
+      <workItem from="1658135654327" duration="1230000" />
+      <workItem from="1658218524643" duration="650000" />
     </task>
     <servers />
   </component>
@@ -176,10 +173,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="687" y="199" key="FileChooserDialogImpl" timestamp="1658116108641">
+    <state x="687" y="199" key="FileChooserDialogImpl" timestamp="1658136935565">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="687" y="199" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1658116108641" />
+    <state x="687" y="199" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1658136935565" />
     <state x="461" y="155" key="SettingsEditor" timestamp="1657879320975">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
