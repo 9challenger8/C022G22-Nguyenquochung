@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {HomeComponent} from './home/home.component';
 import {FacilityAddComponent} from './facility/facility-add/facility-add.component';
-import {ListFacilityComponent} from './facility/list-facility/list-facility.component';
+import {FacilityListComponent} from './facility/facility-list/facility-list.component';
 import {FacilityEditComponent} from './facility/facility-edit/facility-edit.component';
 import {CustomerListComponent} from "./customer/customer-list/customer-list.component";
 import {CustomerAddComponent} from "./customer/customer-add/customer-add.component";
@@ -14,7 +14,7 @@ import {ContractAddComponent} from "./contract/contract-add/contract-add.compone
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'facility/add', component: FacilityAddComponent},
-  {path: 'facility/list', component: ListFacilityComponent},
+  {path: 'facility/list', component: FacilityListComponent},
   {path: 'facility/edit', component: FacilityEditComponent},
   {path: 'customer/list', component: CustomerListComponent},
   {path: 'customer/add', component:CustomerAddComponent},

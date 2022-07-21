@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { ListFacilityComponent } from './facility/list-facility/list-facility.component';
+import { FacilityListComponent } from './facility/facility-list/facility-list.component';
 import { FacilityEditComponent } from './facility/facility-edit/facility-edit.component';
 import { FacilityAddComponent } from './facility/facility-add/facility-add.component';
 import { HomeComponent } from './home/home.component';
@@ -21,7 +21,7 @@ import { ContractAddComponent } from './contract/contract-add/contract-add.compo
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    ListFacilityComponent,
+    FacilityListComponent,
     FacilityEditComponent,
     FacilityAddComponent,
     HomeComponent,

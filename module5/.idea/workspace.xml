@@ -20,28 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4494bfc9-81ff-4a89-8e09-81433b71e705" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/contract/contract-add/contract-add.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/contract/contract-add/contract-add.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/contract/contract-add/contract-add.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/contract/contract-add/contract-add.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/contract/contract-list/contract-list.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/contract/contract-list/contract-list.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/contract/contract-list/contract-list.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/contract/contract-list/contract-list.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/customer/customer-list/customer-list.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/customer/customer-list/customer-list.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/customer/customer-list/customer-list.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/customer/customer-list/customer-list.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module4/ss1_tong_quan_springmvc/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss1_tong_quan_springmvc/thuc_hanh/customer-management" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module4/ss5_thao_tac_csdl_va_orm/thuc_hanh/quan_ly_danh_sach_khach_hang/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss5_thao_tac_csdl_va_orm/thuc_hanh/quan_ly_danh_sach_khach_hang/customer-management" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module4/ss9_aop_exception_handling/thuc_hanh/aspect_log_quan_ly_khach_hang/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss9_aop_exception_handling/thuc_hanh/aspect_log_quan_ly_khach_hang/customer-management" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/header/header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/casestudy_module5/templates/contract/addContract.html" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy_module5/templates/contract/addContract.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/casestudy_module5/templates/contract/listContract.html" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy_module5/templates/contract/listContract.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/casestudy_module5/templates/customer/listCustomer.html" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy_module5/templates/customer/listCustomer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/facility/list-facility/list-facility.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/facility/facility-list/facility-list.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/facility/list-facility/list-facility.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/facility/facility-list/facility-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/facility/list-facility/list-facility.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/facility/facility-list/facility-list.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/facility/list-facility/list-facility.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/facility/facility-list/facility-list.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +109,7 @@
       <workItem from="1658308789439" duration="745000" />
       <workItem from="1658328668317" duration="625000" />
       <workItem from="1658330830048" duration="1288000" />
-      <workItem from="1658376070104" duration="4422000" />
+      <workItem from="1658376070104" duration="4796000" />
     </task>
     <servers />
   </component>
