@@ -102,12 +102,11 @@ section {
 }
 
 .btn:active, .btn:focus {
+
   outline: none;
 }
 .btn.btn-primary {
-  background-color: var(--color-black);
   color: var(--color-white);
-  border-color: var(--color-black);
 }
 
 .btn-search{
@@ -194,7 +193,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Desktop Navigation 
+# Desktop Navigation
 --------------------------------------------------------------*/
 @media (min-width: 1280px) {
   .navbar {

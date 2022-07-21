@@ -20,15 +20,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4494bfc9-81ff-4a89-8e09-81433b71e705" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ss4_angular_component_template/angular-hackernews-app/src/app/article/article.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss4_angular_component_template/angular-hackernews-app/src/app/article/article.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss4_angular_component_template/angular-hackernews-app/src/app/article/article.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss4_angular_component_template/angular-hackernews-app/src/app/article/article.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss4_angular_component_template/angular-hackernews-app/src/app/article/article.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/facility/facility-add/facility-add.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/facility/facility-add/facility-add.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/facility/facility-add/facility-add.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/facility/facility-add/facility-add.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/facility/facility-edit/facility-edit.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/facility/facility-edit/facility-edit.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/facility/facility-edit/facility-edit.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/facility/facility-edit/facility-edit.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/facility/list-facility/list-facility.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/facility/list-facility/list-facility.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/facility/list-facility/list-facility.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/facility/list-facility/list-facility.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/home/home.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/home/home.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/home/home.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/home/home.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module4/ss1_tong_quan_springmvc/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss1_tong_quan_springmvc/thuc_hanh/customer-management" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module4/ss5_thao_tac_csdl_va_orm/thuc_hanh/quan_ly_danh_sach_khach_hang/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss5_thao_tac_csdl_va_orm/thuc_hanh/quan_ly_danh_sach_khach_hang/customer-management" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module4/ss9_aop_exception_handling/thuc_hanh/aspect_log_quan_ly_khach_hang/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss9_aop_exception_handling/thuc_hanh/aspect_log_quan_ly_khach_hang/customer-management" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/header/header.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/assets/myCustom.css" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/assets/myCustom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy_module5/templates/facility/listFacility.html" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy_module5/templates/facility/listFacility.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy_module5/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy_module5/templates/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +82,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ss4_angular_component_template/angular-hackernews-app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="D:\C022G22-NguyenQuocHung\module5\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -105,6 +126,10 @@
       <workItem from="1658224606597" duration="1614000" />
       <workItem from="1658250842406" duration="21000" />
       <workItem from="1658258188615" duration="839000" />
+      <workItem from="1658304135340" duration="2880000" />
+      <workItem from="1658308789439" duration="745000" />
+      <workItem from="1658328668317" duration="625000" />
+      <workItem from="1658330830048" duration="1288000" />
     </task>
     <servers />
   </component>
@@ -127,10 +152,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="687" y="199" key="FileChooserDialogImpl" timestamp="1658259033207">
+    <state x="687" y="199" key="FileChooserDialogImpl" timestamp="1658328694656">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="687" y="199" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1658259033207" />
+    <state x="687" y="199" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1658328694656" />
     <state x="461" y="155" key="SettingsEditor" timestamp="1657879320975">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
