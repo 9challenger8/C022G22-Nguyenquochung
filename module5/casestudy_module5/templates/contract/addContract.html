@@ -24,20 +24,20 @@
                 <div class="row">
                     <div class="col-12">
 
-                        <form class="customMyForm" action="/contract/create" method="POST" th:object="${contract}">
+                        <form class="customMyForm" action="/contract/create" method="POST">
                             <fieldset>
                                 <legend>Add Contract:</legend>
-                                <input type="hidden" th:field="*{id}"/>
+                                <input type="hidden" />
 
                                 <label for="startDate">Start date:</label><br>
-                                <input th:field="*{startDate}" id="startDate" name="startDate" type="date"
+                                <input  id="startDate" name="startDate" type="date"
                                        class="feedback-input" placeholder="Start date"/>
 
                                 <label for="endDate">End date:</label><br>
-                                <input th:field="*{endDate}" id="endDate" name="endDate" type="date"
+                                <input id="endDate" name="endDate" type="date"
                                        class="feedback-input" placeholder="End date"/>
 
-                                <input th:field="*{deposit}" name="deposit" type="text" class="feedback-input"
+                                <input name="deposit" type="text" class="feedback-input"
                                        placeholder="Deposit"/>
 
                                 <label for="totalMoney">Total money:</label><br>
@@ -51,25 +51,19 @@
                                 <!--                                <input  id="costAttachFacilityTotalMoney" th:value="${contract.facility.cost}"  type="hidden" class="feedback-input"/>-->
 
 
-                                <select name="customer" th:field="*{customer}">
+                                <select name="customer" >
                                     <option value="" selected="selected">Please choose customer.</option>
-                                    <option th:each="temp:${customers}" th:value="${temp.id}"
-                                            th:text="${temp.name}">
-                                    </option>
+
                                 </select>
 
-                                <select name="facility" th:field="*{facility}">
+                                <select name="facility" >
                                     <option value="" selected="selected">Please choose facility.</option>
-                                    <option th:each="temp:${facilities}" th:value="${temp.id}"
-                                            th:text="${temp.name}">
-                                    </option>
+
                                 </select>
 
-                                <select name="employee" th:field="*{employee}">
+                                <select name="employee">
                                     <option value="" selected="selected">Please choose employee.</option>
-                                    <option th:each="temp:${employees}" th:value="${temp.id}"
-                                            th:text="${temp.name}">
-                                    </option>
+
                                 </select>
 
 
@@ -101,9 +95,6 @@
                                                     <option value="" selected="selected">Please choose attach
                                                         facility.
                                                     </option>
-                                                    <option th:each="temp:${attachFacilities}" th:value="${temp.id}"
-                                                            th:text="${temp.name}">
-                                                    </option>
                                                 </select>
 
 <!--                                                    <select id="attachFacilityCost" >-->
@@ -120,8 +111,8 @@
                                             </div>
 
                                             <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary"
-                                                        onclick="getValueToHidden()" data-bs-dismiss="modal">Add
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                    Add
                                                 </button>
 
                                             </div>

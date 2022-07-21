@@ -1,0 +1,44 @@
+
+<main id="main">
+  <div class="container">
+    <section id="hero-slider" class="hero-slider">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+
+            <form action="/customer/create"  method="POST" >
+              <fieldset>
+                <legend>Edit Customer:</legend>
+                <input type="hidden" />
+                <input name="name" type="text" class="feedback-input" placeholder="Name" />
+
+                <label for="dateOfBirth" >Date of birth:</label><br>
+                <input id="dateOfBirth"  name="dateOfBirth" type="date" class="feedback-input" placeholder="Date of Birth" />
+
+
+                <select  name="gender">
+                  <option selected  value=""  >Please choose gender.</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                  <option value="Other">Other</option>
+                </select>
+
+                <input  name="idCard" type="text" class="feedback-input" placeholder="Id card" />
+
+                <input name="phoneNumber" type="text" class="feedback-input" placeholder="Phone number" />
+                <input  name="email" type="text" class="feedback-input" placeholder="Email" />
+
+                <select name="customerType" >
+                  <option value=""  selected="selected" >Please choose customer type.</option>
+                </select>
+                <textarea  name="address" class="feedback-input" placeholder="Address" ></textarea>
+                <input type="submit" value="SUBMIT"/>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+

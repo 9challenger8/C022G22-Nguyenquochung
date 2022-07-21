@@ -9,6 +9,11 @@ import { ListFacilityComponent } from './facility/list-facility/list-facility.co
 import { FacilityEditComponent } from './facility/facility-edit/facility-edit.component';
 import { FacilityAddComponent } from './facility/facility-add/facility-add.component';
 import { HomeComponent } from './home/home.component';
+import { CustomerListComponent } from './customer/customer-list/customer-list.component';
+import { CustomerAddComponent } from './customer/customer-add/customer-add.component';
+import { CustomerEditComponent } from './customer/customer-edit/customer-edit.component';
+import { ContractListComponent } from './contract/contract-list/contract-list.component';
+import { ContractAddComponent } from './contract/contract-add/contract-add.component';
 
 
 @NgModule({
@@ -20,6 +25,11 @@ import { HomeComponent } from './home/home.component';
     FacilityEditComponent,
     FacilityAddComponent,
     HomeComponent,
+    CustomerListComponent,
+    CustomerAddComponent,
+    CustomerEditComponent,
+    ContractListComponent,
+    ContractAddComponent,
   ],
   imports: [
     BrowserModule,
