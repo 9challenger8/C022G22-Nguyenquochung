@@ -1,0 +1,90 @@
+
+<h1 style="text-align: center">Register Form</h1>
+<div class="container">
+  <form [formGroup]="registerForm" (ngSubmit)="registerFormSuccess()">
+
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email </label>
+      <input type="text" class="form-control" id="exampleInputEmail1" formControlName="email">
+      <p style="color: red" *ngIf="registerForm.controls.email.hasError('required')">
+        Email can't be left blank
+      </p>
+      <p style="color: red" *ngIf="registerForm.controls.email.hasError('email')">
+        Please enter the correct format
+      </p>
+    </div>
+
+
+    <div class="mb-3">
+      <label for="exampleFormControlInput7" class="form-label" formControlName="password">Password</label>
+      <input type="text" class="form-control" id="exampleFormControlInput7" formControlName="password">
+      <p style="color: red" *ngIf="registerForm.controls.password.hasError('minlength')">
+        Password is at least 6 characters
+      </p>
+      <p style="color: red" *ngIf="registerForm.controls.password.hasError('required')">
+        Password can't be left blank
+      </p>
+    </div>
+
+
+    <div class="mb-3">
+      <label for="exampleFormControlInput2" class="form-label">Confirm password</label>
+      <input type="text" class="form-control" id="exampleFormControlInput2" formControlName="confirmPassword">
+    </div>
+
+    <div class="mb-3">
+      <select formControlName="country" class="form-select" aria-label="Default select example">
+        <option value="" selected>Open this select menu</option>
+        <option value="United of State">United of State</option>
+        <option value="Japan">Japan</option>
+        <option value="English">English</option>
+      </select>
+      <p style="color: red" *ngIf="registerForm.controls.country.hasError('required')">
+        Can't be left blank
+      </p>
+    </div>
+
+    <!--    <p style="color: red" *ngIf="registerForm.controls.confirmPassword.hasError('checkPassword')">-->
+    <!--      Confirm password is same password-->
+    <!--    </p>-->
+
+    <div class="mb-3">
+      <label for="exampleFormControlInput3" class="form-label" formControlName="age">Age</label>
+      <input type="text" class="form-control" id="exampleFormControlInput3" formControlName="age">
+      <p style="color: red" *ngIf="registerForm.controls.age.hasError('required')">
+        Age can't  be left blank
+      </p>
+      <p style="color: red" *ngIf="registerForm.controls.age.hasError('min')">
+        Con non qua
+      </p>
+    </div>
+
+    <div class="form-check">
+      <input formControlName="gender" value="Female"  class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+      <label class="form-check-label" for="flexRadioDefault1">
+       Female
+      </label>
+    </div>
+    <div class="form-check">
+      <input formControlName="gender" value="Male" class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+      <label class="form-check-label" for="flexRadioDefault2">
+        Male
+      </label>
+      <p style="color: red" *ngIf="registerForm.controls.gender.hasError('required')">
+        Gender can't  be left blank
+      </p>
+    </div>
+
+
+    <div class="mb-3">
+      <label for="exampleFormControlInput5" class="form-label">Phone</label>
+      <input formControlName="phone" type="text" class="form-control" id="exampleFormControlInput5">
+      <p style="color: red" *ngIf="registerForm.controls.phone.hasError('required')">
+        Phone can't  be left blank
+      </p>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+</div>
