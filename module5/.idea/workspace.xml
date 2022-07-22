@@ -20,51 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4494bfc9-81ff-4a89-8e09-81433b71e705" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/ASUS_PRO.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/angular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/browserslist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/e2e/protractor.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/e2e/src/app.e2e-spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/e2e/src/app.po.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/e2e/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/karma.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/src/app/app-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/src/app/app.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/src/app/app.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/src/app/app.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/src/app/app.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/src/app/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/src/app/login/login.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/src/app/login/login.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/src/app/login/login.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/src/app/login/login.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/src/app/todo/todo.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/src/assets/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/src/environments/environment.prod.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/src/environments/environment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/src/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/src/polyfills.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/src/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/src/test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/tsconfig.spec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/tslint.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss6_angular_form/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module4/ss1_tong_quan_springmvc/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss1_tong_quan_springmvc/thuc_hanh/customer-management" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module4/ss5_thao_tac_csdl_va_orm/thuc_hanh/quan_ly_danh_sach_khach_hang/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss5_thao_tac_csdl_va_orm/thuc_hanh/quan_ly_danh_sach_khach_hang/customer-management" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module4/ss9_aop_exception_handling/thuc_hanh/aspect_log_quan_ly_khach_hang/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss9_aop_exception_handling/thuc_hanh/aspect_log_quan_ly_khach_hang/customer-management" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/customer/customer-list/customer-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/customer/customer-list/customer-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/facility/facility-list/facility-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/facility/facility-list/facility-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/src/app/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/src/app/register/register.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/src/app/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/src/app/register/register.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +109,7 @@
       <workItem from="1658330830048" duration="1288000" />
       <workItem from="1658376070104" duration="7246000" />
       <workItem from="1658426469563" duration="2470000" />
-      <workItem from="1658453159048" duration="16968000" />
+      <workItem from="1658453159048" duration="18722000" />
     </task>
     <servers />
   </component>

@@ -15,21 +15,26 @@
     </div>
 
 
-    <div class="mb-3">
-      <label for="exampleFormControlInput7" class="form-label" formControlName="password">Password</label>
-      <input type="text" class="form-control" id="exampleFormControlInput7" formControlName="password">
-      <p style="color: red" *ngIf="registerForm.controls.password.hasError('minlength')">
-        Password is at least 6 characters
-      </p>
-      <p style="color: red" *ngIf="registerForm.controls.password.hasError('required')">
-        Password can't be left blank
-      </p>
-    </div>
+<!--    <div [formGroup]="formPassword">-->
+      <div class="mb-3">
+        <label for="exampleFormControlInput7" class="form-label" formControlName="password">Password</label>
+        <input type="text" class="form-control" id="exampleFormControlInput7" formControlName="password">
+        <p style="color: red" *ngIf="registerForm.controls.password.hasError('minlength')">
+          Password is at least 6 characters
+        </p>
+        <p style="color: red" *ngIf="registerForm.controls.password.hasError('required')">
+          Password can't be left blank
+        </p>
+<!--      </div>-->
 
 
-    <div class="mb-3">
-      <label for="exampleFormControlInput2" class="form-label">Confirm password</label>
-      <input type="text" class="form-control" id="exampleFormControlInput2" formControlName="confirmPassword">
+      <div class="mb-3">
+        <label for="exampleFormControlInput2" class="form-label">Confirm password</label>
+        <input type="text" class="form-control" id="exampleFormControlInput2" formControlName="confirmPassword">
+        <p style="color: red" *ngIf="registerForm.controls.confirmPassword.hasError('required')">
+          Confirm password can't be left blank
+        </p>
+      </div>
     </div>
 
     <div class="mb-3">
@@ -81,6 +86,9 @@
       <input formControlName="phone" type="text" class="form-control" id="exampleFormControlInput5">
       <p style="color: red" *ngIf="registerForm.controls.phone.hasError('required')">
         Phone can't  be left blank
+      </p>
+      <p style="color: red" *ngIf="registerForm.controls.phone.hasError('pattern')">
+        Please enter the correct format
       </p>
     </div>
 
