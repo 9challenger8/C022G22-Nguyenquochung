@@ -20,7 +20,6 @@
                 <th scope="col">Date of birth</th>
                 <th scope="col">Gender</th>
                 <th scope="col">Id card</th>
-                <th scope="col">Email</th>
                 <th scope="col">Phone number</th>
                 <th scope="col">Customer type</th>
                 <th scope="col">Address</th>
@@ -28,192 +27,38 @@
               </tr>
               </thead>
               <tbody>
-              <tr >
-                <th scope="row" ></th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+              <tr *ngFor="let temp of customers" >
+                <th scope="row"> {{temp.id}}</th>
+                <td>{{temp.name}}</td>
+                <td>{{temp.dateOfBirth}}</td>
+                <td>{{temp.gender}}</td>
+                <td>{{temp.gender}}</td>
+                <td>{{temp.cardId}}</td>
+                <td>{{temp.customerType.name}}</td>
+                <td>{{temp.address}}</td>
                 <td>
                   <!-- Button trigger modal -->
                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Delete
                   </button>
-
-                  <!-- Modal -->
-                  <div class="modal fade" id="exampleMod4al" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <!--                                                    <h5 class="modal-title" th:id="'exampleModalLabel'+ ${row.id}">Delete</h5>-->
-                          <!--                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
-                          Delete
-                        </div>
-                        <div class="modal-body">
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          <a  ><button type="button" class="btn btn-primary" >Delete</button></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-                <td><a >Edit</a></td>
-              </tr>
-
-              <tr >
-                <th scope="row" ></th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>
-                  <!-- Button trigger modal -->
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Delete
-                  </button>
-
-                  <!-- Modal -->
-                  <div class="modal fade" id="exampleMod44al" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <!--                                                    <h5 class="modal-title" th:id="'exampleModalLabel'+ ${row.id}">Delete</h5>-->
-                          <!--                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
-                          Delete
-                        </div>
-                        <div class="modal-body">
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          <a  ><button type="button" class="btn btn-primary" >Delete</button></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-                <td><a >Edit</a></td>
-              </tr>
-
-              <tr >
-                <th scope="row" ></th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>
-                  <!-- Button trigger modal -->
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Delete
-                  </button>
-
-                  <!-- Modal -->
-                  <div class="modal fade" id="example33Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <!--                                                    <h5 class="modal-title" th:id="'exampleModalLabel'+ ${row.id}">Delete</h5>-->
-                          <!--                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
-                          Delete
-                        </div>
-                        <div class="modal-body">
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          <a  ><button type="button" class="btn btn-primary" >Delete</button></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-                <td><a >Edit</a></td>
-              </tr>
-
-              <tr >
-                <th scope="row" ></th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>
-                  <!-- Button trigger modal -->
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Delete
-                  </button>
-
-                  <!-- Modal -->
-                  <div class="modal fade" id="exampleMod66al" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <!--                                                    <h5 class="modal-title" th:id="'exampleModalLabel'+ ${row.id}">Delete</h5>-->
-                          <!--                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
-                          Delete
-                        </div>
-                        <div class="modal-body">
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          <a  ><button type="button" class="btn btn-primary" >Delete</button></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-                <td><a >Edit</a></td>
-              </tr>
-
-              <tr >
-                <th scope="row" ></th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>
-                  <!-- Button trigger modal -->
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Delete
-                  </button>
-
-                  <!-- Modal -->
-                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <!--                                                    <h5 class="modal-title" th:id="'exampleModalLabel'+ ${row.id}">Delete</h5>-->
-                          <!--                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
-                          Delete
-                        </div>
-                        <div class="modal-body">
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          <a  ><button type="button" class="btn btn-primary" >Delete</button></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+<!--                  &lt;!&ndash; Modal &ndash;&gt;-->
+<!--                  <div class="modal fade" id="exampleMod4al" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">-->
+<!--                    <div class="modal-dialog">-->
+<!--                      <div class="modal-content">-->
+<!--                        <div class="modal-header">-->
+<!--                          &lt;!&ndash;                                                    <h5 class="modal-title" th:id="'exampleModalLabel'+ ${row.id}">Delete</h5>&ndash;&gt;-->
+<!--                          &lt;!&ndash;                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>&ndash;&gt;-->
+<!--                          Delete-->
+<!--                        </div>-->
+<!--                        <div class="modal-body">-->
+<!--                        </div>-->
+<!--                        <div class="modal-footer">-->
+<!--                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
+<!--                          <a  ><button type="button" class="btn btn-primary" >Delete</button></a>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>-->
                 </td>
                 <td><a >Edit</a></td>
               </tr>
