@@ -17,6 +17,7 @@ export class FacilityListComponent implements OnInit {
 
    const rentTypes : RentType[] = [{id:1,name:'Year'},{id:2,name:'Month'},{id:3,name:'Day'},{id:4,name:'Hour'}];
 
+
    this.facilities.push({id:1,name:'Room_123',area:'12',cost:'12000',numberOfPeople:'20',rentType:{id:1,name:'Year'}});
    this.facilities.push({id:2,name:'Room_1',area:'12',cost:'1000',numberOfPeople:'20',rentType:{id:1,name:'Year'}});
    this.facilities.push({id:3,name:'Room_2',area:'12',cost:'12000',numberOfPeople:'20',rentType:{id:1,name:'Year'}});
@@ -29,7 +30,4 @@ export class FacilityListComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-
-
 }

@@ -1,0 +1,8 @@
+<h2 style="text-align: center;font-weight: bolder;color: navy">Dictionary</h2>
+
+<label for="name">Search: </label>
+<input id="name" type="text" [formControl]="word">
+<button (click)="find()">Search</button>
+
+<p>Result: {{mean}}</p>
+
