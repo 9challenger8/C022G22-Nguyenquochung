@@ -14,6 +14,10 @@ import { CustomerAddComponent } from './customer/customer-add/customer-add.compo
 import { CustomerEditComponent } from './customer/customer-edit/customer-edit.component';
 import { ContractListComponent } from './contract/contract-list/contract-list.component';
 import { ContractAddComponent } from './contract/contract-add/contract-add.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
+import {NgxPaginationModule} from "ngx-pagination";
+
 
 
 @NgModule({
@@ -31,10 +35,14 @@ import { ContractAddComponent } from './contract/contract-add/contract-add.compo
     ContractListComponent,
     ContractAddComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule,
+        ReactiveFormsModule,
+        HttpClientModule,
+        NgxPaginationModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

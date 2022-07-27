@@ -98,9 +98,10 @@ legend {
     font-weight: bold;
 }
 .addNew{
+  cursor: pointer;
     font-size: 20px;
     font-weight: bold;
-    color: blue;
+    color: white;
 }
 
 

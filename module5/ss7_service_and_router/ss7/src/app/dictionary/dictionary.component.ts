@@ -17,7 +17,6 @@ export class DictionaryComponent implements OnInit {
   }
 
   find():string {
-    console.log( this.word.value+'')
     return this.mean =this.dictionaryService.findMeanWord(String(this.word.value))
   }
 }

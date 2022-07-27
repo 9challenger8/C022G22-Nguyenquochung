@@ -16,9 +16,23 @@
 }
 
 #main{
-    background-color: #e4f5e7;
+    background-color: white;
 }
 
 .btn{
   margin-left: 8px;
+}
+
+.row-custom th{
+  text-align: center;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.row-body-custom{
+  font-size: 22px;
+}
+
+.bi:hover{
+  color: #FFFFFF;
 }

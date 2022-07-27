@@ -24,7 +24,6 @@ export class DictionaryService {
     }else {
       return 'No data available.'
     }
-
   }
 
 

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Customer} from "../../model/customer/customer";
+import {CustomerService} from "../../service/customer/customer.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-customer-list',
@@ -7,22 +9,31 @@ import {Customer} from "../../model/customer/customer";
   styleUrls: ['./customer-list.component.css']
 })
 export class CustomerListComponent implements OnInit {
-  customers: Customer[] = [];
 
-  constructor() {
-    this.customers.push({id:1,name:'Jonh',dateOfBirth:'11-12-2019',gender:'Male',cardId:'123',phoneNumber:'0944',
-      customerType:{id:1,name:'Diamond'},address:'12/Putin Street'});
-    this.customers.push({id:2,name:'Alex',dateOfBirth:'11-12-2019',gender:'Female',cardId:'123',phoneNumber:'0944',
-      customerType:{id:1,name:'Diamond'},address:'12/Putin Street'});
-    this.customers.push({id:3,name:'Tom',dateOfBirth:'11-12-2019',gender:'Male',cardId:'123',phoneNumber:'0944',
-      customerType:{id:1,name:'Diamond'},address:'12/Putin Street'});
-    this.customers.push({id:4,name:'Jerry',dateOfBirth:'11-12-2019',gender:'Male',cardId:'123',phoneNumber:'0944',
-      customerType:{id:1,name:'Diamond'},address:'12/Putin Street'});
-    this.customers.push({id:5,name:'Black Girl',dateOfBirth:'11-12-2019',gender:'Female',cardId:'123',phoneNumber:'0944',
-      customerType:{id:1,name:'Diamond'},address:'12/Putin Street'});
+  customers: Customer[] = [];
+  p: number = 1;
+
+  constructor(private customerService:CustomerService,
+              private router:Router) {
   }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.getAll();
+  }
+
+  getAll() {
+    this.customerService.getAll().subscribe(data => {
+      this.customers = data;
+    });
+  }
+
+  deleteCustomer(id: number) {
+    this.customerService.deleteCustomer(id).subscribe(() => {
+      this.getAll();
+      this.router.navigate(['/customer/list']);
+    }, e => {
+      console.log(e);
+    });
   }
 
 }

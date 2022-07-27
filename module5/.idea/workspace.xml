@@ -20,57 +20,72 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4494bfc9-81ff-4a89-8e09-81433b71e705" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/angular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/browserslist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/e2e/protractor.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/e2e/src/app.e2e-spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/e2e/src/app.po.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/e2e/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/karma.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/src/app/app-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/src/app/app.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/src/app/app.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/src/app/app.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/src/app/app.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/src/app/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/src/app/model/product.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/src/app/model/song.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/src/app/model/word.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/src/app/service/date-util.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/src/app/service/date-util.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/src/app/service/product.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/src/app/service/product.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/src/app/service/song.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/src/app/service/song.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/src/app/timelines/timelines.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/src/app/timelines/timelines.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/src/app/timelines/timelines.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/src/app/timelines/timelines.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/src/assets/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/src/environments/environment.prod.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/src/environments/environment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/src/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/src/polyfills.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/src/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/src/test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/tsconfig.spec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/tslint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/data/db.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/service/customer/customer-type.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/service/customer/customer.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/browserslist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/e2e/protractor.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/e2e/src/app.e2e-spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/e2e/src/app.po.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/e2e/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/app/app-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/app/app.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/app/app.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/app/data/db.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/app/model/todo.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/app/service/todo.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/app/todo/todo.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/app/todo/todo.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/app/todo/todo.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/app/todo/todo.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/environments/environment.prod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/environments/environment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/polyfills.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/tslint.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module4/ss1_tong_quan_springmvc/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss1_tong_quan_springmvc/thuc_hanh/customer-management" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module4/ss5_thao_tac_csdl_va_orm/thuc_hanh/quan_ly_danh_sach_khach_hang/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss5_thao_tac_csdl_va_orm/thuc_hanh/quan_ly_danh_sach_khach_hang/customer-management" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module4/ss9_aop_exception_handling/thuc_hanh/aspect_log_quan_ly_khach_hang/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss9_aop_exception_handling/thuc_hanh/aspect_log_quan_ly_khach_hang/customer-management" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/contract/contract-list/contract-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/contract/contract-list/contract-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/facility/facility-list/facility-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/facility/facility-list/facility-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/contract/contract-list/contract-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/contract/contract-list/contract-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/customer/customer-add/customer-add.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/customer/customer-add/customer-add.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/customer/customer-add/customer-add.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/customer/customer-add/customer-add.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/customer/customer-edit/customer-edit.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/customer/customer-edit/customer-edit.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/customer/customer-edit/customer-edit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/customer/customer-edit/customer-edit.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/customer/customer-list/customer-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/customer/customer-list/customer-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/customer/customer-list/customer-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/customer/customer-list/customer-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/facility/facility-list/facility-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/facility/facility-list/facility-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/model/customer/customer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/model/customer/customer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/assets/form.css" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/assets/form.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/assets/myCustom.css" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/assets/myCustom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/src/app/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/src/app/register/register.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss7_service_and_router/ss7/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss7_service_and_router/ss7/src/app/dictionary/dictionary.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/src/app/dictionary/dictionary.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss7_service_and_router/ss7/src/app/service/dictionary.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/src/app/service/dictionary.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,25 +120,26 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last.edited.regexp" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ss8_connect_backend/ss8-angular/src/service" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="D:\C022G22-NguyenQuocHung\module5\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-    <property name="ts.external.directory.path" value="D:\C022G22-NguyenQuocHung\module5\casestudy-module5-angular\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="D:\C022G22-NguyenQuocHung\module5\ss2_type_script\thuc_hanh\xay_dung_cac_doi_tuong_hinh_hoc\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\C022G22-NguyenQuocHung\module5\ss8_connect_backend\ss8-angular\src\service" />
+      <recent name="D:\C022G22-NguyenQuocHung\module5\ss8_connect_backend\ss8-angular\src\app" />
+      <recent name="D:\C022G22-NguyenQuocHung\module5\ss8_connect_backend\ss8\src\app" />
       <recent name="D:\C022G22-NguyenQuocHung\module5\casestudy-module5-angular\src" />
       <recent name="D:\C022G22-NguyenQuocHung\module5\casestudy_module5\templates" />
-      <recent name="D:\C022G22-NguyenQuocHung\module5\casestudy_module5\static" />
-      <recent name="D:\C022G22-NguyenQuocHung\module5\casestudy_module5" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\C022G22-NguyenQuocHung\module5\casestudy-module5-angular\src\app\model\facility" />
-      <recent name="D:\C022G22-NguyenQuocHung\module5\ss6_angular_form\bai-tap-ss6\src\app\todo" />
-      <recent name="D:\C022G22-NguyenQuocHung\module5\ss6_angular_form\bai-tap-ss6\src\app" />
-      <recent name="D:\C022G22-NguyenQuocHung\module5\casestudy-module5-angular\src\app\customer" />
-      <recent name="D:\C022G22-NguyenQuocHung\module5\ss4_angular_component_template\angular-hackernews-app\src\app\article" />
+      <recent name="D:\C022G22-NguyenQuocHung\module5\casestudy-module5-angular\src\app\service\customer" />
+      <recent name="D:\C022G22-NguyenQuocHung\module5\casestudy-module5-angular\src\app\data" />
+      <recent name="D:\C022G22-NguyenQuocHung\module5\ss8_connect_backend\ss8-exercise\src\app" />
+      <recent name="D:\C022G22-NguyenQuocHung\module5\ss8_connect_backend\ss8-angular\src\app\service" />
+      <recent name="D:\C022G22-NguyenQuocHung\module5\ss8_connect_backend\ss8-angular\src\app" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -160,7 +176,12 @@
       <workItem from="1658639952725" duration="13308000" />
       <workItem from="1658670979622" duration="724000" />
       <workItem from="1658684828603" duration="429000" />
-      <workItem from="1658711781511" duration="14664000" />
+      <workItem from="1658711781511" duration="16603000" />
+      <workItem from="1658766411504" duration="10364000" />
+      <workItem from="1658805609465" duration="16673000" />
+      <workItem from="1658853333610" duration="23000" />
+      <workItem from="1658875281557" duration="6708000" />
+      <workItem from="1658884991364" duration="19733000" />
     </task>
     <servers />
   </component>
@@ -183,13 +204,17 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="582" y="182" key="#Inspections" timestamp="1658876613303">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="582" y="182" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1658876613303" />
     <state x="687" y="199" key="FileChooserDialogImpl" timestamp="1658328694656">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="687" y="199" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1658328694656" />
-    <state x="461" y="155" key="SettingsEditor" timestamp="1657879320975">
+    <state x="461" y="155" key="SettingsEditor" timestamp="1658909401389">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="155" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1657879320975" />
+    <state x="461" y="155" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1658909401389" />
   </component>
 </project>

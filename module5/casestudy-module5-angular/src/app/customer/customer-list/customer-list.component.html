@@ -1,20 +1,28 @@
 <main id="main">
-  <div  class="container-fluid">
-    <section id="hero-slider" class="hero-slider">
+  <div  class="container-fluid" style="padding: 0">
+    <section id="hero-slider" class="hero-slider" style="padding:0 0 40px 0">
+
+      <div style="padding: 0 12px 0 12px">
+        <div style="width: 100%;margin:7px 0 40px 0 ;height: 180px;background-color: #53E0BE">
+          <h2
+            style="font-size: 80px;margin: 0 ;padding-top: 15px ;color: #142E5E;text-align: center;font-family:Satisfy,sans-serif;font-weight:700;font-style:normal">
+            Customers
+          </h2>
+          <div style="display: flex;justify-content: center">
+            <a routerLink="/customer/add" class="addNew">
+              <i style="font-size: 50px;color: #142E5E"  class="bi bi-person-plus"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h1>List Customer:</h1>
-            <p>
-              <a class="addNew" >
-                Add new customer
-              </a>
-            </p>
 
-
-            <table class="table ">
+            <table class="table table-responsive-lg  table-striped table-bordered ">
               <thead>
-              <tr>
+              <tr class="row-custom" style="background-color: #5DFC9A">
                 <th scope="col">No.</th>
                 <th scope="col">Name</th>
                 <th scope="col">Date of birth</th>
@@ -22,27 +30,33 @@
                 <th scope="col">Id card</th>
                 <th scope="col">Phone number</th>
                 <th scope="col">Customer type</th>
-                <th scope="col">Address</th>
-                <th scope="col" colspan="2">Option</th>
+                <th scope="col" >Address</th>
+                <th scope="col" colspan="2" style="text-align: center">Option</th>
               </tr>
               </thead>
               <tbody>
-              <tr *ngFor="let temp of customers" >
-                <th scope="row"> {{temp.id}}</th>
+              <tr class="row-body-custom" *ngFor="let temp of customers | paginate:{itemsPerPage: 2, currentPage: p};index as i" >
+                <th scope="row"> {{i+1}}</th>
                 <td>{{temp.name}}</td>
-                <td>{{temp.dateOfBirth}}</td>
-                <td>{{temp.gender}}</td>
+                <td>{{temp.dateOfBirth | date:"dd-MM-yyyy"}}</td>
                 <td>{{temp.gender}}</td>
                 <td>{{temp.cardId}}</td>
-                <td>{{temp.customerType.name}}</td>
+                <td>{{temp.phoneNumber}}</td>
+                <td *ngIf="temp.customerType.id==1">Diamond</td>
+                <td *ngIf="temp.customerType.id==2">Platinum</td>
+                <td *ngIf="temp.customerType.id==3">Gold</td>
+                <td *ngIf="temp.customerType.id==4">Silver</td>
+                <td *ngIf="temp.customerType.id==5">Diamond</td>
                 <td>{{temp.address}}</td>
                 <td>
                   <!-- Button trigger modal -->
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Delete
+                  <button (click)="deleteCustomer(temp.id)" type="button" class="btn " >
+                     <i style="background-color: white;color: red;font-size: 22px;padding: 0" class="bi bi-trash-fill"></i>
                   </button>
-<!--                  &lt;!&ndash; Modal &ndash;&gt;-->
-<!--                  <div class="modal fade" id="exampleMod4al" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">-->
+
+<!--                  data-bs-toggle="modal" data-bs-target="#exampleModal"-->
+                  <!-- Modal -->
+<!--                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">-->
 <!--                    <div class="modal-dialog">-->
 <!--                      <div class="modal-content">-->
 <!--                        <div class="modal-header">-->
@@ -54,16 +68,26 @@
 <!--                        </div>-->
 <!--                        <div class="modal-footer">-->
 <!--                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
-<!--                          <a  ><button type="button" class="btn btn-primary" >Delete</button></a>-->
+<!--                          <a><button (click)="deleteCustomer(temp.id)" type="button" class="btn btn-primary" >Delete</button></a>-->
 <!--                        </div>-->
 <!--                      </div>-->
 <!--                    </div>-->
 <!--                  </div>-->
-                </td>
-                <td><a >Edit</a></td>
+<!--                </td>-->
+                  <td>
+                  <button [routerLink]="['/customer/edit',temp.id]" type="button" class="btn " >
+                    <i style="background-color: white;color: dodgerblue;font-size: 22px;padding: 0" class="bi bi-pencil-square"></i>
+                  </button>
+                  </td>
               </tr>
               </tbody>
             </table>
+
+<!--            Pagination-->
+            <div class="container">
+              <pagination-controls (pageChange)="p = $event" class="d-flex flex-row-reverse"></pagination-controls>
+            </div>
+
           </div>
         </div>
 

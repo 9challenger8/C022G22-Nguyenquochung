@@ -1,7 +1,7 @@
 import {CustomerType} from "./customerType";
 
 export interface Customer {
-  id:number;
+  id?:number;
   name:String;
   dateOfBirth?:String;
   gender?:String;

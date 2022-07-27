@@ -6,32 +6,68 @@
         <div class="row">
           <div class="col-12">
 
-            <form action="/customer/create"  method="POST" >
+            <form [formGroup]="customerEdit"  (ngSubmit)="updateCustomer(id)" *ngIf="customerEdit">
               <fieldset>
                 <legend>Edit Customer:</legend>
-                <input type="hidden" />
-                <input name="name" type="text" class="feedback-input" placeholder="Name" />
+
+                <!--                <input formControlName="id"   type="text" class="feedback-input" placeholder="Id" />-->
+                <!--                <p style="color: red" *ngIf="customerAdd.controls.id.hasError('required') && customerAdd.controls.id.touched">-->
+                <!--                  Id can't be left blank-->
+                <!--                </p>-->
+
+                <input formControlName="name" name="name" type="text" class="feedback-input" placeholder="Name" />
+                <p style="color: red" *ngIf="customerEdit.controls.name.hasError('required') && customerEdit.controls.name.touched">
+                  Name can't be left blank.
+                </p>
+                <p style="color: red" *ngIf="customerEdit.controls.name.hasError('pattern') && customerEdit.controls.name.touched">
+                  Valid format.
+                </p>
 
                 <label for="dateOfBirth" >Date of birth:</label><br>
-                <input id="dateOfBirth"  name="dateOfBirth" type="date" class="feedback-input" placeholder="Date of Birth" />
+                <input formControlName="dateOfBirth" id="dateOfBirth"  name="dateOfBirth" type="date" class="feedback-input"
+                       placeholder="Date of Birth" />
+                <p style="color: red" *ngIf="customerEdit.controls.dateOfBirth.hasError('required') && customerEdit.controls.dateOfBirth.touched">
+                  Date of birth can't be left blank.
+                </p>
 
-
-                <select  name="gender">
-                  <option selected  value=""  >Please choose gender.</option>
+                <select formControlName="gender"  name="gender">
+                  <option selected value="" >Please choose gender.</option>
                   <option value="Male">Male</option>
                   <option value="Female">Female</option>
                   <option value="Other">Other</option>
                 </select>
+                <p style="color: red" *ngIf="customerEdit.controls.gender.hasError('required') && customerEdit.controls.gender.touched">
+                  Gender can't be left blank.
+                </p>
 
-                <input  name="idCard" type="text" class="feedback-input" placeholder="Id card" />
+                <input formControlName="cardId"  name="idCard" type="text" class="feedback-input" placeholder="Id card" />
+                <p style="color: red" *ngIf="customerEdit.controls.cardId.hasError('required') && customerEdit.controls.cardId.touched">
+                  Card id can't be left blank.
+                </p>
+                <p style="color: red" *ngIf="customerEdit.controls.cardId.hasError('pattern') && customerEdit.controls.cardId.touched">
+                  Valid format.
+                </p>
 
-                <input name="phoneNumber" type="text" class="feedback-input" placeholder="Phone number" />
-                <input  name="email" type="text" class="feedback-input" placeholder="Email" />
+                <input formControlName="phoneNumber" name="phoneNumber" type="text" class="feedback-input" placeholder="Phone number" />
+                <p style="color: red" *ngIf="customerEdit.controls.phoneNumber.hasError('required') && customerEdit.controls.phoneNumber.touched">
+                  Phone number can't be left blank.
+                </p>
+                <p style="color: red" *ngIf="customerEdit.controls.phoneNumber.hasError('pattern') && customerEdit.controls.phoneNumber.touched">
+                  Valid format.
+                </p>
 
-                <select name="customerType" >
-                  <option value=""  selected="selected" >Please choose customer type.</option>
+                <select formControlName="customerType" name="customerType" >
+                  <option value="null" disabled  selected="selected" >Please choose customer type.</option>
+                  <option *ngFor="let customerType of customerTypes" [value]="customerType.id">{{customerType.name}}</option>
                 </select>
-                <textarea  name="address" class="feedback-input" placeholder="Address" ></textarea>
+                <p style="color: red" *ngIf="customerEdit.controls.customerType.hasError('required') && customerEdit.controls.customerType.touched">
+                  Customer type id can't be left blank.
+                </p>
+
+                <textarea formControlName="address"  name="address" class="feedback-input" placeholder="Address" ></textarea>
+                <p style="color: red" *ngIf="customerEdit.controls.address.hasError('required') && customerEdit.controls.address.touched">
+                  Address can't be left blank.
+                </p>
                 <input type="submit" value="SUBMIT"/>
               </fieldset>
             </form>
