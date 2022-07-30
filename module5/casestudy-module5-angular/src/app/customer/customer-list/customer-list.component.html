@@ -1,5 +1,5 @@
 <main id="main">
-  <div  class="container-fluid" style="padding: 0">
+  <div class="container-fluid" style="padding: 0">
     <section id="hero-slider" class="hero-slider" style="padding:0 0 40px 0">
 
       <div style="padding: 0 12px 0 12px">
@@ -8,10 +8,23 @@
             style="font-size: 80px;margin: 0 ;padding-top: 15px ;color: #142E5E;text-align: center;font-family:Satisfy,sans-serif;font-weight:700;font-style:normal">
             Customers
           </h2>
-          <div style="display: flex;justify-content: center">
-            <a routerLink="/customer/add" class="addNew">
-              <i style="font-size: 50px;color: #142E5E"  class="bi bi-person-plus"></i>
+
+          <div style="display: flex;justify-content: center;height: 60px">
+
+            <a routerLink="/customer/add">
+              <i style="font-size: 50px;color: #142E5E" class="bi bi-person-plus"></i>
             </a>
+            <!--              <input style="width: 200px" (ngModelChange)="customerFilerControl.next($event)" [(ngModel)]="customerFilter" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">-->
+            <input [(ngModel)]="searchText" style="width: 200px;height: 50px" class="form-control me-2" type="search"
+                   placeholder="Search" aria-label="Search">
+            <input [formControl]="nameSearch" style="width: 200px;height: 50px" class="form-control me-2"
+                   type="search" placeholder="Name" aria-label="Search">
+            <input [formControl]="idCardSearch" style="width: 200px;height: 50px" class="form-control me-2"
+                   type="search" placeholder="Id card" aria-label="Search">
+
+            <button (click)="searchCustomerByNameAndIdCard()" style="height: 50px">Search</button>
+
+
           </div>
         </div>
       </div>
@@ -20,23 +33,32 @@
         <div class="row">
           <div class="col-12">
 
-            <table class="table table-responsive-lg  table-striped table-bordered ">
+            <table class="table table-responsive-lg  table-striped table-bordered "
+                   *ngIf="(customers | filter: searchText).length > 0; else noResults">
               <thead>
               <tr class="row-custom" style="background-color: #5DFC9A">
                 <th scope="col">No.</th>
-                <th scope="col">Name</th>
+                <th scope="col">Name
+                  <i style="cursor: pointer" (click)="sortByName('up')" class="bi bi-arrow-up">
+
+                  </i>
+                  <i style="cursor: pointer" (click)="sortByName('down')" class="bi bi-arrow-down">
+
+                  </i>
+                </th>
                 <th scope="col">Date of birth</th>
                 <th scope="col">Gender</th>
                 <th scope="col">Id card</th>
                 <th scope="col">Phone number</th>
                 <th scope="col">Customer type</th>
-                <th scope="col" >Address</th>
+                <th scope="col">Address</th>
                 <th scope="col" colspan="2" style="text-align: center">Option</th>
               </tr>
               </thead>
               <tbody>
-              <tr class="row-body-custom" *ngFor="let temp of customers | paginate:{itemsPerPage: 2, currentPage: p};index as i" >
-                <th scope="row"> {{i+1}}</th>
+              <tr class="row-body-custom"
+                  *ngFor="let temp of customers| filter : searchText | paginate:{itemsPerPage: 8, currentPage: p};index as i">
+                <th scope="row"> {{i + 1}}</th>
                 <td>{{temp.name}}</td>
                 <td>{{temp.dateOfBirth | date:"dd-MM-yyyy"}}</td>
                 <td>{{temp.gender}}</td>
@@ -50,48 +72,80 @@
                 <td>{{temp.address}}</td>
                 <td>
                   <!-- Button trigger modal -->
-                  <button (click)="deleteCustomer(temp.id)" type="button" class="btn " >
-                     <i style="background-color: white;color: red;font-size: 22px;padding: 0" class="bi bi-trash-fill"></i>
+                  <button (click)="getDataForModal(temp.id,temp.name)" type="button" class="btn" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal">
+                    <i style="background-color: white;color: red;font-size: 22px;padding: 0"
+                       class="bi bi-trash-fill"></i>
                   </button>
 
-<!--                  data-bs-toggle="modal" data-bs-target="#exampleModal"-->
-                  <!-- Modal -->
-<!--                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">-->
-<!--                    <div class="modal-dialog">-->
-<!--                      <div class="modal-content">-->
-<!--                        <div class="modal-header">-->
-<!--                          &lt;!&ndash;                                                    <h5 class="modal-title" th:id="'exampleModalLabel'+ ${row.id}">Delete</h5>&ndash;&gt;-->
-<!--                          &lt;!&ndash;                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>&ndash;&gt;-->
-<!--                          Delete-->
-<!--                        </div>-->
-<!--                        <div class="modal-body">-->
-<!--                        </div>-->
-<!--                        <div class="modal-footer">-->
-<!--                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
-<!--                          <a><button (click)="deleteCustomer(temp.id)" type="button" class="btn btn-primary" >Delete</button></a>-->
-<!--                        </div>-->
-<!--                      </div>-->
-<!--                    </div>-->
-<!--                  </div>-->
-<!--                </td>-->
-                  <td>
-                  <button [routerLink]="['/customer/edit',temp.id]" type="button" class="btn " >
-                    <i style="background-color: white;color: dodgerblue;font-size: 22px;padding: 0" class="bi bi-pencil-square"></i>
+
+                  <!--                     Modal-->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                       aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <!--                                                    <h5 class="modal-title" th:id="'exampleModalLabel'+ ${row.id}">Delete</h5>-->
+                          <!--                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+                          Delete
+                        </div>
+                        <div class="modal-body">
+                          <p>Do you want delete customer name: {{nameModal}} and id: {{idModal}} </p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <a>
+                            <button (click)="deleteCustomer()" type="button" data-bs-dismiss="modal" class="btn btn-primary">Delete
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <button [routerLink]="['/customer/edit',temp.id]" type="button" class="btn ">
+                    <i style="background-color: white;color: dodgerblue;font-size: 22px;padding: 0"
+                       class="bi bi-pencil-square"></i>
                   </button>
-                  </td>
+                </td>
               </tr>
               </tbody>
             </table>
 
-<!--            Pagination-->
+            <ng-template #noResults>
+              <table class="table table-responsive-lg  table-striped table-bordered ">
+                <thead>
+                <tr class="row-custom" style="background-color: #5DFC9A">
+                  <th scope="col">No.</th>
+                  <th scope="col">Name
+                    <i style="cursor: pointer" (click)="sortByName('up')" class="bi bi-arrow-up">
+                    </i>
+                    <i style="cursor: pointer" (click)="sortByName('down')" class="bi bi-arrow-down">
+                    </i>
+                  </th>
+                  <th scope="col">Date of birth</th>
+                  <th scope="col">Gender</th>
+                  <th scope="col">Id card</th>
+                  <th scope="col">Phone number</th>
+                  <th scope="col">Customer type</th>
+                  <th scope="col">Address</th>
+                  <th scope="col" colspan="2" style="text-align: center">Option</th>
+                </tr>
+                </thead>
+                <tbody>
+                <h3 style="color:black"> No results found.</h3>
+                </tbody>
+              </table>
+            </ng-template>
+
+            <!--            Pagination-->
             <div class="container">
               <pagination-controls (pageChange)="p = $event" class="d-flex flex-row-reverse"></pagination-controls>
             </div>
 
           </div>
         </div>
-
-
       </div>
     </section>
   </div>

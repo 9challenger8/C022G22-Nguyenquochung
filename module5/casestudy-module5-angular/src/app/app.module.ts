@@ -17,6 +17,8 @@ import { ContractAddComponent } from './contract/contract-add/contract-add.compo
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import {NgxPaginationModule} from "ngx-pagination";
+import {FilterPipe} from "./pipe/filter.pipe";
+
 
 
 
@@ -34,6 +36,8 @@ import {NgxPaginationModule} from "ngx-pagination";
     CustomerEditComponent,
     ContractListComponent,
     ContractAddComponent,
+    FilterPipe
+
   ],
     imports: [
         BrowserModule,

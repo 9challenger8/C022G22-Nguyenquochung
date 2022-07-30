@@ -1,16 +1,108 @@
 {
   "customers": [
     {
-      "name": "Phuong Go Ha",
-      "dateOfBirth": "2022-07-17",
+      "name": "The Anh",
+      "dateOfBirth": "2022-07-07",
       "gender": "Male",
       "cardId": "222222222",
-      "phoneNumber": "0908888882",
+      "phoneNumber": "0902222222",
       "customerType": {
-        "id": 5
+        "id": 1,
+        "name": "Diamond"
       },
-      "address": "67 Tiger Street",
-      "id": 13
+      "address": "eqe",
+      "id": 14
+    },
+    {
+      "name": "The Anh",
+      "dateOfBirth": "2022-07-07",
+      "gender": "Male",
+      "cardId": "222222222",
+      "phoneNumber": "0902222222",
+      "customerType": {
+        "id": 1,
+        "name": "Diamond"
+      },
+      "address": "eqe",
+      "id": 14
+    },
+    {
+      "name": "The Anh",
+      "dateOfBirth": "2022-07-07",
+      "gender": "Male",
+      "cardId": "222222222",
+      "phoneNumber": "0902222222",
+      "customerType": {
+        "id": 1,
+        "name": "Diamond"
+      },
+      "address": "eqe",
+      "id": 14
+    },
+    {
+      "name": "The Anh",
+      "dateOfBirth": "2022-07-07",
+      "gender": "Male",
+      "cardId": "222222222",
+      "phoneNumber": "0902222222",
+      "customerType": {
+        "id": 1,
+        "name": "Diamond"
+      },
+      "address": "eqe",
+      "id": 14
+    },
+    {
+      "name": "The Anh",
+      "dateOfBirth": "2022-07-07",
+      "gender": "Male",
+      "cardId": "222222222",
+      "phoneNumber": "0902222222",
+      "customerType": {
+        "id": 1,
+        "name": "Diamond"
+      },
+      "address": "eqe",
+      "id": 14
+    },
+    {
+      "name": "Hu Hk",
+      "dateOfBirth": "2022-07-30",
+      "gender": "Female",
+      "cardId": "222222222",
+      "phoneNumber": "0902222222",
+      "customerType": {
+        "id": 1,
+        "name": "Diamond"
+      },
+      "address": "a",
+      "id": 15
+    },
+    {
+      "name": "Hu Ko",
+      "dateOfBirth": "2022-07-24",
+      "gender": "Female",
+      "cardId": "222222222",
+      "phoneNumber": "0902222222",
+      "customerType": {
+        "id": 5,
+        "name": "Member"
+      },
+      "address": "a",
+      "id": 16
+    },
+    {
+      "name": "Ko Kp",
+      "dateOfBirth": "2022-07-02",
+      "gender": "Male",
+      "cardId": "222222222",
+      "phoneNumber": "0902222222",
+      "customerType": {
+        "id": 2,
+        "name": "Platinum"
+      },
+      "address": "k",
+      "id": 17
     }
   ],
   "customerTypes": [

@@ -12,6 +12,7 @@ import {ActivatedRoute, ParamMap, Router} from "@angular/router";
 })
 export class CustomerEditComponent implements OnInit {
   customerTypes: CustomerType[] = [];
+
   id:number;
 
   customerEdit: FormGroup;

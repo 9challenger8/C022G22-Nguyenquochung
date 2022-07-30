@@ -32,4 +32,8 @@ export class CustomerService {
     return this.http.delete<Customer>(this.URL_CUSTOMER+ '/' + id);
   }
 
+  searchCustomerByNameCustomerAndIdCard(name:string ,cardId:string):Observable<Customer[]>{
+    return this.http.get<Customer[]>(this.URL_CUSTOMER+'?name_like='+name+'&cardId_like='+cardId);
+  }
+
 }

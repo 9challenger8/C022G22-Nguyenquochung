@@ -20,72 +20,363 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4494bfc9-81ff-4a89-8e09-81433b71e705" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/data/db.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/service/customer/customer-type.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/service/customer/customer.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/angular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/browserslist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/e2e/protractor.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/e2e/src/app.e2e-spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/e2e/src/app.po.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/e2e/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/karma.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/app/app-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/app/app.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/app/app.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/app/app.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/app/app.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/app/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/app/data/db.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/app/model/todo.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/app/service/todo.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/app/todo/todo.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/app/todo/todo.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/app/todo/todo.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/app/todo/todo.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/assets/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/environments/environment.prod.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/environments/environment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/polyfills.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/tsconfig.spec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/tslint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/browserslist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/e2e/protractor.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/e2e/src/app.e2e-spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/e2e/src/app.po.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/e2e/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/app-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/app.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/app.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/data/db.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/footer/footer.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/footer/footer.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/footer/footer.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/footer/footer.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/header/header.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/header/header.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/header/header.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/header/header.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/home/home.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/home/home.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/home/home.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/home/home.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/model/product.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/model/seriesProduct.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/product/add/add.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/product/add/add.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/product/add/add.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/product/add/add.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/product/list/list.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/product/list/list.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/product/list/list.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/product/list/list.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/service/product.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/service/series-product.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/css/variables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/form.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/img/apple-touch-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/img/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/img/person-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/img/person-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/img/person-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/img/person-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/img/person-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/img/person-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/img/person-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/img/post-landscape-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/img/post-landscape-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/img/post-landscape-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/img/post-landscape-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/img/post-landscape-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/img/post-landscape-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/img/post-landscape-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/img/post-landscape-8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/img/post-portrait-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/img/post-portrait-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/img/post-portrait-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/img/post-portrait-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/img/post-portrait-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/img/post-portrait-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/img/post-portrait-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/img/post-portrait-8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/img/post-slide-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/img/post-slide-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/img/post-slide-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/img/post-slide-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/img/post-slide-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/img/post-slide-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/img/post-sq-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/img/post-sq-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/img/post-sq-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/img/post-sq-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/img/post-sq-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/img/post-sq-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/img/post-sq-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/img/post-sq-8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/myCustom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/aos/aos.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/aos/aos.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap-icons/bootstrap-icons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap-icons/bootstrap-icons.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap-icons/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-grid.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-utilities.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/css/bootstrap.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/css/bootstrap.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/js/bootstrap.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/js/bootstrap.esm.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/js/bootstrap.esm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/glightbox/css/glightbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/glightbox/css/glightbox.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/glightbox/js/glightbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/glightbox/js/glightbox.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/php-email-form/validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/swiper/swiper-bundle.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/assets/vendor/swiper/swiper-bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/environments/environment.prod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/environments/environment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/polyfills.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/tslint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/pipe/filter.pipe.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/browserslist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/e2e/protractor.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/e2e/src/app.e2e-spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/e2e/src/app.po.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/e2e/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/app-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/app.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/app.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/data/db.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/footer/footer.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/footer/footer.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/footer/footer.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/footer/footer.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/header/header.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/header/header.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/header/header.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/header/header.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/home/home.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/home/home.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/home/home.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/home/home.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/model/product.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/model/seriesProduct.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/product/add/add.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/product/add/add.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/product/add/add.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/product/add/add.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/product/list/list.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/product/list/list.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/product/list/list.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/product/list/list.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/service/product.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/service/series-product.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/css/variables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/form.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/img/apple-touch-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/img/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/img/person-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/img/person-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/img/person-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/img/person-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/img/person-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/img/person-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/img/person-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/img/post-landscape-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/img/post-landscape-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/img/post-landscape-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/img/post-landscape-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/img/post-landscape-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/img/post-landscape-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/img/post-landscape-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/img/post-landscape-8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/img/post-portrait-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/img/post-portrait-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/img/post-portrait-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/img/post-portrait-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/img/post-portrait-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/img/post-portrait-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/img/post-portrait-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/img/post-portrait-8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/img/post-slide-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/img/post-slide-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/img/post-slide-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/img/post-slide-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/img/post-slide-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/img/post-slide-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/img/post-sq-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/img/post-sq-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/img/post-sq-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/img/post-sq-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/img/post-sq-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/img/post-sq-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/img/post-sq-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/img/post-sq-8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/myCustom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/aos/aos.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/aos/aos.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap-icons/bootstrap-icons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap-icons/bootstrap-icons.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap-icons/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-grid.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-utilities.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/css/bootstrap.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/css/bootstrap.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/js/bootstrap.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/js/bootstrap.esm.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/js/bootstrap.esm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/glightbox/css/glightbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/glightbox/css/glightbox.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/glightbox/js/glightbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/glightbox/js/glightbox.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/php-email-form/validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/swiper/swiper-bundle.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/assets/vendor/swiper/swiper-bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/environments/environment.prod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/environments/environment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/polyfills.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/tslint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/connect_spring_vs_exam_module5/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/connect_spring_vs_exam_module5/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/connect_spring_vs_exam_module5/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/connect_spring_vs_exam_module5/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/connect_spring_vs_exam_module5/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/connect_spring_vs_exam_module5/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/connect_spring_vs_exam_module5/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/connect_spring_vs_exam_module5/src/main/java/com/connect_spring_vs_exam_module5/ConnectSpringVsExamModule5Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/connect_spring_vs_exam_module5/src/main/java/com/connect_spring_vs_exam_module5/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/connect_spring_vs_exam_module5/src/main/java/com/connect_spring_vs_exam_module5/model/SeriesProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/connect_spring_vs_exam_module5/src/main/java/com/connect_spring_vs_exam_module5/repository/IProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/connect_spring_vs_exam_module5/src/main/java/com/connect_spring_vs_exam_module5/repository/ISeriesProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/connect_spring_vs_exam_module5/src/main/java/com/connect_spring_vs_exam_module5/rest/ProductRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/connect_spring_vs_exam_module5/src/main/java/com/connect_spring_vs_exam_module5/rest/SeriesProductRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/connect_spring_vs_exam_module5/src/main/java/com/connect_spring_vs_exam_module5/service/IProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/connect_spring_vs_exam_module5/src/main/java/com/connect_spring_vs_exam_module5/service/ISeriesProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/connect_spring_vs_exam_module5/src/main/java/com/connect_spring_vs_exam_module5/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/connect_spring_vs_exam_module5/src/main/java/com/connect_spring_vs_exam_module5/service/SeriesProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/connect_spring_vs_exam_module5/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module6/connect_spring_vs_exam_module5/src/test/java/com/connect_spring_vs_exam_module5/ConnectSpringVsExamModule5ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/case_study_module4/src/main/java/com/case_study_module4/service/ICustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/case_study_module4/src/main/java/com/case_study_module4/service/ICustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module4/ss10_session_and_cookie_trong_spring/thuc_hanh/them_san_pham_vao_gio_hang/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss10_session_and_cookie_trong_spring/thuc_hanh/them_san_pham_vao_gio_hang/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module4/ss1_tong_quan_springmvc/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss1_tong_quan_springmvc/thuc_hanh/customer-management" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module4/ss5_thao_tac_csdl_va_orm/thuc_hanh/quan_ly_danh_sach_khach_hang/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss5_thao_tac_csdl_va_orm/thuc_hanh/quan_ly_danh_sach_khach_hang/customer-management" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module4/ss9_aop_exception_handling/thuc_hanh/aspect_log_quan_ly_khach_hang/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss9_aop_exception_handling/thuc_hanh/aspect_log_quan_ly_khach_hang/customer-management" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/contract/contract-list/contract-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/contract/contract-list/contract-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/customer/customer-add/customer-add.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/customer/customer-add/customer-add.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/customer/customer-add/customer-add.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/customer/customer-add/customer-add.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/customer/customer-edit/customer-edit.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/customer/customer-edit/customer-edit.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/customer/customer-edit/customer-edit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/customer/customer-edit/customer-edit.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/customer/customer-list/customer-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/customer/customer-list/customer-list.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/customer/customer-list/customer-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/customer/customer-list/customer-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/facility/facility-list/facility-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/facility/facility-list/facility-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/model/customer/customer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/model/customer/customer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/data/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/data/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/service/customer/customer.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/service/customer/customer.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/assets/form.css" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/assets/form.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/assets/myCustom.css" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/assets/myCustom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/src/app/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/src/app/register/register.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss7_service_and_router/ss7/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss7_service_and_router/ss7/src/app/dictionary/dictionary.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/src/app/dictionary/dictionary.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss7_service_and_router/ss7/src/app/service/dictionary.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ss7_service_and_router/ss7/src/app/service/dictionary.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,26 +411,26 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last.edited.regexp" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ss8_connect_backend/ss8-angular/src/service" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="D:\C022G22-NguyenQuocHung\module5\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-    <property name="ts.external.directory.path" value="D:\C022G22-NguyenQuocHung\module5\ss2_type_script\thuc_hanh\xay_dung_cac_doi_tuong_hinh_hoc\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="D:\C022G22-NguyenQuocHung\module5\exam_module5\exam-module5\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\C022G22-NguyenQuocHung\module5\exam_final_module5\exam-final-module5\src\assets" />
+      <recent name="D:\C022G22-NguyenQuocHung\module5\exam-final-module5\src\assets" />
+      <recent name="D:\C022G22-NguyenQuocHung\module5\exam-final-module5\src\app" />
       <recent name="D:\C022G22-NguyenQuocHung\module5\ss8_connect_backend\ss8-angular\src\service" />
       <recent name="D:\C022G22-NguyenQuocHung\module5\ss8_connect_backend\ss8-angular\src\app" />
-      <recent name="D:\C022G22-NguyenQuocHung\module5\ss8_connect_backend\ss8\src\app" />
-      <recent name="D:\C022G22-NguyenQuocHung\module5\casestudy-module5-angular\src" />
-      <recent name="D:\C022G22-NguyenQuocHung\module5\casestudy_module5\templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\C022G22-NguyenQuocHung\module5\exam-final-module5\src" />
+      <recent name="D:\C022G22-NguyenQuocHung\module5\casestudy-module5-angular\src\app\pipe" />
       <recent name="D:\C022G22-NguyenQuocHung\module5\casestudy-module5-angular\src\app\service\customer" />
       <recent name="D:\C022G22-NguyenQuocHung\module5\casestudy-module5-angular\src\app\data" />
       <recent name="D:\C022G22-NguyenQuocHung\module5\ss8_connect_backend\ss8-exercise\src\app" />
-      <recent name="D:\C022G22-NguyenQuocHung\module5\ss8_connect_backend\ss8-angular\src\app\service" />
-      <recent name="D:\C022G22-NguyenQuocHung\module5\ss8_connect_backend\ss8-angular\src\app" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -182,6 +473,20 @@
       <workItem from="1658853333610" duration="23000" />
       <workItem from="1658875281557" duration="6708000" />
       <workItem from="1658884991364" duration="19733000" />
+      <workItem from="1658939524481" duration="6362000" />
+      <workItem from="1658971255614" duration="17708000" />
+      <workItem from="1659047694265" duration="3009000" />
+      <workItem from="1659050739749" duration="2135000" />
+      <workItem from="1659052920144" duration="33000" />
+      <workItem from="1659057617038" duration="107000" />
+      <workItem from="1659058602053" duration="1656000" />
+      <workItem from="1659065328316" duration="2839000" />
+      <workItem from="1659077710707" duration="6061000" />
+      <workItem from="1659083829620" duration="348000" />
+      <workItem from="1659084441373" duration="37000" />
+      <workItem from="1659106731516" duration="1539000" />
+      <workItem from="1659150837940" duration="2238000" />
+      <workItem from="1659154476489" duration="368000" />
     </task>
     <servers />
   </component>
@@ -208,13 +513,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="582" y="182" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1658876613303" />
-    <state x="687" y="199" key="FileChooserDialogImpl" timestamp="1658328694656">
+    <state x="688" y="303" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1659002918892">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="687" y="199" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1658328694656" />
+    <state x="688" y="303" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1659002918892" />
+    <state x="687" y="199" key="FileChooserDialogImpl" timestamp="1659154473833">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="687" y="199" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1659154473833" />
     <state x="461" y="155" key="SettingsEditor" timestamp="1658909401389">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="155" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1658909401389" />
+    <state width="643" height="498" key="SwitcherDM" timestamp="1659082505169">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="643" height="498" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1659082505169" />
+    <state x="655" y="251" key="refactoring.ChangeSignatureDialog" timestamp="1659001194856">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="655" y="251" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1659001194856" />
   </component>
 </project>

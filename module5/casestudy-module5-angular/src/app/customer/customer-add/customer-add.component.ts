@@ -20,8 +20,10 @@ export class CustomerAddComponent implements OnInit {
   constructor(private customerService: CustomerService,
               private customerTypeService: CustomerTypeService,
               private router: Router) {
+  }
+
+  getForm(){
     this.customerAdd = new FormGroup({
-      // id: new FormControl('',[Validators.required]),
       name: new FormControl('', [Validators.pattern(/^([A-Z][a-z]*\s*)*$/), Validators.required]),
       dateOfBirth: new FormControl('', [Validators.required]),
       gender: new FormControl('', [Validators.required]),
@@ -35,6 +37,7 @@ export class CustomerAddComponent implements OnInit {
 
   ngOnInit() {
     this.getAllCustomerType();
+    this.getForm()
   }
 
   submit() {

@@ -1,0 +1,63 @@
+{
+  "seriesProducts": [
+    {
+      "id": 1,
+      "product": {
+        "name": "Iphone",
+        "country": "American",
+        "cost": "1000",
+        "amount": "cai"
+      },
+      "amount": "10",
+      "startDate": "10-12-2019",
+      "produceDate": "10-12-2019",
+      "deadDate": "10-12-2019"
+    },
+    {
+      "id": 1,
+      "product": {
+        "name": "Iphone",
+        "country": "American",
+        "cost": "1000",
+        "amount": "cai"
+      },
+      "amount": "10",
+      "startDate": "10-12-2019",
+      "produceDate": "10-12-2019",
+      "deadDate": "10-12-2019"
+    },
+    {
+      "id": "LH-1234",
+      "product": {
+        "name": "Xiaomi",
+        "country": "China",
+        "cost": "500",
+        "amount": "cai"
+      },
+      "amount": "24",
+      "startDate": "2022-07-16",
+      "produceDate": "2022-07-15",
+      "deadDate": "2022-07-23"
+    }
+  ],
+  "products": [
+    {
+      "name": "Iphone",
+      "country": "American",
+      "cost": "1000",
+      "amount": "cai"
+    },
+    {
+      "name": "Samsung",
+      "country": "Korea",
+      "cost": "800",
+      "amount": "cai"
+    },
+    {
+      "name": "Xiaomi",
+      "country": "China",
+      "cost": "500",
+      "amount": "cai"
+    }
+  ]
+}
