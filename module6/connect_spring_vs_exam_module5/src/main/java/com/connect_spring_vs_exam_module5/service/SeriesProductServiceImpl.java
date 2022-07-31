@@ -8,6 +8,9 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
+
 @Service
 public class SeriesProductServiceImpl implements ISeriesProductService {
 
@@ -15,20 +18,19 @@ public class SeriesProductServiceImpl implements ISeriesProductService {
     private ISeriesProductRepository iSeriesProductRepository;
 
     @Override
-    public SeriesProduct findById(String id) {
-        return iSeriesProductRepository.getById(id);
+    public Optional<SeriesProduct> getById(String id) {
+        return iSeriesProductRepository.findById(id);
     }
 
     @Override
     public void removeById(String id) {
-        iSeriesProductRepository.deleteById(id);
+         iSeriesProductRepository.deleteById(id);
 
     }
 
     @Override
-    public void save(SeriesProduct seriesProduct) {
-        iSeriesProductRepository.save(seriesProduct);
-
+    public SeriesProduct save(SeriesProduct seriesProduct) {
+        return iSeriesProductRepository.save(seriesProduct);
     }
 
     @Override

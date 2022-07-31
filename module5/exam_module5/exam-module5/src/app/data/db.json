@@ -14,17 +14,43 @@
       "deadDate": "10-12-2019"
     },
     {
-      "id": 1,
+      "id": "LH-1234",
       "product": {
-        "name": "Iphone",
-        "country": "American",
-        "cost": "1000",
+        "name": "Xiaomi",
+        "country": "China",
+        "cost": "500",
         "amount": "cai"
       },
-      "amount": "10",
-      "startDate": "10-12-2019",
-      "produceDate": "10-12-2019",
-      "deadDate": "10-12-2019"
+      "amount": "24",
+      "startDate": "2022-07-16",
+      "produceDate": "2022-07-15",
+      "deadDate": "2022-07-23"
+    },
+    {
+      "id": "LH-1234",
+      "product": {
+        "name": "Xiaomi",
+        "country": "China",
+        "cost": "500",
+        "amount": "cai"
+      },
+      "amount": "24",
+      "startDate": "2022-07-16",
+      "produceDate": "2022-07-15",
+      "deadDate": "2022-07-23"
+    },
+    {
+      "id": "LH-1234",
+      "product": {
+        "name": "Xiaomi",
+        "country": "China",
+        "cost": "500",
+        "amount": "cai"
+      },
+      "amount": "24",
+      "startDate": "2022-07-16",
+      "produceDate": "2022-07-15",
+      "deadDate": "2022-07-23"
     },
     {
       "id": "LH-1234",

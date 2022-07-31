@@ -24,15 +24,16 @@ public class CustomerController {
     private ICustomerTypeService iCustomerTypeService;
 
     @GetMapping("/list")
-    public String displayList(@PageableDefault(value = 6) Pageable pageable,
+    public String displayList(@PageableDefault(value = 3)   Pageable pageable,
                               @RequestParam Optional<String> keyword,
                               Model model){
         String keywordVal=keyword.orElse("");
         model.addAttribute("keywordVal",keywordVal);
-        model.addAttribute("customers", iCustomerService.findAllByName("%"+keywordVal+"%" ,pageable));
-
+        model.addAttribute("customers", iCustomerService.findAllByName("%" + keywordVal+"%" ,pageable));
         return "customer/listCustomer";
     }
+
+
 
     @GetMapping("/create")
     public String createCustomer(Model model){

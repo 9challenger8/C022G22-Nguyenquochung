@@ -11,6 +11,7 @@ import {ActivatedRoute, ParamMap, Router} from "@angular/router";
   styleUrls: ['./customer-edit.component.css']
 })
 export class CustomerEditComponent implements OnInit {
+
   customerTypes: CustomerType[] = [];
 
   id:number;

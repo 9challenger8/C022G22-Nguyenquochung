@@ -20,7 +20,7 @@ public class Product {
 
     private String cost;
 
-    private String amount;
+    private String unit;
 
     @OneToMany(mappedBy = "product")
     @JsonBackReference
@@ -29,12 +29,12 @@ public class Product {
     public Product() {
     }
 
-    public Product(Integer id, String name, String producer, String cost, String amount, List<SeriesProduct> seriesProductList) {
+    public Product(Integer id, String name, String producer, String cost, String unit, List<SeriesProduct> seriesProductList) {
         this.id = id;
         this.name = name;
         this.producer = producer;
         this.cost = cost;
-        this.amount = amount;
+        this.unit = unit;
         this.seriesProductList = seriesProductList;
     }
 
@@ -70,12 +70,12 @@ public class Product {
         this.cost = cost;
     }
 
-    public String getAmount() {
-        return amount;
+    public String getUnit() {
+        return unit;
     }
 
-    public void setAmount(String amount) {
-        this.amount = amount;
+    public void setUnit(String unit) {
+        this.unit = unit;
     }
 
     public List<SeriesProduct> getSeriesProductList() {

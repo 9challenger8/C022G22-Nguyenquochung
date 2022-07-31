@@ -10,6 +10,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Repository;
 
 import javax.transaction.Transactional;
@@ -29,7 +30,7 @@ public interface ICustomerRepository extends JpaRepository<Customer, Integer> {
 
     @Query(value = "select * from customer where name like :name", nativeQuery = true,
             countQuery = "select count(*) from (select * from customer where name like :name) abc")
-    Page<Customer> findAllByName(@Param("name") String name, Pageable pageable);
+    Page<Customer> findAllByName(@Param("name") String name,Pageable pageable);
 
     @Query(value = "select * from customer",nativeQuery = true)
     List<Customer> findAll();

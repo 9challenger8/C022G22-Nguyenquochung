@@ -1,10 +1,10 @@
 import {Product} from './product';
 
 export interface SeriesProduct {
-  id: string;
+  id?: string;
   product?: Product;
   amount?: string;
   startDate?: string;
   produceDate?: string;
-  deadDate?: string;
+  expirationDate?: string;
 }

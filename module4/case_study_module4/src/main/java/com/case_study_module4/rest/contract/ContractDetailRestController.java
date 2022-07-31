@@ -39,4 +39,5 @@ public class ContractDetailRestController {
     public ResponseEntity<ContractDetail> createContractDetail(@RequestBody ContractDetail contractDetail) {
         return new ResponseEntity<>( iContractDetailService.save(contractDetail), HttpStatus.CREATED);
     }
+
 }

@@ -12,23 +12,29 @@ export class ListComponent implements OnInit {
 
   seriesProducts: SeriesProduct[] = [];
 
-  p = 1;
   idSeriesModal: string;
   nameProductModal: string;
   startDateProductModal: string;
+
+
+
+
+  indexPagination: number = 0;
+  totalPagination: number;
+  pages:Array<number>;
 
   constructor(private seriesProduct: SeriesProductService,
               private router: Router) { }
 
   ngOnInit(): void {
-    this.getAll();
+   this.getAllPagination();
   }
 
-  getAll() {
-    this.seriesProduct.getAll().subscribe(data => {
-      this.seriesProducts = data;
-    });
-  }
+  // getAll() {
+  //   this.seriesProduct.getAll().subscribe(data => {
+  //     this.seriesProducts = data;
+  //   });
+  // }
 
   getDataForModal(nameProductModal: string , idSeriesModal: string, startProductModal: string) {
     this.idSeriesModal = idSeriesModal;
@@ -36,7 +42,7 @@ export class ListComponent implements OnInit {
     this.startDateProductModal = startProductModal;
   }
 
-  deleteCustomer() {
+  deleteSeriesProduct() {
     this.seriesProduct.deleteSeriesProduct(this.idSeriesModal).subscribe(() => {
     }, e => {
       console.log(e);
@@ -45,4 +51,17 @@ export class ListComponent implements OnInit {
     });
   }
 
+  getAllPagination(){
+    this.seriesProduct.getAllPagination(this.indexPagination).subscribe(data =>{
+      console.log(data)
+      this.seriesProducts = data.content;
+      this.pages= new Array(data['totalPages']);
+    })
+  }
+
+  setPage(i: number,event:any) {
+    event.preventDefault();
+    this.indexPagination = i;
+    this.getAllPagination();
+  }
 }

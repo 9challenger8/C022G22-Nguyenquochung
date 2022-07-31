@@ -3,5 +3,5 @@ export interface Product {
   name?: string;
   producer: string;
   cost?: string;
-  amount?: string;
+  unit?: string;
 }
