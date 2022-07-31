@@ -34,6 +34,11 @@ public class SeriesProductServiceImpl implements ISeriesProductService {
     }
 
     @Override
+    public Page<SeriesProduct> findSeriesProductById(String id, Pageable pageable) {
+        return iSeriesProductRepository.findSeriesProductById(id,pageable);
+    }
+
+    @Override
     public Page<SeriesProduct> findAll(Pageable pageable) {
         return iSeriesProductRepository.findAll(pageable);
     }

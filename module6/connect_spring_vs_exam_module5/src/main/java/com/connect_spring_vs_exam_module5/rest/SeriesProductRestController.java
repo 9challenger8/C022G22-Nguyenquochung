@@ -23,12 +23,23 @@ public class SeriesProductRestController {
     private ISeriesProductService iSeriesProductService;
 
     @GetMapping("/list")
-    public ResponseEntity<Page<SeriesProduct>> getAllSeriesProductPagination(@PageableDefault(value = 3) Pageable pageable){
+    public ResponseEntity<Page<SeriesProduct>> getAllSeriesProductPagination(@PageableDefault(value = 2) Pageable pageable){
         Page<SeriesProduct> seriesProductPage=iSeriesProductService.findAll(pageable);
         if(seriesProductPage.isEmpty()){
-            return new ResponseEntity<>(seriesProductPage,HttpStatus.NO_CONTENT);
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
         return new ResponseEntity<>(seriesProductPage, HttpStatus.OK);
+    }
+
+    @GetMapping("/searchList")
+    public ResponseEntity<Page<SeriesProduct>> findSeriesProductByIdPagination(@PageableDefault(value = 3) Pageable pageable,
+                                                                               @RequestParam Optional<String> id){
+        String keywordId = id.orElse("");
+        Page<SeriesProduct> seriesProductPage=iSeriesProductService.findSeriesProductById(keywordId,pageable);
+        if(seriesProductPage.isEmpty()){
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        }
+        return new ResponseEntity<>(seriesProductPage,HttpStatus.OK);
     }
 
 

@@ -33,8 +33,6 @@ public class CustomerController {
         return "customer/listCustomer";
     }
 
-
-
     @GetMapping("/create")
     public String createCustomer(Model model){
         model.addAttribute("customerTypes",iCustomerTypeService.findAll());

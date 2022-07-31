@@ -17,6 +17,8 @@ public interface ISeriesProductService {
 
 //    Page<SeriesProduct> findAllByName(String name, Pageable pageable);
 
+    Page<SeriesProduct> findSeriesProductById(String id, Pageable pageable);
+
     Page<SeriesProduct> findAll(Pageable pageable);
 
 

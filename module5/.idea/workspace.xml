@@ -20,40 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4494bfc9-81ff-4a89-8e09-81433b71e705" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../module4/ss7_spring_data_repository/bai_tap/production_uprade/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module4/ss7_spring_data_repository/bai_tap/production_uprade/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module4/ss7_spring_data_repository/bai_tap/production_uprade/.idea/production_uprade.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module4/ss7_spring_data_repository/bai_tap/production_uprade/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module4/ss7_spring_data_repository/bai_tap/production_uprade/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module4/ss7_spring_data_repository/bai_tap/production_uprade/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/product/edit/edit.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/product/edit/edit.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/product/edit/edit.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/product/edit/edit.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module3/casestudy_mysql/case_study.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../module3/casestudy_mysql/case_study.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module4/case_study_module4/src/main/java/com/case_study_module4/controller/customer/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/case_study_module4/src/main/java/com/case_study_module4/controller/customer/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module4/case_study_module4/src/main/java/com/case_study_module4/repository/customer/ICustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/case_study_module4/src/main/java/com/case_study_module4/repository/customer/ICustomerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module4/case_study_module4/src/main/java/com/case_study_module4/rest/contract/ContractDetailRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/case_study_module4/src/main/java/com/case_study_module4/rest/contract/ContractDetailRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module4/case_study_module4/src/main/java/com/case_study_module4/service/ICustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/case_study_module4/src/main/java/com/case_study_module4/service/ICustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module4/case_study_module4/src/main/java/com/case_study_module4/service/customer/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/case_study_module4/src/main/java/com/case_study_module4/service/customer/CustomerServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module4/ss1_tong_quan_springmvc/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss1_tong_quan_springmvc/thuc_hanh/customer-management" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module4/ss5_thao_tac_csdl_va_orm/thuc_hanh/quan_ly_danh_sach_khach_hang/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss5_thao_tac_csdl_va_orm/thuc_hanh/quan_ly_danh_sach_khach_hang/customer-management" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module4/ss9_aop_exception_handling/thuc_hanh/aspect_log_quan_ly_khach_hang/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss9_aop_exception_handling/thuc_hanh/aspect_log_quan_ly_khach_hang/customer-management" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/customer/customer-edit/customer-edit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/customer/customer-edit/customer-edit.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/data/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/data/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/model/product.ts" beforeDir="false" afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/model/product.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/model/seriesProduct.ts" beforeDir="false" afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/model/seriesProduct.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/product/add/add.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/product/add/add.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/product/add/add.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/product/add/add.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casestudy-module5-angular/src/app/customer/customer-list/customer-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/casestudy-module5-angular/src/app/customer/customer-list/customer-list.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/product/list/list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/product/list/list.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/product/list/list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/product/list/list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/service/product.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/service/product.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/service/series-product.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/service/series-product.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module6/connect_spring_vs_exam_module5/src/main/java/com/connect_spring_vs_exam_module5/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/connect_spring_vs_exam_module5/src/main/java/com/connect_spring_vs_exam_module5/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module6/connect_spring_vs_exam_module5/src/main/java/com/connect_spring_vs_exam_module5/rest/ProductRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/connect_spring_vs_exam_module5/src/main/java/com/connect_spring_vs_exam_module5/rest/ProductRestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module6/connect_spring_vs_exam_module5/src/main/java/com/connect_spring_vs_exam_module5/rest/SeriesProductRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/connect_spring_vs_exam_module5/src/main/java/com/connect_spring_vs_exam_module5/rest/SeriesProductRestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module6/connect_spring_vs_exam_module5/src/main/java/com/connect_spring_vs_exam_module5/service/ISeriesProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/connect_spring_vs_exam_module5/src/main/java/com/connect_spring_vs_exam_module5/service/ISeriesProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module6/connect_spring_vs_exam_module5/src/main/java/com/connect_spring_vs_exam_module5/service/SeriesProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module6/connect_spring_vs_exam_module5/src/main/java/com/connect_spring_vs_exam_module5/service/SeriesProductServiceImpl.java" afterDir="false" />
@@ -170,6 +144,7 @@
       <workItem from="1659213384363" duration="5606000" />
       <workItem from="1659220369013" duration="749000" />
       <workItem from="1659239870252" duration="14914000" />
+      <workItem from="1659267014442" duration="7347000" />
     </task>
     <servers />
   </component>

@@ -1,6 +1,6 @@
 package com.case_study_module4.repository.employee;
 
-import com.case_study_module4.model.customer.Customer;
+
 import com.case_study_module4.model.employee.Employee;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

@@ -23,6 +23,10 @@ export class SeriesProductService {
     return this.http.get<[any]>(this.URL_SERIES_PRODUCT_SPRING + '/list?page=' + indexPagination);
   }
 
+  getSearchListByIdPagination(id:string,indexPagination: number):Observable<any>{
+    return this.http.get<any>(this.URL_SERIES_PRODUCT_SPRING + '/searchList?id='+ id +'&page='+indexPagination)
+  }
+
   saveSeriesProduct(seriesProduct): Observable<any> {
     return this.http.post<any>(this.URL_SERIES_PRODUCT_SPRING + '/create', seriesProduct);
   }

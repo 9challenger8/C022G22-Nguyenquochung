@@ -60,8 +60,6 @@ export class CustomerListComponent implements OnInit {
   }
 
   searchCustomerByNameAndIdCard(){
-    console.log(this.nameSearch.value)
-    console.log(this.idCardSearch.value)
     this.customerService.searchCustomerByNameCustomerAndIdCard(this.nameSearch.value,this.idCardSearch.value).subscribe(data=>{
       this.customers=data;
       this.router.navigate(['/customer/list']);
