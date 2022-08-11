@@ -12,11 +12,7 @@ export class RegisterComponent implements OnInit {
   registerForm: FormGroup;
   formPassword: FormGroup;
 
-
   constructor() {
-
-
-
     this.registerForm = new FormGroup({
       email: new FormControl("", [Validators.required, Validators.email]),
 

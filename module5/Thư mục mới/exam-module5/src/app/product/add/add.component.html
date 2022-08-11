@@ -50,11 +50,11 @@
                   Produce Date can't be left blank.
                 </p>
 
-                <label for="deadDate">Start date:</label><br>
-                <input formControlName="deadDate" id="deadDate" name="deadDate" type="date"
+                <label for="expirationDate">Start date:</label><br>
+                <input formControlName="expirationDate" id="expirationDate" name="deadDate" type="date"
                        class="feedback-input"
                        placeholder="deadDate"/>
-                <p style="color: red" *ngIf="seriesProductAdd.controls.deadDate.hasError('required') && seriesProductAdd.controls.deadDate.touched">
+                <p style="color: red" *ngIf="seriesProductAdd.controls.expirationDate.hasError('required') && seriesProductAdd.controls.expirationDate.touched">
                   Dead Date can't be left blank.
                 </p>
 

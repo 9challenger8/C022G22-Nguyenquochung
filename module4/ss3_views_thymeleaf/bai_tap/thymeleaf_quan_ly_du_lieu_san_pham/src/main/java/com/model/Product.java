@@ -1,6 +1,7 @@
 package com.model;
 
 public class Product {
+    
     private Integer id;
     private String name;
     private String  price;

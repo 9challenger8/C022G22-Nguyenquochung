@@ -8,6 +8,7 @@
               <fieldset>
                 <legend>Add Series Product:</legend>
 
+<!--                <input id="image" type="file" class="feedback-input" (change)="showPreview($event)">-->
 
                 <input formControlName="id" name="id" type="text" class="feedback-input" placeholder="Enter id"/>
                 <p style="color: red" *ngIf="seriesProductAdd.controls.id.hasError('required') && seriesProductAdd.controls.id.touched">

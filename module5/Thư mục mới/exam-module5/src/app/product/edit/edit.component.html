@@ -1,0 +1,71 @@
+<main id="main">
+  <div class="container">
+    <section id="hero-slider" class="hero-slider">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <form [formGroup]="seriesProductEdit" (ngSubmit)="updateSeriesProduct(id)" *ngIf="seriesProductEdit">
+              <fieldset>
+                <legend>Edit Series Product:</legend>
+
+                <input formControlName="id" name="id" type="text" class="feedback-input" placeholder="Enter id"/>
+                <p style="color: red" *ngIf="seriesProductEdit.controls.id.hasError('required') && seriesProductEdit.controls.id.touched">
+                  Id can't be left blank.
+                </p>
+                <p style="color: red" *ngIf="seriesProductEdit.controls.id.hasError('pattern') && seriesProductEdit.controls.id.touched">
+                  Invalid format.
+                </p>
+
+                <select formControlName="product" name="product">
+                  <option value="" disabled selected="selected">Please choose product.</option>
+                  <option *ngFor="let product of products" [value]="product.id">{{product.name}}</option>
+                </select>
+                <p style="color: red" *ngIf="seriesProductEdit.controls.product.hasError('required') && seriesProductEdit.controls.product.touched">
+                  Product can't be left blank.
+                </p>
+
+
+                <input formControlName="amount" name="amount" type="text" class="feedback-input" placeholder="Enter amount"/>
+                <p style="color: red" *ngIf="seriesProductEdit.controls.amount.hasError('required') && seriesProductEdit.controls.amount.touched">
+                  Amount id can't be left blank.
+                </p>
+                <p style="color: red" *ngIf="seriesProductEdit.controls.amount.hasError('pattern') && seriesProductEdit.controls.amount.touched">
+                  Invalid format.
+                </p>
+
+                <label for="startDate">Start date:</label><br>
+                <input formControlName="startDate" id="startDate" name="startDate" type="date"
+                       class="feedback-input"
+                       placeholder="startDate"/>
+                <p style="color: red" *ngIf="seriesProductEdit.controls.startDate.hasError('required') && seriesProductEdit.controls.startDate.touched">
+                  Start Date can't be left blank.
+                </p>
+
+                <label for="startDate">Produce Date:</label><br>
+                <input formControlName="produceDate" id="produceDate" name="produceDate" type="date"
+                       class="feedback-input"
+                       placeholder="Produce Date"/>
+                <p style="color: red" *ngIf="seriesProductEdit.controls.produceDate.hasError('required') && seriesProductEdit.controls.produceDate.touched">
+                  Produce Date can't be left blank.
+                </p>
+
+                <label for="expirationDate">Expiration date:</label><br>
+                <input formControlName="expirationDate" id="expirationDate"  type="date"
+                       class="feedback-input"/>
+                <p style="color: red" *ngIf="seriesProductEdit.controls.expirationDate.hasError('required') && seriesProductEdit.controls.expirationDate.touched">
+                  Expiration Date can't be left blank.
+                </p>
+
+                <input type="submit" value="SUBMIT"/>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+
+
+

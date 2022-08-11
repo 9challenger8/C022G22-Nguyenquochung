@@ -32,11 +32,13 @@ export class AddComponent implements OnInit {
       amount: new FormControl('', [Validators.required, Validators.pattern(/^[1-9][0-9]*$/)]),
       startDate: new FormControl('', [Validators.required]),
       produceDate: new FormControl('', [Validators.required]),
-      deadDate: new FormControl('', Validators.required),
+      expirationDate: new FormControl('', Validators.required),
     });
   }
+
   submit() {
     const seriesProduct = this.seriesProductAdd.value;
+    console.log(seriesProduct)
     this.seriesProductService.saveSeriesProduct(seriesProduct).subscribe(() => {
       alert('Tạo thành công');
       this.seriesProductAdd.reset();

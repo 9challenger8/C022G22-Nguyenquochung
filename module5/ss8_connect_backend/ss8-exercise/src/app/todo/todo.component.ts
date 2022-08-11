@@ -32,19 +32,19 @@ export class TodoComponent implements OnInit {
     });
   }
 
-  // toggleTodo(i: number) {
-  //   console.log(i)
-  //   const value = this.content.value;
-  //   const todo: Todo = {
-  //     content: value,
-  //     complete: true
-  //   };
-  //   this.todoService.findById(i).subscribe(data => {
-  //     data.complete = true;
-  //     this.todos[data.id].complete = !this.todos[data.id].complete;
-  //   })
-  //   // this.todos[i].complete = !this.todos[i].complete;
-  // }
+  toggleTodo(i: number) {
+    console.log(i)
+    const value = this.content.value;
+    const todo: Todo = {
+      content: value,
+      complete: true
+    };
+    this.todoService.findById(i).subscribe(data => {
+      data.complete = true;
+      this.todos[data.id].complete = !this.todos[data.id].complete;
+    })
+    this.todos[i].complete = !this.todos[i].complete;
+  }
 
 
   change() {

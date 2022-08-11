@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+
+    <div th:replace="~{layout :: linkCss}"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/form.css}">
+</head>
+
+<body>
+<header th:replace="/layout :: begin"></header>
+
+<main id="main">
+    <div class="container-fluid">
+        <section id="hero-slider" class="hero-slider">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>List Contract:</h1>
+                        <p>
+                            <a class="addNew" >
+                                Add new contract
+                            </a>
+                        </p>
+
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th scope="col">No.</th>
+                                <th scope="col">Facility</th>
+                                <th scope="col">Customer</th>
+                                <th scope="col">Employee</th>
+                                <th scope="col">Start date</th>
+                                <th scope="col">End date</th>
+                                <th scope="col">Deposit</th>
+                                <th scope="col">Total money</th>
+                                <th scope="col" colspan="2">Option</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th ></th>
+                                <td ></td>
+                                <td ></td>
+                                <td ></td>
+                                <td ></td>
+                                <td></td>
+                                <td ></td>
+                                <td ></td>
+                                <td>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn-primary"
+                                            th:onclick="'getAttachFacilities('+${row.id}+')'" data-bs-toggle="modal"
+                                            th:data-bs-target="'#contractModal'+ ${row.id}">
+                                        +
+                                    </button>
+
+
+                                </td>
+
+                                <!--Modal danh sach dich vu di kem-->
+                                <td>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="'#attachFacilityModal'+${row.id}">
+                                        List attach facilities
+                                    </button>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+
+<footer th:replace="/layout ::end"></footer>
+
+<script src="/jquery-3.6.0.min.js"></script>
+
+
+<div th:replace="~{layout :: linkScript}"></div>
+
+<script>
+    function getAttachFacilities(id) {
+        $.ajax({
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            type: "GET",
+            url: "http://localhost:8080/restContract/list",
+            success: function (data) {
+                let content = `<option value=""  selected="selected" >Please choose attach facility.</option>`;
+                for (let i = 0; i < data.length; i++) {
+                    content += `<option value="${data[i].id}"> ${data[i].name} </option>`;
+                }
+                document.getElementById('attachFacility' + id).innerHTML = content;
+            }
+        })
+    }
+
+
+    function addNewContractDetail(id) {
+        //lay du lieu
+        let attachFacility = $('#attachFacility' + id).val();
+
+        let quantity = $('#quantity' + id).val();
+        let newContractDetail = {
+            quantity: quantity,
+            attachFacility: {
+                id: attachFacility
+            },
+            contract: {
+                id: id
+            }
+        };
+        // goi ajax
+        $.ajax({
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            type: "POST",
+            data: JSON.stringify(newContractDetail),
+            //tên API
+            url: "http://localhost:8080/restContractDetail/create",
+            //xử lý khi thành công
+            success: console.log('success')
+        });
+        event.preventDefault();
+    }
+
+    function successHandler(id) {
+        $.ajax({
+            type: "GET",
+            //tên API
+            url: "http://localhost:8080/restContractDetail/list/" + id,
+            //xử lý khi thành công
+            success: function (data) {
+                // hien thi danh sach o day
+                let content = '  <tr>\n' +
+                    '<th>Name Facility Attach</th>\n' +
+'                      <th>Quantity</th>\n' +
+                    '</tr>';
+                for (let i = 0; i < data.length; i++) {
+                    content += `<tr><td>${data[i].attachFacility.name}</td>` +
+                        `<td>${data[i].quantity}</td></tr>`;
+                }
+                document.getElementById('contractDetailList'+id).innerHTML = content;
+            }
+        });
+    }
+</script>
+
+</body>
+</html>
+
+

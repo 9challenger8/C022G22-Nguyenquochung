@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <div th:replace="~{layout :: linkCss}"></div>
+    <link rel="stylesheet" th:href="@{/form.css}">
+
+</head>
+
+
+<body>
+
+<header th:replace="/layout :: begin"></header>
+
+
+<main id="main">
+    <div class="container">
+        <section id="hero-slider" class="hero-slider">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+
+                        <form class="customMyForm" action="/contract/create" method="POST">
+                            <fieldset>
+                                <legend>Add Contract:</legend>
+                                <input type="hidden" />
+
+                                <label for="startDate">Start date:</label><br>
+                                <input  id="startDate" name="startDate" type="date"
+                                       class="feedback-input" placeholder="Start date"/>
+
+                                <label for="endDate">End date:</label><br>
+                                <input id="endDate" name="endDate" type="date"
+                                       class="feedback-input" placeholder="End date"/>
+
+                                <input name="deposit" type="text" class="feedback-input"
+                                       placeholder="Deposit"/>
+
+                                <label for="totalMoney">Total money:</label><br>
+
+                                <input value="0 đ" id="totalMoney" name="totalMoney" type="text"
+                                       class="feedback-input"/>
+
+<!--                                <input id="costFacility" th:value="${contract.facility.cost}" type="hidden">-->
+<!--                                       class="feedback-input"/>-->
+                                <!--                                <input  id="quantityAttachFacility" th:value="${contract.}"   type="hidden" class="feedback-input"  />-->
+                                <!--                                <input  id="costAttachFacilityTotalMoney" th:value="${contract.facility.cost}"  type="hidden" class="feedback-input"/>-->
+
+
+                                <select name="customer" >
+                                    <option value="" selected="selected">Please choose customer.</option>
+
+                                </select>
+
+                                <select name="facility" >
+                                    <option value="" selected="selected">Please choose facility.</option>
+
+                                </select>
+
+                                <select name="employee">
+                                    <option value="" selected="selected">Please choose employee.</option>
+
+                                </select>
+
+
+                                <input id="attachFacilityId" name="attachFacilityId" type="hidden"
+                                       class="feedback-input"/>
+
+                                <input id="quantity" name="quantity" type="hidden" class="feedback-input"/>
+
+                                <!-- Button trigger modal -->
+                                <label for="modalButton">Attach facility:</label><br>
+                                <button id="modalButton" type="button" class="modalButton " data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                    +
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Attach facility</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <select id="attachFacility">
+                                                    <option value="" selected="selected">Please choose attach
+                                                        facility.
+                                                    </option>
+                                                </select>
+
+<!--                                                    <select id="attachFacilityCost" >-->
+<!--                                                        <option value="" selected="selected">Please choose attach-->
+<!--                                                            facility.-->
+<!--                                                        </option>-->
+<!--                                                        <option th:each="temp:${attachFacilities}" th:value="${temp.cost}"-->
+<!--                                                                th:text="${temp.name}">-->
+<!--                                                        </option>-->
+<!--                                                    </select>-->
+
+                                                    <input id="quantityInput" type="text" class="feedback-input"
+                                                           placeholder="Quantity"/>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                    Add
+                                                </button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="submit" value="SUBMIT"/>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+
+<footer th:replace="/layout ::end"></footer>
+<script src="/jquery-3.6.0.min.js"></script>
+<div th:replace="~{layout :: linkScript}"></div>
+
+<script>
+    // function getAttachFacilities(){
+    //     $.ajax({
+    //         headers: {
+    //             'Accept': 'application/json',
+    //             'Content-Type': 'application/json'
+    //         },
+    //         type: "GET",
+    //         url: "http://localhost:8080/restContract/list",
+    //         success: function(data){
+    //             let content =`<option value=""  selected="selected" >Please choose attach facility.</option>`;
+    //             for(let i=0; i<data.length; i++){
+    //                 content  += `<option value="${data[i].id}"> ${data[i].name} </option>`;
+    //             }
+    //             document.getElementById('attachFacility').innerHTML = content;
+    //         }
+    //     })
+    // }
+    function getValueToHidden() {
+
+        let attachFacilityId = $('#attachFacility').val();
+        let quantity = $('#quantityInput').val();
+        let costAttachFacility = $('#attachFacilityCost').val();
+        // let costFacility = $('#costFacility').val();
+        let totalMoney = costAttachFacility * quantity;
+
+        $('#attachFacilityId').val(attachFacilityId)
+        $('#quantity').val(quantity)
+        $('#totalMoney').val(totalMoney)
+
+    }
+
+
+</script>
+
+</body>
+</html>

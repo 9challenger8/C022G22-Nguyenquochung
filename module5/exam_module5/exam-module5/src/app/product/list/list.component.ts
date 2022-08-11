@@ -54,6 +54,7 @@ export class ListComponent implements OnInit {
     });
   }
 
+  // lấy list không tìm kiếm
   getAllPagination() {
     this.seriesProduct.getAllPagination(this.indexPagination).subscribe(data => {
       console.log(data)
@@ -62,6 +63,7 @@ export class ListComponent implements OnInit {
     })
   }
 
+  // lấy list tìm kiếm theo  Id
   getSearchListByIdPagination(){
     this.seriesProduct.getSearchListByIdPagination(this.idSearch.value,this.indexPagination).subscribe(data => {
       console.log(data)

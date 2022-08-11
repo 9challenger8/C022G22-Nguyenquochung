@@ -13,6 +13,8 @@ import {ReactiveFormsModule} from '@angular/forms';
 import {NgxPaginationModule} from 'ngx-pagination';
 import { HomeComponent } from './home/home.component';
 import { EditComponent } from './product/edit/edit.component';
+import {environment} from "../environments/environment";
+import {AngularFireModule} from "@angular/fire";
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { EditComponent } from './product/edit/edit.component';
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -27,17 +27,43 @@
       "deadDate": "2022-07-23"
     },
     {
-      "id": "LH-1293",
+      "id": "LH-1234",
       "product": {
-        "name": "Samsung",
-        "country": "Korea",
-        "cost": "800",
+        "name": "Xiaomi",
+        "country": "China",
+        "cost": "500",
         "amount": "cai"
       },
-      "amount": "23",
-      "startDate": "2022-07-14",
+      "amount": "24",
+      "startDate": "2022-07-16",
       "produceDate": "2022-07-15",
-      "deadDate": "2022-07-13"
+      "deadDate": "2022-07-23"
+    },
+    {
+      "id": "LH-1234",
+      "product": {
+        "name": "Xiaomi",
+        "country": "China",
+        "cost": "500",
+        "amount": "cai"
+      },
+      "amount": "24",
+      "startDate": "2022-07-16",
+      "produceDate": "2022-07-15",
+      "deadDate": "2022-07-23"
+    },
+    {
+      "id": "LH-1234",
+      "product": {
+        "name": "Xiaomi",
+        "country": "China",
+        "cost": "500",
+        "amount": "cai"
+      },
+      "amount": "24",
+      "startDate": "2022-07-16",
+      "produceDate": "2022-07-15",
+      "deadDate": "2022-07-23"
     }
   ],
   "products": [

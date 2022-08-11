@@ -1,6 +1,7 @@
 export interface Product {
+  id?:number;
   name?: string;
-  country: string;
+  producer: string;
   cost?: string;
-  amount?: string;
+  unit?: string;
 }
