@@ -20,39 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4494bfc9-81ff-4a89-8e09-81433b71e705" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/product/edit/edit.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/product/edit/edit.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/product/edit/edit.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module4/ss1_tong_quan_springmvc/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss1_tong_quan_springmvc/thuc_hanh/customer-management" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module4/ss3_views_thymeleaf/bai_tap/thymeleaf_quan_ly_du_lieu_san_pham/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss3_views_thymeleaf/bai_tap/thymeleaf_quan_ly_du_lieu_san_pham/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module4/ss3_views_thymeleaf/bai_tap/thymeleaf_quan_ly_du_lieu_san_pham/src/main/java/com/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss3_views_thymeleaf/bai_tap/thymeleaf_quan_ly_du_lieu_san_pham/src/main/java/com/model/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module4/ss5_thao_tac_csdl_va_orm/thuc_hanh/quan_ly_danh_sach_khach_hang/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss5_thao_tac_csdl_va_orm/thuc_hanh/quan_ly_danh_sach_khach_hang/customer-management" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module4/ss9_aop_exception_handling/thuc_hanh/aspect_log_quan_ly_khach_hang/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../module4/ss9_aop_exception_handling/thuc_hanh/aspect_log_quan_ly_khach_hang/customer-management" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/data/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/data/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/model/product.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/model/product.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/model/seriesProduct.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/model/seriesProduct.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/product/add/add.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/product/add/add.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/product/add/add.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/product/add/add.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/product/list/list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/product/list/list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/product/list/list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/product/list/list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/service/product.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/service/product.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/service/series-product.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/service/series-product.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam_module5/exam-module5/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/exam_module5/exam-module5/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam_module5/exam-module5/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/exam_module5/exam-module5/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/header/header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/product/add/add.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/product/add/add.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/product/add/add.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/product/add/add.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/product/list/list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/product/list/list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/product/list/list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/app/product/list/list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam_module5/exam-module5/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/exam_module5/exam-module5/src/environments/environment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/src/app/register/register.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Thư mục mới/exam-module5/src/app/product/edit/edit.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/src/app/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ss6_angular_form/bai-tap-ss6/src/app/register/register.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/app/todo/todo.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ss8_connect_backend/ss8-exercise/src/app/todo/todo.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5_again/casestudy_module5/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module5_again/casestudy_module5/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module5_again/ss2_type_script/bai_tap/fibonacci/src/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module5_again/ss2_type_script/bai_tap/fibonacci/src/main.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,6 +145,7 @@
       <workItem from="1659425496484" duration="580000" />
       <workItem from="1660128263278" duration="4062000" />
       <workItem from="1660183127336" duration="941000" />
+      <workItem from="1660192207035" duration="753000" />
     </task>
     <servers />
   </component>
@@ -203,10 +176,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="688" y="303" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1659002918892" />
-    <state x="687" y="199" key="FileChooserDialogImpl" timestamp="1660184074094">
+    <state x="687" y="199" key="FileChooserDialogImpl" timestamp="1660193047491">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="687" y="199" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1660184074094" />
+    <state x="687" y="199" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1660193047491" />
     <state width="1893" height="267" key="GridCell.Tab.0.bottom" timestamp="1659326713311">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

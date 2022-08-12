@@ -1,0 +1,43 @@
+
+<main id="main">
+  <div class="container">
+    <section id="hero-slider" class="hero-slider">
+      <div class="container" data-aos="fade-in">
+        <div class="row">
+          <div class="col-12">
+            <form action="/facility/create" method="post">
+              <fieldset>
+                <legend>Add Service:</legend>
+                <input  name="name" type="text" class="feedback-input" placeholder="Name" />
+                <input name="area" type="text" class="feedback-input" placeholder="Area" />
+                <input  name="cost" type="text" class="feedback-input" placeholder="Cost" />
+                <input name="numberPeople" type="text" class="feedback-input" placeholder="Number of people" />
+
+                <select  name="rentType">
+                  <option value="" selected="selected">Please choose a rental type.</option>
+                </select>
+
+                <select  id="facilityType"  name="facilityType" onchange="display()">
+                  <option value=""  selected="selected">Please choose a facility type.</option>
+
+                </select>
+
+                <input  id="standardRoom" name="standardRoom" type="text"
+                        class="feedback-input" placeholder="Standard Room" style="display: none" />
+                <input  id="otherConvenience" name="otherConvenience" type="text" class="feedback-input"
+                        placeholder="Description other convenience" style="display: none" />
+                <input  id="poolArea" name="poolArea" type="text" class="feedback-input" placeholder="Pool area" style="display: none" />
+                <input  id="numberFloor" name="numberFloor" type="text" class="feedback-input"
+                        placeholder="Number of floor" style="display: none" />
+                <textarea id="facilityFree" name="facilityFree" class="feedback-input" placeholder="Facility free" style="display: none"></textarea>
+
+                <input type="submit" value="SUBMIT"/>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
