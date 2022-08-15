@@ -14,6 +14,9 @@ import { CustomerListComponent } from './customer/customer-list/customer-list.co
 import { FacilityAddComponent } from './facility/facility-add/facility-add.component';
 import { FacilityListComponent } from './facility/facility-list/facility-list.component';
 import { FacilityEditComponent } from './facility/facility-edit/facility-edit.component';
+import {HttpClientModule} from "@angular/common/http";
+import {NgxPaginationModule} from "ngx-pagination";
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -30,10 +33,13 @@ import { FacilityEditComponent } from './facility/facility-edit/facility-edit.co
     FacilityListComponent,
     FacilityEditComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule,
+        NgxPaginationModule,
+        ReactiveFormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

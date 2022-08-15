@@ -7,7 +7,7 @@ import {Router} from "@angular/router";
 import * as _ from 'lodash';
 // input thu vien npm i moment --save
 import * as moment from 'moment';
-import {FormControl} from "@angular/forms";
+import {FormControl} from '@angular/forms';
 
 @Component({
   selector: 'app-customer-list',
@@ -17,9 +17,10 @@ import {FormControl} from "@angular/forms";
 export class CustomerListComponent implements OnInit {
 
 
-  searchText: string='';
+  searchText = '';
   customers: Customer[] = [];
-  p: number = 1;
+
+  p = 1;
 
   idModal:number;
   nameModal:string;
@@ -28,8 +29,8 @@ export class CustomerListComponent implements OnInit {
 
   idCardSearch = new FormControl('');
 
-  constructor(private customerService:CustomerService,
-              private router:Router) {
+  constructor(private customerService: CustomerService,
+              private router: Router) {
   }
 
   ngOnInit() {
@@ -53,24 +54,24 @@ export class CustomerListComponent implements OnInit {
 
   sortByName(dir) {
     if(dir=='up'){
-      this.customers = _.orderBy(this.customers,['name'],['asc'])
+      this.customers = _.orderBy(this.customers,['name'],['asc']);
     }else {
-      this.customers = _.orderBy(this.customers,['name'],['desc'])
+      this.customers = _.orderBy(this.customers,['name'],['desc']);
     }
   }
 
   searchCustomerByNameAndIdCard(){
-    this.customerService.searchCustomerByNameCustomerAndIdCard(this.nameSearch.value,this.idCardSearch.value).subscribe(data=>{
-      this.customers=data;
+    this.customerService.searchCustomerByNameCustomerAndIdCard(this.nameSearch.value, this.idCardSearch.value).subscribe(data=>{
+      this.customers = data;
       this.router.navigate(['/customer/list']);
     }, e => {
       console.log(e);
     });
   }
 
-  getDataForModal(id:number,name:string){
-    this.idModal= +id;
-    this.nameModal=name;
+  getDataForModal(id: number, name: string){
+    this.idModal = id;
+    this.nameModal = name;
   }
 
 }

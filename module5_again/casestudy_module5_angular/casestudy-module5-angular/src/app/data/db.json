@@ -1,0 +1,78 @@
+{
+  "customers": [
+    {
+      "name": "The Anh",
+      "dateOfBirth": "2022-07-07",
+      "gender": "Male",
+      "cardId": "222222222",
+      "phoneNumber": "0902222222",
+      "customerType": {
+        "id": 4,
+        "name": "Silver"
+      },
+      "address": "eqe",
+      "id": 14
+    },
+    {
+      "name": "Nguyen Hung",
+      "dateOfBirth": "2022-08-25",
+      "gender": "Female",
+      "cardId": "222222222",
+      "phoneNumber": "0903222222",
+      "customerType": {
+        "id": 4,
+        "name": "Silver"
+      },
+      "address": "22",
+      "id": 15
+    },
+    {
+      "name": "Nguyen Too",
+      "dateOfBirth": "2022-09-02",
+      "gender": "Female",
+      "cardId": "222222222",
+      "phoneNumber": "0912342222",
+      "customerType": {
+        "id": 5,
+        "name": "Member"
+      },
+      "address": "2222222",
+      "id": 16
+    },
+    {
+      "name": "Hung Nguyen ",
+      "dateOfBirth": "2022-08-21",
+      "gender": "Male",
+      "cardId": "222222222",
+      "phoneNumber": "0907483832",
+      "customerType": {
+        "id": 5,
+        "name": "Member"
+      },
+      "address": "bvc",
+      "id": 17
+    }
+  ],
+  "customerTypes": [
+    {
+      "id": 1,
+      "name": "Diamond"
+    },
+    {
+      "id": 2,
+      "name": "Platinum"
+    },
+    {
+      "id": 3,
+      "name": "Gold"
+    },
+    {
+      "id": 4,
+      "name": "Silver"
+    },
+    {
+      "id": 5,
+      "name": "Member"
+    }
+  ]
+}

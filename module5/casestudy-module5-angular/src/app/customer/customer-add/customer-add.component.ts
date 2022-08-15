@@ -37,29 +37,11 @@ export class CustomerAddComponent implements OnInit {
 
   ngOnInit() {
     this.getAllCustomerType();
-    this.getForm()
+    this.getForm();
   }
 
   submit() {
     const customer = this.customerAdd.value;
-
-    // customer.customerType = {
-    //   id: customer.customerType
-    // };
-
-
-    // const customer: Customer ={
-    //   name: value.name,
-    //   dateOfBirth: value.dateOfBirth,
-    //   gender: value.gender,
-    //   cardId: value.cardId,
-    //   phoneNumber: value.phoneNumber,
-    //   customerType: {
-    //     id: value.customerType,
-    //     name: value.customerType
-    //   },
-    //   address: value.address
-    // }
 
     this.customerService.saveCustomer(customer).subscribe(() => {
       alert('Tạo thành công');

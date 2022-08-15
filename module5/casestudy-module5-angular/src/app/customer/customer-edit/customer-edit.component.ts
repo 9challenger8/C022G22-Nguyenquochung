@@ -14,12 +14,12 @@ export class CustomerEditComponent implements OnInit {
 
   customerTypes: CustomerType[] = [];
 
-  id:number;
+  id: number;
 
   customerEdit: FormGroup;
 
-  constructor(private customerService:CustomerService,
-              private customerTypeService:CustomerTypeService,
+  constructor(private customerService: CustomerService,
+              private customerTypeService: CustomerTypeService,
               private router: Router,
               private activatedRoute: ActivatedRoute) {
     this.activatedRoute.paramMap.subscribe((paramMap: ParamMap) => {
@@ -31,7 +31,7 @@ export class CustomerEditComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getAllCustomerType()
+    this.getAllCustomerType();
   }
 
   getCustomer(id: number) {

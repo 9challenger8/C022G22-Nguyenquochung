@@ -1,37 +1,61 @@
-<!--<main id="main">-->
+<main id="main">
 
-<!--  <div style="padding: 0 12px 0 12px">-->
-<!--    <div style="width: 100%;margin-bottom:40px ;height: 294px;-->
-<!--    background-image: url('https://img.homedy.com/store/images/2022/06/23/z3513795405604-d46f360f37132aabffb1c2c1f9135b26-637915938506832408.jpg')">-->
-<!--      <h2-->
-<!--        style="font-size: 40px;padding-top: 120px ;color: #ffffff;text-align: center;font-family:Playfair Display,serif;font-weight:700;font-style:normal">-->
-<!--        Facilities-->
-<!--      </h2>-->
-<!--    </div>-->
-<!--  </div>-->
+  <div style="padding: 0 12px 0 12px">
+    <div style="margin-bottom:40px ;height: 150px;
+    background-image: url('https://cdn3.ivivu.com/2021/04/avana-retreat-mai-chau-ivivu-5.jpeg');opacity: 0.9">
+      <h2
+        style="font-size: 90px;margin: 0 ;padding-top: 25px ;color:#F7804A;text-align: center;font-family:Satisfy,sans-serif;font-weight:700;font-style:normal">
+        Facilities
+      </h2>
+    </div>
+  </div>
 
-<!--  <section id="hero-slider" class="hero-slider">-->
-<!--    <div class=" my-container container-fluid">-->
-<!--      <div style="display: flex;justify-content: space-between;flex-wrap:wrap" >-->
+    <div class=" my-container container-fluid">
 
-<!--        <div class="card" style="width:31.5%" *ngFor="let temp of facilities">-->
-<!--          <img-->
-<!--            src="https://resortdanang.info/wp-content/uploads/2018/12/phong-khach-villas-3-bedroom-furama-da-nang.jpg"-->
-<!--            class="card-img-top" alt="...">-->
+      <div style="width: 100%;margin:0 0 7px 0 ;height: 55px;background-color: #cef8e0">
+        <div style="display: flex;justify-content: space-between;align-items: center">
 
-<!--          <div class="card-body">-->
-<!--            <h5 class="card-title">{{temp.name}}</h5>-->
-<!--            <p class="card-text">{{temp.cost}}</p>-->
-<!--            <a href="#!" class="btn btn-primary">Delete</a>-->
-<!--            <a href="#!" class="btn btn-primary">Edit</a>-->
-<!--          </div>-->
-<!--          <div class="container-fluid" style="height: 40px;background-color: #e4f5e7"></div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </section>&lt;!&ndash; End Hero Slider Section &ndash;&gt;-->
+          <div style="margin : 0 0 0 20px ">
+            <a routerLink="/facility/add">
+              <i style="font-size: 39px;color: black" class="bi bi-bag-plus-fill"></i>
+            </a>
+            <a  style="margin-left: 20px " >
+              <i style="font-size: 40px;color: black" class="bi bi-sort-alpha-down"></i>
+            </a>
+            <a style="margin-left: 20px ">
+              <i style="font-size: 40px;color: black" class="bi bi-sort-alpha-down-alt"></i>
+            </a>
+          </div>
+          <div style="margin: 0 15px 0 0 ;">
+            <div class="input-group">
+              <input  type="text" class="form-control" placeholder="Search name">
+              <div>
+                <button  class="btn btn-secondary" type="button">
+                  <i class="bi bi-search"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-<!--</main>-->
+      <div style="display: flex;justify-content: space-between;flex-wrap:wrap" >
+
+        <div class="card" style="width:31.5%" *ngFor="let temp of facilityList">
+          <img
+            src="https://resortdanang.info/wp-content/uploads/2018/12/phong-khach-villas-3-bedroom-furama-da-nang.jpg"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{temp.name}}</h5>
+            <p class="card-text">{{temp.cost | currency }}</p>
+            <a href="#!" class="btn btn-primary">Delete</a>
+            <a href="#!" class="btn btn-primary">Edit</a>
+          </div>
+          <div class="container-fluid" style="height: 40px"></div>
+        </div>
+      </div>
+    </div>
+</main>
 
 
 

@@ -10,19 +10,19 @@ export class CustomerTypeService {
 
   private URL_CUSTOMER_TYPE = "http://localhost:3000/customerTypes";
 
-
   constructor(private http:HttpClient) { }
 
+
   getAll(): Observable<CustomerType[]> {
-    return this.http.get<CustomerType[]>(this.URL_CUSTOMER_TYPE);
+    return this.http.get<CustomerType[]>(this.URL_CUSTOMER_TYPE)
   }
 
-  saveCategory(customerType): Observable<CustomerType> {
-    return this.http.post<CustomerType>(this.URL_CUSTOMER_TYPE, customerType);
+  saveCustomerType(customerType):Observable<CustomerType>{
+    return this.http.post<CustomerType>(this.URL_CUSTOMER_TYPE,customerType);
   }
 
-  findById(id: number): Observable<CustomerType> {
-    return this.http.get<CustomerType>(this.URL_CUSTOMER_TYPE + '/' + id);
+  findById(id : number):Observable<CustomerType>{
+    return this.http.get<CustomerType>(this.URL_CUSTOMER_TYPE + "/" + id);
   }
 
 }

@@ -57,7 +57,7 @@
                 </p>
 
                 <select formControlName="customerType" name="customerType" >
-                  <option value="null" disabled  selected="selected" >Please choose customer type.</option>
+                  <option value="" disabled  selected="selected" >Please choose customer type.</option>
                   <option *ngFor="let customerType of customerTypes" [value]="customerType.id">{{customerType.name}}</option>
                 </select>
                 <p style="color: red" *ngIf="customerEdit.controls.customerType.hasError('required') && customerEdit.controls.customerType.touched">

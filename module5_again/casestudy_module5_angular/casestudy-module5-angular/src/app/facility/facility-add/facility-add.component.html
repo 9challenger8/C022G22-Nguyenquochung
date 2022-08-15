@@ -5,7 +5,7 @@
       <div class="container" data-aos="fade-in">
         <div class="row">
           <div class="col-12">
-            <form action="/facility/create" method="post">
+<!--            <form >-->
               <fieldset>
                 <legend>Add Service:</legend>
                 <input  name="name" type="text" class="feedback-input" placeholder="Name" />
@@ -17,13 +17,13 @@
                   <option value="" selected="selected">Please choose a rental type.</option>
                 </select>
 
-                <select  id="facilityType"  name="facilityType" onchange="display()">
+                <select  id="facilityType"  name="facilityType" >
                   <option value=""  selected="selected">Please choose a facility type.</option>
 
                 </select>
 
                 <input  id="standardRoom" name="standardRoom" type="text"
-                        class="feedback-input" placeholder="Standard Room" style="display: none" />
+                        class="feedback-input" placeholder="Standard Room"  />
                 <input  id="otherConvenience" name="otherConvenience" type="text" class="feedback-input"
                         placeholder="Description other convenience" style="display: none" />
                 <input  id="poolArea" name="poolArea" type="text" class="feedback-input" placeholder="Pool area" style="display: none" />
@@ -33,7 +33,7 @@
 
                 <input type="submit" value="SUBMIT"/>
               </fieldset>
-            </form>
+<!--            </form>-->
           </div>
         </div>
       </div>

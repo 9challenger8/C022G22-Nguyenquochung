@@ -7,10 +7,9 @@
       "cardId": "222222222",
       "phoneNumber": "0902222222",
       "customerType": {
-        "id": 1,
-        "name": "Diamond"
+        "id": "3"
       },
-      "address": "eqe",
+      "address": "ttttt",
       "id": 14
     },
     {
@@ -84,10 +83,7 @@
       "gender": "Female",
       "cardId": "222222222",
       "phoneNumber": "0902222222",
-      "customerType": {
-        "id": 5,
-        "name": "Member"
-      },
+      "customerType": "4",
       "address": "a",
       "id": 16
     },
@@ -98,8 +94,7 @@
       "cardId": "222222222",
       "phoneNumber": "0902222222",
       "customerType": {
-        "id": 2,
-        "name": "Platinum"
+        "id": "5"
       },
       "address": "k",
       "id": 17
