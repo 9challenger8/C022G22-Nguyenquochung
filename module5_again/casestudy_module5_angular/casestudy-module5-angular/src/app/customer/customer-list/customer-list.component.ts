@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import {CustomerService} from "../../service/customer/customer.service";
-import {Customer} from "../../model/customer/customer";
-import {Router} from "@angular/router";
-import {FormControl} from "@angular/forms";
+import {Component, OnInit} from '@angular/core';
+import {CustomerService} from '../../service/customer/customer.service';
+import {Customer} from '../../model/customer/customer';
+import {Router} from '@angular/router';
+import {FormControl} from '@angular/forms';
 
 @Component({
   selector: 'app-customer-list',
@@ -17,9 +17,9 @@ export class CustomerListComponent implements OnInit {
   nameSearch = new FormControl('');
 
 
-  p: number = 1;
+  p = 1;
 
-  constructor(private customerService:CustomerService,
+  constructor(private customerService: CustomerService,
               private router: Router) {
 
   }
@@ -29,30 +29,30 @@ export class CustomerListComponent implements OnInit {
 
   }
 
-  getAllCustomer(){
-    this.customerService.getAll().subscribe(data =>{
+  getAllCustomer() {
+    this.customerService.getAll().subscribe(data => {
       this.customerList = data;
-    })
+    });
   }
 
-  deleteCustomer(){
-    this.customerService.deleteCustomer(this.idModal).subscribe(()=>{
-    },e=>{
-      console.log(e)
-    },()=>{
+  deleteCustomer() {
+    this.customerService.deleteCustomer(this.idModal).subscribe(() => {
+    }, e => {
+      console.log(e);
+    }, () => {
       this.ngOnInit();
     });
   }
 
-  getDataForModal(id:number,name:string){
-    this.idModal=id;
-    this.nameModal=name;
+  getDataForModal(id: number, name: string) {
+    this.idModal = id;
+    this.nameModal = name;
   }
 
-  searchCustomerByName(){
-    this.customerService.searchCustomerByName(this.nameSearch.value).subscribe(data =>{
-      this.customerList= data;
-    })
+  searchCustomerByName() {
+    this.customerService.searchCustomerByName(this.nameSearch.value).subscribe(data => {
+      this.customerList = data;
+    });
   }
 
 }

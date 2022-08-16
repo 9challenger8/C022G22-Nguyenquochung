@@ -1,9 +1,9 @@
-import { Component, OnInit } from '@angular/core';
-import {CustomerService} from "../../service/customer/customer.service";
-import {CustomerTypeService} from "../../service/customer/customer-type.service";
-import {ActivatedRoute, ParamMap, Router} from "@angular/router";
-import {CustomerType} from "../../model/customer/customerType";
-import {FormControl, FormGroup, Validators} from "@angular/forms";
+import {Component, OnInit} from '@angular/core';
+import {CustomerService} from '../../service/customer/customer.service';
+import {CustomerTypeService} from '../../service/customer/customer-type.service';
+import {ActivatedRoute, ParamMap, Router} from '@angular/router';
+import {CustomerType} from '../../model/customer/customerType';
+import {FormControl, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-customer-edit',
@@ -12,18 +12,18 @@ import {FormControl, FormGroup, Validators} from "@angular/forms";
 })
 export class CustomerEditComponent implements OnInit {
 
-  customerTypeList : Array<CustomerType>;
-  customerEdit : FormGroup;
-  id:number;
+  customerTypeList: Array<CustomerType>;
+  customerEdit: FormGroup;
+  id: number;
 
-  constructor(private customerService:CustomerService,
-              private customerTypeService:CustomerTypeService,
-              private router:Router,
-              private activatedRoute:ActivatedRoute) {
-    this.activatedRoute.paramMap.subscribe((paramMap:ParamMap) =>{
-      this.id = parseInt(paramMap.get('id'));
+  constructor(private customerService: CustomerService,
+              private customerTypeService: CustomerTypeService,
+              private router: Router,
+              private activatedRoute: ActivatedRoute) {
+    this.activatedRoute.paramMap.subscribe((paramMap: ParamMap) => {
+      this.id = +paramMap.get('id');
       this.getCustomer(this.id);
-    })
+    });
   }
 
 
@@ -31,10 +31,10 @@ export class CustomerEditComponent implements OnInit {
     this.getAllCustomerType();
   }
 
-  getAllCustomerType(){
-    this.customerTypeService.getAll().subscribe( data =>{
+  getAllCustomerType() {
+    this.customerTypeService.getAll().subscribe(data => {
       this.customerTypeList = data;
-    })
+    });
   }
 
   getCustomer(id: number) {
@@ -53,21 +53,21 @@ export class CustomerEditComponent implements OnInit {
   }
 
   updateCustomer(id: number) {
-    const customer= this.customerEdit.value;
+    const customer = this.customerEdit.value;
     // customer.customerType = {
     //   id: customer.customerType
     // }
 
-    this.customerService.updateCustomer(id,customer).subscribe(() =>{
+    this.customerService.updateCustomer(id, customer).subscribe(() => {
       alert('Successfully');
-    },e=>{
-      console.log(e)
-    },()=>{
+    }, e => {
+      console.log(e);
+    }, () => {
       this.router.navigateByUrl('/customer/list');
-    })
+    });
   }
 
-  compareObj(value,option) {
-    return value.id === option.id ;
+  compareObj(value, option) {
+    return value.id === option.id;
   }
 }

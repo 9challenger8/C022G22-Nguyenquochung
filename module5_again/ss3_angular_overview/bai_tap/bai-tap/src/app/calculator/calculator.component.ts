@@ -26,6 +26,10 @@ export class CalculatorComponent implements OnInit {
       case '*':
         return this.result= this.number1 * this.number2;
       case '/':
+        if(this.number2==0){
+          alert('Number 2 not equal 0.')
+          return this.result=null;
+        }
         return this.result= this.number1 / this.number2;
     }
   }

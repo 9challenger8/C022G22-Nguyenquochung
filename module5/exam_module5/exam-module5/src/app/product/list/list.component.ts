@@ -77,4 +77,5 @@ export class ListComponent implements OnInit {
     this.indexPagination = i;
     this.getSearchListByIdPagination();
   }
+
 }

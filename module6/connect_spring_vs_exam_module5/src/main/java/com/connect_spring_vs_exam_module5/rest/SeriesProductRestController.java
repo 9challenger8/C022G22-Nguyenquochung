@@ -3,7 +3,6 @@ package com.connect_spring_vs_exam_module5.rest;
 
 import com.connect_spring_vs_exam_module5.model.SeriesProduct;
 import com.connect_spring_vs_exam_module5.service.ISeriesProductService;
-import net.bytebuddy.implementation.bind.annotation.Default;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -41,18 +40,6 @@ public class SeriesProductRestController {
         }
         return new ResponseEntity<>(seriesProductPage,HttpStatus.OK);
     }
-
-
-
-//    public String displayList(@PageableDefault(value = 6) Pageable pageable,
-//                              @RequestParam Optional<String> keyword,
-//                              Model model){
-//        String keywordVal=keyword.orElse("");
-//        model.addAttribute("keywordVal",keywordVal);
-//        model.addAttribute("customers", iCustomerService.findAllByName("%"+keywordVal+"%" ,pageable));
-//
-//        return "customer/listCustomer";
-//    }
 
     @GetMapping("/detail/{id}")
     public ResponseEntity<SeriesProduct> getDetailSeriesProductById(@PathVariable String id){

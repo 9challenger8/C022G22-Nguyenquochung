@@ -1,19 +1,20 @@
-package com.case_study_module4.service;
+package com.backend_connect_casestudy.service;
 
-import com.case_study_module4.model.facility.Facility;
+
+import com.backend_connect_casestudy.model.facility.Facility;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
-
 import java.util.List;
+import java.util.Optional;
 
 public interface IFacilityService {
 
-    Facility findById( int id) ;
+    Optional<Facility> findById(Integer id) ;
 
     void removeById(int id);
 
-    void save(Facility facility);
+    Facility save(Facility facility);
 
     Page<Facility> findAllByName(String name, Pageable pageable);
 
