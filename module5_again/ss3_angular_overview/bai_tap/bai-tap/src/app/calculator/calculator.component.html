@@ -1,7 +1,5 @@
 <h2 style="align-content: center">Calculator</h2>
 
-
-
 <table>
   <tr>
     <th colspan="2"><input type="number" [(ngModel)]="number1"></th>
@@ -9,15 +7,25 @@
   </tr>
 
   <tr>
-    <td><button (click)="calculator('+')">SUm</button></td>
-    <td><button (click)="calculator('-')">Sub</button></td>
-    <td><button (click)="calculator('*')">MUL</button></td>
-    <td><button (click)="calculator('/')">DIV</button></td>
+    <td>
+      <button (click)="calculator('+')">SUm</button>
+    </td>
+    <td>
+      <button (click)="calculator('-')">Sub</button>
+    </td>
+    <td>
+      <button (click)="calculator('*')">MUL</button>
+    </td>
+    <td>
+      <button (click)="calculator('/')">DIV</button>
+    </td>
   </tr>
 
-  <tr><th colspan="4"><label>
-    <input type="text" [(ngModel)]="result">
-  </label></th></tr>
+  <tr>
+    <th colspan="4">
+      <p>{{result}}</p>
+   </th>
+  </tr>
 
 </table>
 

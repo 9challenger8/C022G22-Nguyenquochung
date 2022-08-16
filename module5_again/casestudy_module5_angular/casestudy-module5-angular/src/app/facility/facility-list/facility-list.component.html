@@ -48,8 +48,41 @@
           <div class="card-body">
             <h5 class="card-title">{{temp.name}}</h5>
             <p class="card-text">{{temp.cost | currency }}</p>
-            <a class="btn btn-primary">Delete</a>
-            <a class="btn btn-primary">Edit</a>
+            <div style="display: flex;justify-content: flex-end;margin-right: 25px">
+              <!-- Button trigger modal -->
+              <button style="width: 75px;background-color: yellowgreen;padding: 0" (click)="getDataForModal(temp.id,temp.name)" type="button" class="btn" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal">
+                <i style="background-color: yellowgreen;color: orangered;font-size: 30px;padding: 0" class="bi bi-trash-fill"></i>
+              </button>
+              <button style="width: 75px;background-color: yellowgreen;padding: 0"  type="button" class="btn ">
+                <i style="background-color: yellowgreen;color: dodgerblue;font-size: 30px;padding: 0"
+                   class="bi bi-pencil-square"></i>
+              </button>
+
+            </div>
+            <!--                     Modal-->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                 aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    Delete
+                  </div>
+                  <div class="modal-body">
+                    <p>Do you want delete customer name: <span style="color: red"> {{nameModal}} </span> <br>
+                      with id: <span style="color: red">{{idModal}}</span> ?</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a>
+                      <button  type="button" data-bs-dismiss="modal"
+                              class="btn btn-primary">Delete
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="container-fluid" style="height: 40px"></div>
         </div>

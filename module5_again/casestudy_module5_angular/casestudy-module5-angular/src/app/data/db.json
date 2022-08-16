@@ -38,19 +38,6 @@
       },
       "address": "2222222",
       "id": 16
-    },
-    {
-      "name": "Hung Nguyen ",
-      "dateOfBirth": "2022-08-21",
-      "gender": "Male",
-      "cardId": "222222222",
-      "phoneNumber": "0907483832",
-      "customerType": {
-        "id": 5,
-        "name": "Member"
-      },
-      "address": "bvc",
-      "id": 17
     }
   ],
   "customerTypes": [

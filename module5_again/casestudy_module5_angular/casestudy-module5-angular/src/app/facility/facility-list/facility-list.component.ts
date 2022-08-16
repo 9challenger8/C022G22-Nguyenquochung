@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Facility} from "../../model/facility/facility";
 import {RentType} from "../../model/facility/rentType";
+import {FormControl} from "@angular/forms";
 
 @Component({
   selector: 'app-facility-list',
@@ -9,18 +10,14 @@ import {RentType} from "../../model/facility/rentType";
 })
 export class FacilityListComponent implements OnInit {
 
-
-
   facilityList: Array<Facility> = [];
+
+  idModal: number;
+  nameModal: string;
+  // nameSearch = new FormControl('');
 
 
   constructor() {
-
-    const rentTypeList: RentType[] = [{id: 1, name: 'Year'}, {id: 2, name: 'Month'}, {id: 3, name: 'Day'}, {
-      id: 4,
-      name: 'Hour'
-    }];
-
     this.facilityList.push({
       id: 1,
       name: 'Room_123',
@@ -72,6 +69,11 @@ export class FacilityListComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  getDataForModal(id: number, name: string) {
+    this.idModal = id;
+    this.nameModal = name;
   }
 
 
