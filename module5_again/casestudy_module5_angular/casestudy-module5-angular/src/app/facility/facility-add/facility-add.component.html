@@ -6,31 +6,41 @@
           <div class="col-12">
             <!--            <form >-->
             <fieldset>
-              <legend>Add Service:</legend>
-              <input name="name" type="text" class="feedback-input" placeholder="Name"/>
-              <input name="area" type="text" class="feedback-input" placeholder="Area"/>
-              <input name="cost" type="text" class="feedback-input" placeholder="Cost"/>
-              <input name="numberPeople" type="text" class="feedback-input" placeholder="Number of people"/>
-
-              <select name="rentType">
+              <legend>Add Service</legend>
+              <label for="name">Name <span style="color: red">(*)</span>:</label>
+              <input id="name" name="name" type="text" class="feedback-input" placeholder="Name"/>
+              <label for="area">Area <span style="color: red">(*)</span>:</label>
+              <input id="area" name="area" type="text" class="feedback-input" placeholder="Area"/>
+              <label for="cost">Cost <span style="color: red">(*)</span>:</label>
+              <input id="cost" name="cost" type="text" class="feedback-input" placeholder="Cost"/>
+              <label for="numberPeople">Number people <span style="color: red">(*)</span>:</label>
+              <input id="numberPeople" name="numberPeople" type="text" class="feedback-input"
+                     placeholder="Number of people"/>
+              <label for="rentType">Rent type <span style="color: red">(*)</span>:</label>
+              <select id="rentType" name="rentType">
                 <option value="" selected="selected">Please choose a rental type.</option>
               </select>
-
+              <label for="facilityType">Facility Type <span style="color: red">(*)</span>:</label>
               <select id="facilityType" name="facilityType" (change)="selectFacility($event)">
                 <option value="" selected="selected">Please choose a facility type.</option>
                 <option value="1">Villa.</option>
                 <option value="2">House.</option>
                 <option value="3">Room.</option>
               </select>
-
-              <input name="standardRoom" type="text"
+              <label for="standardRoom" [ngStyle]="{'display': displayStandardRoom }">Stand room <span style="color: red">(*)</span>:</label>
+              <input id="standardRoom" name="standardRoom" type="text"
                      class="feedback-input" placeholder="Standard Room" [ngStyle]="{'display': displayStandardRoom }"/>
-              <input name="otherConvenience" type="text" class="feedback-input"
+              <label for="otherConvenience" [ngStyle]="{'display': displayOtherConvenience }">Other convenience <span style="color: red">(*)</span>:</label>
+              <input id="otherConvenience" name="otherConvenience" type="text" class="feedback-input"
                      placeholder="Description other convenience" [ngStyle]="{'display': displayOtherConvenience }"/>
-              <input name="poolArea" type="text" class="feedback-input" placeholder="Pool area" [ngStyle]="{'display': displayPoolArea }"/>
-              <input name="numberFloor" type="text" class="feedback-input"
+              <label for="poolArea" [ngStyle]="{'display': displayPoolArea }">Pool area <span style="color: red">(*)</span>:</label>
+              <input id="poolArea" name="poolArea" type="text" class="feedback-input" placeholder="Pool area"
+                     [ngStyle]="{'display': displayPoolArea }"/>
+              <label for="numberFloor" [ngStyle]="{'display': displayNumberFloor }">Number floor <span style="color: red">(*)</span>:</label>
+              <input id="numberFloor" name="numberFloor" type="text" class="feedback-input"
                      placeholder="Number of floor" [ngStyle]="{'display': displayNumberFloor }"/>
-              <textarea name="facilityFree" class="feedback-input" placeholder="Facility free"
+              <label for="facilityFree" [ngStyle]="{'display': displayFacilityFree }">Facility free <span style="color: red">(*)</span>:</label>
+              <textarea id="facilityFree" name="facilityFree" class="feedback-input" placeholder="Facility free"
                         [ngStyle]="{'display': displayFacilityFree }"></textarea>
 
               <input type="submit" value="SUBMIT"/>

@@ -3,14 +3,14 @@
     {
       "name": "The Anh",
       "dateOfBirth": "2022-07-07",
-      "gender": "Male",
+      "gender": "Female",
       "cardId": "222222222",
       "phoneNumber": "0902222222",
       "customerType": {
         "id": 4,
         "name": "Silver"
       },
-      "address": "eqe",
+      "address": "da nang",
       "id": 14
     },
     {
@@ -20,10 +20,10 @@
       "cardId": "222222222",
       "phoneNumber": "0903222222",
       "customerType": {
-        "id": 4,
-        "name": "Silver"
+        "id": 2,
+        "name": "Platinum"
       },
-      "address": "22",
+      "address": "daklak\n",
       "id": 15
     },
     {

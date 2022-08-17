@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Facility} from "../../model/facility/facility";
-import {RentType} from "../../model/facility/rentType";
-import {FormControl} from "@angular/forms";
+import {FacilityService} from "../../service/facility/facility.service";
 
 @Component({
   selector: 'app-facility-list',
@@ -17,7 +16,7 @@ export class FacilityListComponent implements OnInit {
   // nameSearch = new FormControl('');
 
 
-  constructor() {
+  constructor( private facilityService:FacilityService) {
     this.facilityList.push({
       id: 1,
       name: 'Room_123',
@@ -69,6 +68,13 @@ export class FacilityListComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  getAllFacilityPagination(){
+    this.facilityService.getAll().subscribe(data =>{
+      this.facilityList=data;
+    })
+
   }
 
   getDataForModal(id: number, name: string) {

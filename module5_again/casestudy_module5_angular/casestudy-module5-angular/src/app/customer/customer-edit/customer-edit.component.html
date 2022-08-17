@@ -6,57 +6,65 @@
         <div class="row">
           <div class="col-12">
 
-            <form [formGroup]="customerEdit"  (ngSubmit)="updateCustomer(id)" *ngIf="customerEdit">
+            <form class="table-shadow font-label-custom" [formGroup]="customerEdit"  (ngSubmit)="updateCustomer(id)" *ngIf="customerEdit">
               <fieldset>
-                <legend>Edit Customer:</legend>
-
-                <!--                <input formControlName="id"   type="text" class="feedback-input" placeholder="Id" />-->
-                <!--                <p style="color: red" *ngIf="customerAdd.controls.id.hasError('required') && customerAdd.controls.id.touched">-->
-                <!--                  Id can't be left blank-->
-                <!--                </p>-->
-
-                <input formControlName="name" name="name" type="text" class="feedback-input" placeholder="Name" />
-                <p style="color: red" *ngIf="customerEdit.controls.name.hasError('required') && customerEdit.controls.name.touched">
+                <legend>Edit Customer</legend>
+                <label for="name">Name <span style="color: red">(*)</span>:</label>
+                <input id="name" formControlName="name" name="name" type="text" class="feedback-input"
+                       placeholder="Name"/>
+                <p style="color: red"
+                   *ngIf="customerEdit.controls.name.hasError('required') && customerEdit.controls.name.touched">
                   Name can't be left blank.
                 </p>
-                <p style="color: red" *ngIf="customerEdit.controls.name.hasError('pattern') && customerEdit.controls.name.touched">
+                <p style="color: red"
+                   *ngIf="customerEdit.controls.name.hasError('pattern') && customerEdit.controls.name.touched">
                   Invalid format.
                 </p>
 
-                <label for="dateOfBirth" >Date of birth:</label><br>
-                <input formControlName="dateOfBirth" id="dateOfBirth"  name="dateOfBirth" type="date" class="feedback-input"
-                       placeholder="Date of Birth" />
-                <p style="color: red" *ngIf="customerEdit.controls.dateOfBirth.hasError('required') && customerEdit.controls.dateOfBirth.touched">
+                <label for="dateOfBirth">Date of birth <span style="color: red">(*)</span>:</label><br>
+                <input formControlName="dateOfBirth" id="dateOfBirth" name="dateOfBirth" type="date"
+                       class="feedback-input"
+                       placeholder="Date of Birth"/>
+                <p style="color: red"
+                   *ngIf="customerEdit.controls.dateOfBirth.hasError('required') && customerEdit.controls.dateOfBirth.touched">
                   Date of birth can't be left blank.
                 </p>
-
-                <select formControlName="gender"  name="gender">
-                  <option selected value="" >Please choose gender.</option>
+                <label for="gender">Gender <span style="color: red">(*)</span>:</label>
+                <select id="gender" formControlName="gender" name="gender">
+                  <option selected value="">Please choose gender.</option>
                   <option value="Male">Male</option>
                   <option value="Female">Female</option>
                   <option value="Other">Other</option>
                 </select>
-                <p style="color: red" *ngIf="customerEdit.controls.gender.hasError('required') && customerEdit.controls.gender.touched">
+                <p style="color: red"
+                   *ngIf="customerEdit.controls.gender.hasError('required') && customerEdit.controls.gender.touched">
                   Gender can't be left blank.
                 </p>
-
-                <input formControlName="cardId"  name="idCard" type="text" class="feedback-input" placeholder="Id card" />
-                <p style="color: red" *ngIf="customerEdit.controls.cardId.hasError('required') && customerEdit.controls.cardId.touched">
+                <label for="idCard">Id card <span style="color: red">(*)</span>:</label>
+                <input formControlName="cardId" id="idCard" name="idCard" type="text" class="feedback-input"
+                       placeholder="Id card"/>
+                <p style="color: red"
+                   *ngIf="customerEdit.controls.cardId.hasError('required') && customerEdit.controls.cardId.touched">
                   Card id can't be left blank.
                 </p>
-                <p style="color: red" *ngIf="customerEdit.controls.cardId.hasError('pattern') && customerEdit.controls.cardId.touched">
+                <p style="color: red"
+                   *ngIf="customerEdit.controls.cardId.hasError('pattern') && customerEdit.controls.cardId.touched">
                   Invalid format.
                 </p>
-
-                <input formControlName="phoneNumber" name="phoneNumber" type="text" class="feedback-input" placeholder="Phone number" />
-                <p style="color: red" *ngIf="customerEdit.controls.phoneNumber.hasError('required') && customerEdit.controls.phoneNumber.touched">
+                <label for="phoneNumber">Phone number <span style="color: red">(*)</span>:</label>
+                <input formControlName="phoneNumber" id="phoneNumber" name="phoneNumber" type="text"
+                       class="feedback-input"
+                       placeholder="Phone number"/>
+                <p style="color: red"
+                   *ngIf="customerEdit.controls.phoneNumber.hasError('required') && customerEdit.controls.phoneNumber.touched">
                   Phone number can't be left blank.
                 </p>
-                <p style="color: red" *ngIf="customerEdit.controls.phoneNumber.hasError('pattern') && customerEdit.controls.phoneNumber.touched">
+                <p style="color: red"
+                   *ngIf="customerEdit.controls.phoneNumber.hasError('pattern') && customerEdit.controls.phoneNumber.touched">
                   Invalid format.
                 </p>
-
-                <select [compareWith]="compareObj" formControlName="customerType" >
+                <label for="customerType">Customer type <span style="color: red">(*)</span>:</label>
+                <select [compareWith]="compareObj" id="customerType" formControlName="customerType" >
                   <option value="" disabled  selected="selected" >Please choose customer type.</option>
                   <option *ngFor="let customerType of customerTypeList" [ngValue]="customerType" >
                     {{customerType.name}}
@@ -65,8 +73,8 @@
                 <p style="color: red" *ngIf="customerEdit.controls.customerType.hasError('required') && customerEdit.controls.customerType.touched">
                   Customer type id can't be left blank.
                 </p>
-
-                <textarea formControlName="address"  name="address" class="feedback-input" placeholder="Address" ></textarea>
+                <label for="address">Address <span style="color: red">(*)</span>:</label>
+                <textarea formControlName="address" id="address"  name="address" class="feedback-input" placeholder="Address" ></textarea>
                 <p style="color: red" *ngIf="customerEdit.controls.address.hasError('required') && customerEdit.controls.address.touched">
                   Address can't be left blank.
                 </p>

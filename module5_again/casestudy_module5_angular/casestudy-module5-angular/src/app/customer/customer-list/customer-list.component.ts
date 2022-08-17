@@ -21,7 +21,6 @@ export class CustomerListComponent implements OnInit {
 
   constructor(private customerService: CustomerService,
               private router: Router) {
-
   }
 
   ngOnInit(): void {
@@ -44,15 +43,14 @@ export class CustomerListComponent implements OnInit {
     });
   }
 
-  getDataForModal(id: number, name: string) {
-    this.idModal = id;
-    this.nameModal = name;
-  }
-
   searchCustomerByName() {
     this.customerService.searchCustomerByName(this.nameSearch.value).subscribe(data => {
       this.customerList = data;
     });
   }
 
+  getDataForModal(id: number, name: string) {
+    this.idModal = id;
+    this.nameModal = name;
+  }
 }

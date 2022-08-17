@@ -10,8 +10,9 @@ export class ContractListComponent implements OnInit {
 
   contractList : Array<Contract> = [];
 
-  constructor() {
 
+
+  constructor() {
     this.contractList.push({id:1,customer:{id:1,name:'Joni'},facility:{id:1,name:'Room_123'},startDate:'12-22-2019',
       endDate:'22-23-2021',deposit:'12000'})
     this.contractList.push({id:2,customer:{id:1,name:'Jonah'},facility:{id:1,name:'Room_123'},startDate:'12-22-2019',

@@ -18,6 +18,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {NgxPaginationModule} from 'ngx-pagination';
 import {ReactiveFormsModule} from '@angular/forms';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +32,7 @@ import {ReactiveFormsModule} from '@angular/forms';
     CustomerListComponent,
     FacilityAddComponent,
     FacilityListComponent,
-    FacilityEditComponent
+    FacilityEditComponent,
   ],
     imports: [
         BrowserModule,

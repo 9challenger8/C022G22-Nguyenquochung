@@ -2,55 +2,60 @@
 <main id="main">
 
   <div style="padding: 0 12px 0 12px">
-    <div style="width: 100%;margin-top:7px ;height: 150px;
-        background-image: url('https://resortdanang.info/wp-content/uploads/2018/11/sheraton-da-nang.jpg');opacity: 0.9">
-      <h2
-        style="font-size: 90px;margin: 0 ;padding-top: 25px ;color: #F7804A;text-align: center;font-family:Satisfy,sans-serif;font-weight:700;font-style:normal">
-        Customers
-      </h2>
-    </div>
-  </div>
-
-  <section id="hero-slider" class="hero-slider">
-    <div class=" my-container container-fluid">
-      <div style="width: 100%;margin:0 0 7px 0 ;height: 55px;background-color: #cef8e0">
-        <div style="display: flex;justify-content: space-between;align-items: center">
-          <div style="margin : 0 0 0 20px ">
-            <a>
-              <i style="font-size: 40px;color: black" class="bi bi-person"></i>
-            </a>
-            <a routerLink="/customer/add" style="margin-left: 20px ">
-              <i style="font-size: 40px;color: black" class="bi bi-person-plus"></i>
-            </a>
-            <a style="margin-left: 20px ">
-              <i style="font-size: 40px;color: black" class="bi bi-sort-alpha-down"></i>
-            </a>
-            <a style="margin-left: 20px ">
-              <i style="font-size: 40px;color: black" class="bi bi-sort-alpha-down-alt"></i>
-            </a>
-          </div>
-          <div style="margin: 0 15px 0 0 ;">
-            <div class="input-group">
-              <input [formControl]="nameSearch" type="text" class="form-control" placeholder="Search name">
-              <div>
-                <button (click)="searchCustomerByName()" class="btn btn-secondary" type="button">
-                  <i class="bi bi-search"></i>
-                </button>
-              </div>
+    <div  class="shadow-custom" style="width: 100%;margin:0;height: 110px;background-color: #cef8e0">
+      <div style="height: 100%;display: flex;justify-content: space-between;align-items: center">
+        <div style="margin : 0 0 0 20px ">
+          <a >
+            <i style="font-size: 40px;color: black" class="bi bi-person"></i>
+          </a>
+          <a class="" routerLink="/customer/add" style="margin-left: 20px ">
+            <i style="font-size: 40px" class="bi bi-person-plus icon-hover-custom"></i>
+          </a>
+<!--          <a  style="margin-left: 20px ">-->
+<!--            <i style="font-size: 40px" class="bi bi-sort-alpha-down icon-hover-custom"></i>-->
+<!--          </a>-->
+<!--          <a  style="margin-left: 20px ">-->
+<!--            <i style="font-size: 40px" class="bi bi-sort-alpha-down-alt icon-hover-custom"></i>-->
+<!--          </a>-->
+        </div>
+        <div>
+          <h2
+            style="font-size: 80px;margin: 0 ;padding:0  ;color: #212529;text-align: center;font-family:Satisfy,sans-serif;font-weight:700;font-style:normal">
+            Customers
+          </h2>
+        </div>
+        <div style="margin: 0 15px 0 0 ;">
+          <div class="input-group">
+            <input [formControl]="nameSearch" type="text" class="form-control" style="font-size: 25px" placeholder="Search name">
+            <div>
+              <button style="font-size: 25px;" (click)="searchCustomerByName()" class="btn btn-secondary" type="button">
+                <i class="bi bi-search"></i>
+              </button>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+
+  <section style="padding-top: 55px" id="hero-slider" class="hero-slider">
+    <div class=" my-container container-fluid">
 
       <div>
-        <table class="table table-responsive-lg  table-striped table-bordered "
+        <table class="table table-responsive-lg table-striped table-bordered table-hover table-shadow"
                *ngIf="(customerList).length > 0; else noResults">
           <thead>
-          <tr class="row-custom" style="background-color: #5DFC9A">
-            <th scope="col">No.</th>
-            <th scope="col">Name</th>
-            <th scope="col">Date of birth</th>
-            <th scope="col">Gender</th>
+          <tr class="row-custom" style="background-color: #6de29b">
+            <th style="width: 80px;" scope="col">No.</th>
+            <th style="width: 250px;" scope="col">
+              Name
+              <a>
+                <i class="bi bi-arrow-up  icon-hover-custom"></i>
+              </a>
+              <i class="bi bi-arrow-down  icon-hover-custom"></i>
+            </th>
+            <th style="width: 120px;" scope="col">Birthday</th>
+            <th style="width: 100px ;" scope="col">Gender</th>
             <th scope="col">Id card</th>
             <th scope="col">Phone number</th>
             <th scope="col">Customer type</th>
@@ -69,13 +74,19 @@
             <td>{{temp.phoneNumber}}</td>
             <td>{{temp.customerType.name}}</td>
             <td>{{temp.address}}</td>
-            <td>
+            <td style="text-align: center">
               <!-- Button trigger modal -->
-              <button (click)="getDataForModal(temp.id,temp.name)" type="button" class="btn" data-bs-toggle="modal"
+              <button style="padding: 0;margin: 0" (click)="getDataForModal(temp.id,temp.name)" type="button" class="btn button-delete" data-bs-toggle="modal"
                       data-bs-target="#exampleModal">
-                <i style="background-color: white;color: red;font-size: 22px;padding: 0" class="bi bi-trash-fill"></i>
+                <i style="font-size: 22px;padding: 0" class="bi bi-trash-fill"></i>
               </button>
-
+            </td>
+            <td style="text-align: center;" >
+              <button style="padding: 0;margin: 0" [routerLink]="['/customer/edit',temp.id]" type="button" class="btn button-edit ">
+                <i style="font-size: 22px;padding: 0"
+                   class="bi bi-pencil-square"></i>
+              </button>
+            </td>
 
               <!--                     Modal-->
               <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -100,13 +111,6 @@
                   </div>
                 </div>
               </div>
-            </td>
-            <td>
-              <button  type="button" class="btn ">
-                <i style="background-color: white;color: dodgerblue;font-size: 22px;padding: 0"
-                   class="bi bi-pencil-square"></i>
-              </button>
-            </td>
           </tr>
           </tbody>
         </table>
@@ -114,14 +118,13 @@
 
         <!--            Hien thi khi khong co du lieu-->
         <ng-template #noResults>
-          <table class="table table-responsive-lg  table-striped table-bordered ">
+          <table class="table table-hover table-responsive-lg  table-striped table-bordered table-shadow ">
             <thead>
             <tr class="row-custom" style="background-color: #5DFC9A">
-              <th scope="col">No.</th>
-              <th scope="col">Name
-              </th>
-              <th scope="col">Date of birth</th>
-              <th scope="col">Gender</th>
+              <th style="width: 80px;" scope="col">No.</th>
+              <th style="width: 250px;" scope="col">Name</th>
+              <th style="width: 120px;" scope="col">Birthday</th>
+              <th style="width: 100px ;" scope="col">Gender</th>
               <th scope="col">Id card</th>
               <th scope="col">Phone number</th>
               <th scope="col">Customer type</th>
@@ -130,14 +133,16 @@
             </tr>
             </thead>
             <tbody>
-            <h3 style="color:black"> No results found.</h3>
+            <tr class="row-body-custom">
+              <td style="text-align: center" colspan="10"> No results found.</td>
+            </tr>
             </tbody>
           </table>
         </ng-template>
 
         <!--            Pagination-->
-        <div class="container">
-          <pagination-controls (pageChange)="p = $event" class="d-flex flex-row-reverse"></pagination-controls>
+        <div class="container" style="display: flex;justify-content: center;margin-top: 10px">
+            <pagination-controls (pageChange)="p = $event" ></pagination-controls>
         </div>
       </div>
 

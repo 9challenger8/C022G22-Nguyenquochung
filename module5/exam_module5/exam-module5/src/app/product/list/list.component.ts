@@ -21,8 +21,9 @@ export class ListComponent implements OnInit {
 
 
   indexPagination: number = 0;
-  totalPagination: number;
   pages: Array<number>;
+
+  totalPagination: number;
 
   constructor(private seriesProduct: SeriesProductService,
               private router: Router) {

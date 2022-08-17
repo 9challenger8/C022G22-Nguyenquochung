@@ -1,93 +1,105 @@
 <main id="main">
 
   <div style="padding: 0 12px 0 12px">
-    <div style="margin-bottom:40px ;height: 150px;
-    background-image: url('https://cdn3.ivivu.com/2021/04/avana-retreat-mai-chau-ivivu-5.jpeg');opacity: 0.9">
-      <h2
-        style="font-size: 90px;margin: 0 ;padding-top: 25px ;color:#F7804A;text-align: center;font-family:Satisfy,sans-serif;font-weight:700;font-style:normal">
-        Facilities
-      </h2>
+
+    <div class="shadow-custom" style="width: 100%;margin:0;height: 110px;background-color: #cef8e0">
+      <div style="height: 100%;display: flex;justify-content: space-between;align-items: center">
+
+        <div style="margin : 0 0 0 20px ">
+          <a routerLink="/facility/add">
+            <i style="font-size: 39px" class="bi bi-bag-plus-fill icon-hover-custom"></i>
+          </a>
+          <a style="margin-left: 20px ">
+            <i style="font-size: 40px" class="bi bi-sort-alpha-down icon-hover-custom"></i>
+          </a>
+          <a style="margin-left: 20px ">
+            <i style="font-size: 40px" class="bi bi-sort-alpha-down-alt icon-hover-custom"></i>
+          </a>
+        </div>
+        <div>
+          <h2
+            style="font-size: 80px;margin: 0 ;color:#212529;text-align: center;font-family:Satisfy,sans-serif;font-weight:700;font-style:normal">
+            Facilities
+          </h2>
+        </div>
+        <div style="margin: 0 15px 0 0 ;">
+          <div class="input-group">
+            <input type="text" class="form-control" style="font-size: 25px" placeholder="Search name">
+            <div>
+              <button style="font-size: 25px" class="btn btn-secondary" type="button">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
-    <div class=" my-container container-fluid">
+  <section style="padding-top: 30px" id="hero-slider" class="hero-slider">
+    <div style="margin:0 5% 0 5%" class="my-container container-fluid">
 
-      <div style="width: 100%;margin:0 0 7px 0 ;height: 55px;background-color: #cef8e0">
-        <div style="display: flex;justify-content: space-between;align-items: center">
 
-          <div style="margin : 0 0 0 20px ">
-            <a routerLink="/facility/add">
-              <i style="font-size: 39px;color: black" class="bi bi-bag-plus-fill"></i>
-            </a>
-            <a  style="margin-left: 20px " >
-              <i style="font-size: 40px;color: black" class="bi bi-sort-alpha-down"></i>
-            </a>
-            <a style="margin-left: 20px ">
-              <i style="font-size: 40px;color: black" class="bi bi-sort-alpha-down-alt"></i>
-            </a>
-          </div>
-          <div style="margin: 0 15px 0 0 ;">
-            <div class="input-group">
-              <input  type="text" class="form-control" placeholder="Search name">
-              <div>
-                <button  class="btn btn-secondary" type="button">
-                  <i class="bi bi-search"></i>
+      <div style="display: flex;flex-wrap: wrap">
+        <div style="width: 33.33%;border: none;padding:1.5% 1% 1.5% 1% " *ngFor="let temp of facilityList">
+          <div class="card-custom" style="position: relative" >
+            <img style="border-radius: 10px 10px 0 0"
+              src="https://resortdanang.info/wp-content/uploads/2018/12/phong-khach-villas-3-bedroom-furama-da-nang.jpg"
+              class="card-img-top" alt="...">
+                <i  (click)="getDataForModal(temp.id,temp.name)" style="font-weight: bold"  data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                   class="bi bi-x-lg card-button-delete-custom">
+                </i>
+            <div class="card-body">
+              <h5 class="card-title">{{temp.name}}</h5>
+              <div style="width: 100%;display: flex;padding-bottom: 8px">
+                <div class="card-text"><span>Cost: </span> {{temp.cost | currency }}</div>
+                <div class="card-text"><span>Area: </span> {{temp.area}} m<sup>2</sup></div>
+              </div>
+              <div style="display: flex;justify-content: flex-end;margin-right: 25px">
+                <button style="width: 75px;padding: 0;margin-right:10px" type="button" class="btn card-button-cart-custom card-button-border-custom">
+                  <i style="font-size: 30px;padding: 0"
+                    class="bi bi-cart-fill"></i>
+                </button>
+
+                <button routerLink="/facility/edit" style="width: 75px;padding: 0" type="button" class="btn card-button-edit-custom card-button-border-custom">
+                  <i style="font-size: 30px;padding: 0"
+                     class="bi bi-pencil-square"></i>
                 </button>
               </div>
             </div>
           </div>
+
+
+          <!--          <div class="container-fluid" style="height: 40px"></div>-->
         </div>
       </div>
 
-      <div style="display: flex;justify-content: space-between;flex-wrap:wrap" >
-
-        <div class="card" style="width:31.5%" *ngFor="let temp of facilityList">
-          <img
-            src="https://resortdanang.info/wp-content/uploads/2018/12/phong-khach-villas-3-bedroom-furama-da-nang.jpg"
-            class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">{{temp.name}}</h5>
-            <p class="card-text">{{temp.cost | currency }}</p>
-            <div style="display: flex;justify-content: flex-end;margin-right: 25px">
-              <!-- Button trigger modal -->
-              <button style="width: 75px;background-color: yellowgreen;padding: 0" (click)="getDataForModal(temp.id,temp.name)" type="button" class="btn" data-bs-toggle="modal"
-                      data-bs-target="#exampleModal">
-                <i style="background-color: yellowgreen;color: orangered;font-size: 30px;padding: 0" class="bi bi-trash-fill"></i>
-              </button>
-              <button style="width: 75px;background-color: yellowgreen;padding: 0"  type="button" class="btn ">
-                <i style="background-color: yellowgreen;color: dodgerblue;font-size: 30px;padding: 0"
-                   class="bi bi-pencil-square"></i>
-              </button>
-
+      <!--                     Modal-->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+           aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              Delete
             </div>
-            <!--                     Modal-->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                 aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    Delete
-                  </div>
-                  <div class="modal-body">
-                    <p>Do you want delete customer name: <span style="color: red"> {{nameModal}} </span> <br>
-                      with id: <span style="color: red">{{idModal}}</span> ?</p>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <a>
-                      <button  type="button" data-bs-dismiss="modal"
-                              class="btn btn-primary">Delete
-                      </button>
-                    </a>
-                  </div>
-                </div>
-              </div>
+            <div class="modal-body">
+              <p>Do you want delete customer name: <span style="color: red"> {{nameModal}} </span> <br>
+                with id: <span style="color: red">{{idModal}}</span> ?</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <a>
+                <button type="button" data-bs-dismiss="modal"
+                        class="btn btn-primary">Delete
+                </button>
+              </a>
             </div>
           </div>
-          <div class="container-fluid" style="height: 40px"></div>
         </div>
       </div>
     </div>
+  </section>
 </main>
 
 

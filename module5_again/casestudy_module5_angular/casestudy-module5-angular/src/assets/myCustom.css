@@ -1,37 +1,98 @@
 
-
-.my-container{
-    width: 90%;
+.my-container {
+  width: 90%;
 }
 
-.card-title{
-    font-weight: bold;
+.card-title {
+  font-weight: bold;
+  font-size: 25px;
 }
 
-.card{
-    border: none;
+.card-text{
+  font-size: 22px;
+  width: 50%;
 }
 
-.card-body{
-    background-color: #f4f2f2;
+.icon-hover-custom:hover {
+  color: red;
 }
 
-#main{
-    background-color: white;
+.card-custom {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.btn{
-  margin-left: 8px;
+.card-custom:hover{
+  transform: scale(1,1.08);
 }
 
-.row-custom th{
+
+.card-button-delete-custom {
+  color: black;
+  font-size: 45px;
+  padding: 0;
+  position: absolute;
+  left: 470px;
+  cursor: pointer;
+}
+
+.card-button-delete-custom:hover{
+  color: red;
+}
+
+.card-button-border-custom{
+  border: 1px solid black;
+}
+
+.card-button-cart-custom:hover{
+  color: white;
+  background-color: #59aa07;
+  border: none;
+}
+
+.card-button-edit-custom:hover{
+  color: white;
+  background-color:#FFC107 ;
+  border: none;
+}
+
+.card-body {
+  background-color: #f4f2f2;
+  border-radius: 10px;
+}
+.table-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.row-custom th {
   text-align: center;
   font-size: 25px;
   font-weight: bolder;
 }
 
-.row-body-custom{
+.row-body-custom {
   font-size: 22px;
+}
+
+.shadow-custom {
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*Css for customer list*/
+.button-delete {
+  color: black;
+}
+
+.button-delete:hover {
+  color: red;
+}
+
+.button-edit {
+  color: black;
+}
+
+.button-edit:hover {
+  color:#FFC107;
 }
 
 

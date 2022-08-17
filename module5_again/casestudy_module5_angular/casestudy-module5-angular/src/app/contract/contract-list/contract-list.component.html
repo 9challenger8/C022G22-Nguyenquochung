@@ -1,62 +1,90 @@
 <main id="main">
-  <div class="container-fluid">
-    <section id="hero-slider" class="hero-slider" style="padding:0 0 40px 0">
+  <div style="padding: 0 12px 0 12px">
+    <div  class="shadow-custom" style="width: 100%;margin:0;height: 110px;background-color: #cef8e0">
+      <div style="height: 100%;display: flex;justify-content: space-between;align-items: center">
 
-      <div style="width: 100%;margin:10px 0 40px 0 ;height: 160px;background-color: #0a58ca">
-        <h2
-          style="font-size: 40px;padding-top: 30px ;color: #ffffff;text-align: center;font-family:Playfair Display,serif;font-weight:700;font-style:normal">
-          Contracts
-        </h2>
-        <div style="display: flex;justify-content: center">
-          <a routerLink="/contract/add" class="addNew">
-            <i style="font-size: 50px" class="bi bi-plus-square"></i>
+        <div style="margin : 0 0 0 20px ">
+          <a routerLink="/contract/add">
+            <i style="font-size: 40px" class="bi bi-plus-square icon-hover-custom"></i>
+          </a>
+          <a style="margin-left: 20px ">
+            <i style="font-size: 40px;" class="bi bi-sort-alpha-down icon-hover-custom"></i>
+          </a>
+          <a style="margin-left: 20px ">
+            <i style="font-size: 40px" class="bi bi-sort-alpha-down-alt icon-hover-custom"></i>
           </a>
         </div>
-      </div>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <table class="table">
-              <thead>
-              <tr>
-                <th scope="col">No.</th>
-                <th scope="col">Facility</th>
-                <th scope="col">Customer</th>
-                <th scope="col">Start date</th>
-                <th scope="col">End date</th>
-                <th scope="col">Deposit</th>
-                <th scope="col" colspan="2">Option</th>
-              </tr>
-              </thead>
-              <tbody>
-              <tr *ngFor="let temp of contractList">
-                <th>{{temp.id}}</th>
-                <td>{{temp.customer.name}}</td>
-                <td>{{temp.facility.name}}</td>
-                <td>{{temp.startDate}}</td>
-                <td>{{temp.endDate}}</td>
-                <td>{{temp.deposit}}</td>
-                <td>
-<!--                   Button trigger modal-->
-                  <button type="button" class="btn-primary">
-                    +
-                  </button>
-<!--                </td>-->
-                <!--Modal danh sach dich vu di kem-->
-                  <!-- Button trigger modal -->
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                          data-bs-target="attachFacilityModal">
-                    List attach facilities
-                  </button>
-                </td>
-              </tr>
-              </tbody>
-            </table>
+        <div>
+          <h2
+            style="font-size: 80px;margin: 0;color: #212529;text-align: center;font-family:Satisfy,sans-serif;font-weight:700;font-style:normal">
+            Contracts
+          </h2>
+        </div>
+
+        <div style="margin: 0 15px 0 0 ;">
+          <div class="input-group">
+            <input type="text" class="form-control" style="font-size: 25px" placeholder="Search name">
+            <div>
+              <button style="font-size: 25px" class="btn btn-secondary" type="button">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   </div>
+
+  <section style="padding-top: 55px " id="hero-slider" class="hero-slider">
+    <div class="my-container container-fluid">
+      <table  class="table table-hover table-responsive-lg  table-striped table-bordered table-shadow"
+             *ngIf="(contractList).length > 0; else noResults">
+
+        <thead>
+        <tr class="row-custom" style="background-color: #6de29b">
+          <th scope="col">No.</th>
+          <th scope="col">Facility</th>
+          <th scope="col">Customer</th>
+          <th scope="col">Start date</th>
+          <th scope="col">End date</th>
+          <th scope="col">Deposit</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="row-body-custom" *ngFor="let temp of contractList">
+          <th>{{temp.id}}</th>
+          <td>{{temp.customer.name}}</td>
+          <td>{{temp.facility.name}}</td>
+          <td>{{temp.startDate}}</td>
+          <td>{{temp.endDate}}</td>
+          <td>{{temp.deposit}}</td>
+        </tr>
+        </tbody>
+      </table>
+
+      <!--            Hien thi khi khong co du lieu-->
+      <ng-template #noResults>
+        <table class="table table-hover table-responsive-lg  table-striped table-bordered table-shadow ">
+          <thead>
+          <tr class="row-custom" style="background-color: #6de29b">
+            <th scope="col">No.</th>
+            <th scope="col">Facility</th>
+            <th scope="col">Customer</th>
+            <th scope="col">Start date</th>
+            <th scope="col">End date</th>
+            <th scope="col">Deposit</th>
+            <th scope="col" colspan="2">Option</th>
+          </tr>
+          </thead>
+          <tbody style="text-align: center">
+          <tr class="row-body-custom">
+            <td colspan="8"> No results found.</td>
+          </tr>
+          </tbody>
+        </table>
+      </ng-template>
+    </div>
+  </section>
 </main>
 
