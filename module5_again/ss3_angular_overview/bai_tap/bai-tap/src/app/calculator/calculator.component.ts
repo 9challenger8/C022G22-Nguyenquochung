@@ -7,16 +7,15 @@ import {Component, OnInit} from '@angular/core';
 })
 
 export class CalculatorComponent implements OnInit {
+  number1: number = 0;
+  number2: number = 0;
+  result = 0;
 
   constructor() {
   }
 
   ngOnInit(): void {
   }
-
-  number1: number = 0;
-  number2: number = 0;
-  result = 0;
 
   calculator(operator: string): number {
     switch (operator) {
@@ -34,6 +33,4 @@ export class CalculatorComponent implements OnInit {
         return this.result = this.number1 / this.number2;
     }
   }
-
 }
-

@@ -3,24 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { RegisterFormComponent } from './register-form/register-form.component';
 import {ReactiveFormsModule} from "@angular/forms";
-import { RegisterComponent } from './register/register.component';
-import { LoginComponent } from './login/login.component';
-import {HttpClientModule} from "@angular/common/http";
-
 
 @NgModule({
   declarations: [
     AppComponent,
-    RegisterComponent,
-    LoginComponent,
-    HttpClientModule
+    RegisterFormComponent
   ],
     imports: [
         BrowserModule,
         AppRoutingModule,
-        ReactiveFormsModule,
-
+        ReactiveFormsModule
     ],
   providers: [],
   bootstrap: [AppComponent]

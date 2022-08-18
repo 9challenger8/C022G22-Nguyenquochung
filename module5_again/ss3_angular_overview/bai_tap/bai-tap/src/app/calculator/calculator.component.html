@@ -2,8 +2,12 @@
 
 <table>
   <tr>
-    <th colspan="2"><input type="number" [(ngModel)]="number1"></th>
-    <th colspan="2"><input type="number" [(ngModel)]="number2"></th>
+    <th colspan="2"><label>Number 1:
+      <input type="number" [(ngModel)]="number1">
+    </label></th>
+    <th colspan="2"><label>Number 2:
+      <input type="number" [(ngModel)]="number2">
+    </label></th>
   </tr>
 
   <tr>
@@ -26,22 +30,4 @@
       <p>{{result}}</p>
    </th>
   </tr>
-
 </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

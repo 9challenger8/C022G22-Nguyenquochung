@@ -10,7 +10,7 @@ import {AbstractControl, FormControl, FormGroup, Validators} from "@angular/form
 export class RegisterComponent implements OnInit {
 
   registerForm: FormGroup;
-  formPassword: FormGroup;
+  // formPassword: FormGroup;
 
   constructor() {
     this.registerForm = new FormGroup({
@@ -34,15 +34,6 @@ export class RegisterComponent implements OnInit {
   registerFormSuccess() {
     console.log('Ok')
     console.log(this.registerForm)
-  }
-
-  validateConfirm(confirmPassword: AbstractControl) {
-    let value1 = confirmPassword.value
-    let value2 = this.registerForm.controls.password.value
-    if (value1 == value2) {
-      return {'checkPassword': true};
-    }
-    return null;
   }
 
 }
