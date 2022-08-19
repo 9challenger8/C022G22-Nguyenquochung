@@ -7,79 +7,98 @@
             <form [formGroup]="facilityEditForm" (ngSubmit)="submit(id)" *ngIf="facilityEditForm">
             <fieldset>
               <legend>Edit Service</legend>
-              <label for="name">Name <span style="color: red">(*)</span>:</label>
-              <input formControlName="name" id="name" name="name" type="text" class="feedback-input"
-                     placeholder="Name"/>
-              <p style="color: red"
-                 *ngIf="facilityEditForm.controls.name.hasError('required') && facilityEditForm.controls.name.touched">
-                Name can't be left blank.
-              </p>
 
-              <label for="area">Area <span style="color: red">(*)</span>:</label>
-              <input formControlName="area" id="area" name="area" type="text" class="feedback-input"
-                     placeholder="Area"/>
-              <p style="color: red"
-                 *ngIf="facilityEditForm.controls.area.hasError('required') && facilityEditForm.controls.area.touched">
-                Area can't be left blank.
-              </p>
+              <div style="display: flex">
+                <div style="width: 50%;padding-right: 1%">
+                  <label for="name">Name <span style="color: red">(*)</span>:</label>
+                  <input formControlName="name" id="name" name="name" type="text" class="feedback-input"
+                         placeholder="Name"/>
+                  <p style="color: red"
+                     *ngIf="facilityEditForm.controls.name.hasError('required') && facilityEditForm.controls.name.touched">
+                    Name can't be left blank.
+                  </p>
+                </div>
+                <div style="width: 50%;padding-left: 1%">
+                  <label for="area">Area <span style="color: red">(*)</span>:</label>
+                  <input formControlName="area" id="area" name="area" type="text" class="feedback-input"
+                         placeholder="Area"/>
+                  <p style="color: red"
+                     *ngIf="facilityEditForm.controls.area.hasError('required') && facilityEditForm.controls.area.touched">
+                    Area can't be left blank.
+                  </p>
+                </div>
+              </div>
 
-              <label for="cost">Cost <span style="color: red">(*)</span>:</label>
-              <input formControlName="cost" id="cost" name="cost" type="text" class="feedback-input"
-                     placeholder="Cost"/>
-              <p style="color: red"
-                 *ngIf="facilityEditForm.controls.cost.hasError('required') && facilityEditForm.controls.cost.touched">
-                Cost can't be left blank.
-              </p>
+              <div style="display: flex">
+                <div style="width: 50%;padding-right: 1%">
+                  <label for="cost">Cost <span style="color: red">(*)</span>:</label>
+                  <input formControlName="cost" id="cost" name="cost" type="text" class="feedback-input"
+                         placeholder="Cost"/>
+                  <p style="color: red"
+                     *ngIf="facilityEditForm.controls.cost.hasError('required') && facilityEditForm.controls.cost.touched">
+                    Cost can't be left blank.
+                  </p>
 
-              <label for="numberOfPeople">Number people <span style="color: red">(*)</span>:</label>
-              <input formControlName="numberOfPeople" id="numberOfPeople" name="numberOfPeople" type="text"
-                     class="feedback-input"
-                     placeholder="Number of people"/>
-              <p style="color: red"
-                 *ngIf="facilityEditForm.controls.numberOfPeople.hasError('required') && facilityEditForm.controls.numberOfPeople.touched">
-                Number of people can't be left blank.
-              </p>
+                </div>
+                <div style="width: 50%;padding-left: 1%">
+                  <label for="numberOfPeople">Number people <span style="color: red">(*)</span>:</label>
+                  <input formControlName="numberOfPeople" id="numberOfPeople" name="numberOfPeople" type="text"
+                         class="feedback-input"
+                         placeholder="Number of people"/>
+                  <p style="color: red"
+                     *ngIf="facilityEditForm.controls.numberOfPeople.hasError('required') && facilityEditForm.controls.numberOfPeople.touched">
+                    Number of people can't be left blank.
+                  </p>
+                </div>
+              </div>
 
-              <label for="rentType">Rent type <span style="color: red">(*)</span>:</label>
-              <select formControlName="rentType" id="rentType" name="rentType">
-                <option value="" selected="selected">Please choose a rental type.</option>
-                <option *ngFor="let rentType of rentTypeList" [ngValue]="rentType">{{rentType.name}}</option>
-              </select>
-              <p style="color: red"
-                 *ngIf="facilityEditForm.controls.rentType.hasError('required') && facilityEditForm.controls.rentType.touched">
-                Rent type can't be left blank.
-              </p>
+              <div style="display: flex">
+                <div style="width: 50%;padding-right: 1%">
+                  <label for="rentType">Rent type <span style="color: red">(*)</span>:</label>
+                  <select formControlName="rentType" id="rentType" name="rentType">
+                    <option value="" selected="selected">Please choose a rental type.</option>
+                    <option *ngFor="let rentType of rentTypeList" [ngValue]="rentType">{{rentType.name}}</option>
+                  </select>
+                  <p style="color: red"
+                     *ngIf="facilityEditForm.controls.rentType.hasError('required') && facilityEditForm.controls.rentType.touched">
+                    Rent type can't be left blank.
+                  </p>
+                </div>
+                <label for="facilityType">Facility Type <span style="color: red">(*)</span>:</label>
+                <select formControlName="facilityType" id="facilityType" name="facilityType" (change)="selectFacility($event)">
+                  <option value="" selected="selected">Please choose a facility type.</option>
+                  <option *ngFor="let facilityType of facilityTypeList"
+                          [ngValue]="facilityType">{{facilityType.name}}</option>
+                </select>
+                <p style="color: red"
+                   *ngIf="facilityEditForm.controls.facilityType.hasError('required') && facilityEditForm.controls.facilityType.touched">
+                  Facility type can't be left blank.
+                </p>
+              </div>
 
-              <label for="facilityType">Facility Type <span style="color: red">(*)</span>:</label>
-              <select id="facilityType" name="facilityType" (change)="selectFacility($event)">
-                <option value="" selected="selected">Please choose a facility type.</option>
-                <option *ngFor="let facilityType of facilityTypeList"
-                        [ngValue]="facilityType">{{facilityType.name}}</option>
-              </select>
-              <p style="color: red"
-                 *ngIf="facilityEditForm.controls.facilityType.hasError('required') && facilityEditForm.controls.facilityType.touched">
-                Facility type can't be left blank.
-              </p>
-
-              <label for="standardRoom" [ngStyle]="{'display': displayStandardRoom }">Stand room <span
-                style="color: red">(*)</span>:</label>
-              <input formControlName="standardRoom" id="standardRoom" name="standardRoom" type="text"
-                     class="feedback-input" placeholder="Standard Room"
-                     [ngStyle]="{'display': displayStandardRoom }"/>
-              <p style="color: red"
-                 *ngIf="facilityEditForm.controls.standardRoom.hasError('required') && facilityEditForm.controls.standardRoom.touched">
-                Stand room can't be left blank.
-              </p>
-
-              <label for="otherConvenience" [ngStyle]="{'display': displayOtherConvenience }">Other convenience <span
-                style="color: red">(*)</span>:</label>
-              <input formControlName="otherConvenience" id="otherConvenience" name="otherConvenience" type="text"
-                     class="feedback-input"
-                     placeholder="Description other convenience" [ngStyle]="{'display': displayOtherConvenience }"/>
-              <p style="color: red"
-                 *ngIf="facilityEditForm.controls.otherConvenience.hasError('required') && facilityEditForm.controls.otherConvenience.touched">
-                Other convenience can't be left blank.
-              </p>
+              <div style="display: flex">
+                <div style="width: 50%;padding-right: 1%">
+                  <label for="standardRoom" [ngStyle]="{'display': displayStandardRoom }">Stand room <span
+                    style="color: red">(*)</span>:</label>
+                  <input formControlName="standardRoom" id="standardRoom" name="standardRoom" type="text"
+                         class="feedback-input" placeholder="Standard Room"
+                         [ngStyle]="{'display': displayStandardRoom }"/>
+                  <p style="color: red"
+                     *ngIf="facilityEditForm.controls.standardRoom.hasError('required') && facilityEditForm.controls.standardRoom.touched">
+                    Stand room can't be left blank.
+                  </p>
+                </div>
+                <label for="otherConvenience" [ngStyle]="{'display': displayOtherConvenience }">Other convenience
+                  <span
+                    style="color: red">(*)</span>:</label>
+                <input formControlName="otherConvenience" id="otherConvenience" name="otherConvenience" type="text"
+                       class="feedback-input"
+                       placeholder="Description other convenience" [ngStyle]="{'display': displayOtherConvenience }"/>
+                <p style="color: red"
+                   *ngIf="facilityEditForm.controls.otherConvenience.hasError('required') && facilityEditForm.controls.otherConvenience.touched">
+                  Other convenience can't be left blank.
+                </p>
+              </div>
 
               <label for="poolArea" [ngStyle]="{'display': displayPoolArea }">Pool area <span
                 style="color: red">(*)</span>:</label>

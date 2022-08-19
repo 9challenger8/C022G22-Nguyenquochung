@@ -28,46 +28,46 @@ export class FacilityListComponent implements OnInit {
 
 
   constructor( private facilityService:FacilityService) {
-    // this.facilityList.push({
-    //   id: 1,
-    //   name: 'Room_123',
-    //   area: '12',
-    //   cost: '12000',
-    //   numberOfPeople: '20',
-    //   rentType: {id: 1, name: 'Year'}
-    // });
-    // this.facilityList.push({
-    //   id: 2,
-    //   name: 'Room_1',
-    //   area: '12',
-    //   cost: '1000',
-    //   numberOfPeople: '20',
-    //   rentType: {id: 1, name: 'Year'}
-    // });
-    // this.facilityList.push({
-    //   id: 3,
-    //   name: 'Room_2',
-    //   area: '12',
-    //   cost: '12000',
-    //   numberOfPeople: '20',
-    //   rentType: {id: 1, name: 'Year'}
-    // });
-    // this.facilityList.push({
-    //   id: 4,
-    //   name: 'Room_3',
-    //   area: '12',
-    //   cost: '12000',
-    //   numberOfPeople: '20',
-    //   rentType: {id: 1, name: 'Year'}
-    // });
-    // this.facilityList.push({
-    //   id: 5,
-    //   name: 'Room_456',
-    //   area: '12',
-    //   cost: '12000',
-    //   numberOfPeople: '20',
-    //   rentType: {id: 1, name: 'Year'}
-    // });
+    this.facilityList.push({
+      id: 1,
+      name: 'Room_123',
+      area: '12',
+      cost: '12000',
+      numberOfPeople: '20',
+      rentType: {id: 1, name: 'Year'}
+    });
+    this.facilityList.push({
+      id: 2,
+      name: 'Room_1',
+      area: '12',
+      cost: '1000',
+      numberOfPeople: '20',
+      rentType: {id: 1, name: 'Year'}
+    });
+    this.facilityList.push({
+      id: 3,
+      name: 'Room_2',
+      area: '12',
+      cost: '12000',
+      numberOfPeople: '20',
+      rentType: {id: 1, name: 'Year'}
+    });
+    this.facilityList.push({
+      id: 4,
+      name: 'Room_3',
+      area: '12',
+      cost: '12000',
+      numberOfPeople: '20',
+      rentType: {id: 1, name: 'Year'}
+    });
+    this.facilityList.push({
+      id: 5,
+      name: 'Room_456',
+      area: '12',
+      cost: '12000',
+      numberOfPeople: '20',
+      rentType: {id: 1, name: 'Year'}
+    });
 
   }
 

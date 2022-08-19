@@ -5,7 +5,7 @@
     <div class="shadow-custom" style="width: 100%;margin:0;height: 110px;background-color: #cef8e0">
       <div style="height: 100%;display: flex;justify-content: space-between;align-items: center">
 
-        <div style="margin : 0 0 0 20px ">
+        <div style="margin : 0 0 0 20px;width: 600px ">
           <a routerLink="/facility/add">
             <i style="font-size: 39px" class="bi bi-bag-plus-fill icon-hover-custom"></i>
           </a>
@@ -22,8 +22,9 @@
             Facilities
           </h2>
         </div>
-        <div style="margin: 0 15px 0 0 ;">
+        <div style="margin: 0 15px 0 0 ;width: 600px">
           <div class="input-group">
+            <input  type="date" class="form-control" style="font-size: 25px;margin-right: 12px" >
             <input [formControl]="nameSearch" type="text" class="form-control" style="font-size: 25px" placeholder="Search name">
             <div>
               <button (click)="getSearchListByNamePagination()" style="font-size: 25px" class="btn btn-secondary" type="button">
@@ -39,16 +40,18 @@
   <section style="padding-top: 30px" id="hero-slider" class="hero-slider">
     <div style="margin:0 5% 0 5%" class="my-container container-fluid">
 
-      <div style="display: flex;flex-wrap: wrap">
-        <div style="width: 33.33%;border: none;padding:1.5% 1% 1.5% 1% " *ngFor="let temp of facilityList">
-          <div class="card-custom" style="position: relative" >
+      <div style="display: flex;flex-wrap: wrap;">
+        <div style="width: 33.33%;border: none;padding:1.5% 1% 1.5% 1%;position: relative" *ngFor="let temp of facilityList">
+          <i   (click)="getDataForModal(temp.id,temp.name)" style="font-weight: bold;font-size: 40px;"  data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              class="bi bi-x-square-fill card-button-delete-custom hover-red">
+          </i>
+          <i class=""></i>
+          <div class="card-custom">
             <img style="border-radius: 10px 10px 0 0"
               src="https://resortdanang.info/wp-content/uploads/2018/12/phong-khach-villas-3-bedroom-furama-da-nang.jpg"
               class="card-img-top" alt="...">
-                <i  (click)="getDataForModal(temp.id,temp.name)" style="font-weight: bold"  data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
-                   class="bi bi-x-lg card-button-delete-custom">
-                </i>
+
             <div class="card-body">
               <h5 class="card-title">{{temp.name}}</h5>
               <div style="width: 100%;display: flex;padding-bottom: 8px">

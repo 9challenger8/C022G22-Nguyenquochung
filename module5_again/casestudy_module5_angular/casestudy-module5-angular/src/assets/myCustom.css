@@ -14,7 +14,7 @@
 }
 
 .icon-hover-custom:hover {
-  color: red;
+  color: #dc3545;
 }
 
 .card-custom {
@@ -22,22 +22,19 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.card-custom:hover{
-  transform: scale(1,1.08);
-}
 
 
 .card-button-delete-custom {
-  color: black;
-  font-size: 45px;
   padding: 0;
   position: absolute;
-  left: 470px;
+  right: 19px;
+  top:18px;
   cursor: pointer;
 }
 
-.card-button-delete-custom:hover{
-  color: red;
+.hover-red:hover{
+  color: #dc3545;
+  cursor: pointer;
 }
 
 .card-button-border-custom{
@@ -46,7 +43,7 @@
 
 .card-button-cart-custom:hover{
   color: white;
-  background-color: #59aa07;
+  background-color:#198754;
   border: none;
 }
 
@@ -84,7 +81,7 @@
 }
 
 .button-delete:hover {
-  color: red;
+  color: #dc3545;
 }
 
 .button-edit {

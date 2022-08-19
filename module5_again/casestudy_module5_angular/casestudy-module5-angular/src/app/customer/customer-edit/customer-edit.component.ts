@@ -13,7 +13,9 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
 export class CustomerEditComponent implements OnInit {
 
   customerTypeList: Array<CustomerType>;
+
   customerEdit: FormGroup;
+
   id: number;
 
   constructor(private customerService: CustomerService,
@@ -54,9 +56,6 @@ export class CustomerEditComponent implements OnInit {
 
   updateCustomer(id: number) {
     const customer = this.customerEdit.value;
-    // customer.customerType = {
-    //   id: customer.customerType
-    // }
 
     this.customerService.updateCustomer(id, customer).subscribe(() => {
       alert('Successfully');

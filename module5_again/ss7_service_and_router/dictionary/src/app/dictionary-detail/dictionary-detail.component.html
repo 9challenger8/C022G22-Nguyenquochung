@@ -1,0 +1,18 @@
+<h1>Detail</h1>
+<div *ngIf="detail">
+  <table>
+    <thead>
+    <tr>
+      <th>Word</th>
+      <th>Mean</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>{{detail.word}}</td>
+      <td>{{detail.mean}}</td>
+    </tr>
+    </tbody>
+  </table>
+  <a routerLink="../../list-dictionary">Back</a>
+</div>

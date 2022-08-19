@@ -1,8 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-/*body {*/
-/*    background: white;*/
-/*}*/
 
 .customMyForm {
   max-width: 1250px;
@@ -18,15 +15,18 @@
   font-size: 18px;
   border-radius: 5px;
   line-height: 22px;
-  background-color: #FFFFE0;
   border: 1px solid #000000;
   transition: all 0.3s;
   padding: 13px;
-  margin-bottom: 15px;
+  margin-bottom: 24px;
   width: 100%;
   box-sizing: border-box;
   outline: 0;
+}
 
+.feedback-input:focus {
+  border: 1px solid #7baeee;
+  box-shadow: 5px 5px 8px 5px rgba(102, 141, 179, 0.15), 0 6px 25px 0 rgba(102, 141, 179, 0.15);
 }
 
 .modalButton {
@@ -50,7 +50,6 @@ select {
   font-size: 18px;
   border-radius: 5px;
   line-height: 22px;
-  background-color: #FFFFE0;
   border: 1px solid #000000;
   transition: all 0.3s;
   padding: 13px;
@@ -58,6 +57,11 @@ select {
   width: 100%;
   box-sizing: border-box;
   outline: 0;
+}
+
+select:hover{
+  border: 1px solid #7baeee;
+  box-shadow: 5px 5px 8px 5px rgba(102, 141, 179, 0.15), 0 6px 25px 0 rgba(102, 141, 179, 0.15);
 }
 
 label {
@@ -68,21 +72,15 @@ label {
 
 fieldset {
   color: black;
-  border-radius: 5px;
+  border-radius: 10px;
   line-height: 22px;
   padding: 40px;
   border: 2px solid #0f5132;
-  /*box-shadow: 5px 10px #20c997;*/
   box-shadow: rgba(100, 100, 111, 0.2) 0 29px 29px 0;
-
-}
-
-.feedback-input:focus {
-  border: 1px solid #d92424;
 }
 
 textarea {
-  height: 150px;
+  height: 100px;
   line-height: 150%;
   resize: vertical;
 }
@@ -90,37 +88,26 @@ textarea {
 legend {
   font-size: 45px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 45px;
   font-weight: bold;
 }
 
-.addNew {
-  padding: 0;
-  margin: 0;
-}
-
-.addNew:hover {
-  color: black;
-}
-
-.hover-custom:hover {
-  color: white;
-}
-
-[type="submit"] {
+.button-submit {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  width: 100%;
-  background: #0000EE;
+  width: 30%;
+  background-color: #0000EE;
   border-radius: 5px;
   border: 0;
   cursor: pointer;
   color: white;
   font-size: 24px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 20px 10px 20px;
   transition: all 0.3s;
-  margin-top: -4px;
   font-weight: 700;
+}
+
+.hover-green:hover{
+  background-color: #59aa07;
 }
 
 [type="submit"]:hover {

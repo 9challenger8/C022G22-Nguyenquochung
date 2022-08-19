@@ -3,16 +3,16 @@
     <div  class="shadow-custom" style="width: 100%;margin:0;height: 110px;background-color: #cef8e0">
       <div style="height: 100%;display: flex;justify-content: space-between;align-items: center">
 
-        <div style="margin : 0 0 0 20px ">
+        <div style="margin : 0 0 0 20px;width: 600px ">
           <a routerLink="/contract/add">
             <i style="font-size: 40px" class="bi bi-plus-square icon-hover-custom"></i>
           </a>
-          <a style="margin-left: 20px ">
-            <i style="font-size: 40px;" class="bi bi-sort-alpha-down icon-hover-custom"></i>
-          </a>
-          <a style="margin-left: 20px ">
-            <i style="font-size: 40px" class="bi bi-sort-alpha-down-alt icon-hover-custom"></i>
-          </a>
+<!--          <a style="margin-left: 20px ">-->
+<!--            <i style="font-size: 40px;" class="bi bi-sort-alpha-down icon-hover-custom"></i>-->
+<!--          </a>-->
+<!--          <a style="margin-left: 20px ">-->
+<!--            <i style="font-size: 40px" class="bi bi-sort-alpha-down-alt icon-hover-custom"></i>-->
+<!--          </a>-->
         </div>
 
         <div>
@@ -22,8 +22,9 @@
           </h2>
         </div>
 
-        <div style="margin: 0 15px 0 0 ;">
+        <div style="margin: 0 15px 0 0 ;width: 600px">
           <div class="input-group">
+            <input  type="date" class="form-control" style="font-size: 25px;margin-right: 12px">
             <input type="text" class="form-control" style="font-size: 25px" placeholder="Search name">
             <div>
               <button style="font-size: 25px" class="btn btn-secondary" type="button">
@@ -44,7 +45,11 @@
         <thead>
         <tr class="row-custom" style="background-color: #6de29b">
           <th scope="col">No.</th>
-          <th scope="col">Facility</th>
+          <th scope="col">
+            Facility
+            <i class="bi bi-arrow-up  icon-hover-custom"></i>
+            <i class="bi bi-arrow-down  icon-hover-custom"></i>
+          </th>
           <th scope="col">Customer</th>
           <th scope="col">Start date</th>
           <th scope="col">End date</th>
@@ -54,8 +59,8 @@
         <tbody>
         <tr class="row-body-custom" *ngFor="let temp of contractList">
           <th>{{temp.id}}</th>
-          <td>{{temp.customer.name}}</td>
           <td>{{temp.facility.name}}</td>
+          <td>{{temp.customer.name}}</td>
           <td>{{temp.startDate}}</td>
           <td>{{temp.endDate}}</td>
           <td>{{temp.deposit}}</td>
