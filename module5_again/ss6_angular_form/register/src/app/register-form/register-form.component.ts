@@ -18,25 +18,6 @@ export class RegisterFormComponent implements OnInit {
     zip: "12345"
   };
 
-  ngOnInit() {}
-
-
-  constructor(
-    private fb: FormBuilder,
-    private customValidationService: CustomValidationService
-  ) {}
-
-  autoFillAddress() {
-    this.userForm.patchValue({
-      address: {
-        street: this.userAddressInfo.street,
-        city: this.userAddressInfo.city,
-        state: this.userAddressInfo.state,
-        zip: this.userAddressInfo.zip
-      }
-    });
-  }
-
   userForm = this.fb.group(
     {
       username: [
@@ -60,6 +41,24 @@ export class RegisterFormComponent implements OnInit {
       )
     }
   );
+
+  ngOnInit() {}
+
+  constructor(
+    private fb: FormBuilder,
+    private customValidationService: CustomValidationService
+  ) {}
+
+  autoFillAddress() {
+    this.userForm.patchValue({
+      address: {
+        street: this.userAddressInfo.street,
+        city: this.userAddressInfo.city,
+        state: this.userAddressInfo.state,
+        zip: this.userAddressInfo.zip
+      }
+    });
+  }
 
   addDay() {
     this.daysAvailable.push(this.fb.control(""));

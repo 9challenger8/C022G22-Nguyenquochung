@@ -20,7 +20,7 @@ public class Facility {
     @Column(name = "standard_room")
     private String standardRoom;
 
-    private String describe;
+    private String otherConvenience;
 
     @Column(name = "pool_area")
     private String poolArea;
@@ -29,51 +29,58 @@ public class Facility {
     private String numberOfFloor;
 
     @Column(name = "facility_free")
-    private String facilityFree;
+    private String freeFacility;
 
     @ManyToOne
     @JoinColumn(name="rent_type_id")
     private RentType rentType;
 
+    @ManyToOne
+    @JoinColumn(name ="facility_type_id")
+    private FacilityType facilityType;
+
     public Facility() {
     }
 
     public Facility(Integer id, String name, String area, String cost, String numberOfPeople, String standardRoom,
-                    String description, String poolArea, String numberOfFloor, RentType rentType) {
+                    String otherConvenience, String poolArea, String numberOfFloor, RentType rentType, FacilityType facilityType) {
         this.id = id;
         this.name = name;
         this.area = area;
         this.cost = cost;
         this.numberOfPeople = numberOfPeople;
         this.standardRoom = standardRoom;
-        this.describe = description;
+        this.otherConvenience = otherConvenience;
         this.poolArea = poolArea;
         this.numberOfFloor = numberOfFloor;
         this.rentType = rentType;
+        this.facilityType = facilityType;
     }
 
     public Facility(Integer id, String name, String area, String cost, String numberOfPeople, String standardRoom,
-                    String description, String numberOfFloor, RentType rentType) {
+                    String otherConvenience, String numberOfFloor, RentType rentType, FacilityType facilityType) {
         this.id = id;
         this.name = name;
         this.area = area;
         this.cost = cost;
         this.numberOfPeople = numberOfPeople;
         this.standardRoom = standardRoom;
-        this.describe = description;
+        this.otherConvenience = otherConvenience;
         this.numberOfFloor = numberOfFloor;
         this.rentType = rentType;
+        this.facilityType = facilityType;
     }
 
-    public Facility(Integer id, String name, String area, String cost, String numberOfPeople, String facilityFree,
-                    RentType rentType) {
+    public Facility(Integer id, String name, String area, String cost, String numberOfPeople,
+                    String facilityFree, RentType rentType, FacilityType facilityType) {
         this.id = id;
         this.name = name;
         this.area = area;
         this.cost = cost;
         this.numberOfPeople = numberOfPeople;
-        this.facilityFree = facilityFree;
+        this.freeFacility = facilityFree;
         this.rentType = rentType;
+        this.facilityType = facilityType;
     }
 
     public Integer getId() {
@@ -124,12 +131,12 @@ public class Facility {
         this.standardRoom = standardRoom;
     }
 
-    public String getDescribe() {
-        return describe;
+    public String getOtherConvenience() {
+        return otherConvenience;
     }
 
-    public void setDescribe(String describe) {
-        this.describe = describe;
+    public void setOtherConvenience(String otherConvenience) {
+        this.otherConvenience = otherConvenience;
     }
 
     public String getPoolArea() {
@@ -148,12 +155,12 @@ public class Facility {
         this.numberOfFloor = numberOfFloor;
     }
 
-    public String getFacilityFree() {
-        return facilityFree;
+    public String getFreeFacility() {
+        return freeFacility;
     }
 
-    public void setFacilityFree(String facilityFree) {
-        this.facilityFree = facilityFree;
+    public void setFreeFacility(String facilityFree) {
+        this.freeFacility = facilityFree;
     }
 
     public RentType getRentType() {
@@ -162,5 +169,13 @@ public class Facility {
 
     public void setRentType(RentType rentType) {
         this.rentType = rentType;
+    }
+
+    public FacilityType getFacilityType() {
+        return facilityType;
+    }
+
+    public void setFacilityType(FacilityType facilityType) {
+        this.facilityType = facilityType;
     }
 }

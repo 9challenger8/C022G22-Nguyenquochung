@@ -14,7 +14,7 @@ import {ContractListComponent} from "./contract/contract-list/contract-list.comp
 const routes: Routes = [
   {path:'',component: HomeComponent},
   {path:'facility/add',component:FacilityAddComponent},
-  {path:'facility/edit',component:FacilityEditComponent},
+  {path:'facility/edit/:id',component:FacilityEditComponent},
   {path:'facility/list',component:FacilityListComponent},
   {path:'customer/add',component:CustomerAddComponent},
   {path:'customer/edit/:id',component:CustomerEditComponent},

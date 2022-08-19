@@ -3,7 +3,7 @@
   "version": 1, 
   "newProjectRoot": "projects",
   "projects": {
-    "bai-tap-ss6": {
+    "bai-tap": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/bai-tap-ss6",
+            "outputPath": "dist/bai-tap",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "bai-tap-ss6:build"
+            "browserTarget": "bai-tap:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "bai-tap-ss6:build:production"
+              "browserTarget": "bai-tap:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "bai-tap-ss6:build"
+            "browserTarget": "bai-tap:build"
           }
         },
         "test": {
@@ -110,15 +110,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "bai-tap-ss6:serve"
+            "devServerTarget": "bai-tap:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "bai-tap-ss6:serve:production"
+              "devServerTarget": "bai-tap:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "bai-tap-ss6"
+  "defaultProject": "bai-tap"
 }

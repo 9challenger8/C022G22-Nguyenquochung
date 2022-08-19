@@ -54,14 +54,12 @@ export class EditComponent implements OnInit {
       id:seriesProduct.product
     }
     console.log(seriesProduct)
-
     this.seriesProductService.updateSeriesProduct(id,seriesProduct).subscribe(() => {
     } , e=>{
     },()=>{
       alert('Cập nhật thành công');
       this.router.navigateByUrl('/list');
     })
-
   }
 
   getAllProduct() {

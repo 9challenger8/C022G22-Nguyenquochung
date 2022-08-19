@@ -8,31 +8,31 @@ import {Facility} from "../../model/facility/facility";
 })
 export class FacilityService {
 
-  private URL_FACILITY = '';
+  private URL_FACILITY = 'http://localhost:8080/facility';
 
   constructor(private http : HttpClient) { }
 
-  getAll(): Observable<Facility[]> {
+  getAll(): Observable<any> {
     return this.http.get<Facility[]>(this.URL_FACILITY)
   }
 
-  saveFacility(facility):Observable<Facility>{
-    return this.http.post<Facility>(this.URL_FACILITY,facility);
+  saveFacility(facility):Observable<any>{
+    return this.http.post<any>(this.URL_FACILITY+'/create',facility);
   }
 
   findById(id : number):Observable<Facility>{
-    return this.http.get<Facility>(this.URL_FACILITY + "/" + id);
+    return this.http.get<any>(this.URL_FACILITY + "/detail/" + id);
   }
 
-  deleteFacility(id: number):Observable<Facility>{
-    return this.http.delete<Facility>(this.URL_FACILITY + '/' + id);
+  deleteFacility(id: number):Observable<any>{
+    return this.http.delete<any>(this.URL_FACILITY + '/delete/' + id);
   }
 
-  updateFacility(id: number, facility):Observable<Facility>{
-    return this.http.put<Facility>(this.URL_FACILITY + '/' + id,facility);
+  updateFacility(id: number, facility):Observable<any>{
+    return this.http.put<any>(this.URL_FACILITY + '/update/' + id,facility);
   }
 
-  searchFacilityByName(name: string):Observable<Facility[]>{
-    return this.http.get<Facility[]>(this.URL_FACILITY + '?name_like=' + name);
+  searchFacilityByName(name: string,indexPagination:number):Observable<any>{
+    return this.http.get<any>(this.URL_FACILITY + '/searchList?name=' + name+'&page='+indexPagination);
   }
 }

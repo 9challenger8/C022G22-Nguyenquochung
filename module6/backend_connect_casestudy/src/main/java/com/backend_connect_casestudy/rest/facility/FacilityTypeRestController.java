@@ -1,8 +1,8 @@
 package com.backend_connect_casestudy.rest.facility;
 
 
-import com.backend_connect_casestudy.model.facility.RentType;
-import com.backend_connect_casestudy.service.IRentTypeService;
+import com.backend_connect_casestudy.model.facility.FacilityType;
+import com.backend_connect_casestudy.service.IFacilityTypeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,16 +15,15 @@ import java.util.List;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")
-@RequestMapping("/rentType")
-public class RentTypeRestController {
+@RequestMapping("/facilityType")
+public class FacilityTypeRestController {
 
     @Autowired
-    private IRentTypeService iRentTypeService;
+    private IFacilityTypeService iFacilityTypeService;
 
     @GetMapping("/list")
-    public ResponseEntity<List<RentType>> getListRentType(){
-        List<RentType> rentTypeList = iRentTypeService.findAll();
-        return new ResponseEntity<>(rentTypeList, HttpStatus.OK);
+    public ResponseEntity<List<FacilityType>> getListRentType(){
+        List<FacilityType> facilityTypeList = iFacilityTypeService.findAll();
+        return new ResponseEntity<>(facilityTypeList, HttpStatus.OK);
     }
-
 }

@@ -1,7 +1,5 @@
 package com.case_study_module4.controller.facility;
 
-
-import com.case_study_module4.model.customer.Customer;
 import com.case_study_module4.model.facility.Facility;
 import com.case_study_module4.service.IFacilityService;
 import com.case_study_module4.service.IFacilityTypeService;

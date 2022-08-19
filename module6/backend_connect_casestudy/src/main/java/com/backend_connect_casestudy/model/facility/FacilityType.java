@@ -1,28 +1,32 @@
 package com.backend_connect_casestudy.model.facility;
 
+
 import com.fasterxml.jackson.annotation.JsonBackReference;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
 import java.util.List;
 
 @Entity
-@Table(name = "rent_type")
-public class RentType {
+@Table(name="facility_type")
+public class FacilityType {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     private String name;
 
-    @OneToMany(mappedBy = "rentType")
+
+    @OneToMany(mappedBy = "facilityType")
     @JsonBackReference
     private List<Facility> facilityList;
 
-    public RentType() {
+    public FacilityType() {
     }
 
-    public RentType(Integer id, String name, List<Facility> facilityList) {
+    public FacilityType(Integer id, String name, List<Facility> facilityList) {
         this.id = id;
         this.name = name;
         this.facilityList = facilityList;
@@ -51,4 +55,5 @@ public class RentType {
     public void setFacilityList(List<Facility> facilityList) {
         this.facilityList = facilityList;
     }
+
 }
