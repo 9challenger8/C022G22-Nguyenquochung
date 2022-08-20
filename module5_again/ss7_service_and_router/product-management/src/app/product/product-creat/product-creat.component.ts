@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import {ProductService} from "../../service/product.service";
 import {FormControl, FormGroup} from "@angular/forms";
+import {ProductService} from "../../../../../ss7/src/app/service/product.service";
 
 @Component({
-  selector: 'app-product-create',
-  templateUrl: './product-create.component.html',
-  styleUrls: ['./product-create.component.css']
+  selector: 'app-product-creat',
+  templateUrl: './product-creat.component.html',
+  styleUrls: ['./product-creat.component.css']
 })
-export class ProductCreateComponent implements OnInit {
+export class ProductCreatComponent implements OnInit {
 
   productForm: FormGroup = new FormGroup({
     id: new FormControl(),
@@ -16,9 +16,10 @@ export class ProductCreateComponent implements OnInit {
     description: new FormControl(),
   });
 
-  constructor(private productService: ProductService) { }
+  constructor(private productService: ProductService) {
+  }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
   submit() {

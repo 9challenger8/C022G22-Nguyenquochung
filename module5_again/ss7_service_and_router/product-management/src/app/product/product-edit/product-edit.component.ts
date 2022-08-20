@@ -1,14 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup} from "@angular/forms";
-import {ProductService} from "../../service/product.service";
 import {ActivatedRoute, ParamMap} from "@angular/router";
+import {ProductService} from "../../../../../ss7/src/app/service/product.service";
 
 @Component({
-  selector: 'app-product-update',
-  templateUrl: './product-update.component.html',
-  styleUrls: ['./product-update.component.css']
+  selector: 'app-product-edit',
+  templateUrl: './product-edit.component.html',
+  styleUrls: ['./product-edit.component.css']
 })
-export class ProductUpdateComponent implements OnInit {
+export class ProductEditComponent implements OnInit {
+
   productForm: FormGroup;
   id: number;
 
@@ -26,7 +27,7 @@ export class ProductUpdateComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
   getProduct(id: number) {
