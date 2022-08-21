@@ -3,7 +3,6 @@ package com.backend_connect_casestudy.rest.contract;
 
 
 import com.backend_connect_casestudy.model.contract.ContractDetail;
-import com.backend_connect_casestudy.model.facility.Facility;
 import com.backend_connect_casestudy.service.IContractDetailService;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -33,6 +32,4 @@ public class ContractDetailRestController {
     public ResponseEntity<ContractDetail> saveFacility(@RequestBody ContractDetail contractDetail) {
         return new ResponseEntity<>(iContractDetailService.save(contractDetail), HttpStatus.CREATED);
     }
-
-
 }

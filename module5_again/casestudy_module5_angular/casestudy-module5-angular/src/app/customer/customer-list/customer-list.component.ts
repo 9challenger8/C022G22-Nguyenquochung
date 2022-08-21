@@ -17,15 +17,17 @@ export class CustomerListComponent implements OnInit {
   nameSearch = new FormControl('');
 
 
-  p = 1;
+  //pagination
+  indexPagination: number = 0;
+  pages: Array<number>;
+  totalPagination: number;
 
   constructor(private customerService: CustomerService,
               private router: Router) {
   }
 
   ngOnInit(): void {
-    this.getAllCustomer();
-
+    this.getSearchListByNamePagination();
   }
 
   getAllCustomer() {
@@ -43,14 +45,22 @@ export class CustomerListComponent implements OnInit {
     });
   }
 
-  searchCustomerByName() {
-    this.customerService.searchCustomerByName(this.nameSearch.value).subscribe(data => {
-      this.customerList = data;
-    });
+  getSearchListByNamePagination() {
+    this.customerService.searchCustomerByName(this.nameSearch.value, this.indexPagination).subscribe(data => {
+      console.log(data)
+      this.customerList = data.content
+      this.pages = new Array(data['totalPages']);
+    })
   }
 
   getDataForModal(id: number, name: string) {
     this.idModal = id;
     this.nameModal = name;
+  }
+
+  setPage(i: number, event: any) {
+    event.preventDefault();
+    this.indexPagination = i;
+    this.getSearchListByNamePagination()
   }
 }

@@ -1,5 +1,6 @@
 package com.backend_connect_casestudy.rest.facility;
 
+import com.backend_connect_casestudy.model.customer.Customer;
 import com.backend_connect_casestudy.model.facility.Facility;
 import com.backend_connect_casestudy.service.IFacilityService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +11,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Optional;
 
 @RestController
@@ -20,13 +22,19 @@ public class FacilityRestController {
     @Autowired
     private IFacilityService iFacilityService;
 
-    @GetMapping("/list")
+    @GetMapping("/listPagination")
     public ResponseEntity<Page<Facility>> getAllFacilityPagination(@PageableDefault(value = 4) Pageable pageable) {
         Page<Facility> seriesProductPage = iFacilityService.findAllPageable(pageable);
         if (seriesProductPage.isEmpty()) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
         return new ResponseEntity<>(seriesProductPage, HttpStatus.OK);
+    }
+
+    @GetMapping("/list")
+    public ResponseEntity<List<Facility>> getAllFacility(){
+        List<Facility> facilityList = iFacilityService.findAll();
+        return new ResponseEntity<>(facilityList,HttpStatus.OK);
     }
 
     @GetMapping("/searchList")
@@ -42,11 +50,11 @@ public class FacilityRestController {
 
     @GetMapping("/detail/{id}")
     public ResponseEntity<Facility> getDetailFacilityById(@PathVariable Integer id) {
-        Optional<Facility> seriesProductOptional = iFacilityService.findById(id);
-        if (!seriesProductOptional.isPresent()) {
+        Optional<Facility> facilityOptional = iFacilityService.findById(id);
+        if (!facilityOptional.isPresent()) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
-        return new ResponseEntity<>(seriesProductOptional.get(), HttpStatus.OK);
+        return new ResponseEntity<>(facilityOptional.get(), HttpStatus.OK);
     }
 
     @PostMapping("/create")

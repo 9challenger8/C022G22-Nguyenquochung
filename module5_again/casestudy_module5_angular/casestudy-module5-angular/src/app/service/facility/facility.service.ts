@@ -12,7 +12,7 @@ export class FacilityService {
   constructor(private http : HttpClient) { }
 
   getAll(): Observable<any> {
-    return this.http.get<any>(this.URL_FACILITY)
+    return this.http.get<any>(this.URL_FACILITY+'/list')
   }
 
   saveFacility(facility):Observable<any>{

@@ -33,12 +33,14 @@ export class ContractAddComponent implements OnInit {
 
   getAllCustomer(){
     this.customerService.getAll().subscribe(data =>{
-      this.customerList = data;
+
+      this.customerList = data.content;
       })
   }
 
   getAllFacility(){
     this.facilityService.getAll().subscribe(data =>{
+      console.log(data)
       this.facilityList = data;
     })
   }
@@ -63,5 +65,4 @@ export class ContractAddComponent implements OnInit {
       this.router.navigateByUrl('/contract/list');
     });
   }
-
 }
