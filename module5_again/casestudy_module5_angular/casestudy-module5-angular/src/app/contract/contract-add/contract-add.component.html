@@ -5,77 +5,86 @@
         <div class="row">
           <div class="col-12">
 
-            <!--            <form class="customMyForm" action="/contract/create" method="POST">-->
-            <fieldset>
-              <legend>Add Contract</legend>
+            <form class="customMyForm table-shadow" [formGroup]="contractAddForm" (ngSubmit)="createContract()"  >
+              <fieldset style="position: relative">
+                <legend>Add Contract
+                  <i routerLink="/contract/list" style="position: absolute;right: 0;top:0;font-size: 50px"
+                     class="bi bi-x-square-fill hover-red hover-effect-red"></i>
+                </legend>
 
-              <div style="display: flex">
-                <div style="width: 50%;padding-right: 1%">
-                  <label for="startDate">Start date <span style="color: red">(*)</span>:</label><br>
-                  <input id="startDate" name="startDate" type="date"
-                         class="feedback-input" placeholder="Start date"/>
+                <div style="display: flex">
+                  <div style="width: 50%;padding-right: 1%">
+                    <label for="startDate">Start date <span style="color: red">(*)</span>:</label><br>
+                    <input formControlName="startDate" id="startDate" name="startDate" type="date"
+                           class="feedback-input" placeholder="Start date"/>
+                    <p style="color: red"
+                       *ngIf="contractAddForm.controls.startDate.hasError('required') && contractAddForm.controls.startDate.touched">
+                      Start date can't be left blank.
+                    </p>
+                  </div>
+                  <div style="width: 50%;padding-left: 1%">
+                    <label for="endDate">End date <span style="color: red">(*)</span>:</label><br>
+                    <input formControlName="endDate" id="endDate" name="endDate" type="date"
+                           class="feedback-input" placeholder="End date"/>
+                    <p style="color: red"
+                       *ngIf="contractAddForm.controls.endDate.hasError('required') && contractAddForm.controls.endDate.touched">
+                      End date can't be left blank.
+                    </p>
+                  </div>
                 </div>
-                <div style="width: 50%;padding-left: 1%">
-                  <label for="endDate">End date <span style="color: red">(*)</span>:</label><br>
-                  <input id="endDate" name="endDate" type="date"
-                         class="feedback-input" placeholder="End date"/>
+
+                <div style="display: flex">
+                  <div style="width: 50%;padding-right: 1%">
+                    <label for="deposit">Deposit <span style="color: red">(*)</span>:</label>
+                    <input formControlName="deposit" id="deposit" name="deposit" type="text" class="feedback-input"
+                           placeholder="Deposit"/>
+                    <p style="color: red"
+                       *ngIf="contractAddForm.controls.deposit.hasError('required') && contractAddForm.controls.deposit.touched">
+                      Deposit can't be left blank.
+                    </p>
+                  </div>
+                  <div style="width: 50%;padding-left: 1%">
+                    <label for="customer">Customer <span style="color: red">(*)</span>:</label>
+                    <select formControlName="customer" id="customer" name="customer">
+                      <option value="" selected="selected">Please choose customer.</option>
+                      <option *ngFor="let customer of customerList" [ngValue]="customer">{{customer.name}}</option>
+                    </select>
+                    <p style="color: red"
+                       *ngIf="contractAddForm.controls.customer.hasError('required') && contractAddForm.controls.customer.touched">
+                      Customer can't be left blank.
+                    </p>
+                  </div>
                 </div>
-              </div>
 
-              <div style="display: flex">
-                <div style="width: 50%;padding-right: 1%">
-                  <label for="deposit">Deposit <span style="color: red">(*)</span>:</label>
-                  <input id="deposit" name="deposit" type="text" class="feedback-input"
-                         placeholder="Deposit"/>
+                <div style="display: flex">
+                  <div style="width: 50%;padding-right: 1%">
+
+                    <label for="facility">Facility <span style="color: red">(*)</span>:</label>
+                    <select formControlName="facility" id="facility" name="facility">
+                      <option value="" selected="selected">Please choose facility.</option>
+                      <option *ngFor="let facility of facilityList" [ngValue]="facility">{{facility.name}}</option>
+                    </select>
+                    <p style="color: red"
+                       *ngIf="contractAddForm.controls.customer.hasError('required') && contractAddForm.controls.customer.touched">
+                      Facility can't be left blank.
+                    </p>
+                  </div>
+                  <div style="width: 50%;padding-left: 1%">
+                    <label for="attachFacility">Attach facility <span style="color: red">(*)</span>:</label><br>
+                    <button id="attachFacility"
+                            style="width: 75px;padding: 0;height: 50px;border:  1px solid  #0A58CA;background-color: #0B5ED7"
+                            type="button" class="btn hover-effect-blue">
+                      <i style="font-size: 30px;padding: 0;color: white" class="bi bi-plus"></i>
+                    </button>
+                  </div>
                 </div>
-                <div style="width: 50%;padding-left: 1%">
-                  <label for="customer">Customer <span style="color: red">(*)</span>:</label>
-                  <select id="customer" name="customer">
-                    <option value="" selected="selected">Please choose customer.</option>
-                  </select>
-                </div>
-              </div>
 
-              <div style="display: flex">
-                <div style="width: 50%;padding-right: 1%">
-
-                  <label for="facility">Facility <span style="color: red">(*)</span>:</label>
-                  <select id="facility" name="facility">
-                    <option value="" selected="selected">Please choose facility.</option>
-
-                  </select>
-                </div>
-                <div style="width: 50%;padding-left: 1%">
-
-                  <label for="employee">Employee <span style="color: red">(*)</span>:</label>
-                  <select id="employee" name="employee">
-                    <option value="" selected="selected">Please choose employee.</option>
-
-                  </select>
-
-                </div>
-              </div>
-
-              <input id="attachFacilityId" name="attachFacilityId" type="hidden"
-                     class="feedback-input"/>
-
-              <input id="quantity" name="quantity" type="hidden" class="feedback-input"/>
-
-
-              <label for="totalMoney">Total money <span style="color: red">(*)</span>:</label><br>
-
-              <input value="0 đ" id="totalMoney" name="totalMoney" type="text"
-                     class="feedback-input"/>
-
-              <!--                                <input id="costFacility" th:value="${contract.facility.cost}" type="hidden">-->
-              <!--                                       class="feedback-input"/>-->
-              <!--                                <input  id="quantityAttachFacility" th:value="${contract.}"   type="hidden" class="feedback-input"  />-->
-              <!--                                <input  id="costAttachFacilityTotalMoney" th:value="${contract.facility.cost}"  type="hidden" class="feedback-input"/>-->
-
-
-              <input type="submit" value="SUBMIT"/>
-            </fieldset>
-            <!--            </form>-->
+                <label for="totalMoney">Total money <span style="color: red">(*)</span>:</label><br>
+                <input formControlName="totalMoney" value="0 đ" id="totalMoney" name="totalMoney" type="text"
+                       class="feedback-input"/>
+                <input type="submit" value="SUBMIT"/>
+              </fieldset>
+            </form>
           </div>
         </div>
       </div>

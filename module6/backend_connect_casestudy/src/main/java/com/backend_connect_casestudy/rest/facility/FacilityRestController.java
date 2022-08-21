@@ -33,11 +33,11 @@ public class FacilityRestController {
     public ResponseEntity<Page<Facility>> findFacilityByNamePagination(@PageableDefault(value = 6) Pageable pageable,
                                                                        @RequestParam Optional<String> name) {
         String keywordName = name.orElse("");
-        Page<Facility> seriesProductPage = iFacilityService.findAllByName(keywordName, pageable);
-        if (seriesProductPage.isEmpty()) {
+        Page<Facility> facilityPage = iFacilityService.findAllByName(keywordName, pageable);
+        if (facilityPage.isEmpty()) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
-        return new ResponseEntity<>(seriesProductPage, HttpStatus.OK);
+        return new ResponseEntity<>(facilityPage, HttpStatus.OK);
     }
 
     @GetMapping("/detail/{id}")

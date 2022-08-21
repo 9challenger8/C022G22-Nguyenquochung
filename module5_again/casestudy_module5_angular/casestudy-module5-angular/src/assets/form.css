@@ -25,8 +25,17 @@
 }
 
 .feedback-input:focus {
-  border: 1px solid #7baeee;
-  box-shadow: 5px 5px 8px 5px rgba(102, 141, 179, 0.15), 0 6px 25px 0 rgba(102, 141, 179, 0.15);
+  /*border: 1px solid #7baeee;*/
+  /*box-shadow: 5px 5px 8px 5px rgba(102, 141, 179, 0.15), 0 6px 25px 0 rgba(102, 141, 179, 0.15);*/
+  transform: none;
+  border: 1px solid  #86B7FE;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  box-sizing: border-box;
+  resize: vertical;
+  word-wrap: break-word;
+  box-shadow: rgba(13, 110, 253, 0.25) 0px 0px 0px 4px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 
 .modalButton {
@@ -60,8 +69,15 @@ select {
 }
 
 select:hover{
-  border: 1px solid #7baeee;
-  box-shadow: 5px 5px 8px 5px rgba(102, 141, 179, 0.15), 0 6px 25px 0 rgba(102, 141, 179, 0.15);
+  transform: none;
+  border: 1px solid  #86B7FE;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  box-sizing: border-box;
+  resize: vertical;
+  word-wrap: break-word;
+  box-shadow: rgba(13, 110, 253, 0.25) 0 0 0 4px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 
 label {

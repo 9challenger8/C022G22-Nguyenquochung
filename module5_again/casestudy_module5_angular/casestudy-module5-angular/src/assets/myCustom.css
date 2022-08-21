@@ -35,23 +35,46 @@
 .hover-red:hover{
   color: #dc3545;
   cursor: pointer;
+
 }
 
 .card-button-border-custom{
   border: 1px solid black;
 }
 
-.card-button-cart-custom:hover{
+.card-button-custom:hover{
   color: white;
-  background-color:#198754;
   border: none;
 }
 
-.card-button-edit-custom:hover{
-  color: white;
-  background-color:#FFC107 ;
-  border: none;
+.hover-green:hover{
+  background-color:#198754;
 }
+
+.hover-blue:hover{
+  background-color: #0d6efd;
+}
+
+.hover-effect-blue:hover{
+  transform: none;
+  transition: color 0.15s ease-in-out 0s, background-color 0.15s ease-in-out 0s, border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  box-sizing: border-box;
+  box-shadow: rgba(49, 132, 253, 0.5) 0 0 0 4px;
+  border-radius: 6px;
+}
+
+.hover-effect-red:hover{
+  transform: none;
+  transition: color 0.15s ease-in-out 0s, background-color 0.15s ease-in-out 0s, border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  box-sizing: border-box;
+  box-shadow: rgba(225, 83, 97, 0.5) 0px 0px 0px 4px;
+  border-radius: 6px;
+}
+
+.hover-yellow:hover{
+  background-color:#FFC107 ;
+}
+
 
 .card-body {
   background-color: #f4f2f2;

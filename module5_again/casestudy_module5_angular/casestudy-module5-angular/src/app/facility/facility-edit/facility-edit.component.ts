@@ -65,6 +65,8 @@ export class FacilityEditComponent implements OnInit {
   // Get facility
   getFacility(id: number) {
     this.facilityService.findById(id).subscribe(data => {
+      this.loadInputFacility(data.facilityType.name);
+      console.log(data.facilityType.name)
       this.facilityEditForm = new FormGroup({
         name: new FormControl(data.name, [Validators.required]),
         area: new FormControl(data.area, [Validators.required]),
@@ -83,25 +85,25 @@ export class FacilityEditComponent implements OnInit {
 
   // Select Facility
   selectFacility(event: any) {
-    console.log('Select data select:')
+    console.log('Select data change:')
     console.log(event)
     console.log(event.target.value);
     switch (event.target.value) {
-      case 'Villa' :
+      case '1: Object' :
         this.displayStandardRoom = 'block';
         this.displayOtherConvenience = 'block';
         this.displayPoolArea = 'block';
         this.displayNumberFloor = 'block';
         this.displayFacilityFree = 'none';
         break;
-      case 'House':
+      case '2: Object' :
         this.displayStandardRoom = 'block';
         this.displayOtherConvenience = 'block';
         this.displayPoolArea = 'none';
         this.displayNumberFloor = 'block';
         this.displayFacilityFree = 'none';
         break;
-      case 'Room':
+      case '3: Object' :
         this.displayStandardRoom = 'none';
         this.displayOtherConvenience = 'none';
         this.displayPoolArea = 'none';
@@ -117,17 +119,55 @@ export class FacilityEditComponent implements OnInit {
     }
   }
 
+  // Get data Facility type
   getAllFacilityType() {
     this.facilityTypeService.getAll().subscribe(data => {
       this.facilityTypeList = data;
     })
   }
 
+  // Get data Rent type
   getAllRentType() {
     this.rentTypeService.getAll().subscribe(data => {
       this.rentTypeList = data;
     })
   }
 
+  // Compare value choose select
+  compareObj(value, option) {
+    return value.id === option.id;
+  }
 
+  // Display input facility
+  loadInputFacility(name:string) {
+    switch (name) {
+      case 'Villa' :
+        this.displayStandardRoom = 'block';
+        this.displayOtherConvenience = 'block';
+        this.displayPoolArea = 'block';
+        this.displayNumberFloor = 'block';
+        this.displayFacilityFree = 'none';
+        break;
+      case 'House' :
+        this.displayStandardRoom = 'block';
+        this.displayOtherConvenience = 'block';
+        this.displayPoolArea = 'none';
+        this.displayNumberFloor = 'block';
+        this.displayFacilityFree = 'none';
+        break;
+      case 'Room' :
+        this.displayStandardRoom = 'none';
+        this.displayOtherConvenience = 'none';
+        this.displayPoolArea = 'none';
+        this.displayNumberFloor = 'none';
+        this.displayFacilityFree = 'block';
+        break;
+      default:
+        this.displayStandardRoom = 'none';
+        this.displayOtherConvenience = 'none';
+        this.displayPoolArea = 'none';
+        this.displayNumberFloor = 'none';
+        this.displayFacilityFree = 'none';
+    }
+  }
 }

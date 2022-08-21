@@ -13,8 +13,8 @@ export class FacilityListComponent implements OnInit {
   facilityList: Array<Facility> = [];
 
   // delete modal
-  idModal: number=1;
-  nameModal: string='g';
+  idModal: number;
+  nameModal: string;
 
 
   // search
@@ -92,10 +92,6 @@ export class FacilityListComponent implements OnInit {
 
   getSearchListByNamePagination(){
     this.facilityService.searchFacilityByName(this.nameSearch.value,this.indexPagination).subscribe(data => {
-      console.log(this.nameSearch.value)
-      console.log("search data:");
-      console.log(data)
-      console.log(this.pages)
       this.facilityList = data.content
       this.pages = new Array(data['totalPages']);
     })

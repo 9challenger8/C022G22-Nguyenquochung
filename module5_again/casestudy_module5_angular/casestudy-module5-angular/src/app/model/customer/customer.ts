@@ -6,6 +6,7 @@ export interface Customer {
   dateOfBirth?:string;
   gender?:string;
   cardId?:string;
+  email?:string;
   phoneNumber?:string;
   customerType?:CustomerType;
   address?:string;

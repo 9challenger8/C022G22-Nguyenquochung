@@ -20,8 +20,8 @@
       "cardId": "222222222",
       "phoneNumber": "0903222222",
       "customerType": {
-        "id": 5,
-        "name": "Member"
+        "id": 2,
+        "name": "Platinum"
       },
       "address": "daklak\n",
       "id": 15

@@ -6,7 +6,7 @@
       <div style="height: 100%;display: flex;justify-content: space-between;align-items: center">
 
         <div style="margin : 0 0 0 20px;width: 600px ">
-          <a routerLink="/facility/add">
+          <a routerLink="/facility/add" >
             <i style="font-size: 39px" class="bi bi-bag-plus-fill icon-hover-custom"></i>
           </a>
           <a style="margin-left: 20px ">
@@ -40,13 +40,13 @@
   <section style="padding-top: 30px" id="hero-slider" class="hero-slider">
     <div style="margin:0 5% 0 5%" class="my-container container-fluid">
 
-      <div style="display: flex;flex-wrap: wrap;">
+      <div style="display: flex;flex-wrap: wrap;" *ngIf="(facilityList).length > 0; else noResults">
         <div style="width: 33.33%;border: none;padding:1.5% 1% 1.5% 1%;position: relative" *ngFor="let temp of facilityList">
-          <i   (click)="getDataForModal(temp.id,temp.name)" style="font-weight: bold;font-size: 40px;"  data-bs-toggle="modal"
+          <i   (click)="getDataForModal(temp.id,temp.name)" style="font-weight: bold;font-size: 40px;height: 40px"  data-bs-toggle="modal"
               data-bs-target="#exampleModal"
               class="bi bi-x-square-fill card-button-delete-custom hover-red">
           </i>
-          <i class=""></i>
+
           <div class="card-custom">
             <img style="border-radius: 10px 10px 0 0"
               src="https://resortdanang.info/wp-content/uploads/2018/12/phong-khach-villas-3-bedroom-furama-da-nang.jpg"
@@ -59,12 +59,12 @@
                 <div class="card-text"><span>Area: </span> {{temp.area}} m<sup>2</sup></div>
               </div>
               <div style="display: flex;justify-content: flex-end;margin-right: 25px">
-                <button style="width: 75px;padding: 0;margin-right:10px" type="button" class="btn card-button-cart-custom card-button-border-custom">
+                <button style="width: 75px;padding: 0;margin-right:10px" type="button" class="btn card-button-custom card-button-border-custom hover-green ">
                   <i style="font-size: 30px;padding: 0"
                     class="bi bi-cart-fill"></i>
                 </button>
 
-                <button [routerLink]="['/facility/edit',temp.id]" style="width: 75px;padding: 0" type="button" class="btn card-button-edit-custom card-button-border-custom">
+                <button [routerLink]="['/facility/edit',temp.id]" style="width: 75px;padding: 0" type="button" class="btn card-button-custom card-button-border-custom hover-yellow">
                   <i style="font-size: 30px;padding: 0"
                      class="bi bi-pencil-square"></i>
                 </button>
@@ -73,6 +73,13 @@
           </div>
         </div>
       </div>
+
+      <!--      No data found-->
+      <ng-template #noResults>
+        <h2 style="text-align: center" >No results found.</h2>
+      </ng-template>
+
+
 
 <!--     Modal display delete-->
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -83,7 +90,7 @@
               Delete
             </div>
             <div class="modal-body">
-              <p>Do you want delete fsv name: <span style="color: red"> {{nameModal}} </span> <br>
+              <p>Do you want delete facility name: <span style="color: red"> {{nameModal}} </span> <br>
                 with id: <span style="color: red">{{idModal}}</span> ?</p>
             </div>
             <div class="modal-footer">

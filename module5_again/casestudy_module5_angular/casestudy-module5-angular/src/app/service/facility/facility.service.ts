@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
-import {Facility} from "../../model/facility/facility";
 
 @Injectable({
   providedIn: 'root'
@@ -13,14 +12,14 @@ export class FacilityService {
   constructor(private http : HttpClient) { }
 
   getAll(): Observable<any> {
-    return this.http.get<Facility[]>(this.URL_FACILITY)
+    return this.http.get<any>(this.URL_FACILITY)
   }
 
   saveFacility(facility):Observable<any>{
     return this.http.post<any>(this.URL_FACILITY+'/create',facility);
   }
 
-  findById(id : number):Observable<Facility>{
+  findById(id : number):Observable<any>{
     return this.http.get<any>(this.URL_FACILITY + "/detail/" + id);
   }
 

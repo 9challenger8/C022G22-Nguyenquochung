@@ -8,7 +8,6 @@ import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
-
 import javax.transaction.Transactional;
 
 @Repository
@@ -25,7 +24,5 @@ public interface IFacilityRepository extends JpaRepository<Facility,Integer> {
     @Query(value = "select * from facility where name like concat('%',:name,'%')", nativeQuery = true,
             countQuery = "select count(*) from (select * from facility where name like concat('%',:name,'%')) abc")
     Page<Facility> findAllByName(@Param("name") String name, Pageable pageable);
-
-
 
 }

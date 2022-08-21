@@ -39,6 +39,7 @@ export class CustomerAddComponent implements OnInit {
         cardId: new FormControl('', [Validators.required, Validators.pattern(/(^[0-9]{9}|[0-9]{12})$/)]),
         phoneNumber: new FormControl('', [Validators.pattern(/^(090\d{7}|091\d{7}|(84)+90\d{7}|(84)+91\d{7})$/)
           , Validators.required]),
+        email : new FormControl('',Validators.required),
         customerType: new FormControl('', Validators.required),
         address: new FormControl('', Validators.required)
       }

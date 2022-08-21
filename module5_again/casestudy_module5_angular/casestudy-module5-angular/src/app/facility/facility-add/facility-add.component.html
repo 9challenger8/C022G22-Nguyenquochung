@@ -4,10 +4,12 @@
       <div class="container" data-aos="fade-in">
         <div class="row">
           <div class="col-12">
-            <form [formGroup]="facilityAddForm" (ngSubmit)="submit()">
-              <fieldset>
-                <legend>Add Service</legend>
-
+            <form class="customMyForm table-shadow" [formGroup]="facilityAddForm" (ngSubmit)="submit()">
+              <fieldset style="position: relative">
+                <legend>Add Facility
+                  <i routerLink="/facility/list" style="position: absolute;right: 0;top:0;font-size: 50px"
+                     class="bi bi-x-square-fill hover-red hover-effect-red"></i>
+                </legend>
                 <div style="display: flex">
                   <div style="width: 50%;padding-right: 1%">
                     <label for="name">Name <span style="color: red">(*)</span>:</label>
@@ -92,6 +94,7 @@
                       Stand room can't be left blank.
                     </p>
                   </div>
+                  <div style="width: 50%;padding-left: 1%">
                   <label for="otherConvenience" [ngStyle]="{'display': displayOtherConvenience }">Other convenience
                     <span
                       style="color: red">(*)</span>:</label>
@@ -102,6 +105,7 @@
                      *ngIf="facilityAddForm.controls.otherConvenience.hasError('required') && facilityAddForm.controls.otherConvenience.touched">
                     Other convenience can't be left blank.
                   </p>
+                  </div>
                 </div>
 
                 <label for="poolArea" [ngStyle]="{'display': displayPoolArea }">Pool area <span
