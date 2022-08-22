@@ -25,6 +25,7 @@ export class ProductListComponent implements OnInit {
   }
 
   getDataForModal(id: number, name: string) {
+    console.log(id)
     this.idModal = id;
     this.nameModal = name;
   }

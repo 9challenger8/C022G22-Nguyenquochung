@@ -41,7 +41,8 @@
     <div style="margin:0 5% 0 5%" class="my-container container-fluid">
 
       <div style="display: flex;flex-wrap: wrap;" *ngIf="(facilityList).length > 0; else noResults">
-        <div style="width: 33.33%;border: none;padding:1.5% 1% 1.5% 1%;position: relative" *ngFor="let temp of facilityList">
+        <div style="width: 33.33%;border: none;padding:1.5% 1% 1.5% 1%;position: relative"
+             *ngFor="let temp of facilityList| paginate:{itemsPerPage: 6, currentPage: p}">
           <i   (click)="getDataForModal(temp.id,temp.name)" style="font-weight: bold;font-size: 40px;height: 40px"  data-bs-toggle="modal"
               data-bs-target="#exampleModal"
               class="bi bi-x-square-fill card-button-delete-custom hover-red">
@@ -79,7 +80,10 @@
         <h2 style="text-align: center" >No results found.</h2>
       </ng-template>
 
-
+      <!--    Pagination-->
+      <div class="container navigation" style="display: flex;justify-content: center;margin-top: 10px">
+        <pagination-controls (pageChange)="p = $event"></pagination-controls>
+      </div>
 
 <!--     Modal display delete-->
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -104,27 +108,6 @@
           </div>
         </div>
       </div>
-    </div>
-
-<!--    Pagination-->
-    <div class="container">
-      <nav aria-label="Page navigation example">
-        <ul class="pagination justify-content-center">
-          <!--                  <li class="page-item">-->
-          <!--                    <a class="page-link" href="#" aria-label="Previous">-->
-          <!--                      <span aria-hidden="true">&laquo;</span>-->
-          <!--                    </a>-->
-          <!--                  </li>-->
-          <li class="page-item" [ngClass]="{'active':i==indexPagination}" *ngFor="let temp of pages;let i =index">
-            <a class="page-link" href="#" (click)="setPage(i,$event)" >{{i+1}}</a>
-          </li>
-          <!--                  <li class="page-item">-->
-          <!--                    <a class="page-link" href="#" aria-label="Next">-->
-          <!--                      <span aria-hidden="true">&raquo;</span>-->
-          <!--                    </a>-->
-          <!--                  </li>-->
-        </ul>
-      </nav>
     </div>
   </section>
 </main>

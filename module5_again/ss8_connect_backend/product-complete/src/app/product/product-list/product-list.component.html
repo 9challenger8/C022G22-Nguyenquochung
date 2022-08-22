@@ -1,0 +1,52 @@
+<h1>Danh sách sản phẩm</h1>
+<a routerLink="/product/create">Tạo mới sản phẩm</a>
+<table>
+  <tr>
+    <td>STT</td>
+    <td>Tên</td>
+    <td>Giá</td>
+    <td>Mô tả</td>
+    <td colspan="2"></td>
+  </tr>
+  <tr *ngFor="let product of products; index as i">
+    <td>{{i + 1}}</td>
+    <td>{{product.name}}</td>
+    <td>{{product.price}}</td>
+    <td>{{product.description}}</td>
+    <td>
+      <button [routerLink]="['/product/edit',product.id]" type="button" class="btn btn-warning">
+        Edit
+      </button>
+    </td>
+    <td>
+      <!-- Button trigger modal -->
+      <button (click)="getDataForModal(product.id,product.name)" type="button" class="btn btn-primary"
+              data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Delete
+      </button>
+    </td>
+  </tr>
+</table>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Delete Product</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        You want to delete product name <span>{{nameModal}}</span> with <span>{{idModal}}</span>?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button data-bs-dismiss="modal" type="button"
+                class="btn btn-primary">Delete
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+

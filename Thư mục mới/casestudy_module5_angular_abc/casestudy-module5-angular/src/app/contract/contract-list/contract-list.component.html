@@ -56,19 +56,17 @@
           <th scope="col">Start date</th>
           <th scope="col">End date</th>
           <th scope="col">Deposit</th>
-          <th scope="col">Total money</th>
           <th colspan="2" scope="col">Attach facilities</th>
         </tr>
         </thead>
         <tbody>
-        <tr class="row-body-custom" *ngFor="let temp of contractList">
+        <tr class="row-body-custom" *ngFor="let temp of contractList| paginate:{itemsPerPage: 6, currentPage: p}">
           <th>{{temp.id}}</th>
           <td>{{temp.facility.name}}</td>
           <td>{{temp.customer.name}}</td>
           <td>{{temp.startDate}}</td>
           <td>{{temp.endDate}}</td>
           <td>{{temp.deposit}}</td>
-          <td>{{temp.totalMoney}}</td>
           <td style="text-align: center">
             <button
               style="width: 45px;margin-right: 20px ;padding: 0;height: 35px;border:  1px solid  #0A58CA;background-color: #0B5ED7"
@@ -80,8 +78,7 @@
             <button
               style="position: relative;width: 220px; height: 35px ;border:  1px solid  #0A58CA;background-color: #0B5ED7"
               type="button"
-              class="btn hover-effect-blue" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"
-              (click)="getContractDetailListByContractId(temp.id)">
+              class="btn hover-effect-blue" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
               <span style="font-size: 22px;width: 220px;color: white;position: absolute;bottom: 2px;right: -1px"> List attach facility</span>
             </button>
           </td>
@@ -185,25 +182,10 @@
       </ng-template>
 
       <!--    Pagination-->
-      <div class="container">
-        <nav aria-label="Page navigation example">
-          <ul class="pagination justify-content-center">
-            <!--                  <li class="page-item">-->
-            <!--                    <a class="page-link" href="#" aria-label="Previous">-->
-            <!--                      <span aria-hidden="true">&laquo;</span>-->
-            <!--                    </a>-->
-            <!--                  </li>-->
-            <li class="page-item" [ngClass]="{'active':i==indexPagination}" *ngFor="let temp of pages;let i =index">
-              <a class="page-link" href="#" (click)="setPage(i,$event)">{{i + 1}}</a>
-            </li>
-            <!--                  <li class="page-item">-->
-            <!--                    <a class="page-link" href="#" aria-label="Next">-->
-            <!--                      <span aria-hidden="true">&raquo;</span>-->
-            <!--                    </a>-->
-            <!--                  </li>-->
-          </ul>
-        </nav>
+      <div class="container" style="display: flex;justify-content: center;margin-top: 10px">
+        <pagination-controls (pageChange)="p = $event"></pagination-controls>
       </div>
+
     </div>
   </section>
 </main>

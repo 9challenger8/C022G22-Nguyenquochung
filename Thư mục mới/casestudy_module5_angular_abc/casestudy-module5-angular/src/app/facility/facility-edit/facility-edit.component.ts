@@ -1,11 +1,11 @@
 import {Component, OnInit} from '@angular/core';
-import {FormControl, FormGroup, Validators} from "@angular/forms";
-import {FacilityService} from "../../service/facility/facility.service";
-import {FacilityTypeService} from "../../service/facility/facility-type.service";
-import {RentTypeService} from "../../service/facility/rent-type.service";
-import {ActivatedRoute, ParamMap, Router} from "@angular/router";
-import {FacilityType} from "../../model/facility/facilityType";
-import {RentType} from "../../model/facility/rentType";
+import {FormControl, FormGroup, Validators} from '@angular/forms';
+import {FacilityService} from '../../service/facility/facility.service';
+import {FacilityTypeService} from '../../service/facility/facility-type.service';
+import {RentTypeService} from '../../service/facility/rent-type.service';
+import {ActivatedRoute, ParamMap, Router} from '@angular/router';
+import {FacilityType} from '../../model/facility/facilityType';
+import {RentType} from '../../model/facility/rentType';
 
 @Component({
   selector: 'app-facility-edit',
@@ -25,24 +25,24 @@ export class FacilityEditComponent implements OnInit {
   displayNumberFloor = 'none';
   displayFacilityFree = 'none';
 
-  //id find facility for edit
+  // id find facility for edit
   id: number;
 
-  //declare form edit
-  facilityEditForm: FormGroup
+  // declare form edit
+  facilityEditForm: FormGroup;
 
   constructor(
-              private facilityService: FacilityService,
-              private facilityTypeService: FacilityTypeService,
-              private rentTypeService: RentTypeService,
-              private router: Router,
-              private activatedRoute: ActivatedRoute) {
+    private facilityService: FacilityService,
+    private facilityTypeService: FacilityTypeService,
+    private rentTypeService: RentTypeService,
+    private router: Router,
+    private activatedRoute: ActivatedRoute) {
     this.activatedRoute.paramMap.subscribe((paramMap: ParamMap) => {
       this.id = +paramMap.get('id');
-      console.log('Id edit:')
-      console.log(this.id)
-      this.getFacility(this.id)
-    })
+      console.log('Id edit:');
+      console.log(this.id);
+      this.getFacility(this.id);
+    });
   }
 
   ngOnInit(): void {
@@ -50,23 +50,23 @@ export class FacilityEditComponent implements OnInit {
     this.getAllRentType();
   }
 
-  submit(id:number) {
-      const facility = this.facilityEditForm.value
-      console.log(facility)
+  submit(id: number) {
+    const facility = this.facilityEditForm.value;
+    console.log(facility);
 
-      this.facilityService.updateFacility(id,facility).subscribe(() => {
-      } , e=>{
-      },()=>{
-        alert('Cập nhật thành công');
-        this.router.navigateByUrl('/facility/list');
-      })
+    this.facilityService.updateFacility(id, facility).subscribe(() => {
+    }, e => {
+    }, () => {
+      alert('Cập nhật thành công');
+      this.router.navigateByUrl('/facility/list');
+    });
   }
 
   // Get facility
   getFacility(id: number) {
     this.facilityService.findById(id).subscribe(data => {
       this.loadInputFacility(data.facilityType.name);
-      console.log(data.facilityType.name)
+      console.log(data.facilityType.name);
       this.facilityEditForm = new FormGroup({
         name: new FormControl(data.name, [Validators.required]),
         area: new FormControl(data.area, [Validators.required]),
@@ -79,14 +79,14 @@ export class FacilityEditComponent implements OnInit {
         poolArea: new FormControl(data.poolArea, [Validators.required]),
         numberOfFloor: new FormControl(data.numberOfFloor, [Validators.required]),
         freeFacility: new FormControl(data.freeFacility, [Validators.required]),
-      })
-    })
+      });
+    });
   }
 
   // Select Facility
   selectFacility(event: any) {
-    console.log('Select data change:')
-    console.log(event)
+    console.log('Select data change:');
+    console.log(event);
     console.log(event.target.value);
     switch (event.target.value) {
       case '1: Object' :
@@ -123,14 +123,14 @@ export class FacilityEditComponent implements OnInit {
   getAllFacilityType() {
     this.facilityTypeService.getAll().subscribe(data => {
       this.facilityTypeList = data;
-    })
+    });
   }
 
   // Get data Rent type
   getAllRentType() {
     this.rentTypeService.getAll().subscribe(data => {
       this.rentTypeList = data;
-    })
+    });
   }
 
   // Compare value choose select
@@ -139,7 +139,7 @@ export class FacilityEditComponent implements OnInit {
   }
 
   // Display input facility
-  loadInputFacility(name:string) {
+  loadInputFacility(name: string) {
     switch (name) {
       case 'Villa' :
         this.displayStandardRoom = 'block';
