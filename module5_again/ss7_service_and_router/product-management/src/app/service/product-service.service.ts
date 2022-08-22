@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {Product} from "../../../../ss7/src/app/model/product";
 
 @Injectable({
@@ -44,7 +44,7 @@ export class ProductServiceService {
     this.products.push(product);
   }
 
-  findById(id: number) {
+  findById(id: number): Product {
     return this.products.find(product => product.id === id);
   }
 

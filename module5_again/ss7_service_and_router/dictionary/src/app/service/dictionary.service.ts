@@ -27,6 +27,6 @@ export class DictionaryService {
         return this.dictionaryLibraries[i];
       }
     }
-    return null;
+    return {};
   }
 }

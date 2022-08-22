@@ -66,7 +66,7 @@
           </thead>
           <tbody>
           <tr class="row-body-custom"
-              *ngFor="let temp of customerList | paginate:{itemsPerPage: 3, currentPage: p};index as i">
+              *ngFor="let temp of customerList | paginate:{itemsPerPage: 1, currentPage: p};index as i">
             <th scope="row"> {{i + 1}}</th>
             <td>{{temp.name}}</td>
             <td>{{temp.dateOfBirth | date:"dd-MM-yyyy"}}</td>
@@ -144,11 +144,15 @@
         </ng-template>
 
         <!--            Pagination-->
-        <div class="container" style="display: flex;justify-content: center;margin-top: 10px">
+<!--        <div class="container navigation" style="display: flex;justify-content: center;margin-top: 10px">-->
+<!--          <pagination-controls (pageChange)="p = $event"></pagination-controls>-->
+
+<!--        </div>-->
+
+        <div class="d-flex justify-content-end">
           <pagination-controls (pageChange)="p = $event"></pagination-controls>
         </div>
       </div>
-
     </div>
   </section><!-- End Hero Slider Section -->
 </main>

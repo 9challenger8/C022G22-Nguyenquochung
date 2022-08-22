@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup} from "@angular/forms";
 import {ActivatedRoute, ParamMap} from "@angular/router";
 import {ProductService} from "../../../../../ss7/src/app/service/product.service";
+import {Product} from "../../../../../ss7/src/app/model/product";
 
 @Component({
   selector: 'app-product-edit',
@@ -30,7 +31,7 @@ export class ProductEditComponent implements OnInit {
   ngOnInit() {
   }
 
-  getProduct(id: number) {
+  getProduct(id: number):Product {
     return this.productService.findById(id);
   }
 

@@ -25,8 +25,8 @@ export class FacilityAddComponent implements OnInit {
   displayNumberFloor = 'none';
   displayFacilityFree = 'none';
 
-  //Declare form add
-  facilityAddForm: FormGroup
+  // Declare form add
+  facilityAddForm: FormGroup;
 
   constructor(private facilityService: FacilityService,
               private facilityTypeService: FacilityTypeService,
