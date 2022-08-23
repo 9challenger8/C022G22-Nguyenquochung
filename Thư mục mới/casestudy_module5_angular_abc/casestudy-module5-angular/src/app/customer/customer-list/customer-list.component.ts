@@ -3,6 +3,7 @@ import {CustomerService} from '../../service/customer/customer.service';
 import {Customer} from '../../model/customer/customer';
 import {Router} from '@angular/router';
 import {FormControl} from '@angular/forms';
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'app-customer-list',
@@ -20,7 +21,8 @@ export class CustomerListComponent implements OnInit {
   p = 1;
 
   constructor(private customerService: CustomerService,
-              private router: Router) {
+              private router: Router,
+              private toastr: ToastrService) {
   }
 
   ngOnInit(): void {
@@ -36,6 +38,7 @@ export class CustomerListComponent implements OnInit {
 
   deleteCustomer() {
     this.customerService.deleteCustomer(this.idModal).subscribe(() => {
+      this.toastr.success('Delete success.', 'Delete');
     }, e => {
       console.log(e);
     }, () => {
@@ -53,4 +56,5 @@ export class CustomerListComponent implements OnInit {
     this.idModal = id;
     this.nameModal = name;
   }
+
 }

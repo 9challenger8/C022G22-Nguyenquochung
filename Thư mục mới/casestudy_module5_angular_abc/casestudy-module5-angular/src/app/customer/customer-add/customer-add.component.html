@@ -102,7 +102,7 @@
                   Address can't be left blank.
                 </p>
                 <div style="display: flex;justify-content:center">
-                  <button style="font-size:25px" type="submit" class="btn btn-success">Submit</button>
+                  <button [disabled]="!customerAdd.valid" style="font-size:25px" type="submit" class="btn btn-success">Submit</button>
                 </div>
               </fieldset>
             </form>

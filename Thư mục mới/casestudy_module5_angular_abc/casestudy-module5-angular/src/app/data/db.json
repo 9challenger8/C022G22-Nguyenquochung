@@ -325,6 +325,41 @@
       "deposit": "10000",
       "totalMoney": "",
       "id": 7
+    },
+    {
+      "customer": {
+        "name": "Nguyen Hung",
+        "dateOfBirth": "2022-08-25",
+        "gender": "Female",
+        "cardId": "222222222",
+        "phoneNumber": "0903222222",
+        "customerType": {
+          "id": 2,
+          "name": "Platinum"
+        },
+        "address": "daklak",
+        "id": 15
+      },
+      "facility": {
+        "id": 2,
+        "name": "Room_1",
+        "area": "12",
+        "cost": "1000",
+        "numberOfPeople": "20",
+        "rentType": {
+          "id": 1,
+          "name": "Year"
+        },
+        "facilityType": {
+          "id": 1,
+          "name": "Villa"
+        }
+      },
+      "startDate": "2022-08-14",
+      "endDate": "2022-08-25",
+      "deposit": "12",
+      "totalMoney": "1000",
+      "id": 8
     }
   ]
 }

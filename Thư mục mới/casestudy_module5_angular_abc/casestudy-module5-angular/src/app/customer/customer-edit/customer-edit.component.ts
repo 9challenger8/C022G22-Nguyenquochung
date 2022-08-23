@@ -4,6 +4,7 @@ import {CustomerTypeService} from '../../service/customer/customer-type.service'
 import {ActivatedRoute, ParamMap, Router} from '@angular/router';
 import {CustomerType} from '../../model/customer/customerType';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'app-customer-edit',
@@ -21,7 +22,8 @@ export class CustomerEditComponent implements OnInit {
   constructor(private customerService: CustomerService,
               private customerTypeService: CustomerTypeService,
               private router: Router,
-              private activatedRoute: ActivatedRoute) {
+              private activatedRoute: ActivatedRoute,
+              private toastrService: ToastrService) {
     this.activatedRoute.paramMap.subscribe((paramMap: ParamMap) => {
       this.id = +paramMap.get('id');
       this.getCustomer(this.id);
@@ -58,7 +60,7 @@ export class CustomerEditComponent implements OnInit {
     const customer = this.customerEdit.value;
 
     this.customerService.updateCustomer(id, customer).subscribe(() => {
-      alert('Successfully');
+      this.toastrService.success('Hello world!', 'Toastr fun!');
     }, e => {
       console.log(e);
     }, () => {

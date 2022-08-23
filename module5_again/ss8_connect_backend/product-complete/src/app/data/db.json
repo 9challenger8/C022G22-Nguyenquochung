@@ -5,46 +5,77 @@
       "name": "IPhone 12",
       "price": 2400000,
       "description": "New"
-    },{
+    },
+    {
       "id": 2,
       "name": "IPhone 12",
       "price": 2400000,
       "description": "New"
-    },{
+    },
+    {
       "id": 3,
       "name": "IPhone 12",
       "price": 2400000,
       "description": "New"
-    },{
+    },
+    {
       "id": 4,
       "name": "IPhone 12",
       "price": 2400000,
       "description": "New"
-    },{
+    },
+    {
       "id": 5,
       "name": "IPhone 12",
       "price": 2400000,
       "description": "New"
-    },{
+    },
+    {
       "id": 6,
       "name": "IPhone 12",
       "price": 2400000,
       "description": "New"
-    },{
+    },
+    {
       "id": 7,
       "name": "IPhone 12",
       "price": 2400000,
       "description": "New"
-    },{
+    },
+    {
       "id": 8,
       "name": "IPhone 12",
       "price": 2400000,
       "description": "New"
-    },{
+    },
+    {
       "id": 9,
       "name": "IPhone 12",
       "price": 2400000,
       "description": "New"
+    },
+    {
+      "name": null,
+      "price": null,
+      "description": null,
+      "category": {
+        "id": null
+      },
+      "id": 10
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Good"
+    },
+    {
+      "id": 2,
+      "name": "Bad"
+    },
+    {
+      "id": 3,
+      "name": "Very Bad"
     }
   ]
 }

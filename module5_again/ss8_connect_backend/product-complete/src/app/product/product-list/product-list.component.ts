@@ -8,28 +8,18 @@ import {ProductService} from "../../service/product.service";
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
-
-   idModal: number;
-   nameModal: string;
-
-  products: Array<Product> = [];
+  products: Product[] = [];
 
   constructor(private productService: ProductService) {
   }
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.getAll();
   }
 
   getAll() {
-    this.productService.getAll().subscribe(data=>{
-      this.products = data;
-    })
+    this.productService.getAll().subscribe(products => {
+      this.products = products;
+    });
   }
-
-  getDataForModal(id: number, name: string) {
-    this.idModal = id;
-    this.nameModal = name;
-  }
-
 }

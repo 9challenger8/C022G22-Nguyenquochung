@@ -17,23 +17,23 @@ export class ProductService {
     return this.http.get<any>(this.URL_PRODUCT);
   }
 
-  saveCustomer(customer): Observable<any> {
-    return this.http.post<any>(this.URL_PRODUCT, customer);
+  saveProduct(product): Observable<any> {
+    return this.http.post<any>(this.URL_PRODUCT, product);
   }
 
   findById(id: number): Observable<any> {
     return this.http.get<any>(this.URL_PRODUCT + '/' + id);
   }
 
-  deleteCustomer(id: number): Observable<any> {
+  deleteProduct(id: number): Observable<any> {
     return this.http.delete<any>(this.URL_PRODUCT + '/' + id);
   }
 
-  updateCustomer(id: number, customer): Observable<any> {
-    return this.http.put<any>(this.URL_PRODUCT + '/' + id, customer);
+  updateProduct(id: number, product): Observable<any> {
+    return this.http.put<any>(this.URL_PRODUCT + '/' + id, product);
   }
 
-  searchCustomerByName(name: string): Observable<any> {
+  searchProductByName(name: string): Observable<any> {
     return this.http.get<any>(this.URL_PRODUCT + '?name_like=' + name);
   }
 }

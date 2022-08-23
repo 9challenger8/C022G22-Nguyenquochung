@@ -28,6 +28,10 @@
                        *ngIf="facilityAddForm.controls.area.hasError('required') && facilityAddForm.controls.area.touched">
                       Area can't be left blank.
                     </p>
+                    <p style="color: red"
+                       *ngIf="facilityAddForm.controls.area.hasError('positiveNumber') && facilityAddForm.controls.area.touched">
+                      Area must be greater than 0.
+                    </p>
                   </div>
                 </div>
 
@@ -39,6 +43,10 @@
                     <p style="color: red"
                        *ngIf="facilityAddForm.controls.cost.hasError('required') && facilityAddForm.controls.cost.touched">
                       Cost can't be left blank.
+                    </p>
+                    <p style="color: red"
+                       *ngIf="facilityAddForm.controls.cost.hasError('positiveNumber') && facilityAddForm.controls.cost.touched">
+                      Cost must be greater than 0.
                     </p>
 
                   </div>
@@ -117,6 +125,10 @@
                    *ngIf="facilityAddForm.controls.poolArea.hasError('required') && facilityAddForm.controls.poolArea.touched">
                   Pool area can't be left blank.
                 </p>
+                <p style="color: red"
+                   *ngIf="facilityAddForm.controls.poolArea.hasError('positiveNumber') && facilityAddForm.controls.deposit.touched">
+                  Pool area must be greater than 0.
+                </p>
 
                 <label for="numberOfFloor" [ngStyle]="{'display': displayNumberFloor }">Number floor <span
                   style="color: red">(*)</span>:</label>
@@ -139,7 +151,7 @@
                 </p>
 
                 <div style="display: flex;justify-content:center">
-                  <button style="font-size:25px" type="submit" class="btn btn-success">Submit</button>
+                  <button [disabled]="!facilityAddForm.valid"  style="font-size:25px" type="submit" class="btn btn-success">Submit</button>
                 </div>
               </fieldset>
             </form>

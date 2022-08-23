@@ -21,6 +21,10 @@
                        *ngIf="contractAddForm.controls.startDate.hasError('required') && contractAddForm.controls.startDate.touched">
                       Start date can't be left blank.
                     </p>
+                    <p style="color: red"
+                       *ngIf="contractAddForm.controls.startDate.hasError('required') && contractAddForm.controls.startDate.touched">
+                      Start date can't be left blank.
+                    </p>
                   </div>
                   <div style="width: 50%;padding-left: 1%">
                     <label for="endDate">End date <span style="color: red">(*)</span>:</label><br>
@@ -41,6 +45,10 @@
                     <p style="color: red"
                        *ngIf="contractAddForm.controls.deposit.hasError('required') && contractAddForm.controls.deposit.touched">
                       Deposit can't be left blank.
+                    </p>
+                    <p style="color: red"
+                       *ngIf="contractAddForm.controls.deposit.hasError('positiveNumber') && contractAddForm.controls.deposit.touched">
+                      Deposit must be greater than 0.
                     </p>
                   </div>
                   <div style="width: 50%;padding-left: 1%">
@@ -83,7 +91,7 @@
                 <input formControlName="totalMoney" value="0 đ" id="totalMoney" name="totalMoney" type="text"
                        class="feedback-input"/>
                 <div style="display: flex;justify-content:center">
-                  <button style="font-size:25px" type="submit" class="btn btn-success">Submit</button>
+                  <button [disabled]="!contractAddForm.valid" style="font-size:25px" type="submit" class="btn btn-success">Submit</button>
                 </div>
               </fieldset>
             </form>

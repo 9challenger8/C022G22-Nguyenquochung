@@ -4,6 +4,7 @@ import {CustomerTypeService} from '../../service/customer/customer-type.service'
 import {Router} from '@angular/router';
 import {CustomerType} from '../../model/customer/customerType';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'app-customer-add',
@@ -17,7 +18,8 @@ export class CustomerAddComponent implements OnInit {
 
   constructor(private customerService: CustomerService,
               private customerTypeService: CustomerTypeService,
-              private router: Router) {
+              private router: Router,
+              private toastrService: ToastrService) {
   }
 
   ngOnInit(): void {
@@ -39,7 +41,7 @@ export class CustomerAddComponent implements OnInit {
         cardId: new FormControl('', [Validators.required, Validators.pattern(/(^[0-9]{9}|[0-9]{12})$/)]),
         phoneNumber: new FormControl('', [Validators.pattern(/^(090\d{7}|091\d{7}|(84)+90\d{7}|(84)+91\d{7})$/)
           , Validators.required]),
-        email: new FormControl('', Validators.required),
+        // email: new FormControl('', Validators.required),
         customerType: new FormControl('', Validators.required),
         address: new FormControl('', Validators.required)
       }
@@ -48,8 +50,9 @@ export class CustomerAddComponent implements OnInit {
 
   submit() {
     const customer = this.customerAdd.value;
+    console.log(this.customerAdd);
     this.customerService.saveCustomer(customer).subscribe(() => {
-      alert('Successfully');
+      this.toastrService.success('Hello world!', 'Toastr fun!');
     }, e => {
       console.log(e);
     }, () => {

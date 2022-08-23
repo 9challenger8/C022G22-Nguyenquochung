@@ -8,4 +8,5 @@ export interface Contract {
   startDate?: string;
   endDate?: string;
   deposit?: string;
+  totalMoney?: string;
 }
