@@ -7,6 +7,7 @@ import {AttachFacility} from "../../model/contract/attachFacility";
 import {ContractDetail} from "../../model/contract/contractDetail";
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {ActivatedRoute, ParamMap, Router} from "@angular/router";
+import {ToastrService} from "ngx-toastr";
 
 @Component({
   selector: 'app-contract-list',
@@ -38,21 +39,8 @@ export class ContractListComponent implements OnInit {
               private contractService: ContractService,
               private attachFacilityService: AttachFacilityService,
               private activatedRoute: ActivatedRoute,
-              private router:Router) {
-    // this.contractList.push({id:1,customer:{id:1,name:'Joni'},facility:{id:1,name:'Room_123'},startDate:'12-22-2019',
-    //   endDate:'22-23-2021',deposit:'12000'})
-    // this.contractList.push({id:2,customer:{id:1,name:'Jonah'},facility:{id:1,name:'Room_123'},startDate:'12-22-2019',
-    //   endDate:'22-23-2021',deposit:'12000'})
-    // this.contractList.push({id:3,customer:{id:1,name:'Jone'},facility:{id:1,name:'Room_123'},startDate:'12-22-2019',
-    //   endDate:'22-23-2021',deposit:'12000'})
-    // this.contractList.push({id:4,customer:{id:1,name:'Joni'},facility:{id:1,name:'Room_123'},startDate:'12-22-2019',
-    //   endDate:'22-23-2021',deposit:'12000'})
-    // this.contractList.push({id:5,customer:{id:1,name:'Rose'},facility:{id:1,name:'Room_123'},startDate:'12-22-2019',
-    //   endDate:'22-23-2021',deposit:'12000'})
-    // this.activatedRoute.paramMap.subscribe((paramMap:ParamMap)=>{
-    //   this.idContract = +paramMap.get('id');
-    // })
-
+              private router:Router,
+              private toastrService: ToastrService) {
   }
 
   ngOnInit(): void {
@@ -71,7 +59,7 @@ export class ContractListComponent implements OnInit {
     })
   }
 
-  // chuyen du lieu contract khi mo form
+  // truyen du lieu contract khi mo form
   getFormContractDetailAdd(contract:any) {
     this.contractDetailAddForm = new FormGroup({
       // id: new FormControl('',Validators.required),
@@ -83,19 +71,19 @@ export class ContractListComponent implements OnInit {
 
   saveContractDetail() {
     const contractDetail = this.contractDetailAddForm.value;
-    contractDetail.id = +contractDetail.id;
+    // contractDetail.id = +contractDetail.id;
     console.log(this.contractDetailAddForm.value)
     this.contractDetailService.saveContractDetail(contractDetail).subscribe(() => {
-      alert('Tạo thành công');
       this.contractDetailAddForm.reset();
     }, e => console.log(e), () => {
+      this.toastrService.success('Successfully added new attach facility.', 'Notification!');
       // this.router.navigateByUrl('/facility/list');
     });
   }
 
   getSearchListByNamePagination() {
     this.contractService.searchContractByNameCustomer(this.nameCustomerSearch.value, this.indexPagination).subscribe(data => {
-      console.log(data)
+      console.log("hien thi: "+ data)
       this.contractList = data.content
       this.pages = new Array(data['totalPages']);
     })

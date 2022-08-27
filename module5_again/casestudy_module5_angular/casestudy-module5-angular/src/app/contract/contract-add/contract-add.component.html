@@ -36,7 +36,7 @@
                 <div style="display: flex">
                   <div style="width: 50%;padding-right: 1%">
                     <label for="deposit">Deposit <span style="color: red">(*)</span>:</label>
-                    <input formControlName="deposit" id="deposit" name="deposit" type="text" class="feedback-input"
+                    <input formControlName="deposit"  id="deposit" name="deposit" type="text" class="feedback-input"
                            placeholder="Deposit"/>
                     <p style="color: red"
                        *ngIf="contractAddForm.controls.deposit.hasError('required') && contractAddForm.controls.deposit.touched">
@@ -49,10 +49,10 @@
                       <option value="" selected="selected">Please choose customer.</option>
                       <option *ngFor="let customer of customerList" [ngValue]="customer">{{customer.name}}</option>
                     </select>
-<!--                    <p style="color: red"-->
-<!--                       *ngIf="contractAddForm.controls.customer.hasError('required') && contractAddForm.controls.customer.touched">-->
-<!--                      Customer can't be left blank.-->
-<!--                    </p>-->
+                    <p style="color: red"
+                       *ngIf="contractAddForm.controls.customer.hasError('required') && contractAddForm.controls.customer.touched">
+                      Customer can't be left blank.
+                    </p>
                   </div>
                 </div>
 
@@ -64,15 +64,15 @@
                       <option value="" selected="selected">Please choose facility.</option>
                       <option *ngFor="let facility of facilityList" [ngValue]="facility">{{facility.name}}</option>
                     </select>
-<!--                    <p style="color: red"-->
-<!--                       *ngIf="contractAddForm.controls.customer.hasError('required') && contractAddForm.controls.customer.touched">-->
-<!--                      Facility can't be left blank.-->
-<!--                    </p>-->
+                    <p style="color: red"
+                       *ngIf="contractAddForm.controls.facility.hasError('required') && contractAddForm.controls.facility.touched">
+                      Facility can't be left blank.
+                    </p>
                   </div>
                   <div style="width: 50%;padding-left: 1%">
-                    <label for="attachFacility">Attach facility <span style="color: red">(*)</span>:</label><br>
-                    <button id="attachFacility"
-                            style="width: 75px;padding: 0;height: 50px;border:  1px solid  #0A58CA;background-color: #0B5ED7"
+                    <label for="attachFacilityButton">Attach facility <span style="color: red">(*)</span>:</label><br>
+                    <button id="attachFacilityButton" (click)="getFormContractDetailAdd()"
+                            style="width: 75px;padding: 0;height: 50px;border:  1px solid  #0A58CA;background-color: #0B5ED7" data-bs-toggle="modal" data-bs-target="#addContractDetailModal"
                             type="button" class="btn hover-effect-blue">
                       <i style="font-size: 30px;padding: 0;color: white" class="bi bi-plus"></i>
                     </button>
@@ -80,7 +80,7 @@
                 </div>
 
                 <label for="totalMoney">Total money <span style="color: red">(*)</span>:</label><br>
-                <input formControlName="totalMoney" value="0 đ" id="totalMoney" name="totalMoney" type="text"
+                <input [(ngModel)]="totalMoney" formControlName="totalMoney" value="0 đ" id="totalMoney" name="totalMoney" type="text"
                        class="feedback-input"/>
                 <div style="display: flex;justify-content:center">
                   <button style="font-size: 24px" type="submit" class="btn btn-success">Submit</button>
@@ -93,4 +93,35 @@
     </section>
   </div>
 </main>
+
+<!--       Modal add contract detail-->
+<div class="modal fade" id="addContractDetailModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+     aria-hidden="true" data-bs-backdrop="static">
+  <div class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Attach Facility</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="contractDetailAddForm">
+          <label for="attachFacility">Attach facility <span style="color: red">(*)</span>:</label>
+          <select formControlName="attachFacility" id="attachFacility" name="attachFacility">
+            <option value="" selected="selected">Please choose a attach facility.</option>
+            <option *ngFor="let attachFacility of attachFacilityList"
+                    [ngValue]="attachFacility">{{attachFacility.name}}</option>
+          </select>
+
+          <label for="quantity">Quantity <span style="color: red">(*)</span>:</label>
+          <input formControlName="quantity" id="quantity" name="quantity" type="text"
+                 class="feedback-input"
+                 placeholder="Enter quantity"/>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button (click)="saveContractDetail()" type="button" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
 

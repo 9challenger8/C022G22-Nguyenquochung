@@ -1,0 +1,413 @@
+{
+  "customers": [
+    {
+      "name": "The Anh",
+      "dateOfBirth": "2022-07-07",
+      "gender": "Female",
+      "cardId": "222222222",
+      "phoneNumber": "0902222222",
+      "customerType": {
+        "id": 5,
+        "name": "Member"
+      },
+      "address": "da nang",
+      "id": 14
+    },
+    {
+      "name": "Nguyen Hung",
+      "dateOfBirth": "2022-08-25",
+      "gender": "Female",
+      "cardId": "222222222",
+      "phoneNumber": "0903222222",
+      "customerType": {
+        "id": 2,
+        "name": "Platinum"
+      },
+      "address": "daklak",
+      "id": 15
+    },
+    {
+      "name": "Nguyen Too",
+      "dateOfBirth": "2022-09-02",
+      "gender": "Female",
+      "cardId": "222222222",
+      "phoneNumber": "0912342222",
+      "customerType": {
+        "id": 5,
+        "name": "Member"
+      },
+      "address": "20 Putin",
+      "id": 16
+    },
+    {
+      "name": "Putin Vladimir",
+      "dateOfBirth": "2022-08-13",
+      "gender": "Male",
+      "cardId": "090111112222",
+      "phoneNumber": "0905446656",
+      "customerType": {
+        "id": 2,
+        "name": "Platinum"
+      },
+      "address": "Obama Street",
+      "id": 17
+    }
+  ],
+  "customerTypes": [
+    {
+      "id": 1,
+      "name": "Diamond"
+    },
+    {
+      "id": 2,
+      "name": "Platinum"
+    },
+    {
+      "id": 3,
+      "name": "Gold"
+    },
+    {
+      "id": 4,
+      "name": "Silver"
+    },
+    {
+      "id": 5,
+      "name": "Member"
+    }
+  ],
+  "rentTypes": [
+    {
+      "id": 1,
+      "name": "Year"
+    },
+    {
+      "id": 2,
+      "name": "Month"
+    },
+    {
+      "id": 3,
+      "name": "Week"
+    },
+    {
+      "id": 4,
+      "name": "Day"
+    },
+    {
+      "id": 5,
+      "name": "Hour"
+    }
+  ],
+  "facilityType": [
+    {
+      "id": 1,
+      "name": "Villa"
+    },
+    {
+      "id": 2,
+      "name": "House"
+    },
+    {
+      "id": 3,
+      "name": "Room"
+    }
+  ],
+  "facilities": [
+    {
+      "name": "Room_123",
+      "area": "12",
+      "cost": "12000",
+      "numberOfPeople": "20",
+      "rentType": {
+        "id": 2,
+        "name": "Month"
+      },
+      "facilityType": {
+        "id": 1,
+        "name": "Villa"
+      },
+      "standardRoom": null,
+      "otherConvenience": "abc",
+      "poolArea": "20",
+      "numberOfFloor": "2",
+      "freeFacility": "hhh",
+      "id": 1
+    },
+    {
+      "name": "Room_1",
+      "area": "12",
+      "cost": "1000",
+      "numberOfPeople": "20",
+      "rentType": {
+        "id": 1,
+        "name": "Year"
+      },
+      "facilityType": {
+        "id": 1,
+        "name": "Villa"
+      },
+      "standardRoom": null,
+      "otherConvenience": null,
+      "poolArea": null,
+      "numberOfFloor": null,
+      "freeFacility": null,
+      "id": 2
+    },
+    {
+      "name": "Room_2",
+      "area": "12",
+      "cost": "12000",
+      "numberOfPeople": "20",
+      "rentType": {
+        "id": 1,
+        "name": "Year"
+      },
+      "facilityType": {
+        "id": 3,
+        "name": "Room"
+      },
+      "standardRoom": null,
+      "otherConvenience": null,
+      "poolArea": null,
+      "numberOfFloor": null,
+      "freeFacility": null,
+      "id": 3
+    },
+    {
+      "name": "HOUSE_123",
+      "area": "100",
+      "cost": "1000",
+      "numberOfPeople": "10",
+      "rentType": {
+        "id": 2,
+        "name": "Month"
+      },
+      "facilityType": {
+        "id": 3,
+        "name": "Room"
+      },
+      "standardRoom": "abc",
+      "otherConvenience": "abc",
+      "poolArea": "",
+      "numberOfFloor": "333",
+      "freeFacility": "",
+      "id": 4
+    }
+  ],
+  "contracts": [
+    {
+      "id": 1,
+      "customer": {
+        "id": 1,
+        "name": "Joni"
+      },
+      "facility": {
+        "id": 1,
+        "name": "Room_123"
+      },
+      "startDate": "2019-12-12",
+      "endDate": "2022-08-07",
+      "deposit": "12000"
+    },
+    {
+      "id": 2,
+      "customer": {
+        "id": 1,
+        "name": "Jonah"
+      },
+      "facility": {
+        "id": 1,
+        "name": "Room_123"
+      },
+      "startDate": "2019-12-12",
+      "endDate": "2022-08-07",
+      "deposit": "12000"
+    },
+    {
+      "id": 3,
+      "customer": {
+        "id": 1,
+        "name": "Joni"
+      },
+      "facility": {
+        "id": 1,
+        "name": "Room_123"
+      },
+      "startDate": "2019-12-12",
+      "endDate": "2022-08-07",
+      "deposit": "12000"
+    },
+    {
+      "id": 4,
+      "customer": {
+        "id": 1,
+        "name": "Joni"
+      },
+      "facility": {
+        "id": 1,
+        "name": "Room_123"
+      },
+      "startDate": "2019-12-12",
+      "endDate": "2022-08-07",
+      "deposit": "12000"
+    },
+    {
+      "id": 5,
+      "customer": {
+        "id": 1,
+        "name": "Joni"
+      },
+      "facility": {
+        "id": 1,
+        "name": "Room_123"
+      },
+      "startDate": "2019-12-12",
+      "endDate": "2022-08-07",
+      "deposit": "12000"
+    },
+    {
+      "customer": {
+        "name": "The Anh",
+        "dateOfBirth": "2019-12-12",
+        "gender": "Female",
+        "cardId": "222222222",
+        "phoneNumber": "0902222222",
+        "customerType": {
+          "id": 4,
+          "name": "Silver"
+        },
+        "address": "da nang",
+        "id": 14
+      },
+      "facility": {
+        "name": "Room_123",
+        "area": "12",
+        "cost": "12000",
+        "numberOfPeople": "20",
+        "rentType": {
+          "id": 1,
+          "name": "Year"
+        },
+        "facilityType": {
+          "id": 1,
+          "name": "Villa"
+        },
+        "standardRoom": null,
+        "otherConvenience": "abc",
+        "poolArea": "20",
+        "numberOfFloor": "2",
+        "freeFacility": null,
+        "id": 1
+      },
+      "startDate": "2019-12-12",
+      "endDate": "2022-08-13",
+      "deposit": "1000",
+      "totalMoney": "",
+      "id": 6
+    },
+    {
+      "customer": {
+        "name": "The Anh",
+        "dateOfBirth": "2019-12-12",
+        "gender": "Female",
+        "cardId": "222222222",
+        "phoneNumber": "0902222222",
+        "customerType": {
+          "id": 4,
+          "name": "Silver"
+        },
+        "address": "da nang",
+        "id": 14
+      },
+      "facility": {
+        "id": 4,
+        "name": "Room_3",
+        "area": "12",
+        "cost": "12000",
+        "numberOfPeople": "20",
+        "rentType": {
+          "id": 1,
+          "name": "Year"
+        },
+        "facilityType": {
+          "id": 1,
+          "name": "Villa"
+        }
+      },
+      "startDate": "2022-08-03",
+      "endDate": "2022-08-12",
+      "deposit": "10000",
+      "totalMoney": "",
+      "id": 7
+    },
+    {
+      "customer": {
+        "name": "Nguyen Hung",
+        "dateOfBirth": "2022-08-25",
+        "gender": "Female",
+        "cardId": "222222222",
+        "phoneNumber": "0903222222",
+        "customerType": {
+          "id": 2,
+          "name": "Platinum"
+        },
+        "address": "daklak",
+        "id": 15
+      },
+      "facility": {
+        "id": 2,
+        "name": "Room_1",
+        "area": "12",
+        "cost": "1000",
+        "numberOfPeople": "20",
+        "rentType": {
+          "id": 1,
+          "name": "Year"
+        },
+        "facilityType": {
+          "id": 1,
+          "name": "Villa"
+        }
+      },
+      "startDate": "2022-08-14",
+      "endDate": "2022-08-25",
+      "deposit": "12",
+      "totalMoney": "1000",
+      "id": 8
+    },
+    {
+      "customer": {
+        "name": "The Anh",
+        "dateOfBirth": "2022-07-07",
+        "gender": "Female",
+        "cardId": "222222222",
+        "phoneNumber": "0902222222",
+        "customerType": {
+          "id": 4,
+          "name": "Silver"
+        },
+        "address": "da nang",
+        "id": 14
+      },
+      "facility": {
+        "id": 5,
+        "name": "Room_456",
+        "area": "12",
+        "cost": "12000",
+        "numberOfPeople": "20",
+        "rentType": {
+          "id": 1,
+          "name": "Year"
+        },
+        "facilityType": {
+          "id": 1,
+          "name": "Villa"
+        }
+      },
+      "startDate": "2022-08-06",
+      "endDate": "2022-08-27",
+      "deposit": "1000",
+      "totalMoney": "10000",
+      "id": 9
+    }
+  ]
+}

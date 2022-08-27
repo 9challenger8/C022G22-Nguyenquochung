@@ -63,4 +63,5 @@ export class CustomerListComponent implements OnInit {
     this.indexPagination = i;
     this.getSearchListByNamePagination()
   }
+
 }

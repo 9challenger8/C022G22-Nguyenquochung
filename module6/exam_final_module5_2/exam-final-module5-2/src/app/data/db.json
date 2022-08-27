@@ -1,0 +1,74 @@
+{
+  "patients": [
+    {
+      "id": "BA-002",
+      "idPatient": "BN-4325",
+      "namePatient": "Nguyen Tri Trung",
+      "startDate": "2016-03-03",
+      "outDate": "2016-03-20",
+      "issue": "sleep",
+      "solution": "sleep",
+      "nameDoctor": "Nguyen Quoc Hung"
+    },
+    {
+      "id": "BA-003",
+      "idPatient": "BN-4355",
+      "namePatient": "Nguyen Tri",
+      "startDate": "2016-03-03",
+      "outDate": "2016-03-04",
+      "issue": "sleep",
+      "solution": "sleep",
+      "nameDoctor": "Nguyen Quoc Hung"
+    },
+    {
+      "id": "BA-004",
+      "idPatient": "BN-4445",
+      "namePatient": "Nguyen Tien",
+      "startDate": "2016-03-03",
+      "outDate": "2016-03-04",
+      "issue": "sleep",
+      "solution": "sleep",
+      "nameDoctor": "Nguyen Quoc Hung"
+    },
+    {
+      "id": "BA-004",
+      "idPatient": "BN-4445",
+      "namePatient": "Nguyen Tien",
+      "startDate": "2016-03-03",
+      "outDate": "2016-03-04",
+      "issue": "sleep",
+      "solution": "sleep",
+      "nameDoctor": "Nguyen Quoc Hung"
+    },
+    {
+      "id": "BA-004",
+      "idPatient": "BN-4445",
+      "namePatient": "Nguyen Tien",
+      "startDate": "2016-03-03",
+      "outDate": "2016-03-04",
+      "issue": "sleep",
+      "solution": "sleep",
+      "nameDoctor": "Nguyen Quoc Hung"
+    },
+    {
+      "id": "BA-004",
+      "idPatient": "BN-4445",
+      "namePatient": "Nguyen Tien",
+      "startDate": "2016-03-03",
+      "outDate": "2016-03-04",
+      "issue": "sleep",
+      "solution": "sleep",
+      "nameDoctor": "Nguyen Quoc Hung"
+    },
+    {
+      "id": "BA-004",
+      "idPatient": "BN-4445",
+      "namePatient": "Nguyen Tien",
+      "startDate": "2016-03-03",
+      "outDate": "2016-03-04",
+      "issue": "sleep",
+      "solution": "sleep",
+      "nameDoctor": "Nguyen Quoc Hung"
+    }
+  ]
+}

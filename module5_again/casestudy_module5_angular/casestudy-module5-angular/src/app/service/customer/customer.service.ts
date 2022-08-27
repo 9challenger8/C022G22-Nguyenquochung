@@ -12,7 +12,7 @@ export class CustomerService {
   constructor(private http : HttpClient) { }
 
   getAll(): Observable<any> {
-    return this.http.get<any>(this.URL_CUSTOMER_SPRING +'/searchList')
+    return this.http.get<any>(this.URL_CUSTOMER_SPRING +'/list')
   }
 
   saveCustomer(customer):Observable<any>{
