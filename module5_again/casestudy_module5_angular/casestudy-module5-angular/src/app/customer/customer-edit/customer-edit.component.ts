@@ -66,7 +66,7 @@ export class CustomerEditComponent implements OnInit {
     });
   }
 
-  compareObj(value, option):boolean {
+  compareObj(value, option): boolean {
     return value.id === option.id;
   }
 

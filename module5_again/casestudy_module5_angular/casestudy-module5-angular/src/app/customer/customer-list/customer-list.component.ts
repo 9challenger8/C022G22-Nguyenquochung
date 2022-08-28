@@ -14,11 +14,12 @@ export class CustomerListComponent implements OnInit {
 
   idModal: number;
   nameModal: string;
+
+  // search
   nameSearch = new FormControl('');
 
-
-  //pagination
-  indexPagination: number = 0;
+  // pagination
+  indexPagination = 0;
   pages: Array<number>;
   totalPagination: number;
 
@@ -47,10 +48,10 @@ export class CustomerListComponent implements OnInit {
 
   getSearchListByNamePagination() {
     this.customerService.searchCustomerByName(this.nameSearch.value, this.indexPagination).subscribe(data => {
-      console.log(data)
-      this.customerList = data.content
+      console.log(data);
+      this.customerList = data.content;
       this.pages = new Array(data['totalPages']);
-    })
+    });
   }
 
   getDataForModal(id: number, name: string) {
@@ -61,7 +62,7 @@ export class CustomerListComponent implements OnInit {
   setPage(i: number, event: any) {
     event.preventDefault();
     this.indexPagination = i;
-    this.getSearchListByNamePagination()
+    this.getSearchListByNamePagination();
   }
 
 }
