@@ -1,0 +1,118 @@
+
+.my-container {
+  width: 90%;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.card-text{
+  font-size: 22px;
+  width: 50%;
+}
+
+.icon-hover-custom:hover {
+  color: #dc3545;
+}
+
+.card-custom {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+.card-button-delete-custom {
+  padding: 0;
+  position: absolute;
+  right: 19px;
+  top:18px;
+  cursor: pointer;
+}
+
+.hover-red:hover{
+  color: #dc3545;
+  cursor: pointer;
+
+}
+
+.card-button-border-custom{
+  border: 1px solid black;
+}
+
+.card-button-custom:hover{
+  color: white;
+  border: none;
+}
+
+.hover-green:hover{
+  background-color:#198754;
+}
+
+.hover-blue:hover{
+  background-color: #0d6efd;
+}
+
+.hover-effect-blue:hover{
+  transform: none;
+  transition: color 0.15s ease-in-out 0s, background-color 0.15s ease-in-out 0s, border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  box-sizing: border-box;
+  box-shadow: rgba(49, 132, 253, 0.5) 0 0 0 4px;
+  border-radius: 6px;
+}
+
+.hover-effect-red:hover{
+  transform: none;
+  transition: color 0.15s ease-in-out 0s, background-color 0.15s ease-in-out 0s, border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  box-sizing: border-box;
+  box-shadow: rgba(225, 83, 97, 0.5) 0px 0px 0px 4px;
+  border-radius: 6px;
+}
+
+.hover-yellow:hover{
+  background-color:#FFC107 ;
+}
+
+
+.card-body {
+  background-color: #f4f2f2;
+  border-radius: 10px;
+}
+.table-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.row-custom th {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.row-body-custom {
+  font-size: 22px;
+}
+
+.shadow-custom {
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*Css for customer list*/
+.button-delete {
+  color: black;
+}
+
+.button-delete:hover {
+  color: #dc3545;
+}
+
+.button-edit {
+  color: black;
+}
+
+.button-edit:hover {
+  color:#FFC107;
+}
+
+

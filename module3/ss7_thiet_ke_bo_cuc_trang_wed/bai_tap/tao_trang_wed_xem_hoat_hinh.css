@@ -242,7 +242,7 @@ footer{
     background-color: black;
     height: 40px;
 }
-@media screen and (max-width: 700px){
+@media screen and (max-width: 1500px){
     .col-xs-12{
         width: 100%;
     }

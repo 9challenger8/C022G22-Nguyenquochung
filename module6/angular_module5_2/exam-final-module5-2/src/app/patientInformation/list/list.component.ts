@@ -43,7 +43,7 @@ export class ListComponent implements OnInit {
     this.patientInformationService.searchPatientByName(this.nameSearch.value, this.indexPagination).subscribe(data => {
       console.log(data);
       this.patientList = data.content;
-      this.pages = new Array(data['totalPages']);
+      this.pages = new Array(data.totalPages);
     });
   }
 

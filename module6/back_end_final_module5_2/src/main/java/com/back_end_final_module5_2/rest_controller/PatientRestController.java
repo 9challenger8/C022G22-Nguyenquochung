@@ -40,14 +40,14 @@ public class PatientRestController {
 
     @PostMapping("/create")
     public ResponseEntity<Patient> savePatient(@RequestBody Patient patient){
-        return new ResponseEntity<>(iPatientService.save(patient),HttpStatus.CREATED);
+        return new ResponseEntity<>(iPatientService.savePatient(patient),HttpStatus.CREATED);
     }
 
     @PutMapping("/update/{id}")
     public ResponseEntity<Patient> updatePatient(@RequestBody Patient patient,
                                                  @PathVariable String id){
-        patient.setIdPatient(id);
-        return new ResponseEntity<>(iPatientService.save(patient),HttpStatus.OK);
+        patient.setIdRecord(id);
+        return new ResponseEntity<>(iPatientService.savePatient(patient),HttpStatus.OK);
     }
 
     @DeleteMapping("/delete/{id}")

@@ -20,9 +20,6 @@ public interface IContractRepository extends JpaRepository<Contract,Integer> {
     @Query(value = "delete from contract where id = :id", nativeQuery = true)
     void removeById(@Param("id") String id);
 
-
-
-
     @Query(value = "select * from contract",nativeQuery = true)
     List<Contract> findAll();
 }

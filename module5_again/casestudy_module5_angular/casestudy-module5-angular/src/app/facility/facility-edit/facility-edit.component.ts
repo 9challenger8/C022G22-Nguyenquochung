@@ -85,7 +85,7 @@ export class FacilityEditComponent implements OnInit {
 
   // Select Facility
   selectFacility(event: any) {
-    console.log('Select data change:')
+    console.log('Select data change:');
     console.log(event)
     console.log(event.target.value);
     switch (event.target.value) {

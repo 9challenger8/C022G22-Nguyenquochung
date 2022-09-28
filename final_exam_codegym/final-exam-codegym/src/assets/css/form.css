@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+.customMyForm {
+  max-width: 1250px;
+  margin: 50px auto;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+
+.feedback-input {
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  border: 1px solid #000000;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 24px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  /*border: 1px solid #7baeee;*/
+  /*box-shadow: 5px 5px 8px 5px rgba(102, 141, 179, 0.15), 0 6px 25px 0 rgba(102, 141, 179, 0.15);*/
+  transform: none;
+  border: 1px solid  #86B7FE;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  box-sizing: border-box;
+  resize: vertical;
+  word-wrap: break-word;
+  box-shadow: rgba(13, 110, 253, 0.25) 0px 0px 0px 4px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.modalButton {
+  color: white;
+  font-size: 30px;
+  border-radius: 5px;
+  background-color: #007aff;
+  border: 1px solid #000000;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 5%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+select {
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  border: 1px solid #000000;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+select:hover{
+  transform: none;
+  border: 1px solid  #86B7FE;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  box-sizing: border-box;
+  resize: vertical;
+  word-wrap: break-word;
+  box-shadow: rgba(13, 110, 253, 0.25) 0 0 0 4px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+label {
+  padding-bottom: 5px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+fieldset {
+  color: black;
+  border-radius: 10px;
+  line-height: 22px;
+  padding: 40px;
+  border: 2px solid #0f5132;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 29px 29px 0;
+}
+
+textarea {
+  height: 100px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+legend {
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 45px;
+  font-weight: bold;
+}
+
+.button-submit {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 30%;
+  background-color: #0000EE;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding: 10px 20px 10px 20px;
+  transition: all 0.3s;
+  font-weight: 700;
+}
+
+.hover-green:hover{
+  background-color: #59aa07;
+}
+
+[type="submit"]:hover {
+  transform: none;
+  transition: color 0.15s ease-in-out 0s, background-color 0.15s ease-in-out 0s, border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  box-sizing: border-box;
+  box-shadow: rgba(60, 153, 110, 0.5) 0px 0px 0px 4px;
+  border-radius: 6px;
+}

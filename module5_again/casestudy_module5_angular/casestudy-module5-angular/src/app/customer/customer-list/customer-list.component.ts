@@ -10,6 +10,7 @@ import {FormControl} from '@angular/forms';
   styleUrls: ['./customer-list.component.css']
 })
 export class CustomerListComponent implements OnInit {
+
   customerList: Customer[] = [];
 
   idModal: number;
@@ -50,7 +51,7 @@ export class CustomerListComponent implements OnInit {
     this.customerService.searchCustomerByName(this.nameSearch.value, this.indexPagination).subscribe(data => {
       console.log(data);
       this.customerList = data.content;
-      this.pages = new Array(data['totalPages']);
+      this.pages = new Array(data.totalPages);
     });
   }
 

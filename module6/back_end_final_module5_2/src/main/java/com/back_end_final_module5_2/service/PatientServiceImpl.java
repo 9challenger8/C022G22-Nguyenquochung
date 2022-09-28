@@ -1,5 +1,6 @@
 package com.back_end_final_module5_2.service;
 
+import com.back_end_final_module5_2.model.Doctor;
 import com.back_end_final_module5_2.model.Patient;
 import com.back_end_final_module5_2.repository.IPatientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,7 +32,13 @@ public class PatientServiceImpl implements IPatientService {
     }
 
     @Override
-    public Patient save(Patient patient) {
+    public Patient savePatient(Patient patient) {
         return iPatientRepository.save(patient);
     }
+
+//    @Override
+//    public Patient savePatient(String idRecord, String idPatient, String issue, String namePatient, String outDate, String solution, String startDate, Doctor doctor) {
+//        return iPatientRepository.savePatient(idRecord,idPatient,issue,namePatient,outDate,solution,startDate,doctor);
+//    }
+
 }
