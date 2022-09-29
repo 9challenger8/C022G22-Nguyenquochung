@@ -7,11 +7,11 @@ import {Component, OnInit} from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  // hien thi form dang ki
-  loginFormClass = 'login-form-container';
-
   constructor() {
   }
+
+  // hien thi form dang ki
+  loginFormClass = '';
 
   ngOnInit(): void {
   }
@@ -21,8 +21,6 @@ export class HeaderComponent implements OnInit {
   }
 
   closeLoginForm() {
-    this.loginFormClass = 'login-form-container';
+    this.loginFormClass = '';
   }
-
-
 }
