@@ -1,0 +1,204 @@
+/*:root{*/
+/*  --purple:#8e44ad;*/
+/*  --red:#c0392b;*/
+/*  --orange:#f39c12;*/
+/*  --black:#333;*/
+/*  --white:#fff;*/
+/*  --light-color:#666;*/
+/*  --light-white:#ccc;*/
+/*  --light-bg:#f5f5f5;*/
+/*  --border:.1rem solid var(--black);*/
+/*  --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);*/
+/*}*/
+
+/**{*/
+/*  font-family: 'Rubik', sans-serif;*/
+/*  margin:0; padding:0;*/
+/*  box-sizing: border-box;*/
+/*  outline: none; border:none;*/
+/*  text-decoration: none;*/
+/*  transition:all .2s linear;*/
+/*}*/
+
+.title{
+  text-align: center;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  color:#333;
+  font-size: 4rem;
+}
+
+.heading{
+  min-height: 30vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  gap:1rem;
+  background: url(../../assets/image/heading-bg.webp) no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.heading h3{
+  font-size: 5rem;
+  color:#333;
+  text-transform: uppercase;
+}
+
+.heading p{
+  font-size: 2.5rem;
+  color:#666;
+}
+
+.heading p a{
+  color:#8e44ad;
+}
+
+.heading p a:hover{
+  text-decoration: underline;
+}
+
+.shopping-cart .box-container{
+  max-width: 1200px;
+  margin:0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 30rem);
+  align-items: center;
+  gap:1.5rem;
+  justify-content: center;
+}
+
+.shopping-cart .box-container .box{
+  text-align: center;
+  padding:2rem;
+  border-radius: .5rem;
+  background-color: #fff;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  position: relative;
+  border:.1rem solid #333;
+}
+
+.shopping-cart .box-container .box .fa-times{
+  position: absolute;
+  top:1rem; right:1rem;
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 2rem;
+  background-color: #c0392b;
+  color:#fff;
+  border-radius: .5rem;
+}
+
+.shopping-cart .box-container .box .fa-times:hover{
+  background-color: #333;
+}
+
+.shopping-cart .box-container .box img{
+  height: 30rem;
+}
+
+.shopping-cart .box-container .box .name{
+  padding:1rem 0;
+  font-size: 2rem;
+  color:#333;
+}
+
+.shopping-cart .box-container .box .price{
+  padding:1rem 0;
+  font-size: 2.5rem;
+  color:#c0392b;
+}
+
+.shopping-cart .box-container .box input[type="number"]{
+  margin:.5rem 0;
+  border:.1rem solid #333;
+  border-radius: .5rem;
+  padding:1.2rem 1.4rem;
+  font-size: 2rem;
+  color:#333;
+  width: 9rem;
+}
+
+.shopping-cart .box-container .box .sub-total{
+  padding-top: 1.5rem;
+  font-size: 2rem;
+  color:#666;
+}
+
+.shopping-cart .box-container .box .sub-total span{
+  color:#c0392b;
+}
+
+.shopping-cart .cart-total{
+  max-width: 1200px;
+  margin:0 auto;
+  border:.1rem solid #333;
+  padding:2rem;
+  text-align: center;
+  margin-top: 2rem;
+  border-radius: .5rem;
+}
+
+.shopping-cart .cart-total p{
+  font-size: 2.5rem;
+  color:#666;
+}
+
+.shopping-cart .cart-total p span{
+  color:#c0392b;
+}
+
+.shopping-cart .cart-total .flex{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap:1rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+}
+
+.shopping-cart .disabled{
+  pointer-events: none;
+  opacity: .5;
+  user-select: none;
+}
+
+.btn,
+.option-btn,
+.delete-btn,
+.white-btn{
+  display: inline-block;
+  margin-top: 1rem;
+  padding:1rem 3rem;
+  cursor: pointer;
+  color:#fff;
+  font-size: 1.8rem;
+  border-radius: .5rem;
+  text-transform: capitalize;
+}
+
+.btn:hover,
+.option-btn:hover,
+.delete-btn:hover{
+  background-color: #333;
+}
+
+.white-btn,
+.btn{
+  background-color: #8e44ad;
+}
+
+.option-btn{
+  background-color: #f39c12;
+}
+
+.delete-btn{
+  background-color:#c0392b;
+}
+
+.white-btn:hover{
+  background-color: #fff;
+  color:#333;
+}

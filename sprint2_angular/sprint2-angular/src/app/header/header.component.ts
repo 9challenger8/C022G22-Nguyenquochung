@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -12,6 +12,8 @@ export class HeaderComponent implements OnInit {
 
   // hien thi form dang ki
   loginFormClass = '';
+  searchFormClass = '';
+  fixBarClass = '';
 
   ngOnInit(): void {
   }
@@ -22,5 +24,22 @@ export class HeaderComponent implements OnInit {
 
   closeLoginForm() {
     this.loginFormClass = '';
+  }
+
+  displaySearchForm() {
+    if (this.searchFormClass === 'active') {
+      this.searchFormClass = '';
+    } else {
+      this.searchFormClass = 'active';
+    }
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  onScroll() {
+    if (window.scrollY > 80) {
+      this.fixBarClass = 'active';
+    } else {
+      this.fixBarClass = '';
+    }
   }
 }

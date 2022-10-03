@@ -1,25 +1,25 @@
 
 <!-- header section starts  -->
-<div  class="header">
+<div (scroll)="onScroll()" class="header">
 
   <div class="header-1">
 
-    <a href="#" class="logo"> <i class="fas fa-book"></i> bookly </a>
+    <a routerLink="" href="#" class="logo"> <i class="fas fa-book"></i> bookly </a>
 
-    <div class="search-form">
+    <div [ngClass]="searchFormClass" class="search-form">
       <input type="search" name="" placeholder="tìm kiếm sản phẩm mong muốn..." id="search-box">
       <label for="search-box" class="fas fa-search"></label>
     </div>
 
     <div class="icons">
-      <div id="search-btn" class="fas fa-search"></div>
+      <div (click)="displaySearchForm()" id="search-btn" class="fas fa-search"></div>
       <a href="#" class="fas fa-heart"></a>
-      <a href="#" class="fas fa-shopping-cart"></a>
+      <a routerLink="/cart" href="#" class="fas fa-shopping-cart"></a>
       <div (click)="displayLoginForm()" id="login-btn" class="fas fa-user"></div>
     </div>
   </div>
 
-  <div  class="header-2">
+  <div [ngClass]="fixBarClass"  class="header-2">
     <nav class="navbar">
       <a href="#home">Trang chủ</a>
       <a href="#featured">Danh mục sách</a>
