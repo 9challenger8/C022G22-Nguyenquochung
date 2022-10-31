@@ -1,0 +1,33 @@
+<div class="heading">
+  <h3>Thông tin khách hàng</h3>
+  <p><a routerLink="" href="">Trang chủ</a> / Thông tin </p>
+</div>
+
+<section style="background-color: #eee" id="detail" class="box-container">
+  <div class="box">
+    <div class="image-container">
+
+      <div class="big-image">
+        <img src="https://inkythuatso.com/uploads/thumbnails/800/2022/03/anh-body-nam-dep-che-mat-2-31-14-39-48.jpg" alt="">
+      </div>
+
+    </div>
+
+    <div class="content">
+      <h3 class="title">{{customer.name}}</h3>
+      <p>Ngày sinh: <span style="font-weight: 600;margin-right: 200px">{{customer.birthday|date:"dd-MM-yyyy"}}</span>
+        Giới tính: <span style="font-weight: 600">{{customer.gender}}</span></p>
+
+
+      <p>Địa chỉ: <span style="font-weight: 600;margin-right: 200px">{{customer.address}}</span></p>
+
+      <p>Số điện thoại: <span style="font-weight: 600;margin-right: 200px">{{customer.phone}}</span></p>
+      <p>Tên tài khoản: <span style="font-weight: 600;margin-right: 200px">{{username}}</span></p>
+<!--      <p>Email: <span style="font-weight: 600;margin-right: 200px">{{customer.userDto.email}}</span></p>-->
+      <p>Số điện thoại: <span style="font-weight: 600;margin-right: 200px">{{customer.phone}}</span></p>
+
+      <p style="text-align: center;font-weight: 500"><i>Hãy trân trọng sách, sách sẽ trân trọng bạn.</i> </p>
+
+    </div>
+  </div>
+</section>

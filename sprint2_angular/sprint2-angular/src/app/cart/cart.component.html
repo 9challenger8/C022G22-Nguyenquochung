@@ -5,89 +5,41 @@
 
 <section class="shopping-cart">
 
-  <h1 class="title">products added</h1>
+<!--  <h1 class="title">products added</h1>-->
 
-  <div class="box-container">
-    <div class="box">
-      <a href="" class="fas fa-times"></a>
-      <img src="../../assets/image/book3.png" alt="">
-      <div class="name"></div>
-      <div class="price">$/-</div>
+  <div class="box-container" *ngIf="cart.length>0;else noResult">
+    <div class="box" *ngFor="let cart of cart,index as i" >
+      <a class="fas fa-times" (click)="delete(i)"></a>
+      <img [src]="cart.image" alt="">
+      <div class="name">{{cart.name}} </div>
+      <div class="price">{{cart.price}} USD</div>
       <!--      <form action="" method="post">-->
       <input type="hidden" name="cart_id">
-      <input type="number" min="1" name="cart_quantity">
-      <input type="submit" name="update_cart" value="update" class="option-btn">
+<!--      <input  name="update_cart" value="update" class="option-btn">-->
+<!--      <input type="number" min="1" name="cart_quantity">-->
+<!--      <input name="update_cart" value="update" class="option-btn">-->
       <!--      </form>-->
-      <div class="sub-total"> sub total : 20</div>
+      <div class="sub-total"> Số lượng : {{cart.quantity}}</div>
     </div>
-
-    <div class="box">
-      <a href="" class="fas fa-times"></a>
-      <img src="../../assets/image/book3.png" alt="">
-      <div class="name"></div>
-      <div class="price">$/-</div>
-      <!--      <form action="" method="post">-->
-      <input type="hidden" name="cart_id">
-      <input type="number" min="1" name="cart_quantity">
-      <input type="submit" name="update_cart" value="update" class="option-btn">
-      <!--      </form>-->
-      <div class="sub-total"> sub total : 20</div>
-    </div>
-
-
-    <div class="box">
-      <a href="" class="fas fa-times"></a>
-      <img src="../../assets/image/book3.png" alt="">
-      <div class="name"></div>
-      <div class="price">$/-</div>
-      <!--      <form action="" method="post">-->
-      <input type="hidden" name="cart_id">
-      <input type="number" min="1" name="cart_quantity">
-      <input type="submit" name="update_cart" value="update" class="option-btn">
-      <!--      </form>-->
-      <div class="sub-total"> sub total : 20</div>
-    </div>
-
-    <div class="box">
-      <a href="" class="fas fa-times"></a>
-      <img src="../../assets/image/book3.png" alt="">
-      <div class="name"></div>
-      <div class="price">$/-</div>
-      <!--      <form action="" method="post">-->
-      <input type="hidden" name="cart_id">
-      <input type="number" min="1" name="cart_quantity">
-      <input type="submit" name="update_cart" value="update" class="option-btn">
-      <!--      </form>-->
-      <div class="sub-total"> sub total : 20</div>
-    </div>
-
-    <div class="box">
-      <a href="" class="fas fa-times"></a>
-      <img src="../../assets/image/book3.png" alt="">
-      <div class="name"></div>
-      <div class="price">$/-</div>
-      <!--      <form action="" method="post">-->
-      <input type="hidden" name="cart_id">
-      <input type="number" min="1" name="cart_quantity">
-      <input type="submit" name="update_cart" value="update" class="option-btn">
-      <!--      </form>-->
-      <div class="sub-total"> sub total : 20</div>
-    </div>
-
   </div>
 
-
+  <ng-template class="box-container" #noResult>
+    <div class="mt-4" style="text-align: center;font-size: 20px;color: red">Giỏ hàng đang trống.</div>
+  </ng-template>
 
   <div style="margin-top: 2rem; text-align:center;">
-    <a href="" class="delete-btn ">delete all</a>
+    <a class="delete-btn" (click)="deleteAll()" *ngIf="deleteButton==true" >delete all</a>
   </div>
 
-  <div class="cart-total">
-    <p>grand total : <span>$/-</span></p>
-    <div class="flex">
-      <a href="" class="option-btn">continue shopping</a>
-      <a href="" class="btn ">proceed to checkout</a>
-    </div>
+  <div  class="cart-total">
+    <p >Tổng tiền : <span>{{totalMoney}} USD</span></p>
+<!--    <div class="flex">-->
+<!--      <a href="" class="option-btn">Tiếp tục mua hàng</a>-->
+<!--      <a href="" class="btn" >Thanh toán</a>-->
+<!--    </div>-->
+    <br>
+    <div id="payments"></div>
   </div>
+
 
 </section>

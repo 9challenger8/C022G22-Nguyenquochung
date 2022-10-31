@@ -1,9 +1,12 @@
 package com.sprint2_api.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
-public class Customer {
+public class  Customer {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -13,11 +16,11 @@ public class Customer {
 
     private String address;
 
-    private String email;
-
     private String gender;
 
     private String name;
+
+    private String image;
 
     private String phone;
 
@@ -28,25 +31,25 @@ public class Customer {
     @JoinColumn(name = "user_id")
     private AppUser appUser;
 
-    @OneToOne
-    @JoinColumn(name="cart_id")
-    private Cart cart;
+    @OneToMany(mappedBy = "customer")
+    @JsonIgnore
+    private List<BillDetail> billDetailList;
 
     public Customer() {
     }
 
-    public Customer(Integer id, String birthday, String address, String email, String gender, String name, String phone,
-                    Boolean isDeleted, AppUser appUser, Cart cart) {
+    public Customer(Integer id, String birthday, String address, String gender, String name, String image, String phone,
+                    Boolean isDeleted, AppUser appUser, List<BillDetail> billDetailList) {
         this.id = id;
         this.birthday = birthday;
         this.address = address;
-        this.email = email;
         this.gender = gender;
         this.name = name;
+        this.image = image;
         this.phone = phone;
         this.isDeleted = isDeleted;
         this.appUser = appUser;
-        this.cart = cart;
+        this.billDetailList = billDetailList;
     }
 
     public Integer getId() {
@@ -73,14 +76,6 @@ public class Customer {
         this.address = address;
     }
 
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
     public String getGender() {
         return gender;
     }
@@ -95,6 +90,14 @@ public class Customer {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 
     public String getPhone() {
@@ -121,11 +124,11 @@ public class Customer {
         this.appUser = appUser;
     }
 
-    public Cart getCart() {
-        return cart;
+    public List<BillDetail> getBillDetailList() {
+        return billDetailList;
     }
 
-    public void setCart(Cart cart) {
-        this.cart = cart;
+    public void setBillDetailList(List<BillDetail> billDetailList) {
+        this.billDetailList = billDetailList;
     }
 }

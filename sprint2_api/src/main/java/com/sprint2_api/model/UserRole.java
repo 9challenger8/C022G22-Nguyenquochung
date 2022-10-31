@@ -1,5 +1,7 @@
 package com.sprint2_api.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import javax.persistence.*;
 
 @Entity

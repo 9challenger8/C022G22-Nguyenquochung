@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
     loop: true,
     centeredSlides: true,
     autoplay: {
-      delay: 1000,
+      delay: 5000,
       disableOnInteraction: false,
     },
     breakpoints: {
@@ -45,7 +45,7 @@ export class HomeComponent implements OnInit {
     loop: true,
     centeredSlides: true,
     autoplay: {
-      delay: 2000
+      delay: 6000
     },
     pagination: {
       el: '.swiper-pagination',
@@ -76,7 +76,7 @@ export class HomeComponent implements OnInit {
     loop: true,
     centeredSlides: true,
     autoplay: {
-      delay: 2000,
+      delay: 6000,
       disableOnInteraction: false,
     },
     pagination: {clickable: true},

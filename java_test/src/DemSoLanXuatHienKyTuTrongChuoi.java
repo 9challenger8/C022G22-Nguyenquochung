@@ -1,24 +1,38 @@
-import java.util.Scanner;
-
 public class DemSoLanXuatHienKyTuTrongChuoi {
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String str = scanner.nextLine();
-        int count = 1;
+    //    Cach 1:
+    static void DemKyTu(String str) {
+        int[] counter = new int[256];
 
         for (int i = 0; i < str.length(); i++) {
-            for( int j = 1; j<str.length(); j++){
-                if(str.charAt(i)==str.charAt(j)){
-                    count++;
-                }
-            }
-            System.out.println(str.charAt(i));
-            System.out.println("co " + count+ " lan xuat hien");
-            count = 0;
-
-
+            counter[str.charAt(i)]++;
         }
 
+        char[] array = new char[str.length()];
+
+        for (int i = 0; i < str.length(); i++) {
+            array[i] = str.charAt(i);
+
+            int flag = 0;
+
+            for (int j = 0; j <= i; j++) {
+                if (array[i] == str.charAt(j)) {
+                    flag++;
+                }
+            }
+            if (flag == 1) {
+                System.out.println("Số lần xuất hiện của " + array[i]
+                        + " trong chuỗi:" + counter[str.charAt(i)]);
+            }
+        }
+    }
+
+    //Cach 2:
+
+
+    public static void main(String[] args) {
+        String str = "HHHHHHHello world";
+        System.out.println("Chuỗi là: " + str);
+        DemKyTu(str);
     }
 }

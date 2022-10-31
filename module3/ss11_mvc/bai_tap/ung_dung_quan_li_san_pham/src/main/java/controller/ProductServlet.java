@@ -16,7 +16,7 @@ import java.util.List;
 @WebServlet(name = "ProductServlet", value = "/products")
 
 public class ProductServlet extends HttpServlet {
-        private IProductService iProductService=new ProductService();
+        private final IProductService iProductService=new ProductService();
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

@@ -1,0 +1,227 @@
+<div class="heading">
+  <h3>Chi tiết sản phẩm</h3>
+  <p><a routerLink="" href="">Trang chủ</a> / Chi tiết </p>
+</div>
+
+<section style="background-color: #eee" id="detail" class="box-container">
+  <div class="box">
+    <div class="image-container">
+
+      <div class="big-image">
+        <img [src]="book.image" alt="">
+      </div>
+
+      <div class="small-image">
+        <img class="active" src="../../../assets/image/book-3.png" alt="">
+        <img src="../../../assets/image/book-4.png" alt="">
+        <img src="../../../assets/image/book-5.png" alt="">
+      </div>
+    </div>
+
+    <div class="content">
+      <h3 class="title">{{book.name}}</h3>
+      <p>Xuất xứ: <span style="font-weight: 600;margin-right: 200px">Việt Nam</span> Nhà xuất bản:
+        <span style="font-weight: 600">{{book.publisher.namePublisher}}</span></p>
+
+
+      <p>Tác giả: <span style="font-weight: 600;margin-right: 200px">{{book.author}}</span></p>
+
+      <p>Thể loại: <span style="font-weight: 600;margin-right: 200px">{{book.category.name}}</span></p>
+
+      <div class="price">{{book.price}} USD</div>
+      <p>Hãy để sách thắp sáng ước mở của bạn</p>
+
+      <!--      <form action="">-->
+      <div class="quantity-form">
+        <div class="quantity">
+          <span> Số lượng :  </span>
+          <input type="number" value="1">
+        </div>
+      </div>
+      <!--      </form>-->
+        <button class="btn" (click)="addToCart(book)"><i class="fas fa-shopping-cart" ></i> Thêm vào giỏ hàng</button>
+
+      <!--      <span class="stock"> <i class="fas fa-check"></i> in stock </span>-->
+    </div>
+  </div>
+</section>
+
+
+<section style="background-color: #eee" class="featured" id="featured">
+  <h1 class="heading-p"><span>Sản phẩm liên quan</span></h1>
+
+  <swiper [config]="swiperFeaturedConfig" #swiperFeatured class="featured-slider">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide box">
+        <div class="icons">
+          <a href="#" class="fas fa-search"></a>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
+        <div class="image">
+          <img src="../../../assets/image/book-1.png" alt="">
+        </div>
+        <div class="content">
+          <h3>featured books</h3>
+          <div class="price">$15.99 <span>$20.99</span></div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+      </div>
+
+      <div class="swiper-slide box">
+        <div class="icons">
+          <a href="#" class="fas fa-search"></a>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
+        <div class="image">
+          <img src="../../../assets/image/book-2.png" alt="">
+        </div>
+        <div class="content">
+          <h3>featured books</h3>
+          <div class="price">$15.99 <span>$20.99</span></div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+      </div>
+
+      <div class="swiper-slide box">
+        <div class="icons">
+          <a href="#" class="fas fa-search"></a>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
+        <div class="image">
+          <img src="../../../assets/image/book-3.png" alt="">
+        </div>
+        <div class="content">
+          <h3>featured books</h3>
+          <div class="price">$15.99 <span>$20.99</span></div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+      </div>
+
+      <div class="swiper-slide box">
+        <div class="icons">
+          <a href="#" class="fas fa-search"></a>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
+        <div class="image">
+          <img src="../../../assets/image/book-4.png" alt="">
+        </div>
+        <div class="content">
+          <h3>featured books</h3>
+          <div class="price">$15.99 <span>$20.99</span></div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+      </div>
+
+      <div class="swiper-slide box">
+        <div class="icons">
+          <a href="#" class="fas fa-search"></a>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
+        <div class="image">
+          <img src="../../../assets/image/book-5.png" alt="">
+        </div>
+        <div class="content">
+          <h3>featured books</h3>
+          <div class="price">$15.99 <span>$20.99</span></div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+      </div>
+
+      <div class="swiper-slide box">
+        <div class="icons">
+          <a href="#" class="fas fa-search"></a>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
+        <div class="image">
+          <img src="../../../assets/image/book-6.png" alt="">
+        </div>
+        <div class="content">
+          <h3>featured books</h3>
+          <div class="price">$15.99 <span>$20.99</span></div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+      </div>
+
+      <div class="swiper-slide box">
+        <div class="icons">
+          <a href="#" class="fas fa-search"></a>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
+        <div class="image">
+          <img src="../../../assets/image/book-7.png" alt="">
+        </div>
+        <div class="content">
+          <h3>featured books</h3>
+          <div class="price">$15.99 <span>$20.99</span></div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+      </div>
+
+      <div class="swiper-slide box">
+        <div class="icons">
+          <a href="#" class="fas fa-search"></a>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
+        <div class="image">
+          <img src="../../../assets/image/book-8.png" alt="">
+        </div>
+        <div class="content">
+          <h3>featured books</h3>
+          <div class="price">$15.99 <span>$20.99</span></div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+      </div>
+
+      <div class="swiper-slide box">
+        <div class="icons">
+          <a href="#" class="fas fa-search"></a>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
+        <div class="image">
+          <img src="../../../assets/image/book-9.png" alt="">
+        </div>
+        <div class="content">
+          <h3>featured books</h3>
+          <div class="price">$15.99 <span>$20.99</span></div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+      </div>
+
+      <div class="swiper-slide box">
+        <div class="icons">
+          <a href="#" class="fas fa-search"></a>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
+        <div class="image">
+          <img src="../../../assets/image/book-10.png" alt="">
+        </div>
+        <div class="content">
+          <h3>featured books</h3>
+          <div class="price">$15.99 <span>$20.99</span></div>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </swiper>
+</section>
+
+<!-- featured section ends -->
+
+
+
+
+

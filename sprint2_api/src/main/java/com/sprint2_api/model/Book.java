@@ -1,5 +1,7 @@
 package com.sprint2_api.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.List;
 
@@ -10,26 +12,26 @@ public class Book {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    private String code;
-
     private String description;
 
     private String name;
 
     private String price;
 
-    private String publisher;
+    private String author;
 
     private String quantity;
 
     private String releaseDate;
 
+    private String image;
+
     @Column(columnDefinition = "BIT(1) DEFAULT 0")
     private Boolean isDeleted;
 
     @ManyToOne
-    @JoinColumn(name = "author_id")
-    private Author author;
+    @JoinColumn(name = "publisher_id")
+    private Publisher publisher;
 
     @ManyToOne
     @JoinColumn(name = "category_id")
@@ -40,26 +42,26 @@ public class Book {
     private Discount discount;
 
     @OneToMany(mappedBy = "book")
-    private List<CartDetail> cartDetailList;
+    @JsonIgnore
+    private List<BookOrder> bookOrderList;
 
     public Book() {
     }
 
-    public Book(Integer id, String code, String description, String name, String price, String publisher, String quantity,
-                String releaseDate, Boolean isDeleted, Author author, Category category, Discount discount, List<CartDetail> cartDetailList) {
+    public Book(Integer id, String description, String name, String price, String author, String quantity,
+                String releaseDate, Boolean isDeleted, Publisher publisher, Category category, Discount discount, List<BookOrder> bookOrderList) {
         this.id = id;
-        this.code = code;
         this.description = description;
         this.name = name;
         this.price = price;
-        this.publisher = publisher;
+        this.author = author;
         this.quantity = quantity;
         this.releaseDate = releaseDate;
         this.isDeleted = isDeleted;
-        this.author = author;
+        this.publisher = publisher;
         this.category = category;
         this.discount = discount;
-        this.cartDetailList = cartDetailList;
+        this.bookOrderList = bookOrderList;
     }
 
     public Integer getId() {
@@ -68,14 +70,6 @@ public class Book {
 
     public void setId(Integer id) {
         this.id = id;
-    }
-
-    public String getCode() {
-        return code;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
     }
 
     public String getDescription() {
@@ -102,12 +96,12 @@ public class Book {
         this.price = price;
     }
 
-    public String getPublisher() {
-        return publisher;
+    public String getAuthor() {
+        return author;
     }
 
-    public void setPublisher(String publisher) {
-        this.publisher = publisher;
+    public void setAuthor(String author) {
+        this.author = author;
     }
 
     public String getQuantity() {
@@ -134,12 +128,12 @@ public class Book {
         isDeleted = deleted;
     }
 
-    public Author getAuthor() {
-        return author;
+    public Publisher getPublisher() {
+        return publisher;
     }
 
-    public void setAuthor(Author author) {
-        this.author = author;
+    public void setPublisher(Publisher publisher) {
+        this.publisher = publisher;
     }
 
     public Category getCategory() {
@@ -158,11 +152,27 @@ public class Book {
         this.discount = discount;
     }
 
-    public List<CartDetail> getCartDetailList() {
-        return cartDetailList;
+    public List<BookOrder> getCartDetailList() {
+        return bookOrderList;
     }
 
-    public void setCartDetailList(List<CartDetail> cartDetailList) {
-        this.cartDetailList = cartDetailList;
+    public void setCartDetailList(List<BookOrder> bookOrderList) {
+        this.bookOrderList = bookOrderList;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public List<BookOrder> getBillDetailList() {
+        return bookOrderList;
+    }
+
+    public void setBillDetailList(List<BookOrder> bookOrderList) {
+        this.bookOrderList = bookOrderList;
     }
 }

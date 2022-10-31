@@ -1,0 +1,98 @@
+<div class="heading">
+  <h3>Lịch sử mua hàng</h3>
+  <p><a style="text-decoration: none" routerLink="" href="">Trang chủ</a> / Lịch sử </p>
+</div>
+
+
+<section  style="display: flex ;background-color: #eee" class="product" id="product">
+  <table class="table table-responsive-lg table-striped table-bordered table-hover table-shadow"
+         *ngIf="(historyPaymentList).length > 0; else noResults">
+    <thead>
+    <tr class="row-custom" style="background-color: #6de29b">
+<!--      <th style="width: 80px;" scope="col">No.</th>-->
+      <th style="width: 120px;" scope="col">Tên khách hàng</th>
+      <th style="width: 100px ;" scope="col">Ngày mua</th>
+      <th style="width: 100px ;" scope="col">Thời gian mua</th>
+<!--      <th scope="col" colspan="2" style="text-align: center">Option</th>-->
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="row-body-custom"
+        *ngFor="let temp of historyPaymentList ;index as i">
+<!--      <th scope="row"> {{i + 1 +6*(indexPagination)}}</th>-->
+      <td>{{temp.nameCustomer}}</td>
+      <td>{{temp.dateCreate | date:"dd-MM-yyyy"}}</td>
+      <td>{{temp.timeCreate | slice:15 :25}}</td>
+<!--      <td style="text-align: center">-->
+<!--        &lt;!&ndash; Button trigger modal &ndash;&gt;-->
+<!--        <button style="padding: 0;margin: 0" (click)="getDataForModal(temp.id,temp.name)" type="button"-->
+<!--                class="btn button-delete hover-effect-red" data-bs-toggle="modal"-->
+<!--                data-bs-target="#exampleModal">-->
+<!--          <i style="font-size: 22px;padding: 0" class="bi bi-trash-fill"></i>-->
+<!--        </button>-->
+<!--      </td>-->
+<!--      <td style="text-align: center;">-->
+<!--        <button style="padding: 0;margin: 0" [routerLink]="['/customer/edit',temp.id]" type="button"-->
+<!--                class="btn button-edit ">-->
+<!--          <i style="font-size: 22px;padding: 0"-->
+<!--             class="bi bi-pencil-square"></i>-->
+<!--        </button>-->
+<!--      </td>-->
+
+      <!--                     Modal-->
+<!--      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"-->
+<!--           aria-hidden="true">-->
+<!--        <div class="modal-dialog">-->
+<!--          <div class="modal-content">-->
+<!--            <div class="modal-header">-->
+<!--              Delete-->
+<!--            </div>-->
+<!--            <div class="modal-body">-->
+<!--              <p>Do you want delete customer name: <span style="color: red"> {{nameModal}} </span> <br>-->
+<!--                with id: <span style="color: red">{{idModal}}</span> ?</p>-->
+<!--            </div>-->
+<!--            <div class="modal-footer">-->
+<!--              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
+<!--              <a>-->
+<!--                <button (click)="deleteCustomer()" type="button" data-bs-dismiss="modal"-->
+<!--                        class="btn btn-primary">Delete-->
+<!--                </button>-->
+<!--              </a>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+    </tr>
+    </tbody>
+  </table>
+
+  <!--            Hien thi khi khong co du lieu-->
+  <ng-template #noResults>
+    <table class="table table-hover table-responsive-lg  table-striped table-bordered table-shadow ">
+      <thead>
+      <tr class="row-custom" style="background-color: #5DFC9A">
+<!--        <th style="width: 80px;" scope="col">No.</th>-->
+        <th style="width: 250px;" scope="col">Name</th>
+        <th style="width: 120px;" scope="col">Birthday</th>
+        <th style="width: 100px ;" scope="col">Gender</th>
+        <th scope="col">Id card</th>
+        <th scope="col">Phone number</th>
+        <th scope="col">Customer type</th>
+        <th scope="col">Address</th>
+        <th scope="col" colspan="2" style="text-align: center">Option</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr class="row-body-custom">
+        <td style="text-align: center" colspan="10"> No results found.</td>
+      </tr>
+      </tbody>
+    </table>
+  </ng-template>
+
+</section>
+
+
+
+
+

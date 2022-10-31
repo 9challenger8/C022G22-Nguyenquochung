@@ -1,5 +1,6 @@
 package com.sprint2_api.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
@@ -16,27 +17,39 @@ public class AppUser {
 
     private String password;
 
+    private String email;
+
     @Column(columnDefinition = "BIT(1) DEFAULT 0")
     private Boolean isDeleted;
 
     @OneToMany(mappedBy = "appUser")
+    @JsonIgnore
     private List<UserRole> userRoleList;
 
-    @JsonIgnore
     @OneToOne(mappedBy = "appUser")
+    @JsonBackReference
     private Customer customer;
 
     public AppUser() {
     }
 
-    public AppUser(Integer id, String username, String password, Boolean isDeleted, List<UserRole> userRoleList
-            , Customer customer) {
+    public AppUser(Integer id, String username, String password, String email, Boolean isDeleted,
+                   List<UserRole> userRoleList, Customer customer) {
         this.id = id;
         this.username = username;
         this.password = password;
+        this.email = email;
         this.isDeleted = isDeleted;
         this.userRoleList = userRoleList;
         this.customer = customer;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public Integer getId() {
