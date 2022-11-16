@@ -1,0 +1,27 @@
+query packageTimeslotList($filter: PackageTimeslotFilter)
+{
+  packageTimeslotList(filter: $filter) {
+    count
+    totalPage
+    data {
+      ... on PackageTimeslot {
+        id
+        packageId
+        hotelId
+        name
+        startHour
+        startMinute
+        startTime,
+        endHour
+        endMinute
+        endTime,
+        weekdays
+        status
+        packageTimeslotDailyList {
+          date
+          status
+        }
+      }
+    }
+  }
+}

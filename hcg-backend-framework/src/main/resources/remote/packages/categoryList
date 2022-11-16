@@ -1,0 +1,18 @@
+query categoryList($filter:CategoryFilter)
+{
+  	categoryList(filter:$filter)
+  	{
+    	count
+        totalPage
+        data
+        {
+            ... on Category
+            {
+                id
+                name
+                code
+            }
+        }
+    }
+}
+

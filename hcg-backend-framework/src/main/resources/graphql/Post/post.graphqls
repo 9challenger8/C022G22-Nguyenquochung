@@ -1,0 +1,32 @@
+type Post {
+    id: UUID!
+    title: String!
+    text: String!
+    category: String
+    date: Date
+    packages: [Package]
+
+}
+
+input PostFilter{
+    count: Int
+    offset: Int
+    pageSize: Int
+}
+
+input PostInput{
+    id: UUID
+    title: String
+    category: String
+
+}
+
+
+extend type Query {
+    recentPosts(filter: PostFilter): ResponseData!
+}
+
+
+extend type Mutation {
+    createPost(input: PostInput) : ResponseContent!
+}

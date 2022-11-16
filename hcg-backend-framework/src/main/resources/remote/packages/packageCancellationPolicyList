@@ -1,0 +1,18 @@
+query packageCancellationPolicyList($filter: PackageCancellationPolicyFilter) {
+  packageCancellationPolicyList(filter: $filter) {
+    count
+    totalPage
+    data {
+      ... on PackageCancellationPolicy {
+        id
+        packageId
+        hotelId
+        name
+        code
+        hourPrior
+        displayUnit
+        description
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+mutation deletePackageWish($input: PackageWishInput) {
+    deletePackageWish(input: $input) {
+        code
+        status
+        message
+        data {
+            ... on PackageWish {
+                id
+                packageId
+                guestId
+            }
+        }
+    }
+}

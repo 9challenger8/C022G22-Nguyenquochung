@@ -1,0 +1,40 @@
+query packageListEnhanced($filter:PackagesFilter)
+{
+  	packageListEnhanced(filter:$filter)
+  	{
+    	count
+        totalPage
+        data
+        {
+            ... on Package
+            {
+                id
+                code
+                name
+                categoryTag
+                imgId
+                packageDetails
+                hotelId
+                status
+                roomTypeId
+                maxAdults
+                maxChild
+                roomType
+                {
+                    id
+                    name
+                    code
+                    hotelId
+                    sequence
+                }
+                taxRate
+                isTaxRateApplicable
+                serviceFee
+                isServiceFeeApplicable
+                depositValue
+                isOverrideHotelFee
+                minAdvanceBooking
+            }
+        }
+    }
+}

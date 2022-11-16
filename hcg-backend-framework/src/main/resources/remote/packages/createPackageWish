@@ -1,0 +1,14 @@
+mutation createPackageWish($input: PackageWishInput) {
+    createPackageWish(input: $input) {
+        code
+        status
+        message
+        data {
+            ... on PackageWish {
+                id
+                packageId
+                guestId
+            }
+        }
+    }
+}

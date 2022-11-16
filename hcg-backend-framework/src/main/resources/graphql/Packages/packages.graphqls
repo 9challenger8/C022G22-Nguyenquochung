@@ -1,0 +1,16 @@
+type Package {
+    id: UUID!
+    name: String!
+}
+
+input PackageFilter
+{
+    seoString: String
+}
+
+
+extend type Query {
+    packagesList(filter: PackageFilter): ResponseData!
+}
+
+

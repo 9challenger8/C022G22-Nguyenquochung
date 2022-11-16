@@ -1,0 +1,17 @@
+query packageWishList($filter:PackageWishFilter)
+{
+  	packageWishList(filter:$filter)
+  	{
+        count
+        totalPage
+        data
+        {
+            ... on PackageWish
+            {
+                id
+                packageId
+                guestId
+            }
+        }
+    }
+}
