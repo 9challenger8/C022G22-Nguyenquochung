@@ -12,7 +12,6 @@
 
   <div style="width: 80%">
 <!--    <h1 class="heading">latest <span>products</span></h1>-->
-
     <div class="box-container" *ngIf="bookList.length>0;else noResult">
       <div class="box" *ngFor="let book of bookList">
         <span class="discount">-33%</span>
@@ -22,7 +21,6 @@
           <a [routerLink]="['/book/detail',book.id]" class="fas fa-eye"></a>
           <a style="cursor: pointer" *ngIf="['ROLE_USER'].indexOf(role)!==-1" (click)="addToCart(book)" class="fa-solid fa-cart-plus"></a>
         </div>
-<!--        <img src="../../../assets/image/book-1.png" alt="">-->
         <img [src]="book.image" alt="">
         <h3>{{book.name}}</h3>
         <div class="stars">

@@ -4,7 +4,7 @@ public class DayFibonacciNhoHon100 {
     public static void checkFibonacci() {
         int a1 = 0;
         int a2 = 1;
-        int fibonacciNumber = 1 ;
+        int fibonacciNumber = 1;
 
 
         while (fibonacciNumber<100){

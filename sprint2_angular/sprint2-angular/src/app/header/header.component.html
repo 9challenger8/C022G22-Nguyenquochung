@@ -14,8 +14,10 @@
       <div (click)="displaySearchForm()" id="search-btn" class="fas fa-search"></div>
       <a *ngIf="['ROLE_USER'].indexOf(role)!==-1" href="#" class="fas fa-heart"></a>
       <a *ngIf="['ROLE_USER'].indexOf(role)!==-1" [routerLink]="['/customer/history',customer.id]" href="#" class="fa-solid fa-clock-rotate-left"></a>
-
+      <i class=""></i>
       <div *ngIf="['ROLE_USER'].indexOf(role)!==-1" (click)="displayCart()" class="fas fa-shopping-cart"></div>
+      <div *ngIf="['ROLE_ADMIN'].indexOf(role)!==-1" class="fa-solid fa-pen-to-square"></div>
+      <div *ngIf="['ROLE_ADMIN'].indexOf(role)!==-1" class="fa-solid fa-square-plus"></div>
       <div (click)="displayLoginForm()" id="login-btn" class="fas fa-user" *ngIf="isLoggedIn==false" ></div>
       <a href="" (click)="logOut()" id="logout-btn" class="fa-solid fa-right-from-bracket" *ngIf="isLoggedIn==true">
       </a>
@@ -24,7 +26,6 @@
       </a>
     </div>
   </div>
-
   <div [ngClass]="cartClass" class="shopping-cart">
 <!--    <div class="box">-->
 <!--      <i class="fas fa-times"></i>-->

@@ -31,7 +31,6 @@ export class HeaderComponent implements OnInit {
   cartClass = '';
 
   //Dang nhap
-
   formGroup: FormGroup;
   roles: string[] = [];
   username: string;
@@ -41,6 +40,9 @@ export class HeaderComponent implements OnInit {
   currentUser: string;
   role: string;
   isLoggedIn = false;
+
+
+  idCustomer:number = 0;
 
   curDate = formatDate(new Date(), 'yyyy-MM-dd', 'en-US');
 
@@ -74,9 +76,9 @@ export class HeaderComponent implements OnInit {
       this.authService.isLoggedIn = true;
       this.roles = this.tokenStorageService.getUser().roles;
       this.username = this.tokenStorageService.getUser().username;
+      this.getCustomerByUsername();
     }
     this.getBook();
-    this.getCustomerByUsername();
     this.loadHeader();
   }
 

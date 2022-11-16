@@ -3,16 +3,15 @@
   <p><a style="text-decoration: none" routerLink="" href="">Trang chủ</a> / Lịch sử </p>
 </div>
 
-
 <section  style="display: flex ;background-color: #eee" class="product" id="product">
   <table class="table table-responsive-lg table-striped table-bordered table-hover table-shadow"
          *ngIf="(historyPaymentList).length > 0; else noResults">
     <thead>
     <tr class="row-custom" style="background-color: #6de29b">
 <!--      <th style="width: 80px;" scope="col">No.</th>-->
-      <th style="width: 120px;" scope="col">Tên khách hàng</th>
-      <th style="width: 100px ;" scope="col">Ngày mua</th>
-      <th style="width: 100px ;" scope="col">Thời gian mua</th>
+      <th style="width: 120px;height: 40px" scope="col">Tên khách hàng</th>
+      <th style="width: 100px;height: 40px" scope="col">Ngày mua</th>
+      <th style="width: 100px;height: 40px" scope="col">Thời gian mua</th>
 <!--      <th scope="col" colspan="2" style="text-align: center">Option</th>-->
     </tr>
     </thead>

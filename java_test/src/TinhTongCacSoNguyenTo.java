@@ -1,3 +1,5 @@
+import static java.lang.Math.sqrt;
+
 public class TinhTongCacSoNguyenTo {
 
     public static void main(String[] args) {
@@ -16,7 +18,6 @@ public class TinhTongCacSoNguyenTo {
                 total += i;
             }
         }
-
         System.out.println("tong la: " + total);
     }
 
@@ -24,7 +25,7 @@ public class TinhTongCacSoNguyenTo {
         if (n <= 1) {
             return false;
         } else {
-            for (int i = 2; i < n; i++) {
+            for (int i = 2; i <= sqrt(n) ; i++) {
                 if (n % i == 0) {
                     return false;
                 }
@@ -32,5 +33,4 @@ public class TinhTongCacSoNguyenTo {
             return true;
         }
     }
-
 }
