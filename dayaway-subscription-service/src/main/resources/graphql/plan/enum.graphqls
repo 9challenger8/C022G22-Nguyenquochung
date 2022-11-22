@@ -1,0 +1,15 @@
+enum PlanStatusEnum{
+    ACTIVE,
+    INACTIVE,
+    DRAFT,
+}
+enum PlanTypeEnum{
+    CUSTOMER,
+    PARTNER,
+
+}
+enum PlanExpandEnum{
+    planFeature,
+    planFeatureDetails,
+}
+

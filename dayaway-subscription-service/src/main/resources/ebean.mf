@@ -1,0 +1,3 @@
+querybean-packages: com.dayaway.subscription
+entity-packages: com.dayaway.subscription.entity
+transactional-packages: com.dayaway.subscription

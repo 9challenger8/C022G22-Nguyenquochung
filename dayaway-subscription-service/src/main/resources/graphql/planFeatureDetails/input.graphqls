@@ -1,0 +1,15 @@
+input PlanFeatureDetailsFilter {
+    idList                          : [UUID]
+    planIdList                      : [UUID]
+    planFeatureIdList               : [UUID]
+    value                           : String
+}
+
+
+
+input PlanFeatureDetailsInput {
+    id                              : UUID
+    planId                          : UUID
+    planFeatureId                   : UUID
+    value                           : String
+}

@@ -1,0 +1,10 @@
+extend type Query {
+    planFeatureDetailsList(filter: PlanFeatureDetailsFilter )                 :ResponseData
+}
+
+
+extend type Mutation {
+    updatePlanFeatureDetails(input: PlanFeatureDetailsInput )                 :ResponseContent
+    createPlanFeatureDetails(input: PlanFeatureDetailsInput )                 :ResponseContent
+    deletePlanFeatureDetails(input: PlanFeatureDetailsInput )                 :ResponseContent
+}

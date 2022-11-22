@@ -1,0 +1,10 @@
+extend type Query {
+    subscriptionHistoryList(filter: SubscriptionHistoryFilter )                 :ResponseData
+}
+
+
+extend type Mutation {
+    updateSubscriptionHistory(input: SubscriptionHistoryInput )                 :ResponseContent
+    createSubscriptionHistory(input: SubscriptionHistoryInput )                 :ResponseContent
+    deleteSubscriptionHistory(input: SubscriptionHistoryInput )                 :ResponseContent
+}

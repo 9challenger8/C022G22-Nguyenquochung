@@ -1,0 +1,10 @@
+type Subscription {
+    id                              : UUID
+    planId                          : UUID
+    startDate                       : Date
+    endDate                         : Date
+    autoRenewEnabled                : Boolean
+    status                          : SubscriptionStatusEnum
+    relatedType                     : SubscriptionRelatedTypeEnum
+    relatedId                       : UUID
+}

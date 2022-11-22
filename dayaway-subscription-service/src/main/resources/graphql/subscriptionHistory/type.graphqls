@@ -1,0 +1,8 @@
+type SubscriptionHistory {
+    id                              : UUID
+    subscriptionId                  : UUID
+    paymentAmount                   : BigDecimal
+    paymentStatus                   : SubscriptionHistoryPaymentStatusEnum
+    paymentDate                     : Date
+    periodStartDate                 : Date
+}

@@ -1,0 +1,29 @@
+input PlanFilter {
+    idList                          : [UUID]
+    name                            : String
+    descriptionList                 : [String]
+    typeList                        : [PlanTypeEnum]
+    statusList                      : [PlanStatusEnum]
+    roleCodeList                    : [String]
+    monthsPerIntervalList           : [String]
+    priceList                       : [BigDecimal]
+    codeList                        : [String]
+    expand                          : [PlanExpandEnum]
+}
+
+
+
+
+input PlanInput {
+    id                              : UUID
+    name                            : String
+    description                     : String
+    price                           : BigDecimal
+    status                          : PlanStatusEnum
+    type                            : PlanTypeEnum
+    roleCode                        : String
+    monthsPerInterval               : String
+    code                            : String
+}
+
+

@@ -1,0 +1,19 @@
+query roomTypeList($filter:RoomTypeFilter)
+{
+  	roomTypeList(filter:$filter)
+  	{
+        count
+        totalPage
+        data
+        {
+            ... on RoomType
+            {
+                id
+                name
+                code
+                hotelId
+                sequence
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+extend type Query {
+    planList(filter: PlanFilter )                 :ResponseData
+}
+
+
+extend type Mutation {
+    updatePlan(input: PlanInput )                 :ResponseContent
+    createPlan(input: PlanInput )                 :ResponseContent
+    deletePlan(input: PlanInput )                 :ResponseContent
+}

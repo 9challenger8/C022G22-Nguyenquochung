@@ -1,0 +1,23 @@
+input SubscriptionHistoryFilter {
+    idList                          : [UUID]
+    subscriptionIdList              : [UUID]
+    paymentAmountList               : [BigDecimal]
+    paymentStatusList               : [SubscriptionHistoryPaymentStatusEnum]
+    paymentDate                     : Date
+    periodStartDate                 : Date
+
+}
+
+
+
+
+input SubscriptionHistoryInput {
+    id                              : UUID
+    subscriptionId                  : UUID
+    paymentAmount                   : BigDecimal
+    paymentStatus                   : SubscriptionHistoryPaymentStatusEnum
+    paymentDate                     : Date
+    periodStartDate                 : Date
+}
+
+

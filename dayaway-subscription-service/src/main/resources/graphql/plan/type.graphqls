@@ -1,0 +1,15 @@
+type Plan{
+    id                              : UUID
+    name                            : String
+    description                     : String
+    price                           : BigDecimal
+    status                          : PlanStatusEnum
+    type                            : PlanTypeEnum
+    roleCode                       : String
+    monthsPerInterval               : String
+    code                            : String
+    planFeatureDetailsList         : [PlanFeatureDetails]
+    planFeatureList                 : [PlanFeature]
+}
+
+

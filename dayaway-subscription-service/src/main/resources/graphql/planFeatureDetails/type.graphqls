@@ -1,0 +1,7 @@
+type PlanFeatureDetails {
+    id                              : UUID
+    planId                          : UUID
+    planFeatureId                   : UUID
+    value                           : String
+    planFeature                     : PlanFeature
+}
