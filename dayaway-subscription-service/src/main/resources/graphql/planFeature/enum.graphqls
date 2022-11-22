@@ -1,7 +1,0 @@
-enum PlanFeatureTypeEnum{
-    CUSTOMER,
-    PARTNER
-}
-
-
-

@@ -1,7 +1,0 @@
-type PlanFeature {
-    id                              : UUID
-    name                            : String
-    code                            : String
-    type                            : PlanFeatureTypeEnum
-    typeValue                       : String
-}

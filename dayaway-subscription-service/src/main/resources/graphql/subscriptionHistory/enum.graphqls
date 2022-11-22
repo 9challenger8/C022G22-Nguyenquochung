@@ -1,8 +1,0 @@
-enum SubscriptionHistoryPaymentStatusEnum{
-    CANCEL_PAYMENT,
-    PAYMENT_AUTHORIZED,
-    PAYMENT_FAILED,
-    PAYMENT_SUCCEEDED,
-    PENDING_PAYMENT
-}
-
